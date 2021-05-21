@@ -10,44 +10,39 @@
     </transition>
 </template>
 
-<script>
+<script lang="ts">
+import {emitter} from '../setup'
+import { computed, onMounted, ref } from 'vue'
 export default {
     name: 'Alert',
-    data () {
-        return {
-            show: false,
-            message: '',
-            timeout: undefined,
-            type: undefined
-        }
-    },
-    computed: {
-        icon () {
-            switch (this.type) {
-            case 'error':
-                return 'warning'
-            default:
-                return 'info'
-            }
-        }
-    },
-    created () {
-        this.$root.$on('error', (message) => {
-            this.type = 'error'
-            this.onEvent(message)
+    setup() {
+        const show = ref(false)
+        const message = ref('')
+        const timeout = ref<number | undefined>(undefined)
+        const type = ref<string | undefined>(undefined)
+
+        const icon = computed(() => {
+            if(type.value === 'error') return 'warning'
+            else return 'info'
         })
-        this.$root.$on('info', (message) => {
-            this.type = 'info'
-            this.onEvent(message)
+
+        onMounted(() => {
+            emitter.on('error', (message) => {
+                type.value = 'error',
+                onEvent(message)
+            })
+            emitter.on('info', (message) => {
+                type.value = 'info',
+                onEvent(message)
+            })
         })
-    },
-    methods: {
-        onEvent (message) {
-            this.message = message
-            this.show = true
-            clearTimeout(this.timeout)
-            this.timeout = setTimeout(() => {
-                this.show = false
+
+        function onEvent (msg: string) {
+            message.value = msg
+            show.value = true
+            clearTimeout(timeout.value)
+            timeout.value = setTimeout(() => {
+                show.value = false
             }, 3000)
         }
     }

@@ -1,0 +1,70 @@
+{
+    "blackCards": [
+        {
+            "pick": 1,
+            "text": "Astronomen haben entdeckt, dass das Universum aus 5% gewöhnlicher Materie, 25% dunkler Materie und 70% _ besteht."
+        },
+        {
+            "pick": 1,
+            "text": "BowWOW! ist das erste Haustierhotel in LA, das _ für Hunde anbietet."
+        },
+        {
+            "pick": 1,
+            "text": "Hey, was ist mit Renee Zellweger passiert?"
+        },
+        {
+            "pick": 1,
+            "text": "Housekeeping! Sie wollen _?"
+        },
+        {
+            "pick": 1,
+            "text": "In der bürgerlichen Gesellschaft ist das Kapital unabhängig und hat Individualität, während die lebende Person _ ist."
+        },
+        {
+            "pick": 1,
+            "text": "Einige Männer suchen nichts Logisches wie Geld. Sie können nicht gekauft, gemobbt, begründet oder verhandelt werden. Einige Männer wollen nur _."
+        },
+        {
+            "pick": 1,
+            "text": "Was ist los mit diesen Gorillas?"
+        },
+        {
+            "pick": 1,
+            "text": "Warum hat das Huhn die Straße überquert?"
+        },
+        {
+            "pick": 1,
+            "text": "Du sagst Tomate, ich sage _."
+        },
+        {
+            "pick": 1,
+            "text": "Amerika hat Hunger. Amerika braucht _."
+        }
+    ],
+    "whiteCards": [
+        "Ein so großer Schwanz und so schwarz, dass nicht einmal Licht seinem Zug entkommen kann.",
+        "Ein Selbstmordmordgrill mit Doppelmord.",
+        "Eine ursprüngliche Suppen- und Salatbar.",
+        "Ein Stapel Hasen in einem Trenchcoat.",
+        "Mindestens drei Enten.",
+        "Mit sozialem Gerechtigkeitsgelee vollgestopft werden und ein Denkstück verbergen.",
+        "Das absolut Schlimmste sein.",
+        "Disco Mussolini.",
+        "Greg Kinnears schrecklicher Blitzatem.",
+        "Mitt Romneys acht Söhne Kip, Sam, Trot, Fergis, Toolshed, Grisham, Hawkeye und Thorp.",
+        "Mr. und Mrs. Tambourine Mans Jingle-Jangle-Morgensex.",
+        "Mushy tushy.",
+        "Ringo Starr & His All-Starr Band.",
+        "Sandwich.",
+        "Saving the Rainforest Cafe.",
+        "Sir Thomas More's Fruitopia &trade; .",
+        "Schwitzen auf den Straßen eines außer Kontrolle geratenen amerikanischen Traums.",
+        "Diese eine übrig gebliebene Schraube.",
+        "Das, was Politiker mit ihren Daumen machen, wenn sie reden.",
+        "Das gruselige Skelett unter meiner Haut.",
+        "Die Token-Lesbe.",
+        "Diese Delfine.",
+        "Drei Haare vom silbergoldenen Kopf von Galadriel.",
+        "Wasser so kalt, dass es sich in einen Stein verwandelte."
+    ]
+}

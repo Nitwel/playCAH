@@ -1,0 +1,57 @@
+{
+    "blackCards": [
+        {
+            "pick": 2,
+            "text": "In Übereinstimmung mit unseren Vorhersagen finden wir eine robuste Korrelation zwischen _ und _ (p & gt; .05)."
+        },
+        {
+            "pick": 1,
+            "text": "In dem, was als großer Durchbruch gefeiert wird, haben Wissenschaftler _ im Labor synthetisiert."
+        },
+        {
+            "pick": 1,
+            "text": "Eine in Nature diese Woche veröffentlichte Studie ergab, dass _ gut ist für Sie in kleinen Dosen."
+        },
+        {
+            "pick": 2,
+            "text": "Bei dem Versuch, die Bedingungen unmittelbar nach dem Urknall wiederherzustellen, beobachten die Physiker am LHC Kollisionen zwischen _ und _."
+        },
+        {
+            "pick": 1,
+            "text": "Was hat die Dinosaurier wirklich getötet?"
+        },
+        {
+            "pick": 1,
+            "text": "Hey, junge Wissenschaftler! Zieh deine Laborkittel an und schnall deine Schutzbrille an, denn heute sind wir Ich lerne etwas über _!"
+        },
+        {
+            "pick": 2,
+            "text": "Heute haben wir bei MythBusters herausgefunden, wie lange _ _ standhalten kann."
+        }
+    ],
+    "whiteCards": [
+        "Ein supermassives Schwarzes Loch.",
+        "Quantentheorie mit allgemeiner Relativitätstheorie in Einklang bringen.",
+        "Elektroejakulieren eines Kapuzineraffen.",
+        "Unzureichendes Serotonin.",
+        "Entwicklung einer labyrinthischen Vagina.",
+        "Sich wirklich Sorgen um globale Warmi machen ng für ein paar Sekunden.",
+        "Unendlichkeit.",
+        "Oxytocin-Freisetzung durch manuelle Stimulation der Brustwarzen.",
+        "Uranus.",
+        "Kenntnisse in einem engen Bereich, den niemand versteht oder für den sich niemand interessiert.",
+        "Fortpflanzungserfolg erzielen .",
+        "Langsam verdunstend.",
+        "Die ruhige Majestät der Meeresschildkröte.",
+        "Ein Verhältnis von Taille zu Hüfte von 0,7.",
+        "Lustige und interessante Fakten über Felsen.",
+        "Photosynthese.",
+        "Sekundärentwicklung Geschlechtsmerkmale.",
+        "Den Turing-Test nicht bestehen.",
+        "Explosive Dekompression.",
+        "In einen Tornado fahren, um mehr über Tornados zu erfahren.",
+        "David Attenborough beobachtet uns bei der Paarung.",
+        "3,7 Milliarden Jahre Evolution.",
+        "Die Sonne verschlingt die Erde."
+    ]
+}

@@ -1,0 +1,181 @@
+{
+    "blackCards": [
+        {
+            "text": "Hey Baby, komm zurück zu mir und ich zeige dir _.",
+            "pick": 1
+        },
+        {
+            "text": "Mein Sportlehrer wurde gefeuert, weil er _ zum Hindernisparcours hinzugefügt hatte.",
+            "pick": 1
+        },
+        {
+            "text": "Endlich! Ein Service, der _ direkt an die Tür liefert.",
+            "pick": 1
+        },
+        {
+            "text": "Zur Vorbereitung Für seine bevorstehende Rolle tauchte Daniel Day-Lewis in die Welt von _ ein.",
+            "pick": 1
+        },
+        {
+            "text": "Mein Leben wird von einem Teufelskreis von _ und _ beherrscht.",
+            "pick": 2
+        },
+        {
+            "text": "Während der High School habe ich nie wirklich dazugepasst, bis ich den  _ - Club gefunden habe.",
+            "pick": 1
+        },
+        {
+            "text": "Geld kann mir keine Liebe kaufen, aber es kann mir _ kaufen.",
+            "pick": 1
+        },
+        {
+            "text": "Hören Sie, mein Sohn. Wenn Sie sich auf _ einlassen wollen, werde ich Sie nicht aufhalten. Vermeiden Sie einfach _.",
+            "pick": 2
+        },
+        {
+            "text": "Ein erfolgreiches Vorstellungsgespräch beginnt mit einem festen Händedruck und endet mit _.",
+            "pick": 1
+        },
+        {
+            "text": "Rufen Sie die Anwaltskanzleien von Goldstein & Goldstein an, weil niemand _ am Arbeitsplatz tolerieren muss.",
+            "pick": 1
+        },
+        {
+            "text": "Dich zu lieben ist einfach, denn du bist _ .",
+            "pick": 1
+        },
+        {
+            "text": "Das Blind Date lief schrecklich, bis wir unser gemeinsames Interesse an _ entdeckten.",
+            "pick": 1
+        },
+        {
+            "text": "Was hat diesen Fleck auf meiner Couch hinterlassen?",
+            "pick": 1
+        },
+        {
+            "text": "Es stellt sich heraus, dass dieser _- Mann weder der Held war, den wir brauchten noch wollten.",
+            "pick": 1
+        },
+        {
+            "text": "Nach Monaten des Übens mit _ denke ich, ich bin endlich bereit für _.",
+            "pick": 2
+        },
+        {
+            "text": "Im siebten Kreis der Hölle müssen Sünder für alle Ewigkeit _ ertragen.",
+            "pick": 1
+        },
+        {
+            "text": "Als Teil seines täglichen Regimes, hat sich Anderson Cooper 15 Minuten Zeit genommen für _.",
+            "pick": 1
+        },
+        {
+            "text": "Wenn man es genau nimmt, ist _ nur _.",
+            "pick": 2
+        },
+        {
+            "text": "Hast du Probleme mit _? Versuchs mit _!",
+            "pick": 2
+        },
+        {
+            "text": "Und was hast du zum Zeigen und Erzählen mitgebracht?",
+            "pick": 1
+        },
+        {
+            "text": "Ich bin nicht wie der Rest von euch. Ich bin zu reich und beschäftigt für _.",
+            "pick": 1
+        },
+        {
+            "text": "Mit genügend Zeit und Druck wird _ zu _.",
+            "pick": 2
+        },
+        {
+            "text": "_: Stunden voller Spaß. Einfach zu verwenden. Perfekt für _!",
+            "pick": 2
+        },
+        {
+            "text": "_. In der Theorie fantastisch, in der Praxis ein Durcheinander.",
+            "pick": 1
+        },
+        {
+            "text": "Als Teil seines Vertrags wird Prince nicht ohne _ in seiner Umkleidekabine auftreten.",
+            "pick": 1
+        }
+    ],
+    "whiteCards": [
+        "Alle meine Freunde sterben.",
+        "Halt die Klappe.",
+        "Eine Arschkatastrophe.",
+        "Eine Art Vogelmann.",
+        "Das gesamte Internet.",
+        "Herum laufen und Leute schlagen.",
+        "Ein Boo-Boo.",
+        "Unbeschreibliche Einsamkeit.",
+        "Sex auf einer Pizza haben.",
+        "Eine Lavalampe schlürfen.",
+        "Warmer, samtiger Muppet-Sex.",
+        "Nackt durch ein Einkaufszentrum rennen und überall pissen und scheißen.",
+        "Nichts.",
+        "Samuel L. Jackson.",
+        "Selbstgeißelung.",
+        "Die systematische Zerstörung eines ganzen Volkes und seiner Lebensweise.",
+        "Der Quesadilla-Explosions-Salat von Chili's &reg;.",
+        "Reverse Cowgirl.",
+        "Vietnam Flashbacks.",
+        "In Wirklichkeit erschossen werden.",
+        "Kein Sex.",
+        "Schwanz.",
+        "Allein und in Schmerzen sterben.",
+        "Ein Polizist, der gleichzeitig auch ein Hund ist.",
+        "So wie weiße Menschen sind.",
+        "Schwule Aliens.",
+        "Der urzeitliche, laut klatschende Sex, den deine Eltern gerade haben.",
+        "Ein Katzenvideo, das so süß ist, dass deine Augen zurück rollen und die Wirbelsäule aus dem Anus rutscht.",
+        "Ein Neunauge, das die Toilette hinauf schwimmt und sich am Hoden festsaugt.",
+        "Eine rassistische alte Dame schlagen.",
+        "Ein schwarzer Mann Anfang 20, zuletzt in einem Hoodie gesehen.",
+        "Leute anspringen.",
+        "Drei Monate im Loch.",
+        "Blutfürze.",
+        "Das Land der Schokolade.",
+        "Eine verpfuschte Beschneidung.",
+        "Mein Diener, Claude.",
+        "Erbrechen mitten im Blowjob.",
+        "Alle im Stich lassen.",
+        "Schrotflinten anstatt Beine haben.",
+        "Bill Clinton, nackt auf einem Bärenfell mit einem Saxophon.",
+        "Mufasas Todesszene.",
+        "The Harlem Globetrotters .",
+        "Dämonische Besitzergreifung.",
+        "Fisten.",
+        "Das dünne Furnier der situativen Kausalität, das Pornos zugrunde liegt.",
+        "Mädchen, die immer SMS schreiben.",
+        "Einigen Jungs in einer Gasse einen blasen.",
+        "Eine spontane Polonaise.",
+        "Eine Vagina, die zu einer anderen Dimension führt.",
+        "Disco-Fieber.",
+        "Deinen Schwanz mit einem anderen Schwanz in einer chinesische Fingerfalle stecken haben.",
+        "Trinken zehn 5-Stunden-ENERGYS &reg; um fünfzig Stunden Energie zu bekommen.",
+        "Niesen, Furzen und gleichzeitig kommen.",
+        "Ein Idiot mit einer Akkustikgitarre.",
+        "Viel Geld ausgeben.",
+        "Ein Erdnussbutter- Marmeladen Sandwich in den Videorekorder legen.",
+        "Eine unaufhaltsame Welle von Feuerameisen.",
+        "Ein fettiger Matthew McConaughey.",
+        "Fliegende Roboter, die Menschen töten.",
+        "Unbegrenzte Suppe, Salat und Grissini.",
+        "Weinen in die Buchseiten von Sylvia Plath.",
+        "Der feuchte Abgrund seines Mundes.",
+        "Jede Körperöffnung mit Butterscotch-Pudding füllen.",
+        "Eine von Kleinwüchsigen produzierte Version von Shakespeares <i> Richard III </ i>.",
+        "Schreien wie ein Verrückter.",
+        "In keiner sinnvollen Weise zur Gesellschaft beitragen.",
+        "Ein Haufen sich windender Körper.",
+        "Die richtigen Hosen kaufen, um cool zu sein.",
+        "Roland der Furzende, der flatulierende des Königs.",
+        "Dieser Arsch.",
+        "Eine überraschende Menge Haare.",
+        "Tom Sellecks Schnurrbart essen, um seine Kräfte zu erlangen.",
+        "Klettverschluss & Handel;",
+        "Eine PowerPoint-Präsentation."
+    ]
+}

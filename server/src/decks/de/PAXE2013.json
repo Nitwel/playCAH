@@ -1,0 +1,54 @@
+{
+    "blackCards": [
+        {
+            "text": "Du wurdest von _ überfallen und musst dich verteidigen.",
+            "pick": 1
+        },
+        {
+            "text": "Ich habe eine Idee, die noch besser ist als Kickstarter, und sie heißt _starter.",
+            "pick": 1
+        },
+        {
+            "text": "Aktionsstationen! Aktionsstationen! Stellen Sie die Bedingung eins in der gesamten Flotte ein und machen Sie sich auf _!",
+            "pick": 1
+        },
+        {
+            "text": "In In der letzten Runde des diesjährigen Omegathons müssen sich die Omeganauten in einem Spiel mit _.",
+            "pick": 1
+        },
+        {
+            "text": "Drücken Sie & uarr; & darr; & larr; &rarr; B, um _ zu entfesseln.",
+            "pick": 1
+        },
+        {
+            "text": "Ich weiß nicht genau, wie ich an die PAX-Pest gekommen bin, aber ich vermute, dass es etwas mit _ zu tun hat.",
+            "pick": 1
+        }
+    ],
+    "whiteCards": [
+        "Den Eisenpreis bezahlen.",
+        "Wackelphysik.",
+        "Formen in der Luft drehen, damit sie beim Fallen in andere Formen passen.",
+        "Firefly: Staffel 2",
+        "Von Dhalsim eine Schlampe schlagen lassen.",
+        "Wirken Sie Magic Missile auf einen Mobber.",
+        "Die Ausdauer geht zur Neige.",
+        "Ein sofort bedauerlicher 9-Dollar-Hot Dog vom Boston Convention Center.",
+        "Der Raketenwerfer.",
+        "Schärfen eines Schaum-Breitschwerts auf einem Schaum Schleifstein.",
+        "Laden von a vorherige Rettung.",
+        "Die Depression, die auftritt, nachdem sie alle gefangen wurden.",
+        "Verstoß gegen das erste Gesetz der Robotik.",
+        "Mit einem heißen Baby in den Horadric-Würfel gelangen und den Transmute-Knopf drücken.",
+        "Einen Baum schlagen um Holz zu sammeln.",
+        "Das Insulinbudget des Jahres für Warhammer 40k-Figuren ausgeben.",
+        "Vergessen zu essen und folglich zu sterben.",
+        "Wil Wheaton stürzt ein echtes Raumschiff ab.",
+        "The Klobb.",
+        "Alles aufladen der Weg.",
+        "Vespengas.",
+        "Elfen nach der Farbe ihrer Haut und nicht nach dem Inhalt ihres Charakters beurteilen.",
+        "Alle Töpferwaren in einer Töpferscheune auf der Suche nach Rupien zerschlagen.",
+        "500 erreichen Aktionen pro Minute."
+    ]
+}

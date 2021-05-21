@@ -1,0 +1,605 @@
+{
+    "blackCards": [
+        {
+            "text": "Es ist schwierig, Freunden und Familie zu erklären, warum ich so viel über _ weiß.",
+            "pick": 1
+        },
+        {
+            "text": "Wer wusste, dass ich in der Lage sein würde um von _?",
+            "pick": 1
+        },
+        {
+            "text": "Lange Rede, kurzer Sinn, ich bin mit _ in meinem Arsch gelandet.",
+            "pick": 1
+        },
+        {
+            "text": "Zuerst konnte ich _ nicht verstehen, aber jetzt ist es mein größter Knick.",
+            "pick": 1
+        },
+        {
+            "text": "Ich kann nicht glauben, dass ich den größten Teil meines Gehaltsschecks für _ ausgegeben habe.",
+            "pick": 1
+        },
+        {
+            "text": "_, von Bad Dragon &reg ;.",
+            "pick": 1
+        },
+        {
+            "text": "_ sind so verdammt cool.",
+            "pick": 1
+        },
+        {
+            "text": "Als ich mit dem Rollenspiel anfing, ging es bergab.",
+            "pick": 1
+        },
+        {
+            "text": "Klopf nicht an, bis du es ausprobiert hast.",
+            "pick": 1
+        },
+        {
+            "text": "_ sieht in der ganzen Kunst hübsch aus, aber haben Sie eine im wirklichen Leben gesehen?",
+            "pick": 1
+        },
+        {
+            "text": "Mein Vermieter hatte viele unangenehme Fragen für Ich, als er _ in meinem Schlafzimmer fand, während ich bei der Arbeit war.",
+            "pick": 1
+        },
+        {
+            "text": "Jeder auf dieser Seite hat so starke Meinungen über _.",
+            "pick": 1
+        },
+        {
+            "text": "Ich erkannte, dass sie pelzig waren, als sie _ erwähnten.",
+            "pick": 1
+        },
+        {
+            "text": "Whoa, ich könnte über _ phantasieren, aber ich würde im wirklichen Leben nie so weit gehen.",
+            "pick": 1
+        },
+        {
+            "text": "Zu spät die Implikationen Ihres Interesses an _ as erkennen ein Kind.",
+            "pick": 1
+        },
+        {
+            "text": "Ich habe mich mit _ beschäftigt, seit ich die Pubertät erreicht habe, wusste ich einfach nicht, was es bedeutet.",
+            "pick": 1
+        },
+        {
+            "text": "Ich darf nach dem Vorfall mit _ nicht mehr in der Nähe von _.",
+            "pick": 2
+        },
+        {
+            "text": "Alles begann mit _.",
+            "pick": 1
+        },
+        {
+            "text": "Ich werde _ Rollenspiele spielen, du kannst _ sein.",
+            "pick": 2
+        },
+        {
+            "text": "Nur meine Internetfreunde wissen, dass ich über _ phantasiere.",
+            "pick": 1
+        },
+        {
+            "text": "Jeder geht wirklich nur zu den Nachteilen für _.",
+            "pick": 1
+        },
+        {
+            "text": "Der Name meines ursprünglichen Charakters ist _.",
+            "pick": 1
+        },
+        {
+            "text": "Mein geheimer Tumblr-Account, in dem ich nur _ poste.",
+            "pick": 1
+        },
+        {
+            "text": "Das Panel, auf das ich mich dieses Jahr bei AC am meisten freue, ist ...",
+            "pick": 1
+        },
+        {
+            "text": "Wenn meine Eltern jemals _ finden würden, würde ich wahrscheinlich verstoßen.",
+            "pick": 1
+        },
+        {
+            "text": "Es ist wirklich schwer, nicht über _ zu lachen.",
+            "pick": 1
+        },
+        {
+            "text": "Das neueste Element in meinem Suchverlauf.",
+            "pick": 1
+        },
+        {
+            "text": "_ hat das Fandom ruiniert.",
+            "pick": 1
+        },
+        {
+            "text": "Ich habe den Gerüchten über _ nicht geglaubt, bis ich die Videos gesehen habe.",
+            "pick": 1
+        },
+        {
+            "text": "_. Ja, das ist eine ziemlich interessante Art zu sterben.",
+            "pick": 1
+        },
+        {
+            "text": "Nachdem ich so lange pelzig war, kann ich nie _ sehen, ohne ein wenig erregt zu werden.",
+            "pick": 1
+        },
+        {
+            "text": "Ich wusste, dass ich das Fandom verlassen musste, als mir klar wurde, dass ich _ war.",
+            "pick": 1
+        },
+        {
+            "text": "Ja, ich weiß, dass ich viel _ in habe meine Favoriten, aber ich bin nur wegen der Kunst hier.",
+            "pick": 1
+        },
+        {
+            "text": "Ich habe mich nie besser gefühlt, als als mir klar wurde, dass ich _ in meinen Arsch passen könnte.",
+            "pick": 1
+        },
+        {
+            "text": "Okay, _? So ziemlich das süßeste Ding überhaupt.",
+            "pick": 1
+        },
+        {
+            "text": "Ich bin kein \"pelziger\", Ich möchte lieber _ genannt werden.",
+            "pick": 1
+        },
+        {
+            "text": "_ ist mein Geistestier.",
+            "pick": 1
+        },
+        {
+            "text": "In meinem früheren Leben war ich _.",
+            "pick": 1
+        },
+        {
+            "text": "Ich bin nicht einmal traurig, dass ich jeden Tag mindestens sechs Stunden für _.",
+            "pick": 1
+        },
+        {
+            "text": "_ aufgewendet habe. Dies ist, wozu mein Leben gekommen ist.",
+            "pick": 1
+        },
+        {
+            "text": "Fuck _, get _.",
+            "pick": 2
+        },
+        {
+            "text": "_? Oh murr.",
+            "pick": 1
+        },
+        {
+            "text": "Ich würde mich für _ bücken.",
+            "pick": 1
+        },
+        {
+            "text": "Ich denke, Hörner würden _ kompliziert machen.",
+            "pick": 1
+        },
+        {
+            "text": "_? Oh ja, ich könnte meinen Mund darum legen.",
+            "pick": 1
+        },
+        {
+            "text": "Was würde ich nicht ficken?",
+            "pick": 1
+        },
+        {
+            "text": "Wann Ich dachte, ich könnte nicht tiefer gehen, mir wurde klar, dass ich wahrscheinlich ficken würde.",
+            "pick": 1
+        },
+        {
+            "text": "Ich wusste, dass mein Freund ein Bewahrer war, als er sagte, er würde es einfach versuchen für mich.",
+            "pick": 1
+        },
+        {
+            "text": "Ich habe das ganze Jahr auf _ gewartet.",
+            "pick": 1
+        },
+        {
+            "text": "Ich kann es kaum erwarten, mich zu treffen mit meinen Internetfreunden für _.",
+            "pick": 1
+        },
+        {
+            "text": "Hast du von dem Kerl gehört, der _ ins Hotel geschmuggelt hat?",
+            "pick": 1
+        },
+        {
+            "text": "Ich bin nicht einmal mehr von normalen Pornos erregt, ich kann nur noch zu _ oder _ aussteigen.",
+            "pick": 2
+        },
+        {
+            "text": "Nein, schau, du verstehst nicht. Ich mag _.",
+            "pick": 1
+        },
+        {
+            "text": "Ich glaube nicht, dass meine Eltern jemals akzeptieren werden, dass das wahre Ich _ ist.",
+            "pick": 1
+        },
+        {
+            "text": "Sie können versuchen, alles zu rechtfertigen, was Sie wollen, aber Sie müssen es nicht sein, um zu erkennen, dass es einfach falsch ist.",
+            "pick": 2
+        },
+        {
+            "text": "Ich erinnere mich, als _ gerade kam gestartet.",
+            "pick": 1
+        },
+        {
+            "text": "_ sind definitiv die neuen Huskys.",
+            "pick": 1
+        },
+        {
+            "text": "Der wahre Grund, warum ich ins Fandom gekommen bin? _.",
+            "pick": 1
+        },
+        {
+            "text": "_ ist kein Ersatz für soziale Fähigkeiten, aber es ist ein Anfang.",
+            "pick": 1
+        },
+        {
+            "text": "_ ist ein leuchtendes Beispiel von dem, was Menschen mit Autismus wirklich können.",
+            "pick": 1
+        },
+        {
+            "text": "Ich weiß nicht, wie wir zum Thema Drachenschwänze gekommen sind, aber es begann wahrscheinlich mit _.",
+            "pick": 1
+        },
+        {
+            "text": "Kommt tatsächlich in _.",
+            "pick": 1
+        },
+        {
+            "text": "Wenn sonst niemand da ist, denke ich manchmal darüber nach, Dinge mit _ zu tun.",
+            "pick": 1
+        },
+        {
+            "text": "_: Schreckliche Tragödie oder sexuelle Gelegenheit?",
+            "pick": 1
+        },
+        {
+            "text": "Ich bin ungefähr 50% _.",
+            "pick": 1
+        },
+        {
+            "text": "Ich wusste, dass ich ein Problem hatte, als ich _ verkaufen musste, um _ zu bezahlen.",
+            "pick": 2
+        },
+        {
+            "text": "Die angenehmste Überraschung, die ich dieses Jahr hatte .",
+            "pick": 1
+        },
+        {
+            "text": "Es ist einfach so viel gruseliger, wenn 40-jährige Männer auf _ stehen.",
+            "pick": 1
+        },
+        {
+            "text": "Jizzing all over _.",
+            "pick": 1
+        },
+        {
+            "text": "Hey, wollt ihr zu mir zurückkehren? Ich habe _ und _.",
+            "pick": 2
+        },
+        {
+            "text": "Es ist ein wenig besorgniserregend, dass ich die Größe von _ mit Getränkebehältern vergleichen muss.",
+            "pick": 1
+        },
+        {
+            "text": "Es ist keine Bestialität, es ist _.",
+            "pick": 1
+        },
+        {
+            "text": "Jeder denkt, weil ich pelzig bin, stehe ich auf _. Leider haben sie recht.",
+            "pick": 1
+        },
+        {
+            "text": "Während alle anderen eine tiefe, instinktive Angst vor _ zu haben scheinen, macht es mich nur an.",
+            "pick": 1
+        },
+        {
+            "text": "Lügen darüber, dass Sie Spenden erhalten müssen, für die Sie _ ausgeben.",
+            "pick": 2
+        },
+        {
+            "text": "Wenn es Ihnen gefällt, sollten Sie _ darauf setzen.",
+            "pick": 1
+        },
+        {
+            "text": "Meine Freundin lässt mich nicht _.",
+            "pick": 1
+        },
+        {
+            "text": "Ich bin nur schwul für _.",
+            "pick": 1
+        },
+        {
+            "text": "Entschuldigung, ich bin ein Wer -_.",
+            "pick": 1
+        },
+        {
+            "text": "Mein nächster Fursuit wird _.",
+            "pick": 1
+        },
+        {
+            "text": "Ich schreibe einen Porno-Comic über _ und _.",
+            "pick": 2
+        },
+        {
+            "text": "Ist es komisch, dass ich mein Gesicht auf _ reiben möchte?",
+            "pick": 1
+        },
+        {
+            "text": "Ich hätte nie gedacht, dass ich es sein würde Ich fühle mich wohl mit _, aber jetzt ist es so ziemlich das einzige, zu dem ich masturbiere.",
+            "pick": 1
+        },
+        {
+            "text": "Jeder denkt, dass er so großartig ist, aber das einzige, was er gut zeichnen kann, ist _.",
+            "pick": 1
+        },
+        {
+            "text": "Sie werden nur das ganze Geld für _.",
+            "pick": 1
+        },
+        {
+            "text": "Ich sage allen, dass ich Verdiene mein Geld mit \"Illustration\", wenn ich wirklich nur _.",
+            "pick": 1
+        },
+        {
+            "text": "Oh, du bist ein Künstler? Könnten Sie _ für mich zeichnen?",
+            "pick": 1
+        },
+        {
+            "text": "Früher habe ich es vermieden, über _ zu sprechen, aber jetzt ist es nur ein Teil des normalen Gesprächs mit meinen Freunden.",
+            "pick": 1
+        },
+        {
+            "text": "Manchmal wünscht man sich, man würde _ alleine im Wald begegnen. Mit einer Flasche Schmiermittel.",
+            "pick": 1
+        },
+        {
+            "text": "Die meisten Katzen sind _.",
+            "pick": 1
+        },
+        {
+            "text": "Kontaktanzeigen: Ich suche eine Frau, die es nicht tut. t mind _, könnte auch bereit sein, ein Männchen zu versuchen, wenn sie _.",
+            "pick": 2
+        },
+        {
+            "text": "Stolz auf die Sammlung von _.",
+            "pick": 1
+        },
+        {
+            "text": "Ich sage allen, dass ich kein Pelz bin, aber ich habe viel _ gezeichnet.",
+            "pick": 1
+        },
+        {
+            "text": "Meine ursprüngliche Art kombiniert _ und _. Es heißt _.",
+            "pick": 3
+        },
+        {
+            "text": "_. Und jetzt blute ich.",
+            "pick": 1
+        },
+        {
+            "text": "Suck my _.",
+            "pick": 1
+        },
+        {
+            "text": "Ich nehme _ auch als Zahlung für Provisionen.",
+            "pick": 1
+        },
+        {
+            "text": "Es ist mein Traum, mit _ bedeckt zu sein.",
+            "pick": 1
+        },
+        {
+            "text": "_ verdammt _. Nun, das ist heiß.",
+            "pick": 2
+        },
+        {
+            "text": "Möchten Sie lieber _ saugen oder von _ dicked werden?",
+            "pick": 2
+        },
+        {
+            "text": "Es scheitert nie Beleben Sie den Arbeitsplatz, wenn Sie Ihre Mitarbeiter fragen, ob sie lieber Sex mit _ oder _ haben möchten.",
+            "pick": 2
+        },
+        {
+            "text": "HALLO FURRIEND, HOWL TUN SIE?",
+            "pick": 1
+        },
+        {
+            "text": "Was sind momentan die zwei schlechtesten Karten in deiner Hand?",
+            "pick": 2
+        },
+        {
+            "text": "Niemand glaubt mir, wenn ich diese eine Geschichte über das Betreten von _ erzähle .",
+            "pick": 1
+        },
+        {
+            "text": "Sie wissen nicht, wer _ ist? Sie zeichnen _.",
+            "pick": 2
+        }
+    ],
+    "whiteCards": [
+        "DeviantArt.",
+        "Sonic the Hedgehog.",
+        "StarFox.",
+        "PetSmart.",
+        "Eine Wanne.",
+        "Vaseline.",
+        "Sex mit Fremden.",
+        "Diese eine Episode von CSI.",
+        "Cloaca.",
+        "Liebevoll gerenderter Drachenanus.",
+        "Pelzporno zeichnen.",
+        "Ein zwittriger Schneeleopard.",
+        "An übergroße Klitoris, die als funktioneller Penis fungiert.",
+        "Die Textur und Farbe von rohem Fleisch.",
+        "Anwenden Ihrer obskuren, unrealistischen Fetische auf Zeichentrickfiguren der 90er Jahre.",
+        "Wirklich, Disneys Robin Hood wirklich mögen.",
+        "Taking the Knoten.",
+        "Erhitzte Debatten über menschliche Genitalien gegen tierische Genitalien.",
+        "Otherkin.",
+        "Chakats.",
+        "Fursecution.",
+        "Horses.",
+        "Intimität mit dem Familienhund.",
+        "A furpile.",
+        "Der Gestank von einem halben Dutzend ungewaschenen Bronzen.",
+        "Bowsers verschwitzte Eier.",
+        "Krystal, der Fuchs.",
+        "Verwirrende Gefühle gegenüber Zeichentrickfiguren.",
+        "Babyfurs.",
+        "Unangenehm attraktive Tiere.",
+        "Dehnen Sie Ihren Anus, um sich auf den Pferdeschwanz vorzubereiten.",
+        "Ein zwittriger Foxtaur.",
+        "Pounce.org.",
+        "Eine große, ausgestellte Chance.",
+        "Fursuiters at anime Konventionen.",
+        "Peinliche Craigslist-Anzeigen.",
+        "Eine Wohnung voller Internet-besessener Verlierer.",
+        "Leute, die auf pelzigen Konventionen mitspielen.",
+        "Ein mit Sperma befleckter Fursuit.",
+        "Fursuit-Abenteuer.",
+        "Das Ein heterosexueller Typ auf der Party.",
+        "Gefälschte pelzige Mädchen.",
+        "Adoptables mit sichtbaren Genitalien.",
+        "Mein Schwanzloch.",
+        "Geschlechtskrankheiten auf Kongressen fangen.",
+        "Ein peinlich langes F-Listen-Profil.",
+        "Drachendildos.",
+        "Nicht einvernehmlicher Sex mit Zaush.",
+        "Adam Wan.",
+        "Überraschung Zwitter.",
+        "Eine freche Löwin.",
+        "Offensiv stereotype afrikanische Tiere.",
+        "Pudel mit Afros.",
+        "Ein sexuell frustrierter Greifen.",
+        "Ein geiler Drache.",
+        "Dragoneer.",
+        "Entdecken, dass es nie nur eine große Vagina ist.",
+        "Das Ding, das deinem Schwanz einen Knoten IRL gibt.",
+        "All dieses Schmiermittel.",
+        "Liebenswerte soziale Unfähigkeit.",
+        "Zu erkennen, dass Rimming ziemlich cool ist.",
+        "Dieses Mal lässt du deinen Hund ein wenig weiter gehen, als nur an deinem Schritt zu schnüffeln.",
+        "Deinen Fursuit in Febreeze durchnässen.",
+        "Wirklich, wirklich heterosexuell.",
+        "Homosexuell.",
+        "Auf deinem Gesicht sitzen.",
+        "Mehr Geld für Commi ausgeben ssions als Essen in einer bestimmten Woche.",
+        "Scheiße auf mein Gesicht.",
+        "Fremde bellen.",
+        "Analtraining.",
+        "Monsterporno entdecken.",
+        "Ein Schwanz, der so groß ist, dass man ihn umarmen muss .",
+        "Die feine Linie zwischen wilder und völliger Bestialität.",
+        "Bad Dragon &trade; cumlube.",
+        "Piss.",
+        "Lassen Sie Ihre Öffnungen blutig und wund.",
+        "Reiben Sie Erdnussbutter auf Ihre Genitalien.",
+        "Vergessen Sie, welche Fursuit-Pfoten Sie für Handjobs verwenden.",
+        "Ein strategisch platziertes Loch.",
+        "Gerüche.",
+        "Wenn \"zehn Dollar blasen\", denken Sie an eine lange Nacht mit einem Haufen Hirsche.",
+        "Eine Limetten-Citra.",
+        "Eine kleine Schlampe.",
+        "Ein autistischer Messerkampf.",
+        "Sergals.",
+        "Ungefähr 16 Unzen Pferdesamen.",
+        "Die Geräusche, die rote Pandas beim Sex machen.",
+        "Orales Verknoten",
+        "Hundesperma",
+        "Anatomisch inkorrekte Genitalien",
+        "Transformationsporno.",
+        "Bauch reibt sich, was zu unangenehmen Knochen führt.",
+        "Wenn Sie sich dabei ertappen, wie Sie einen Blick auf die Schritte animierter Charaktere werfen.",
+        "Heben Sie Ihren Schwanz.",
+        "Scritches.",
+        "Schlechte Entscheidungen.",
+        "Experimentieren mit Fisting .",
+        "FICK DICH, ich bin ein Drache.",
+        "Tumbles, the Stair Dragon.",
+        "Furry Weekend Atlanta.",
+        "Further Confusion.",
+        "AnthroCon.",
+        "Buchstäblich ein Eimer Sperma.",
+        "Sexuelles Interesse an so ziemlich allem mit einem Loch.",
+        "Anziehung zu so ziemlich allem mit einem Penis.",
+        "Tiergenitalien.",
+        "Motherfuckin g Wölfe.",
+        "Christian Furries.",
+        "Stacheldraht.",
+        "Zwei Knoten.",
+        "Ein wirklich attraktiver Wolf.",
+        "Ein versauter schwuler Fuchs.",
+        "Ein überraschend attraktiver Ameisenbär.",
+        "Natascha, der Anthro Husky.",
+        "Nippelbuffet.",
+        "Schwanz-Sex.",
+        "Mary, die Anthro-Stute.",
+        "Masturbieren mit Krallen.",
+        "Pawing-off.",
+        "Pelziger Porno, schamlos aufgeklebt die Wände.",
+        "Grabby-Pfoten.",
+        "Monster mit Schlafzimmeraugen.",
+        "Genaue Vogelanatomie.",
+        "Unreine Gedanken über Kobolde.",
+        "Erotisches Rollenspiel.",
+        "Furries in Heat.",
+        "Fantasizing über Sex mit fast jedem Monster, dem Sie in Ihrem Videospiel begegnen.",
+        "Crotch-Tits.",
+        "The Tailstar Tango.",
+        "Your Character Here.",
+        "CrusaderCat.",
+        "Wichsen auf den Füßen eines bewusstlosen Freundes .",
+        "Wortspiele mit dem Wort \"Knoten\".",
+        "Ein Greifpenis.",
+        "Cockvore.",
+        "Ein Notizbuch voller peinlicher Nischenpornoskizzen.",
+        "Ihre Freunde am Geruch erkennen können von ihren Ärschen.",
+        "Pfoten.",
+        "Große süße Pfoten.",
+        "Bärentitten.",
+        "Das unglaublich befriedigende Geräusch, das es macht, wenn Sie es herausziehen.",
+        "Analsex, von dem Sie nicht wussten, dass Sie w anted.",
+        "Die Prämisse eines jeden pelzigen Comics.",
+        "Aus den falschen Gründen Tierarzt werden.",
+        "Besonderes Interesse an Naturdokumentationen zeigen.",
+        "Eine sehr Steampunk-Ratte.",
+        "Hundeüberlegenheit.",
+        "Oviposition.",
+        "Flares.",
+        "Überkompensation mit einem riesigen Pferdepenis.",
+        "Ein Fedora-Enthusiast.",
+        "Ein Zungentier.",
+        "Frisky Tentacles.",
+        "Sex with Pok & eacute; mon.",
+        "Mit Hunden rummachen.",
+        "YouTube-Videos der Pferdezucht.",
+        "Pissen Sie auf Ihren Lebensgefährten, um Besitz zu zeigen.",
+        "Hunde, die Höschen tragen.",
+        "Monster Boys in Dessous.",
+        "Power Bottoms.",
+        "Scheide lecken.",
+        "Mikrowellenwindeln.",
+        "Gefängnisschwul sein.",
+        "Sexy the Cat.",
+        "Entzückende Hundeleute.",
+        "HALLO FURRIEND, wie machst du das?",
+        "Artenstereotypen.",
+        "Hörner und Hufe.",
+        "Konventionsschlampen.",
+        "Wirklich, wirklich in Monster.",
+        "Eine pelzige Spinne, die nicht einmal in Knechtschaft ist.",
+        "Keine Männer, keine Hermes, nein Fotzenjungen, keine Transen, keine Transen, keine Furries, keine Außerirdischen, keine Vampire und keine Werwölfe. NUR GERADE ODER BI-MENSCHLICHE WEIBLICHE.",
+        "Sexuelle Erregung durch Kinder-Cartoons.",
+        "SecondLife.",
+        "Hyper-dotierte Eichhörnchen.",
+        "The Gay Yiffy Club.",
+        "Federn in die Zähne stecken lassen.",
+        "Pelz in den Zähnen stecken lassen.",
+        "Fehler einer Person ignorieren, weil ihr Charakter heiß ist."
+    ]
+}

@@ -1,0 +1,32 @@
+{
+    "blackCards": [
+        {
+            "pick": 2,
+            "text": "Buzzfeed präsentiert: 10 Bilder von _, die wie _ aussehen."
+        },
+        {
+            "pick": 1,
+            "text": "Während meines ersten Spiels von D & amp; D, ich habe versehentlich _."
+        },
+        {
+            "pick": 1,
+            "text": "Bob Ross 'wenig bekannte erste Show hieß \"The Joy of _.\""
+        },
+        {
+            "pick": 1,
+            "text": "Wie _ ist State Farm da."
+        },
+        {
+            "pick": 1,
+            "text": "Der Discovery Channel präsentiert: _ week."
+        }
+    ],
+    "whiteCards": [
+        "A neck Bart, der zu 10% aus Käse besteht.",
+        "Becken-Zauberei.",
+        "So leise wie möglich kacken.",
+        "Der schöne Sport des türkischen Ölwrestlings.",
+        "Keine Überlebenden.",
+        "Go Fuck Yourself."
+    ]
+}

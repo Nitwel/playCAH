@@ -1,0 +1,598 @@
+{
+    "blackCards": [
+        {
+            "text": "/ r / _.",
+            "pick": 1
+        },
+        {
+            "text": "Die Ada-Initiative greift jetzt _ an.",
+            "pick": 1
+        },
+        {
+            "text": "Nicht noch ein _ im Hotelaufzug!",
+            "pick": 1
+        },
+        {
+            "text": "Abschlussfeier Trinkspiel: Jedes Mal, wenn _ erwähnt wird ... DRINK!",
+            "pick": 1
+        },
+        {
+            "text": "In einer Anhörung im Kongress behauptete US-CYBERCOM-Kommandeur General Alexander, der letzte Datenverstoß sei auf _ zurückzuführen.",
+            "pick": 1
+        },
+        {
+            "text": "The Maker Faire was unerwartet unterbrochen von _.",
+            "pick": 1
+        },
+        {
+            "text": "Hast du überhaupt _?",
+            "pick": 1
+        },
+        {
+            "text": "Komm auf die dunkle Seite, wir haben _.",
+            "pick": 1
+        },
+        {
+            "text": "YU NO _ !!!!!",
+            "pick": 1
+        },
+        {
+            "text": "Während ich alleine im Serverraum bin I _.",
+            "pick": 1
+        },
+        {
+            "text": "Wenn ich mich betrinke, bin ich ein Experte für _",
+            "pick": 1
+        },
+        {
+            "text": "Nun, weißt du was? Ich habe Fieber und das einzige Rezept ist mehr _.",
+            "pick": 1
+        },
+        {
+            "text": "Wir sollten _ nehmen und es _ drücken.",
+            "pick": 2
+        },
+        {
+            "text": "Wir haben uns entschieden, _ um Geld für den EFF zu sammeln.",
+            "pick": 1
+        },
+        {
+            "text": "TSA würde mich wegen meines _ nicht durchlassen.",
+            "pick": 1
+        },
+        {
+            "text": "Tonight's Final Hacker Jeopa Die Kategorie lautet _!",
+            "pick": 1
+        },
+        {
+            "text": "Der heutige PaulDotCom-Podcast enthält _.",
+            "pick": 1
+        },
+        {
+            "text": "Dies sind nicht die _, die Sie suchen for.",
+            "pick": 1
+        },
+        {
+            "text": "Die Snozberries schmecken wie _.",
+            "pick": 1
+        },
+        {
+            "text": "Der einzige Gewinnzug ist _.",
+            "pick": 1
+        },
+        {
+            "text": "Der nächste Cyberkrieg wird _.",
+            "pick": 1
+        },
+        {
+            "text": "Der beste Teil von Alexis Park war das ganze _.",
+            "pick": 1
+        },
+        {
+            "text": "So lange und danke für all das _.",
+            "pick": 1
+        },
+        {
+            "text": "Sicherheit durch Dunkelheit ist besser als _.",
+            "pick": 1
+        },
+        {
+            "text": "Rule 34 _.",
+            "pick": 1
+        },
+        {
+            "text": "Rock, Paper, Scissors, Lizard, _.",
+            "pick": 1
+        },
+        {
+            "text": "Unsere mächtigste Waffe für die Zombie-Apokalypse wird _ sein.",
+            "pick": 1
+        },
+        {
+            "text": "Nur die Hälfte der Programmierung ist Codierung. Die anderen 90% sind _.",
+            "pick": 1
+        },
+        {
+            "text": "Man macht nicht einfach _.",
+            "pick": 1
+        },
+        {
+            "text": "Im Internet kann niemand Sagen Sie, Sie sind _.",
+            "pick": 1
+        },
+        {
+            "text": "Occupy _.",
+            "pick": 1
+        },
+        {
+            "text": "Es wird gemunkelt, dass die Schnitzeljagd im nächsten Jahr das Finden eines _ beinhaltet. mit einem _.",
+            "pick": 2
+        },
+        {
+            "text": "Wenn wir uns das nächste Mal treffen, sollten wir _.",
+            "pick": 1
+        },
+        {
+            "text": "Mein extrem großes _ macht mich aus besser als du.",
+            "pick": 1
+        },
+        {
+            "text": "Mein _ bringt das ganze _ auf den Hof.",
+            "pick": 2
+        },
+        {
+            "text": "Die meisten Hacker riechen nach _.",
+            "pick": 1
+        },
+        {
+            "text": "Las Vegas ist am besten bekannt für _.",
+            "pick": 1
+        },
+        {
+            "text": "Bleib ruhig und _.",
+            "pick": 1
+        },
+        {
+            "text": "Es ist gefährlich, alleine zu gehen. Nehmen Sie _.",
+            "pick": 1
+        },
+        {
+            "text": "Es riecht nach _ in diesem Raum.",
+            "pick": 1
+        },
+        {
+            "text": "In einem schockierenden Schritt entschied sich Archive.org dafür NICHT sichern _.",
+            "pick": 1
+        },
+        {
+            "text": "I'mma lass dich fertig machen, aber _ ist das beste _ aller Zeiten.",
+            "pick": 2
+        },
+        {
+            "text": "Ich bin es verdammt leid, von _ zu hören.",
+            "pick": 1
+        },
+        {
+            "text": "Ich würde mehr mit meinem Leben anfangen, außer diesem _ im Weg.",
+            "pick": 1
+        },
+        {
+            "text": "Ich arbeite 80 Stunden pro Woche und kann mir immer noch kein _ leisten.",
+            "pick": 1
+        },
+        {
+            "text": "Ich war ein Hacker wie du, bis ich nahm a (n) _ bis zum Knie.",
+            "pick": 1
+        },
+        {
+            "text": "Ich verwende _, um alle meine persönlichen Daten zu sichern.",
+            "pick": 1
+        },
+        {
+            "text": "Ich habe die Fütterung entdeckt und alles, was ich bekam, war _.",
+            "pick": 1
+        },
+        {
+            "text": "Ich sehe aus wie ein geekiger Hacker, aber ich weiß nichts über _.",
+            "pick": 1
+        },
+        {
+            "text": "Ich habe das größte _ aller Zeiten!",
+            "pick": 1
+        },
+        {
+            "text": "Ich finde deinen Mangel an _ störend.",
+            "pick": 1
+        },
+        {
+            "text": "Ich kann nicht glauben, dass sie meinen Vortrag über _ abgelehnt haben.",
+            "pick": 1
+        },
+        {
+            "text": "Ich kann _.",
+            "pick": 1
+        },
+        {
+            "text": "HOLY _ BATMAN !!",
+            "pick": 1
+        },
+        {
+            "text": "High-Tech-Start-up-Unternehmen com bines _ with _.",
+            "pick": 2
+        },
+        {
+            "text": "Geh nach Hause _, du bist betrunken.",
+            "pick": 1
+        },
+        {
+            "text": "Go Go Gadget _!",
+            "pick": 1
+        },
+        {
+            "text": "Trink das ganze _. Hack all the _.",
+            "pick": 2
+        },
+        {
+            "text": "Def Con Kids wird sich jetzt darauf konzentrieren, jungen Hackern _.",
+            "pick": 1
+        },
+        {
+            "text": "Confession Bear Says \"beizubringen : _ \"",
+            "pick": 1
+        },
+        {
+            "text": "Aber führt _ NetBSD aus?",
+            "pick": 1
+        },
+        {
+            "text": "Bin ich der einzige hier, der _.",
+            "pick": 1
+        },
+        {
+            "text": "Ich habe nur _, aber jemand hat mir eine rote Karte gegeben.",
+            "pick": 1
+        },
+        {
+            "text": "35% aller Hacker müssen sich damit befassen _.",
+            "pick": 1
+        },
+        {
+            "text": "_. Dafür gibt es eine App.",
+            "pick": 1
+        },
+        {
+            "text": "_. Deshalb kann ich keine schönen Dinge haben!",
+            "pick": 1
+        },
+        {
+            "text": "_: Sie verwenden diesen Begriff weiterhin. Ich glaube nicht, dass es bedeutet, was Sie denken, dass es bedeutet.",
+            "pick": 1
+        },
+        {
+            "text": "_ ist jetzt an Call Center in Indien ausgelagert.",
+            "pick": 1
+        },
+        {
+            "text": "_ Schuss zuerst.",
+            "pick": 1
+        },
+        {
+            "text": "_ Killed the Barrel Roll",
+            "pick": 1
+        },
+        {
+            "text": "_ Niemand hat Zeit für Dat !!",
+            "pick": 1
+        },
+        {
+            "text": "_ Setz einen Vogel drauf!",
+            "pick": 1
+        },
+        {
+            "text": "_ bringt mich dazu, Regenbogen zu kotzen.",
+            "pick": 1
+        },
+        {
+            "text": "_ wird auch von Prism überwacht.",
+            "pick": 1
+        },
+        {
+            "text": "_ hält uns zusammen.",
+            "pick": 1
+        },
+        {
+            "text": "_ ist ein besserer Ersatz für Krypto.",
+            "pick": 1
+        },
+        {
+            "text": "_ auf einem Segway fahren",
+            "pick": 1
+        },
+        {
+            "text": "Eines Tages vorbei Mein Kamin, ich werde ein massives Gemälde von _ haben. Weißt du, um mich daran zu erinnern, woher ich komme.",
+            "pick": 1
+        }
+    ],
+    "whiteCards": [
+        "Zero F ** K's Given!",
+        "Windows Update",
+        "Wilfrord Brimleys Schnurrbart",
+        "Wikileaks",
+        "Warum nicht Zoidberg ?!",
+        "White Shirt",
+        "Warp Core Breach",
+        "WOPR",
+        "Vinyl Vanna",
+        "Vegas 2.0",
+        "Verwenden von 4Chan für Ratschläge zur Elternschaft",
+        "User Error",
+        "Undercover NBC DateLine Reporter",
+        "UDP Handshake",
+        "Two Girls One Cup",
+        "Truffle Shuffle",
+        "Trigger Word",
+        "Tractor Beam",
+        "Toxic BBQ",
+        "I'm a Text",
+        "Tongue Punch That Fart Box",
+        "Junge",
+        "TL; DR",
+        "Bedrohungsmodellierung",
+        "Throat Punching",
+        "Es gibt Gespräche bei DEF CON?",
+        "Die spanische Inquisition",
+        "Der Geruch von Glitzer und verlorenen Träumen",
+        "Der Plan war es Menge Quelle einen Plan",
+        "Die gebrochenen Elemente ihrer Psyche bauten sich wieder zu einem exakten Bild eines knurrenden Frettchens zusammen und sie zerstörte sich selbst",
+        "Das Arschloch sitzt zu meiner Rechten.",
+        "Das Arschloch sitzt zu meiner Linken",
+        "Das ist was ~ Sie",
+        "Das ist rassistisch!",
+        "Der Ort, an dem ich das Ding dieses Mal hingelegt habe.",
+        "Das ist gerade passiert und wir haben das zugelassen.",
+        "Tentacle Porn",
+        "TARDIS",
+        "Sweat, Wut und Scham",
+        "Gestohlene Laptops",
+        "Sticky Keyboard",
+        "Steve Wozniak",
+        "Steampunk",
+        "SRDF (Self Righteous Dick Face)",
+        "Squirrel",
+        "Spyware",
+        "Spotting a FED",
+        "SPAM mit Speck",
+        "Etwas etwas Gefahrenzone. Ich kenne. Ich versuche es nicht einmal mehr.",
+        "Spacedicks",
+        "Slow Clap",
+        "Sechs Gummibärchen und etwas Scotch",
+        "Situationsbewusstsein",
+        "Halt die Klappe und nimm mein Geld",
+        "Schrödinger's Cat",
+        "Shenanigans",
+        "Sicherheitstheater",
+        "Sicherheitsevangelist",
+        "Sicherheit durch Dunkelheit",
+        "Script Kiddies",
+        "Sagte niemand jemals!",
+        "Sabu",
+        "Rückwärts durch ein Maisfeld rennen",
+        "Regel 34",
+        "Ruby on Rails",
+        "Rolling Natural 20's",
+        "ROFLCOPTER",
+        "Reiten auf einem Pferd",
+        "Lächerlich fotogener Typ",
+        "Zur Freude gerippt",
+        "Aus Backups wiederherstellen",
+        "Redbull ohne Grund",
+        "Rot Hemden",
+        "ReCaptcha",
+        "Echte Männer des Genies",
+        "Regenbogentische",
+        "Wutgesicht",
+        "Wut beenden",
+        "Kevin zurücklegen",
+        "Einen Vogel darauf setzen",
+        "Herausforderungsmünzen bei eBay kaufen",
+        "Prisma",
+        "Priester in einem Tanga im Gangnam-Stil",
+        "Drücken des roten Knopfes",
+        "Prenda Law",
+        "Prairie Dogging während eines Interviews",
+        "Üben des Gringo-Kriegers zu Hause mit Babyöl. Nackt.",
+        "P0rn",
+        "PORK CHOP SANDWICHES!",
+        "Pop, Pop, Ret",
+        "Pool2Girl",
+        "Bitte mach das Notwendige",
+        "Piratenparty",
+        "Pfefferspray",
+        "PedoBear",
+        "Patrick Star",
+        "Pastebin-Passwortdateien",
+        "Passwörter im Klartext per E-Mail",
+        "Passwort: Gast",
+        "0wning You",
+        "Online-Backups",
+        "One Salty Hash",
+        "OMGBTFBBQ",
+        "Offensichtlich",
+        "NSA",
+        "Jetzt bin ich in etwas ... Dunkleres",
+        "Kein einziger Fick wurde gegeben",
+        "Nordkoreas Twitter-Account",
+        "No Starch Press",
+        "No Reason",
+        "Nmap",
+        "Ninjas, Pirates, Roboter und Zombies!",
+        "Ninja-Abzeichen",
+        "Nigerianische Betrüger",
+        "Nackenbart",
+        "NAMBLA",
+        "Na-ah-ah, du hast das Zauberwort nicht gesagt!",
+        "Mein Sexroboter Fisto Roboto",
+        "Meine massive SSD",
+        "Meine kleinen Bronies",
+        "Meine erste Prostatauntersuchung",
+        "Mundumarmungen",
+        "Mega",
+        "Mega Upload",
+        "Mathe ist schwer. Lass uns einkaufen gehen!",
+        "Masturbieren in einem Whirlpool für ein Ninja-Abzeichen",
+        "Mansplaining",
+        "Manisch lachen, während du ein Monokel trägst",
+        "Ein Sandwich machen",
+        "Den Ballmer Peak pflegen",
+        "Lock picks",
+        "Level 8 Portal",
+        "Lemon Party",
+        "Etwas auf der Con lernen",
+        "Lady Boner",
+        "L0pht",
+        "Keylogger",
+        "Kevin Mitnick",
+        "Kegels",
+        "Just the Tip",
+        "Just a sniff",
+        "Julian Assange",
+        "John McAfee",
+        "Es sind nur ein paar Einsen und Nullen",
+        "Es hat sich vermischt!",
+        "Ingress",
+        "Infizierte E-Mail-Anhänge",
+        "In der Cloud",
+        "Implizierte Situationszustimmung",
+        "Schlechter Seebarsch",
+        "Wenn Sie wissen, was ich meine",
+        "Identitätsdiebstahl",
+        "ICANN",
+        "Ich sollte ein Boot kaufen",
+        "Humperdink Award",
+        "HuBot (Chatroom Bot)",
+        "Hookers & Schlag",
+        "Hashtag",
+        "Handschellen",
+        "Mürrische Katze",
+        "Grauer Bart, graue Kugeln",
+        "Grammatik-Nazi",
+        "Habe es geschafft!",
+        "Guter Kerl Greg",
+        "Golfwagen",
+        "Glasloch",
+        "Mit all deiner Technik von den Goons in den Pool geworfen werden",
+        "Immer so sehr in den Arsch gehämmert werden, dass du daran stirbst, in den Arsch gehämmert zu werden",
+        "F'd in das A mit einem D",
+        "Immer ein Sympathie Boner",
+        "Fjodor",
+        "F. X",
+        "Fork jemandes Repo",
+        "Forever Alone",
+        "FOIA Request",
+        "Floppy Disk",
+        "Flipping a table",
+        "Flesh light",
+        "Flame Wars",
+        "Faust voller Arschlöcher",
+        "Fischstäbchen und Pudding",
+        "Erste Welt Probleme",
+        "Letzte Woche fertig!",
+        "FemiNazis",
+        "Fear Uncertainty Doubt (FUD)",
+        "Fapping mit einer Pferdekopfmaske",
+        "Fapping auf dem Familiencomputer",
+        "Fapped",
+        "Facepalm",
+        "EXIF ​​Data Stalking",
+        "Endbenutzer-Lizenzvereinbarung",
+        "Electronic Frontier Foundation",
+        "Edward Snowden",
+        "Drunken Muppet",
+        "Drones",
+        "Double ROT13",
+        "Double Facepalm",
+        "Blinzeln Sie nicht",
+        "Dr. Who",
+        "Dongs",
+        "Doing the '(du bist) NICHT der Vater' Tanz",
+        "Digital Millennium Copyright Act (DMCA)",
+        "Stirb in einem Feuer",
+        "Dick und / oder Bälle",
+        "derp .rar (yo.zip)",
+        "Def Con Wireless",
+        "Keine Verbindung herstellen!",
+        "Deep C Phishing",
+        "Dark Tangent",
+        "Dan Kaminsky Password Generator",
+        "Dan Kaminsky",
+        "Daaaaaanger Zone!",
+        "Cyber ​​War",
+        "Cyber-Douchery",
+        "Cyber ​​Punk",
+        "Weinen über verschüttete Milch",
+        "Crash Override",
+        "Copyright Trolle",
+        "Codieren beim Hören von Wal-Songs",
+        "Clicking shit",
+        "Chuck Norris",
+        "China",
+        "Schau dich später an",
+        "Katzenmemes",
+        "Streicheln der haarigen Brust eines Mannes",
+        "Captain Crunch (John Draper)",
+        "Butthurt",
+        "Butt tuckert Mamas Boxwein",
+        "Aber dann müsste ich dich töten",
+        "Big Dongles",
+        "Big Data",
+        "Der große Löffel sein",
+        "Der kleine Löffel sein",
+        "Durch den Anblick von TSAs Handschuhen sexuell erregt werden",
+        "Badesalz",
+        "Speck",
+        "Babe hat mich beim Ausrutschen erwischt",
+        "Umständliche Mundumarmungen",
+        "Umständliche Umarmungen",
+        "Asymmetrische Verschlüsselung",
+        "Arbitrary Code Execution",
+        "APT1",
+        "Anonymous",
+        "Und dann es starb",
+        "und Boom geht das Dynamit",
+        "Ein Arro w bis zum Knie",
+        "Altair 8800",
+        "All the Things!",
+        "Alexis Park",
+        "Niemand hat Zeit für Daten!",
+        "Ada Initiative genehmigt Fleisch-Licht mit Anti-Vergewaltigungs-Kondom enthalten!",
+        "ACTII pr0n",
+        "Ein Van unten am Fluss",
+        "Eine Stadt ohne Enten",
+        "Eine Reihe expliziter Haftnotizen",
+        "Eine Reihe Röhren",
+        "Ein Himbeer-Pi",
+        "Ein Münztelefon",
+        "Ein Ninja-Telefon",
+        "Eine Hak5-Ananas",
+        "Ein Blowjob mit googly eyed",
+        "Eine riesige Tasse STFU",
+        "Ein gefälschter Ausweis aus Kinkos",
+        "Ein Babyarm mit einem Apfel",
+        "Ein 'Paar Dokumente'",
+        "64-Bit-Schlüssel",
+        "503-Karte nicht verfügbar",
+        "501-Kartenfehler",
+        "500 interner Kartenfehler",
+        "406 nicht zulässig",
+        "404 nicht gefunden",
+        "403 verboten",
+        "401 Unauthorized",
+        "3D-gedrucktes P0rn",
+        "302 Card Redirect",
+        "10.000 kanadische Pennies",
+        "1,21 Jigawatt",
+        "(wub) (wub) (wub)",
+        "I Survived Ada Camp \"Challenge Coin\"",
+        "1337 Sp3ak"
+    ]
+}

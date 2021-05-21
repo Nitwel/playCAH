@@ -1,7 +1,14 @@
-import { createStore } from "vuex";
+import { createStore, Store, useStore as baseUseStore, createLogger } from "vuex";
 import { socket, emitter } from "./setup";
 import router from './router'
-import {actions, formatBlackCard} from './socket'
+import {formatBlackCard} from './socket'
+import { InjectionKey } from 'vue'
+
+export const key: InjectionKey<Store<State>> = Symbol()
+
+export function useStore () {
+    return baseUseStore(key)
+}
 
 export interface State {
     name: string;
@@ -70,11 +77,11 @@ export const store = createStore<State>({
         },
     },
     actions: {
-        ...actions,
         join_lobby({ state }) {
             socket.emit(
                 "join",
-                { name: state.name, lobby: state.lobby },
+                state.name,
+                state.lobby,
                 (response : any) => {
                     if (handleResponse(response)) return;
 
@@ -164,6 +171,9 @@ export const store = createStore<State>({
             return state.users.filter((u) => !u.connected);
         },
     },
+    plugins: [createLogger({
+        logger: console
+    })]
 });
 
 function handleResponse(response: any) {

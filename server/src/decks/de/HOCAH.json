@@ -1,0 +1,58 @@
+{
+    "blackCards": [
+        {
+            "text": "Ein weiser Mann sagte:\" Alles dreht sich um Sex. Außer Sex. Beim Sex geht es um _. \"",
+            "pick": 1
+        },
+        {
+            "text": "Unsere Beziehung ist streng professionell. Lassen Sie uns die Dinge nicht mit _.",
+            "pick": 1
+        },
+        {
+            "text": "komplizieren. Korruption. Verrat. _. In Kürze bei Netflix, \"House of _.\"",
+            "pick": 2
+        },
+        {
+            "text": "Weil Sie _ genossen haben, dachten wir, Sie möchten _.",
+            "pick": 2
+        },
+        {
+            "text": "Ich kann nicht glauben, dass Netflix _ verwendet, um für House of Cards zu werben.",
+            "pick": 1
+        },
+        {
+            "text": "Wir sind nicht wie andere Nachrichtenorganisationen Hier bei Slugline begrüßen wir _ im Büro.",
+            "pick": 1
+        },
+        {
+            "text": "Ich werde nicht lügen. Ich verachte _. Dort habe ich es gesagt.",
+            "pick": 1
+        },
+        {
+            "text": "Alle meine Besprechungen abbrechen. Wir haben eine Situation mit _, die meine sofortige Aufmerksamkeit erfordert.",
+            "pick": 1
+        },
+        {
+            "text": "Wenn Sie ihn brauchen, Remy Danton kann ein paar Fäden ziehen und dich _ holen, aber es wird dich kosten.",
+            "pick": 1
+        }
+    ],
+    "whiteCards": [
+        "Einen Handjob einem sterbenden Mann aufzwingen.",
+        "Eine homoerotische Nebenhandlung.",
+        "Ein Origami-Schwan, der eine Art Symbol ist?",
+        "25 beschissene Witze über House of Cards.",
+        "Meine Wähler.",
+        "Einem Kongressabgeordneten ins Gesicht schlagen.",
+        "Einen Hund erwürgen um dem Publikum einen Punkt zu machen.",
+        "Eine kinderlose Ehe.",
+        "Eine viel jüngere Frau.",
+        "Ein älterer Mann.",
+        "Mit Papa am Telefon gegessen werden.",
+        "Es so aussehen lassen ein Selbstmord.",
+        "Kohlenmonoxidvergiftung.",
+        "Entladen einer Schusswaffe in einem Wohngebiet.",
+        "Rippen so gut, dass sie Rasse und Klasse überschreiten.",
+        "Der sensible europäische Fotograf, der meine Frau fickt."
+    ]
+}

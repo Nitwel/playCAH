@@ -1,0 +1,309 @@
+{
+    "blackCards": [
+        {
+            "text": "Who let the dogs out?",
+            "pick": 1
+        },
+        {
+            "text": "In seinem nächsten Film rettet Will Smith die Welt vor _.",
+            "pick": 1
+        },
+        {
+            "text": "_ und _ sind das neue heiße Paar.",
+            "pick": 2
+        },
+        {
+            "text": "Wenn Nordkorea _ bekommt, wird es das Ende der Welt sein.",
+            "pick": 1
+        },
+        {
+            "text": "Plane ein Drei-Gänge-Menü.",
+            "pick": 3
+        },
+        {
+            "text": "Schmeckt wie _.",
+            "pick": 1
+        },
+        {
+            "text": "Womit werden Roboter die Welt übernehmen?",
+            "pick": 1
+        },
+        {
+            "text": "Dustin Browder verlangt mehr _ in StarCraft &reg;.",
+            "pick": 1
+        },
+        {
+            "text": "Willkommen in meinem geheimen Versteck am _.",
+            "pick": 1
+        },
+        {
+            "text": "Gelobt sei _!",
+            "pick": 1
+        },
+        {
+            "text": "Was kann man immer zwischen den Sofakissen finden?",
+            "pick": 1
+        },
+        {
+            "text": "Was ist das nächste große Kickstarter-Projekt?",
+            "pick": 1
+        },
+        {
+            "text": "Mein Leben für _!",
+            "pick": 1
+        },
+        {
+            "text": "In einer Pressekonferenz hat Obama zu jedermanns Überraschung _ gezeigt.",
+            "pick": 1
+        },
+        {
+            "text": "Nächte voller _.",
+            "pick": 1
+        },
+        {
+            "text": "_ Spiel des Jahres Edition.",
+            "pick": 1
+        },
+        {
+            "text": "Was ging Osama Bin Laden durch den Kopf, bevor er starb?",
+            "pick": 1
+        },
+        {
+            "text": "Der Löwe, die Hexe und _.",
+            "pick": 1
+        },
+        {
+            "text": "In der nächsten Folge wird SpongeBob in _ eingeführt.",
+            "pick": 1
+        },
+        {
+            "text": "Justin Beibers neues Lied dreht sich um _.",
+            "pick": 1
+        },
+        {
+            "text": "Keith Richards genießt _ in seinem Essen.",
+            "pick": 1
+        },
+        {
+            "text": "Bei der neuen Modediät geht es darum, dass Leute _ tun und _ essen.",
+            "pick": 2
+        },
+        {
+            "text": "Grand Theft Auto &trade;: _.",
+            "pick": 1
+        },
+        {
+            "text": "Das Opfer wurde mit _ gefunden.",
+            "pick": 1
+        },
+        {
+            "text": "Ich peitsche mein _ hin und her.",
+            "pick": 1
+        },
+        {
+            "text": "Was ist Liebe ohne _?",
+            "pick": 1
+        },
+        {
+            "text": "_ 2012",
+            "pick": 1
+        },
+        {
+            "text": "Worüber bist du so neugierig?",
+            "pick": 1
+        },
+        {
+            "text": "Was ist die nächste große Attraktion?",
+            "pick": 1
+        },
+        {
+            "text": "Lady Gaga hat enthüllt, ihr neues Kleid wird aus _ sein.",
+            "pick": 1
+        },
+        {
+            "text": "_ ruinierte die Kindheit vieler Menschen.",
+            "pick": 1
+        },
+        {
+            "text": "Wer braucht Uni, wenn man _ hat.",
+            "pick": 1
+        },
+        {
+            "text": "Wenn das Geld knapp ist, kannst du immer _.",
+            "pick": 1
+        },
+        {
+            "text": "Was ist buchstäblich schlimmer als Hitler?",
+            "pick": 1
+        },
+        {
+            "text": "Ich würde _ nicht mit _ 's Schwanz ficken.",
+            "pick": 2
+        },
+        {
+            "text": "Das nächste Assassin's Creed-Spiel findet in _ statt.",
+            "pick": 1
+        },
+        {
+            "text": "Im nächsten Pu nch Out !!, wird der geheime Endgegner sein.",
+            "pick": 1
+        },
+        {
+            "text": "Man geht nicht einfach in _.",
+            "pick": 1
+        },
+        {
+            "text": "Das nächste Pokemon kombiniert _ und _.",
+            "pick": 2
+        },
+        {
+            "text": "Anstatt Cards against Humanity zu spielen, könnte man auch _ tun.",
+            "pick": 1
+        },
+        {
+            "text": "Wer ist das nächste Testobjekt von GLaDOS?",
+            "pick": 1
+        },
+        {
+            "text": "In seiner zweiten Amtszeit wird Obama Amerika von _ befreien.",
+            "pick": 1
+        },
+        {
+            "text": "Ich hätte nie gedacht, dass _ so angenehm sein würde.",
+            "pick": 1
+        },
+        {
+            "text": "In Zukunft werden unsere Autos mit _ fahren.",
+            "pick": 1
+        },
+        {
+            "text": "Was ist Japans nationaler Zeitvertreib?",
+            "pick": 1
+        },
+        {
+            "text": "Ich habe die ganze Welt in meinem _.",
+            "pick": 1
+        },
+        {
+            "text": "Was ist die Antwort auf die Frage des Lebens?",
+            "pick": 1
+        }
+    ],
+    "whiteCards": [
+        "Mr. Fancy Pants.",
+        "Ein Zylinder.",
+        "Gehirncroissant Berg.",
+        "Penn and Teller.",
+        "3,5 Gramm Kokain.",
+        "Rule 34.",
+        "Der kleinste, weißeste Schwanz.",
+        "Eine Saftpresse.",
+        "Beer Pong.",
+        "Scharfe Soße als Gleitmittel.",
+        "Smooth Jazz.",
+        "Sowjetrußland.",
+        "Indiana Jones.",
+        "Hentai.",
+        "Ein Amoklauf.",
+        "Herr. Hankey the Christmas Poo.",
+        "Zwei Zwerge aufeinander, die so tun als wären sie eine Person.",
+        "Die Bibel.",
+        "Geschlechterrollen.",
+        "Four Loko.",
+        "Mario ermordet Sonic brutal.",
+        "Sonic ermordet Mario brutal.",
+        "Der größte Zwerg der Welt.",
+        "Ein Bass, der so tief ist, dass man sich in die Hosen scheißt.",
+        "Titten.",
+        "Regenbogen und Magie.",
+        "Affen die mit Scheiße werfen.",
+        "Hitlers Schnurrbart.",
+        "ALL die schönen Dinge!",
+        "Kondome aus Schafshaut",
+        "Mittwoch",
+        "Das Yankee Stadium",
+        "Air Bud",
+        "Horden von Zombies",
+        "Von einem Esel gefickt werden",
+        "Donkey Kong",
+        "Cranky Kong.",
+        "Der Eiffelturm.",
+        "Hühnchen und Waffeln.",
+        "Ein Flauschteppich.",
+        "Dreckige Hippies.",
+        "Hey Arnold!",
+        "Die Oculus Rift.",
+        "Ein Männertanga.",
+        "Nessie.",
+        "Prinzessin Peach's Kuchen.",
+        "Auf den Rasen des Weißen Hauses scheißen.",
+        "TANTRUM!.",
+        "Die Tränen eines Studenten.",
+        "Mensch ärgere dich nicht.",
+        "Puderzucker schniefen.",
+        "Von Badesalz high werden.",
+        "Der letzte Kreis der Hölle.",
+        "Schlecht geschriebene Star Wars Fanfiction.",
+        "Eine enge Männerbadehose.",
+        "Ein 1971 Ford Pinto.",
+        "Ein Foto",
+        "Der Meister.",
+        "Die beschissenen Reste von Taco Bell &reg.",
+        "Ein Schwamm.",
+        "Walt Disneys gefrorener Kopf",
+        "Hoola Hoops",
+        "Kanadische Freundlichkeit",
+        "Ein Walross mit Baskenmütze",
+        "Speedruns",
+        "Demi Moores Busch",
+        "120 Big Macs essen.",
+        "Den Präsidenten abknallen.",
+        "Meine Sklaven. ",
+        "Sex in deinen Mund.",
+        "420.",
+        "Ein Subway Sandwich.",
+        "Schotten, die ihre Schafe heiraten.",
+        "Die Bauchwelle machen",
+        "Schwester Joy",
+        "Barneys Vergewaltigungskerker",
+        "Elmo",
+        "Viking Metal",
+        "The urn",
+        "Spanische Seifenopern",
+        "Netflix -Filme.",
+        "Ein Terabyte Pferdeporno",
+        "Der Held der Zeit",
+        "Ein Bandwurm",
+        "Haschbrownies",
+        "Missbräuchliche Väter",
+        "Hungrige hungrige Flusspferde",
+        "Eine abgeranzte Jeansjacke.",
+        "Gruselige Clowns",
+        "Metal",
+        "Toggo",
+        "Blau und Schlau",
+        "Kaizo Mario",
+        "Hundeblick",
+        "Spontane Selbstentzündung",
+        "Kappa",
+        "Sich die Hand mit einem Polenböller wegsprengen",
+        "Duke Nukem Forever.",
+        "Paarungszeit.",
+        "Die Wii.",
+        "Ein jüdischer Afro.",
+        "Ein Katzenhund.",
+        "Hipster mit ihren iPhones bei Starbucks.",
+        "Eine Bootsladung Kokain.",
+        "Song of Storms.",
+        "Gerudo Valley.",
+        "Ein riesiges lila Dildoschwert.",
+        "Bill Gates pisst auf Steve Jobs 'Grab.",
+        "Seriöse indische Microsoft Mitarbeiter",
+        "Das Pilzkönigreich",
+        "Hokey Pokey",
+        "Domino's",
+        "Blaue Waffel",
+        "Zitronengranaten",
+        "360 no scopes."
+    ]
+}

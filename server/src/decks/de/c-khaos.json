@@ -1,0 +1,400 @@
+{
+    "blackCards": [
+        {
+            "text": "Ich war ein Abenteurer wie du, dann habe ich ein / an _ in das _ genommen.",
+            "pick": 2
+        },
+        {
+            "text": "You ' Wir müssen _ Fluxx!",
+            "pick": 1
+        },
+        {
+            "text": "Aus Liebe zu GOTT und allem, was HEILIG ist, _ !!",
+            "pick": 1
+        },
+        {
+            "text": "Das neue Betriebssystem heißt _.",
+            "pick": 1
+        },
+        {
+            "text": "Ja, Mr. Death ... ich werde Ihnen ein Spiel spielen! Aber kein Schach! Mein Spiel ist _.",
+            "pick": 1
+        },
+        {
+            "text": "Ich kann Hass und Krieg nicht predigen, wenn ich ein Schüler von _ bin.",
+            "pick": 1
+        },
+        {
+            "text": "Call of Duty Modern Warfare 37: War of _!",
+            "pick": 1
+        },
+        {
+            "text": "Am hellsten Tag, in der schwärzesten Nacht, wird mir kein _ entgehen.",
+            "pick": 1
+        },
+        {
+            "text": "Mein nächstes Video zeigt _.",
+            "pick": 1
+        },
+        {
+            "text": "Wir haben eine Karte gefunden Charlie! Eine Karte zu _ Mountain!",
+            "pick": 1
+        },
+        {
+            "text": "Honigdachs gibt kein _!",
+            "pick": 1
+        },
+        {
+            "text": "Gut. Schlecht. Ich bin der Typ mit dem _.",
+            "pick": 1
+        },
+        {
+            "text": "Heil dem _, Baby.",
+            "pick": 1
+        },
+        {
+            "text": "Shop smart. Shop _.",
+            "pick": 1
+        },
+        {
+            "text": "Alles klar, du primitiver Schraubenkopf , hör zu! Siehst du das? Das ... ist mein _!",
+            "pick": 1
+        },
+        {
+            "text": "Jedes Sperma ist _.",
+            "pick": 1
+        },
+        {
+            "text": "Ich sehe, Sie haben die Maschine, die _.",
+            "pick": 1
+        },
+        {
+            "text": "Ich suche das Heilige _.",
+            "pick": 1
+        },
+        {
+            "text": "Wie werden wir eine Armee der Toten an unseren Burgmauern aufhalten?",
+            "pick": 1
+        },
+        {
+            "text": "Schneller als ein schnelles _! Stärker als ein _!",
+            "pick": 2
+        },
+        {
+            "text": "Kämpfe einen endlosen Kampf um Wahrheit, Gerechtigkeit und das amerikanische _!",
+            "pick": 1
+        },
+        {
+            "text": "Mach mich nicht _. Du würdest mich nicht mögen, wenn ich _ bin.",
+            "pick": 1
+        },
+        {
+            "text": "Mit großer Kraft kommt großartig _.",
+            "pick": 1
+        },
+        {
+            "text": "I. bin nichts treu, General - außer dem _.",
+            "pick": 1
+        },
+        {
+            "text": "Patriotismus ist nicht automatisch gleich _.",
+            "pick": 1
+        },
+        {
+            "text": "Verkleidet als sanftmütig.",
+            "pick": 2
+        },
+        {
+            "text": "Kann _ in einer einzigen Schranke springen!",
+            "pick": 1
+        },
+        {
+            "text": "Dies sind nicht die _, die Sie suchen.",
+            "pick": 1
+        },
+        {
+            "text": "Wir brauchen ein größeres _ .",
+            "pick": 1
+        },
+        {
+            "text": "Beavis and Butthead Do _.",
+            "pick": 1
+        },
+        {
+            "text": "Zum einen begrüße ich unsere neuen _ Overlords.",
+            "pick": 1
+        },
+        {
+            "text": "Weißt du, es gibt eine Million gut aussehender Frauen auf der Welt, Alter. Aber sie bringen dich nicht alle zur Arbeit. Die meisten von ihnen sind nur _.",
+            "pick": 2
+        },
+        {
+            "text": "Teenage Mutant Ninja _.",
+            "pick": 1
+        },
+        {
+            "text": "Achy Breaky _.",
+            "pick": 1
+        },
+        {
+            "text": "Ich bin kein _, aber ich spiele einen im Fernsehen",
+            "pick": 1
+        },
+        {
+            "text": "Ein afrikanischer oder europäischer _?",
+            "pick": 1
+        },
+        {
+            "text": "Nun, Sie können nicht erwarten, die höchste Exekutivgewalt auszuüben, nur weil eine wässrige Torte ein _ auf Sie geworfen hat!",
+            "pick": 1
+        },
+        {
+            "text": "\" _! \"\" Es ist nur ein Modell. \"",
+            "pick": 1
+        },
+        {
+            "text": "Gute Nacht. Schlafen Sie gut. Ich werde dich höchstwahrscheinlich morgen früh.",
+            "pick": 1
+        },
+        {
+            "text": "Ich bin der schreckliche Pirat _.",
+            "pick": 1
+        },
+        {
+            "text": "Do you Soll ich Sie dorthin zurückschicken, wo Sie waren, _ in _?",
+            "pick": 2
+        },
+        {
+            "text": "Ich sehe _ people",
+            "pick": 1
+        },
+        {
+            "text": "_ ? Wir brauchen kein stinkendes _!",
+            "pick": 1
+        },
+        {
+            "text": "Ich bin nicht fett! Ich bin nur _.",
+            "pick": 1
+        },
+        {
+            "text": "Oh mein Gott! Sie haben _!",
+            "pick": 1
+        },
+        {
+            "text": "Die mit Spannung erwartete neue Staffel von Firefly soll mit einer actiongeladenen Szene beginnen, in der River Tams erstaunliche Leistungen von _!",
+            "pick": 1
+        },
+        {
+            "text": "Zwei mal zwei, Hände von _.",
+            "pick": 1
+        },
+        {
+            "text": "Wendy's _ & Juicy.",
+            "pick": 1
+        },
+        {
+            "text": "Ich schwöre bei meinem hübschen Blumenmuster, ich werde es dir tun.",
+            "pick": 2
+        },
+        {
+            "text": "At _, wo jeder Tag _ day ist!",
+            "pick": 2
+        },
+        {
+            "text": "Ich hasse es, wenn _ (s) mein _ hochkriechen!",
+            "pick": 2
+        },
+        {
+            "text": "_. Wie ein Chef!",
+            "pick": 1
+        },
+        {
+            "text": "Das neueste Musikvideo von _ enthält ein Dutzend _ on _.",
+            "pick": 3
+        },
+        {
+            "text": "_. Es ist nicht mehr nur zum Frühstück.",
+            "pick": 1
+        },
+        {
+            "text": "Im sowjetischen _, _ _s du.",
+            "pick": 3
+        },
+        {
+            "text": "_. Teil dieses nahrhaften Frühstücks.",
+            "pick": 1
+        },
+        {
+            "text": "_. Es ist was zum Abendessen!",
+            "pick": 1
+        },
+        {
+            "text": "Wo ist das Rindfleisch?",
+            "pick": 1
+        },
+        {
+            "text": "_. Frühstück der Champions!",
+            "pick": 1
+        },
+        {
+            "text": "I _, also I _.",
+            "pick": 2
+        },
+        {
+            "text": "Willkommen in meinem geheimen Versteck. Ich nenne es die Festung von _.",
+            "pick": 1
+        },
+        {
+            "text": "Mein Sicherheitswort ist _.",
+            "pick": 1
+        },
+        {
+            "text": "Ich mag _, aber _ ist ein hartes Limit!",
+            "pick": 2
+        },
+        {
+            "text": "Team _!",
+            "pick": 1
+        },
+        {
+            "text": "Wir gingen zu einem Workshop über tantrisches _.",
+            "pick": 1
+        },
+        {
+            "text": "Du sollst nicht _.",
+            "pick": 1
+        },
+        {
+            "text": "Ich bin der König von _!",
+            "pick": 1
+        },
+        {
+            "text": "Das einzig Gute _ ist ein totes _.",
+            "pick": 1
+        },
+        {
+            "text": "Eine Abstimmung für _ ist eine Abstimmung für _.",
+            "pick": 2
+        },
+        {
+            "text": "_ is the new _.",
+            "pick": 2
+        },
+        {
+            "text": "Bitches LOVE _!",
+            "pick": 1
+        },
+        {
+            "text": "Der diesjährige Ehrengast ist _.",
+            "pick": 2
+        },
+        {
+            "text": "Dies wird der größte _con aller Zeiten sein!",
+            "pick": 1
+        },
+        {
+            "text": "_ endlich! _ zu guter Letzt! Gott sei Dank, der Allmächtige, ich bin endlich!",
+            "pick": 1
+        },
+        {
+            "text": "Ich habe den Traum, dass diese Nation eines Tages auferstehen und die wahre Bedeutung ihres Glaubensbekenntnisses ausleben wird:",
+            "pick": 1
+        },
+        {
+            "text": "Dies sind meine Schergen von _!",
+            "pick": 1
+        }
+    ],
+    "whiteCards": [
+        "Dachs Dachs Dachs Dachs ...",
+        "Candy Mountain",
+        "Pewdiepie",
+        "Black Mesa.",
+        "Linux.",
+        "Unix.",
+        "Mein ANUS blutet!",
+        "Mein Löffel ist zu groß.",
+        "Godwins Gesetz.",
+        "Nein! Chuck Testa.",
+        "Pedo-Bär.",
+        "Honigdachs.",
+        "Morgan Freeman",
+        "Unvorstellbar !!",
+        "Der Heilige Gral",
+        "Camelot",
+        "Die Maschine, die \"Ping!\"",
+        "Ein Hering!",
+        "Groovy",
+        "Ein Gebüsch!",
+        "The Necronomiconexmortis",
+        "Wir kommen, um dich zu holen, Barbara!",
+        "Mein Boomstick",
+        "S-Mart",
+        "Good Ash",
+        "Evil Ash",
+        "Ein wirklich cooler Umhang und Strumpfhosen",
+        "Content.",
+        "In den Anzug pissen",
+        "Zwischen Green Lantern einen Amboss erschaffen und Sinestro einen Hammer erschaffen.",
+        "Spiderman erwischen sticky, sticky ... web.",
+        "Outrunning The Flash!",
+        "The Batmobile!",
+        "Mit Wonder Woman's Magic Lasso gefesselt sein.",
+        "SHAZAM!",
+        "The Tick.",
+        "Wonder Woman ist unsichtbar Chopper",
+        "Holz für Schafe",
+        "All your base",
+        "Ein Pfeil bis zum Knie",
+        "GLaDOSs Kuchenrezept",
+        "Head Crabs",
+        "Gordon Freeman",
+        "The Umbrella Corporation.",
+        "Ein größeres, schwärzeres Deck",
+        "The Necronomicon",
+        "Fruit Flies",
+        "Fruit Bat",
+        "Traumatic Insemination",
+        "Bagpipes",
+        "The Metal!",
+        "All the ass in the world!",
+        "Anti-Matter Chopsticks",
+        "Groinal Exploder",
+        "Shiny!",
+        "River Tam",
+        "Bro wncoats",
+        "Von Schnitter zu Tode vergewaltigt werden",
+        "Ich werde in meiner Koje sein!",
+        "The Alliance",
+        "Honey Boo Boo",
+        "Snookie",
+        "Hammelfleisch Vindaloo Beast",
+        "Wie ein Boss!",
+        "Talkie Toaster",
+        "Queeg 500",
+        "Athlete's Hand",
+        "Droid Rot",
+        "Iocane Powder",
+        "To the pain",
+        "Verdammt schmutziger Affe",
+        "The Orgazmorator",
+        "Festlich prall",
+        "Cowboys aus der Hölle",
+        "Mecha-Streisand",
+        "Ameisen in der Hose",
+        "Läuse",
+        "Kuchen",
+        "Eine Bande von Bikern",
+        "Soggy Biscuit",
+        "Rough Trade",
+        "The Walk of Shame",
+        "Wutanfall",
+        "Heuschrecken",
+        "Keine Hosen",
+        "Greifnippel",
+        "Kulturelle Veruntreuung",
+        "Vergewaltigungskultur",
+        "Wal-Mart",
+        "Fifi der tanzende Pudel"
+    ]
+}

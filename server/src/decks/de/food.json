@@ -1,0 +1,54 @@
+{
+    "blackCards": [
+        {
+            "pick": 1,
+            "text": "Ich bin Bobby Flay, und wenn du nicht stehen kannst, geh aus der Küche!"
+        },
+        {
+            "pick": 1,
+            "text": "Es ist keine Lieferung. Es ist _."
+        },
+        {
+            "pick": 1,
+            "text": "Oh Baby, deine Rülpser riechen nach _!"
+        },
+        {
+            "pick": 1,
+            "text": "Verpassen Sie nicht Rachel Rays neue Hit-Show <i> Kochen mit _ </ i>."
+        },
+        {
+            "pick": 1,
+            "text": "Entschuldigung, Kellner. Könnte das zurücknehmen? Diese Suppe schmeckt wie _."
+        },
+        {
+            "pick": 1,
+            "text": "Jetzt auf Netflix: <i> Jiro Dreams of _ </ i>."
+        }
+    ],
+    "whiteCards": [
+        "Eine ernüchternde Menge Chili Käse-Pommes.",
+        "Vegetarisch werden und sich die ganze Zeit so gut fühlen.",
+        "Grünkohl-Fürze.",
+        "Den Kuchenteig von Omas Fingern lecken.",
+        "Echter Käsegeschmack.",
+        "Den Wein herumwischen und schnüffeln es ist wie ein großer schicker Mann.",
+        "Der Dial-A-Slice-Apfelteiler von Williams-Sonoma.",
+        "Was tun mit all dieser Schokolade auf meinem Penis?",
+        "Ein Bauch voller hartgekochter Eier.",
+        "Ein freudloses veganes Pastetchen.",
+        "Ein Tisch für einen in der Cheesecake Factory.",
+        "Emotional und physisch von Gordon Ramsay dominiert.",
+        "Kevin Bacon Bits.",
+        "Nicht Ich weiß, was ich noch über Butter glauben soll.",
+        "Suppe, die besser ist als Muschi.",
+        "Jeden Tag Tausende Pfund Krill aufsaugen.",
+        "Ein mexikanisches Kind, das in einem Burrito gefangen ist.",
+        "Eine Gazelle festklemmen jugular und schmeckt sein warmes Wasser.",
+        "Selbstmord am Old Country Buffet begehen.",
+        "Vaters verbotene Pralinen.",
+        "Jizz Twinkies.",
+        "The Hellman's Mayonnaise Corporation.",
+        "Der Hot Dog, den ich in meine gesteckt habe Vagina vor zehn Tagen.",
+        "Die unhörbaren Schreie von Karotten."
+    ]
+}

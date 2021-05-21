@@ -1,0 +1,30 @@
+{
+    "blackCards": [
+        {
+            "pick": 1,
+            "text": "Trump ist großartig! Trump hat _. Ich liebe das."
+        },
+        {
+            "pick": 1,
+            "text": "Laut Arizonas Standpunkt Grundgesetz, du darfst jemanden erschießen, wenn er _."
+        },
+        {
+            "pick": 1,
+            "text": "Es ist 3 Uhr morgens. Das rote Telefon klingelt. Es ist _. Wen möchtest du beantworten?"
+        }
+    ],
+    "whiteCards": [
+        "Eigentlich Donald Trump zum Präsidenten der Vereinigten Staaten wählen.",
+        "Eine liberale Voreingenommenheit.",
+        "Hillary Clinton hassen.",
+        "Aufwachsen und Republikaner werden.",
+        "Mutig mit diesem rassistischen Kommentar weitermachen.",
+        "Diese Fiktion zerstreuen, dass Barack Obama nicht weiß, was er tut.",
+        "Jeb!",
+        "Die guten, fleißigen Leute von Dubuque, Iowa.",
+        "Konservative Reden.",
+        "Am lautesten schreien",
+        "Sound of Fiskalpolitik.",
+        "Full-on-Sozialismus."
+    ]
+}

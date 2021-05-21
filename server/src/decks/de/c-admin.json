@@ -1,0 +1,725 @@
+{
+    "blackCards": [
+        {
+            "text": "Echte Männer schauen _.",
+            "pick": 1
+        },
+        {
+            "text": "Also warte, _ war tatsächlich _? Wow, das habe ich nicht kommen sehen!",
+            "pick": 2
+        },
+        {
+            "text": "Wenn man mich mit kaltem Wasser bespritzt, verwandle ich mich in _.",
+            "pick": 1
+        },
+        {
+            "text": "Egal wie du aussiehst, letztendlich ist _ verantwortlich für _.",
+            "pick": 2
+        },
+        {
+            "text": "_. Das ist mein Fetisch.",
+            "pick": 1
+        },
+        {
+            "text": "_ camped auf meiner Lane.",
+            "pick": 1
+        },
+        {
+            "text": "Vegeta, was sagt der Scouter über seine Kampfkraft?",
+            "pick": 1
+        },
+        {
+            "text": "Wer zum Teufel denkst du bin ich?!",
+            "pick": 1
+        },
+        {
+            "text": "In der nächsten Folge von Dragon Ball Z hat Goku einen heftigen Kampf mit _.",
+            "pick": 1
+        },
+        {
+            "text": "Who let the dogs out?",
+            "pick": 1
+        },
+        {
+            "text": "In seinem nächsten Film, rettet Will Smith die Welt vor _.",
+            "pick": 1
+        },
+        {
+            "text": "_ und _ sind das neue heiße Paar.",
+            "pick": 2
+        },
+        {
+            "text": "Wenn Nordkorea _ bekommt, wird es das Ende der Welt sein.",
+            "pick": 1
+        },
+        {
+            "text": "Plane ein schmackhaftes Drei-Gänge-Menü.",
+            "pick": 3
+        },
+        {
+            "text": "Schmeckt wie _.",
+            "pick": 1
+        },
+        {
+            "text": "Hey Leute, schaut euch meine _ Montage an!",
+            "pick": 1
+        },
+        {
+            "text": "Womit werden Roboter die Weltherrschaft an sich reißen?",
+            "pick": 1
+        },
+        {
+            "text": "Dustin Browder verlangt mehr _ in StarCraft &reg;.",
+            "pick": 1
+        },
+        {
+            "text": "Willkommen in meinem geheimen Versteck am _.",
+            "pick": 1
+        },
+        {
+            "text": "Wirklich und ohne Frage, _ ist der männlichste aller Männer.",
+            "pick": 1
+        },
+        {
+            "text": "WANTED: $ 50.000.000.000 Belohnung für die Festnahme von _.",
+            "pick": 1
+        },
+        {
+            "text": "Menschen sterben, wenn sie _.",
+            "pick": 1
+        },
+        {
+            "text": "Okay, ich gebe es zu. Für _ würde ich schwul werden.",
+            "pick": 1
+        },
+        {
+            "text": "_. Tumblr.com",
+            "pick": 1
+        },
+        {
+            "text": "_. Verdammt, Japan.",
+            "pick": 1
+        },
+        {
+            "text": "Alle deine _ gehören nun uns!",
+            "pick": 1
+        },
+        {
+            "text": "Digimon! Digivolve to: _-mon!",
+            "pick": 1
+        },
+        {
+            "text": "Was wird YouTube in seinem nächsten unnötigen Update hinzufügen?",
+            "pick": 1
+        },
+        {
+            "text": "Ich habe noch nie mehr lachen müssen, als ich _ zum ersten mal sah.",
+            "pick": 1
+        },
+        {
+            "text": "Wer ist ein Arschloch?",
+            "pick": 1
+        },
+        {
+            "text": "Meine Damen und Herren , Ich gebe Ihnen _... ÜBERSÄT MIT BIENEN !!!",
+            "pick": 1
+        },
+        {
+            "text": "Sorry Mario, aber _ ist in einem anderen Schloss.",
+            "pick": 1
+        },
+        {
+            "text": "Es gibt heimliche Vergnügen. Und dann gibt es _.",
+            "pick": 1
+        },
+        {
+            "text": "_ als Präsident!",
+            "pick": 1
+        },
+        {
+            "text": "_ ist eine Lüge.",
+            "pick": 1
+        },
+        {
+            "text": "Hab Spaß, sei nicht _.",
+            "pick": 1
+        },
+        {
+            "text": "Sei nicht böse, sei _.",
+            "pick": 1
+        },
+        {
+            "text": "Wenn es um japanische Küche geht, gibt es einfach nichts Besseres als _.",
+            "pick": 1
+        },
+        {
+            "text": "Nachdem ich _ gesehen habe, brauchte ich _.",
+            "pick": 2
+        },
+        {
+            "text": "Ich bin ein Experte für _.",
+            "pick": 1
+        },
+        {
+            "text": "Gerade angekündigt: Die brandneue Anime-Adaption von _ mit _ als Stimme von _.",
+            "pick": 3
+        },
+        {
+            "text": "_ ist das einzige, was zählt.",
+            "pick": 1
+        },
+        {
+            "text": "Oralsex und Psychiatrie haben uns zu _ gebracht.",
+            "pick": 1
+        },
+        {
+            "text": "Wir werden immer _ haben.",
+            "pick": 1
+        },
+        {
+            "text": "OH MEIN GOTT, DAS IST DAS GRÖSSTE _ , DAS ICH JE IN MEINEM LEBEN GESEHEN HABE!",
+            "pick": 1
+        },
+        {
+            "text": "Und der Preis für die schmutzigste Szene in einem Erwachsenenfilm geht an \"5 Frauen und _.\"",
+            "pick": 1
+        },
+        {
+            "text": "Was hat dich heute geärgert?",
+            "pick": 1
+        },
+        {
+            "text": "Das selten erwähnte 4. kleine Schweinchen hat sein Haus aus _ gebaut.",
+            "pick": 1
+        },
+        {
+            "text": "Lass uns alle zu den Klängen von _ rocken.",
+            "pick": 1
+        },
+        {
+            "text": "Niemand will dein _ sehen.",
+            "pick": 1
+        },
+        {
+            "text": "\" Warum Oma \", sagte Rotkäppchen, \" Was für ein großes _ du doch hast! \"",
+            "pick": 1
+        },
+        {
+            "text": "_ verwendet _. Es ist SEHR EFFEKTIV!",
+            "pick": 2
+        },
+        {
+            "text": "Es ist schwierig, Freunden und Familie zu erklären, warum ich so viel über _ weiß.",
+            "pick": 1
+        },
+        {
+            "text": "Ich hätte nie gedacht, dass ich von _ leben kann.",
+            "pick": 1
+        },
+        {
+            "text": "Nimm _, es wird länger halten.",
+            "pick": 1
+        },
+        {
+            "text": "Mir wurde klar, dass ich den Tiefpunkt erreicht hatte, als ich anfing, durch Müllcontainer nach _ zu graben.",
+            "pick": 1
+        },
+        {
+            "text": "Lange Rede, kurzer Sinn, ich hatte _ in meinem Arsch.",
+            "pick": 1
+        },
+        {
+            "text": "Zuerst konnte ich _ nicht verstehen, aber jetzt ist es meine größte Vorliebe.",
+            "pick": 1
+        },
+        {
+            "text": "_ ist meine schlimmste Angewohnheit.",
+            "pick": 1
+        },
+        {
+            "text": "Was verstecke ich im Keller?",
+            "pick": 1
+        },
+        {
+            "text": "Das ist das Ende von _, wie wir es kennen.",
+            "pick": 1
+        },
+        {
+            "text": "Ich schaue Filme, um zu sehen, ob ich seltsame _ - Tanzszenen finde.",
+            "pick": 1
+        },
+        {
+            "text": "Go-Go-Gadget , _!",
+            "pick": 1
+        },
+        {
+            "text": "Mit _ ist alles besser.",
+            "pick": 1
+        },
+        {
+            "text": "Und es heißt, sein Geist wandert noch immer durch diese Hallen und sucht nach seinem verlorenem _.",
+            "pick": 1
+        },
+        {
+            "text": "Was hast du heute erreicht?",
+            "pick": 1
+        },
+        {
+            "text": "Wonach würdest du schmecken?",
+            "pick": 1
+        },
+        {
+            "text": "Der beste Teil des Aufwachens ist heißer _ in deiner Tasse.",
+            "pick": 1
+        },
+        {
+            "text": "Warum schäumst du vor Wut?",
+            "pick": 1
+        },
+        {
+            "text": "Was hat dich heute glücklich gemacht?",
+            "pick": 1
+        },
+        {
+            "text": "Warum gibt es sechs _ wenn es nur vier _ gibt?",
+            "pick": 2
+        },
+        {
+            "text": "Mein _ ist zu groß!",
+            "pick": 1
+        },
+        {
+            "text": "Bestes Getränk aller Zeiten: Ein Teil _, drei Teile _, und ein Spritzer _.",
+            "pick": 3
+        },
+        {
+            "text": "_ macht mich unwohl.",
+            "pick": 1
+        },
+        {
+            "text": "Die primitiven Dorfbewohner waren sowohl schockiert als auch erstaunt, als ich ihnen _ zeigte.",
+            "pick": 1
+        },
+        {
+            "text": "Stop, drop and _.",
+            "pick": 1
+        },
+        {
+            "text": "_ ist die Wurzel allen Übels.",
+            "pick": 1
+        },
+        {
+            "text": "Denk nach, bevor du _.",
+            "pick": 1
+        },
+        {
+            "text": "Der Weg zum Erfolg ist mit _ gepflastert.",
+            "pick": 1
+        },
+        {
+            "text": "Und auf der Farm, da gibts ein _, I-Ei, I-Ei, Ohh!",
+            "pick": 1
+        },
+        {
+            "text": "Ein wilder _ erscheint! Es benutzt _!",
+            "pick": 2
+        },
+        {
+            "text": "Was ist dein Paarungsruf?",
+            "pick": 1
+        },
+        {
+            "text": "Der Himalaya ist voller Gefahren, wie z _.",
+            "pick": 1
+        },
+        {
+            "text": "Da ist _ in meiner Suppe.",
+            "pick": 1
+        },
+        {
+            "text": "Was ist das Schlimmste, was man zu einem Polizisten sagen kann?",
+            "pick": 1
+        },
+        {
+            "text": "Die traurige Wahrheit ist, dass es am Rande des Universums nichts als _ gibt.",
+            "pick": 1
+        },
+        {
+            "text": "Was ist das Traurigste, was du jemals gesehen hast?",
+            "pick": 1
+        },
+        {
+            "text": "Wenn das Leben dir _ gibt, mach _ daraus.",
+            "pick": 2
+        },
+        {
+            "text": "Was ist dein Lieblingsbuch?",
+            "pick": 1
+        },
+        {
+            "text": "Wer braucht schon ein Bidet, wenn du _ hast?",
+            "pick": 1
+        },
+        {
+            "text": "Töte es mit _ !",
+            "pick": 1
+        },
+        {
+            "text": "Die DRM-Richtlinie der Xbox One ist nicht halb so schlecht wie _.",
+            "pick": 1
+        },
+        {
+            "text": "Ich trage eine Perücke gemacht aus _.",
+            "pick": 1
+        },
+        {
+            "text": "Bestes Spiel 2013? _, natürlich.",
+            "pick": 1
+        },
+        {
+            "text": "IMMA FIRIN MAH _!",
+            "pick": 1
+        },
+        {
+            "text": "Wie hältst du deinen Hund davon ab, dein Bein zu rammeln?",
+            "pick": 1
+        },
+        {
+            "text": "_ klingt nach einer großartigen alternativen Rockband.",
+            "pick": 1
+        },
+        {
+            "text": "_. Alles andere ist unzivilisiert.",
+            "pick": 1
+        },
+        {
+            "text": "Von meiner gesamten Sammlung ist mein wertvollster Besitz _.",
+            "pick": 1
+        },
+        {
+            "text": "_! Extra für Kinder gemacht.",
+            "pick": 1
+        },
+        {
+            "text": "Mama, ich schwöre! Trotz seines Namens ist _ KEIN Porno!",
+            "pick": 1
+        },
+        {
+            "text": "Die japanische Regierung hat kürzlich ein Gesetz verabschiedet, das effektiv alle Formen von _ verbietet.",
+            "pick": 1
+        },
+        {
+            "text": "Ich kann nicht glauben, dass ich den größten Teil meines Gehaltsschecks für _ ausgegeben habe.",
+            "pick": 1
+        },
+        {
+            "text": "_ ist der berühmteste Deutsche.",
+            "pick": 1
+        },
+        {
+            "text": "Ich schreibe Fanfiction Pairing über  _ mit _.",
+            "pick": 2
+        },
+        {
+            "text": "_? Das ist ein DLC-Item.",
+            "pick": 1
+        },
+        {
+            "text": "Oh Gott, ich kann nicht glauben, dass wir _ bei PAX gegessen haben.",
+            "pick": 1
+        },
+        {
+            "text": "Nurin Korea kannst du _ sehen.",
+            "pick": 1
+        },
+        {
+            "text": "Betrunken Monopoly spielen führt zu _.",
+            "pick": 1
+        },
+        {
+            "text": "_ ist der Name meiner _ Coverband.",
+            "pick": 2
+        },
+        {
+            "text": "Die heilige Dreieinigkeit: _, _ und _!",
+            "pick": 3
+        },
+        {
+            "text": "Gelobt sei _!",
+            "pick": 1
+        },
+        {
+            "text": "Was funktioniert so nicht?",
+            "pick": 1
+        },
+        {
+            "text": "Was kannst du immer zwischen den Sofakissen finden?",
+            "pick": 1
+        },
+        {
+            "text": "Was zum Teufel ist los mit dir?",
+            "pick": 1
+        },
+        {
+            "text": "Was ist das nächste große Kickstarter-Projekt?",
+            "pick": 1
+        },
+        {
+            "text": "Was ist der Sinn des Lebens?",
+            "pick": 1
+        },
+        {
+            "text": "Mein Leben für _!",
+            "pick": 1
+        },
+        {
+            "text": "Als ich ein Kind war, hatte ich in meiner Brotbox nur drei _ und _.",
+            "pick": 2
+        },
+        {
+            "text": "Bei seinem letzten Atemzug sandte _ einen Hilferuf aus. Ein Haufen von _ hörte den Schrei.",
+            "pick": 2
+        },
+        {
+            "text": "Mit Demokraten und Republikanern in einer hitzigen Debatte wurde die Wahl von der _ - Partei gewonnen.",
+            "pick": 1
+        },
+        {
+            "text": "Wer hätte gedacht, dass die Alien-Invasion leicht durch _ vereitelt werden könnte.",
+            "pick": 1
+        },
+        {
+            "text": "Wenn du jemanden auf der Welt ficken könntest, wen würdest du wählen?",
+            "pick": 1
+        }
+    ],
+    "whiteCards": [
+        "Der größte, schwärzeste Schwanz",
+        "Doctor Who",
+        "Jumanji",
+        "Peanutbutter Jelly Time",
+        "VERNICHTEN!",
+        "Wards.",
+        "Fick dich, ich bin ein Bär.",
+        "K-Pop.",
+        "Gangnam Style bei einer Beerdigung.",
+        "DIESER VERDAMMTE BATMAN.",
+        "Die zerplatzten Träume einer Stripperin.",
+        "Eine Axt durch die Luft schleudern, während man es einem Bären in den Arsch macht.",
+        "125% der empfohlenen Tagesmenge Schwänze.",
+        "Ein Molotowcocktail.",
+        "Aber nur die Spitze!",
+        "Eine Taschenmuschi.",
+        "WISSENSCHAFT !! 1!",
+        "Oma Höschen.",
+        "Eine Tüte voll Schwänze.",
+        "Seebären.",
+        "Genitalwarzen.",
+        "Hosenschlangen.",
+        "Ein skeptischer Sheriff.",
+        "Die Macht des Greyskull.",
+        "Eine tote Nutte.",
+        "PEEEEEEENIIIS.",
+        "Trinken im Live-Fernsehen.",
+        "Obligatorische Sexparty.",
+        "League of Legends.",
+        "Mit Ziegelsteinen spielen.",
+        "Wackelaugen auf einen Schwanz kleben.",
+        "Mit den Genitalien tippen.",
+        "Piraten Nutten.",
+        "Miss Piggy.",
+        "Der Prinz von Bel-Air.",
+        "Schicke Tampons.",
+        "Der Karten Czar.",
+        "Ein Säufer.",
+        "Krankhafte Fettleibigkeit.",
+        "Das Saarland.",
+        "Eine MILF .",
+        "Das Ende der Welt.",
+        "Knuddels.de.",
+        "Pralle Männertitten.",
+        "Gelber Schnee.",
+        "Boobs.",
+        "DEN GANZEN BAUERNHOF STEHLEN.",
+        "Neben kleinen Leuten stehen, um sie als Armlehnen zu benutzen.",
+        "Zu spät zu erkennen, dass kein Toilettenpapier mehr da ist.",
+        "Nutten und Koks.",
+        "Whiskey.",
+        "Ein Mütterfickender Vampir.",
+        "Etepetete.",
+        "Hundebabys.",
+        "Tentakelvergewaltigung.",
+        "Illegale Einwanderer.",
+        "Skullcrusher Mountain.",
+        "FUNimation.",
+        "Dick und doof.",
+        "Eine Ladung Kokain.",
+        "Ein Facebook-Stalker.",
+        "Reden wie ein Pirat.",
+        "Ein Anruf um 3 Uhr morgens.",
+        "Rule 34.",
+        "Narutards.",
+        "Tote Catgirls.",
+        "Der kleinste, weißeste Schwanz.",
+        "Nonnen.",
+        "Bettnässen.",
+        "Ezreals heißer zucker - Arsch.",
+        "Hello Kitty.",
+        "Huren.",
+        "Vor Mittag betrinken.",
+        "Clown-Stripperinnen.",
+        "Von Kermit verprügelt werden.",
+        "Ein Entsafter.",
+        "Beer Pong.",
+        "Scharfe Soße als Gleitmittel verwenden.",
+        "Vorzeitige Ejakulation.",
+        "Kräftig, deftig, würzig, gut.",
+        "Smooth Jazz.",
+        "Ein blutender Anus.",
+        "Ein Löffel, der zu groß ist.",
+        "Sowjetrußland.",
+        "Nicht schwanger sein.",
+        "Indiana Jones.",
+        "Hentai.",
+        "Chirurg Simulator 2013.",
+        "Tengen Toppa Gurren Lagann.",
+        "Mewtwo.",
+        "Ein Schulamoklauf.",
+        "Cowboy Bebop.",
+        "Fullmetal Alchemist.",
+        "Futanari.",
+        "Mr. Hankey, der Weihnachtskot.",
+        "Vash the Stampede.",
+        "Zwei Zwerge, die sich als eine Person ausgeben.",
+        "Hauptsache Alessio gehts gut.",
+        "Die Bibel.",
+        "Naruto.",
+        "Ein riesiger Pferdeschwanz.",
+        "Minecraft.",
+        "Ein nasses Papiertuch.",
+        "Xyzzy spielt mit Geschlechterrollen herum.",
+        "Four Loko.",
+        "Mario ermordet Sonic brutal.",
+        "Sonic ermordet Mario brutal.",
+        "Idioten, die nicht zu bemerken scheinen, dass Avatar: The Last Airbender nicht wirklich ein Anime ist.",
+        "Ein dicker Mann mittleren Alters in einem Sailor Moon-Kostüm.",
+        "Der größte Zwerg der Welt.",
+        "Yu-Gi -Oh! Die gekürzte Version.",
+        "OVER 9000 !!",
+        "Aya Hirano bei einem Gang-Bang mit ihrer gesamten Band.",
+        "Ein Saftkarton.",
+        "Sex.",
+        "\"... \"",
+        "Pacific Rim.",
+        "Reddit.",
+        "Twitter Accounts.",
+        "Ein Mindfuck.",
+        "Olmeken.",
+        "Ein \"Hello Kitty!\" Vibrator.",
+        "Lesen des Handbuchs",
+        "Tetris-Musik",
+        "Das Death Note",
+        "YouTube",
+        "Südkorea",
+        "Von einem Titanen gefressen werden",
+        "Ein Brunnen voll Erbrochenem.",
+        "DeviantArt.",
+        "Der Hare Hare Yukai Tanz.",
+        "Furzwissenschaft.",
+        "Ein großes nasses rosa Laserschwert.",
+        "Sonic the Hedgehog.",
+        "Ein kurzer Moment der Begabung.",
+        "Fick dich, ich mache was ich will.",
+        "FICK DICH, ich bin SPIDERMAN!",
+        "StarFox.",
+        "Der Weihnachtsmann.",
+        "Ein Zooladen.",
+        "Von einem Berglöwen UND einem Grizzly gleichzeitig zerfleischt werden.",
+        "Glenn Beck wird von Zombies auseinandergerissen.",
+        "Zu dumm sein zum Atmen.",
+        "Eine Wanne Vaseline.",
+        "Schinken?",
+        "Sex mit Fremden.",
+        "Den Penis halbiert bekommen.",
+        "Im wahrsten Sinne des Wortes zur Hölle fahren..",
+        "Heute mal gefroren sein.",
+        "Bienen. Mein Gott.",
+        "Verwandtenheirat.",
+        "KiKA.",
+        "Chuck Norris.",
+        "Meine Mutter.",
+        "Mein Penis fängt Feuer.",
+        "Lesben.",
+        "Ein kleinerer, weißer Schwanz.",
+        "Ein ziemlich epischer Haufen Scheiße.",
+        "Eine Couch, die nach nackten Menschen stinkt.",
+        "Ein schöner kleiner Moment.",
+        "John Madden.",
+        "Bienen!",
+        "Animes schauen, während man high ist.",
+        "Ein Killer Kaninchen.",
+        "Deine Mutter.",
+        "Steck deinen Finger in ihren Arsch.",
+        "Ein winziger weißer Schwanz.",
+        "Ahornsirup.",
+        "Ein Baum.",
+        "Vor den Toren des Weißen Hauses stehen, nackt mit einem Revolver in der Hand.",
+        "Ein Zombiefischer.",
+        "Ein kilometerlanger Penis.",
+        "Eine homoerotische Fanfiction.",
+        "Ein Insider, den nur zwei Leute kennen.",
+        "Lara Croft.",
+        "Anal zerreißen.",
+        "Katholische Priester, die trinken, rauchen und Waffen tragen.",
+        "Strichmännchen-Porno.",
+        "Ein köstliches Baby.",
+        "Der Elefant in deinem Zimmer.",
+        "Ein Arsch- Ei.",
+        "Ein Straßenreinigungssimulator.",
+        "Der böse Videospiel-Nerd.",
+        "Der Nostalgie-Kritiker.",
+        "Der Krafthandschuh.",
+        "Deine jungfräuliche Seele.",
+        "Ein teures Mietkostüm.",
+        "Ein Vogel der ein Pferd fickt",
+        "Ein Was-zur-Hölle-schaue-ich-mir-gerade-an Moment",
+        "Zeitreisen",
+        "Einen Baseball in die Nüsse bekommen",
+        "Eine Hodenuntersuchung",
+        "Redbull",
+        "Überraschungs-Blowjobs",
+        "Space Core.",
+        "Engrish.",
+        "Ein totes Meme.",
+        "Entenjagd",
+        "Twincest.",
+        "DOTA 2.",
+        "Aus Pyongyang verbannt sein.",
+        "Diese eine Episode von CSI.",
+        "Bohrer statt Hände haben.",
+        "Ein asiatischer Schwanz.",
+        "Die verlorene Stadt Atlantis.",
+        "Heilige Dildos.",
+        "George Costanza",
+        "Dr. Phil.",
+        "Ein Polenböller.",
+        "die PS4",
+        "die Wii U",
+        "die SNES",
+        "die NES",
+        "zeig mir deine Titten!",
+        "die SEGA Genesis",
+        "Deinen Sexsklaven danken.",
+        "die PSX",
+        "Der Entenjagdhund",
+        "Aussteigen aus Anime-Pornos.",
+        "Toilettenpapier.",
+        "Abführmittel.",
+        "Nach Nasengold graben.",
+        "Die Teenage Mutant Ninja Turtles.",
+        "Nehmen Sie Platz mit Chris Hansen.",
+        "Ein großer schlaffer Esel-Schwanz.",
+        "Mit dem Partner Schluss machen, indem man ihm auf die Brust kackt während er schläft.",
+        "Dorfkinder."
+    ]
+}

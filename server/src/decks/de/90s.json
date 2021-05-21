@@ -1,0 +1,57 @@
+{
+    "blackCards": [
+        {
+            "text": "Siskel und Ebert haben _ als \"schlecht konzipiert\" und \" schlampig ausgeführt\" geplant.",
+            "pick": 1
+        },
+        {
+            "text": "Up next auf Nickelodeon: \"Clarissa erklärt _.\"",
+            "pick": 1
+        },
+        {
+            "text": "Ob Sie es glauben oder nicht, Jim Carrey kann einen toten Eindruck von _ machen.",
+            "pick": 1
+        },
+        {
+            "text": "Es ist Morphin 'Time! Mastadon! Pterodactyl! Triceratops! Sabertooth Tiger! _!",
+            "pick": 1
+        },
+        {
+            "text": "Ich bin eine Schlampe, ich bin ein Liebhaber , Ich bin ein Kind, ich bin _.",
+            "pick": 1
+        },
+        {
+            "text": "Wie hat Stella ihren Groove zurückbekommen?",
+            "pick": 1
+        },
+        {
+            "text": "Heute Abend auf SNICK: \"Haben Sie Angst vor _?\"",
+            "pick": 1
+        }
+    ],
+    "whiteCards": [
+        "Mehrere Michael Keatons.",
+        "Ein Bus, der explodiert, wenn er unter 50 Meilen pro Stunde fährt .",
+        "Den Schwanz des Präsidenten lutschen.",
+        "Sunny D! Okay!",
+        "Ein Mulatte, ein Albino, eine Mücke und meine Libido.",
+        "Log &trade;.",
+        "Wichsen zu einem 10-Sekunden-RealMedia clip.",
+        "Der Y2K-Bug.",
+        "Deregulierung des Hypothekenmarktes.",
+        "Die Scheiße aus einer Capri-Sonne stechen.",
+        "Nicolas Cages Gesicht tragen.",
+        "Willy befreien.",
+        "Kurt Cobains Tod.",
+        "Der große Cornholio .",
+        "Ich mag dicke Ärsche und kann nicht darüber lügen.",
+        "Schreien \"Frauenpower!\" Und einen hohen Tritt machen.",
+        "Pure Moods, Vol. 1.",
+        "Pizza am Morgen, Pizza am Abend, Pizza zum Abendessen.",
+        "Pamela Andersons Brüste laufen in Zeitlupe.",
+        "Sich in CROSSFIRE &trade verfangen;",
+        "Engel, die sich in etwas anderes einmischen faires Baseballspiel.",
+        "Coole 90er-Jahre-Haare vorne.",
+        "Patti Mayonnaise."
+    ]
+}

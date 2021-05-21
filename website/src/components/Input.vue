@@ -4,16 +4,17 @@
         :placeholder="placeholder"
         :disabled="disabled"
         class="input"
-        :value="value"
-        @input="$emit('input', $event.target.value)"
+        :value="modelValue"
+        @input="$emit('update:modelValue', $event.target.value)"
     >
 </template>
 
 <script>
 export default {
     name: 'Input',
+    emits: ['update:modelValue'],
     props: {
-        value: {
+        modelValue: {
             type: [String, Number],
             default: ''
         },

@@ -1,0 +1,47 @@
+{
+    "blackCards": [
+        {
+            "text": "Air Canada-Richtlinien verbieten jetzt _ in Flugzeugen.",
+            "pick": 1
+        },
+        {
+            "text": "O Kanada, wir stehen auf der Hut vor _.",
+            "pick": 1
+        },
+        {
+            "text": "CTV präsentiert _, ​​die Geschichte von _.",
+            "pick": 2
+        },
+        {
+            "text": "Um ein breiteres Publikum zu erreichen, wurde das Royal Ontario Museum eröffnet eine interaktive Ausstellung über _.",
+            "pick": 1
+        },
+        {
+            "text": "Womit inspiriert die kanadische Regierung ländliche Studenten zum Erfolg?",
+            "pick": 1
+        }
+    ],
+    "whiteCards": [
+        "Poutine .",
+        "Newfies.",
+        "The Official Languages ​​Act. La Loi sur les langues officielles.",
+        "Terry Fox 'Beinprothese.",
+        "The FLQ.",
+        "Canada: America's Hat.",
+        "Don Cherry's Garderobe.",
+        "Das Weiße Haus niederbrennen.",
+        "Heritage-Minuten.",
+        "Homo-Milch.",
+        "Naked News.",
+        "Mr. Dressup.",
+        "Sirup-Sex mit einem Ahornbaum.",
+        "Kanadier sein.",
+        "Snotsicles",
+        "The Famous Five",
+        "Schmirler the Curler",
+        "Stephen Harper",
+        "A Molson Muscle",
+        "The Royal Canadian Mounted Police",
+        "Ein eisiger Handjob aus einem Edmonton Nutte."
+    ]
+}

@@ -1,0 +1,166 @@
+{
+    "blackCards": [
+        {
+            "text": "Wenn Ned Stark _ hätte, hätte er nie _.",
+            "pick": 2
+        },
+        {
+            "text": "Machen Sie sich bereit, _ kommt.",
+            "pick": 1
+        },
+        {
+            "text": "Als Gegenleistung für seine Schwester erhielt Viserys _.",
+            "pick": 1
+        },
+        {
+            "text": "Trotz seiner besten Bemühungen füllte König Robert seine Regierungszeit mit _.",
+            "pick": 1
+        },
+        {
+            "text": "_ wurde zum wahren König der sieben Königreiche erklärt.",
+            "pick": 1
+        },
+        {
+            "text": "In _ gewinnen oder verlieren Sie.",
+            "pick": 1
+        },
+        {
+            "text": "Wegen _ wurde Danerys von allen _ genannt.",
+            "pick": 2
+        },
+        {
+            "text": "Ich werde mit _ und nehmen, was mir gehört _.",
+            "pick": 2
+        },
+        {
+            "text": "In Dothraki gibt es kein Wort für _.",
+            "pick": 1
+        },
+        {
+            "text": "Im nächsten Game of Thrones-Buch, George RR Martin sagte _ wird _.",
+            "pick": 2
+        },
+        {
+            "text": "All hail _! King of _!",
+            "pick": 2
+        },
+        {
+            "text": "Ein Lannister zahlt immer _ .",
+            "pick": 1
+        },
+        {
+            "text": "Erste Lektion, klebe sie mit _.",
+            "pick": 1
+        },
+        {
+            "text": "Im Namen von _, zuerst von seinem _.",
+            "pick": 2
+        },
+        {
+            "text": "Die Dinge, die ich für _ tue.",
+            "pick": 1
+        },
+        {
+            "text": "Hodor sagt immer nur _.",
+            "pick": 1
+        },
+        {
+            "text": "Das nächste Game of Thrones-Buch wird erscheinen Ich werde _ of _.",
+            "pick": 2
+        },
+        {
+            "text": "Eine Dothraki-Hochzeit ohne _ wird als langweilige Angelegenheit angesehen.",
+            "pick": 1
+        },
+        {
+            "text": "After I. wurde gefangen, ich wurde gezwungen, mich der Nachtwache anzuschließen.",
+            "pick": 1
+        },
+        {
+            "text": "Ein Mann ohne _ ist ein Mann ohne Macht.",
+            "pick": 1
+        }
+    ],
+    "whiteCards": [
+        "Jaime Lannister, 'The Kingslayer'.",
+        "Cersei Lannister, die Königin.",
+        "Joffrey Baratheon, der Prinz.",
+        "Tyrion Lannister, 'The Imp'.",
+        "Ned Stark, Lord of Winterfell.",
+        "Warden of the North.",
+        "Robb Stark, Erbe von Winterfell.",
+        "Jon Snow, der Bastard.",
+        "Catelyn Stark, Lady von Winterfell.",
+        "Sansa Stark, verlobt mit Prinz Joffrey.",
+        "Arya Stark.",
+        "Bran Stark.",
+        "Hodor.",
+        "Die Mauer.",
+        "Die Nachtwache.",
+        "Danerys Targaryen, Khaleesi vom Dothraki.",
+        "Theon Greyjoy, Ned Starks jugendliche Gemeinde.",
+        "Peter 'Littlefinger' Baelish.",
+        "Lord Varys, die Spinne.",
+        "König Robert Baratheon, Erster seines Namens, König der Andalen und der Ersten Männer, Lord Beschützer des Reiches.",
+        "Khal Drogo, Dothraki Horse Lord.",
+        "The Iron Throne.",
+        "HODOR !!",
+        "Ros, die rothaarige Hure.",
+        "Winterfell",
+        "Kings Landing",
+        "The North",
+        "Beyond the Wall",
+        "Westeros",
+        "The Seven Kingdoms",
+        "Direwolves",
+        "White Walkers.",
+        "Dragons.",
+        "Der Winter kommt.",
+        "Die alten und die neuen Götter.",
+        "Inzest, heißer Zwilling bei Zwillingsaktion.",
+        "House Stark.",
+        "House Lannister.",
+        "House Targaryen.",
+        "George RR Martin.",
+        "Unentgeltliche Nacktheit, so wie nur HBO &reg; kann sorgen.",
+        "Wirf einen Jungen aus einem Fenster, um Inzest zu vertuschen.",
+        "Tritt der Nachtwache bei.",
+        "Verkaufe deine Schwester an Dothraki-Nomaden.",
+        "Ein Bordell betreiben, was besser ist als Schiffe zu besitzen.",
+        "Den Kontinent mit Drachen erobern.",
+        "Einen missbräuchlichen König heiraten müssen.",
+        "Einen Mann enthaupten, weil er keine Ehre hat.",
+        "Erklären komplizierte Verschwörung mit vielen nackten Frauen.",
+        "Trusting Littlefinger.",
+        "Den Prinzen zu lernen ist ein Bastard und das Produkt von Inzest.",
+        "Slapping Joffrey. Wiederholt.",
+        "Schneiden Sie Ihren Feinden die Köpfe ab und montieren Sie sie auf Stacheln.",
+        "Erziehen Sie den Bastardsohn Ihres Mannes als Ihren eigenen.",
+        "Fragen Sie ein junges Mädchen, ob sie noch blutet.",
+        "Machen Sie Millionen von Fans Weinen Sie, indem Sie geliebte Charaktere töten.",
+        "Hodoring.",
+        "Reiten Sie los, um sich der Rebellion Ihres besten Freundes anzuschließen.",
+        "Stillen Sie Ihren gruseligen Sohn, bis er 9 Jahre alt ist.",
+        "Einen riesigen Wolf als Haustier haben.",
+        "Enthauptet auf den Stufen des Sept von Baelor.",
+        "Von einem Mitglied der Königsgarde getötet.",
+        "Den eisernen Thron mit allen erforderlichen Mitteln erobert.",
+        "Errichtete eine 700 Fuß hohe Mauer, um schlechte Dinge fernzuhalten.",
+        "Geboren als Bastard.",
+        "Von White Walkers geschlachtet und in einem kunstvollen Muster arrangiert.",
+        "Als Hand des Königs ernannt.",
+        "Habe genug Wolfsjungen für alle Kinder gefunden.",
+        "Von deinem Bruder gestreichelt Ihr Hochzeitstag.",
+        "Zur falschen Zeit die falsche Wand erklommen.",
+        "Begann eine sinnlose Rache mit einem anderen Haus.",
+        "Erhöhte Bewertungen durch die Verwendung von unentgeltlicher Nacktheit.",
+        "Getragen von Hodor.",
+        "Verärgert von der Mauer, nur weil.",
+        "Swor Ein Eid an die alten und die neuen Götter.",
+        "Brachte einen neuen Baby-Bastard nach Hause, den Ihre Frau hassen kann.",
+        "Verhandelte eine Hochzeit, die niemand mögen wird.",
+        "Ritt einen Drachen, wie ein Boss.",
+        "Geänderte Dinge aus dem Buch, wütende Fans.",
+        "Verbrachte eine ganze Regierungszeit damit, Eber und verdammte Huren zu jagen."
+    ]
+}

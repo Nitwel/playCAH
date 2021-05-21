@@ -56,12 +56,13 @@
 <script lang="ts">
 import { computed, onMounted, ref } from 'vue'
 import packageJson from '../../package.json'
-import {store} from '../store'
-import {emitter} from '../setup'
+import {useStore} from '../store'
+import {emitter, socket} from '../setup'
 
 export default {
     name: 'Home',
     setup() {
+        const store = useStore()
         const showLobbyInput = ref(true)
 
         const version = computed(() => 'v' + packageJson.version || '1.0.0')

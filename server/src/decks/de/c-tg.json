@@ -1,0 +1,634 @@
+{
+    "blackCards": [
+        {
+            "text": "_: _ in der Fiktion, _ auf der Tischplatte.",
+            "pick": 3
+        },
+        {
+            "text": "Als nächstes: Lord Lysanders Farben _.",
+            "pick": 1
+        },
+        {
+            "text": "Ich vertrete _ mit einem gebrauchten _.",
+            "pick": 2
+        },
+        {
+            "text": "Ich bin wütend, wütend auf _.",
+            "pick": 1
+        },
+        {
+            "text": "Die Bürger von Innsmouth sind wirklich _!",
+            "pick": 1
+        },
+        {
+            "text": "_ fällt, jeder stirbt.",
+            "pick": 1
+        },
+        {
+            "text": "Mein GM hat gerade seine Freundin zu einem _ Charakter gemacht. Wie gefickt sind wir?",
+            "pick": 1
+        },
+        {
+            "text": "Wenn Sie ein Kamel kaufen, fügt Crazy Hassan diese Woche nur _ kostenlos hinzu!",
+            "pick": 1
+        },
+        {
+            "text": "Um Elfen herum, beobachte _",
+            "pick": 1
+        },
+        {
+            "text": "Das einzig Gute _ ist ein toter _",
+            "pick": 2
+        },
+        {
+            "text": "... und dann tötete er die Tarasque mit einem _",
+            "pick": 1
+        },
+        {
+            "text": "Es gibt ein _ auf dem Dach.",
+            "pick": 1
+        },
+        {
+            "text": "Worüber werden wir heute streiten?",
+            "pick": 1
+        },
+        {
+            "text": "In Bezug auf Ihr Kapitel haben die Blutraben einen ihrer _to _ gewidmet.",
+            "pick": 2
+        },
+        {
+            "text": "Roll for _.",
+            "pick": 1
+        },
+        {
+            "text": "Ich habe _ heute morgen vorbereitet.",
+            "pick": 1
+        },
+        {
+            "text": "Der Barde hätte uns fast umgebracht, als er zu s rollte educe _.",
+            "pick": 1
+        },
+        {
+            "text": "_ lässt den Paladin fallen",
+            "pick": 1
+        },
+        {
+            "text": "Die Tür zum FLGS öffnet sich und ein _ kommt herein !",
+            "pick": 2
+        },
+        {
+            "text": "GW speichert nicht mehr auf Lager _",
+            "pick": 1
+        },
+        {
+            "text": "Der Preis für _ hat sich verdoppelt!",
+            "pick": 1
+        },
+        {
+            "text": "Du Narr! Sie fielen einem der klassischen Fehler zum Opfer: _.",
+            "pick": 1
+        },
+        {
+            "text": "... und dann zog der Bastard _ heraus und legte es auf den Tisch.",
+            "pick": 1
+        },
+        {
+            "text": "Ich habe eine magische Rakete auf _ geworfen.",
+            "pick": 1
+        },
+        {
+            "text": "Warte! Ich bin ein _! Lassen Sie mich Ihnen von meinem _!",
+            "pick": 2
+        },
+        {
+            "text": "Immer wenn wir _ ausführen, ist es üblich, dass _ für die Pizza der Gruppe bezahlt.",
+            "pick": 2
+        },
+        {
+            "text": "Ich habe FNM immer wieder komisch angesehen, als ich meine neuen Kartenhüllen mitgebracht habe.",
+            "pick": 1
+        },
+        {
+            "text": "Was ist besser als 3D-Frauen?",
+            "pick": 1
+        },
+        {
+            "text": "Nur Fags spielen Mono _.",
+            "pick": 1
+        },
+        {
+            "text": "Das feindliche _ ist unten.",
+            "pick": 1
+        },
+        {
+            "text": "Ach! Hans renn! Es ist das _!",
+            "pick": 1
+        },
+        {
+            "text": "Was ist die Geheimwaffe der BBEG?",
+            "pick": 1
+        },
+        {
+            "text": "_ ist der einzige Weg, um 3.5 zu reparieren.",
+            "pick": 1
+        },
+        {
+            "text": "Was steht heute auf der Tagesordnung für das Treffen der Magiergilde?",
+            "pick": 1
+        },
+        {
+            "text": "Du würfelst 00 für dein magisches Missgeschick und verwandelst dich in _.",
+            "pick": 1
+        },
+        {
+            "text": "_! was war das?",
+            "pick": 1
+        },
+        {
+            "text": "Was wird der Barde nicht ficken?",
+            "pick": 1
+        },
+        {
+            "text": "Der letzte Strohhalm war der Chaotic Neutral Kauf eines Falles von _.",
+            "pick": 1
+        },
+        {
+            "text": "Ihr BBEG ist tatsächlich _!",
+            "pick": 1
+        },
+        {
+            "text": "Das Abenteuer verlief bis zum BBEG gut setze _ in unseren Weg.",
+            "pick": 1
+        },
+        {
+            "text": "Du wurdest von der Hexe verflucht! Dein _ hat sich in ein _ verwandelt!",
+            "pick": 2
+        },
+        {
+            "text": "Ich mag es, mich wie _ zu verkleiden und Leute mit Schaumschwertern zu schlagen.",
+            "pick": 1
+        },
+        {
+            "text": "Berg, schwarzer Lotus, Sack, um _ zu werfen.",
+            "pick": 1
+        },
+        {
+            "text": "_ gefolgt von unentgeltlich _ wurde ich aus meiner letzten Gruppe rausgeschmissen.",
+            "pick": 2
+        },
+        {
+            "text": "Das _ führt meine Klinge.",
+            "pick": 1
+        },
+        {
+            "text": "Fass mich nicht an _!",
+            "pick": 1
+        },
+        {
+            "text": "Der GM hat sein neues _ eingeladen, sich dem Spiel anzuschließen. Sie spielen _.",
+            "pick": 2
+        },
+        {
+            "text": "0 / 10 würde nicht _.",
+            "pick": 1
+        },
+        {
+            "text": "Siehe! Das neueste Spiel von White Wolf: _: the _.",
+            "pick": 2
+        },
+        {
+            "text": "Für unser bevorstehendes FATAL-Spiel habe ich _ als neuen Charakter zugewiesen.",
+            "pick": 1
+        },
+        {
+            "text": "Ich musste ein Parteimitglied töten, als es 2 Stunden durch _ verschwendet wurde.",
+            "pick": 1
+        },
+        {
+            "text": "Wir haben _in im Drachenhort gefunden.",
+            "pick": 1
+        },
+        {
+            "text": "Wir wussten, dass das Spiel einen guten Start hatte, als der GM kein Veto gegen die Entscheidung eines Spielers einlegte, als _ zu spielen.",
+            "pick": 1
+        },
+        {
+            "text": "Meine Kriegers kamen in einer Schachtel mit _!",
+            "pick": 1
+        },
+        {
+            "text": "Elf _ Wat do?",
+            "pick": 1
+        },
+        {
+            "text": "Der nächste Satz von Magic the Gathering dreht sich um _ .",
+            "pick": 1
+        },
+        {
+            "text": "Alle waren überrascht, als sich herausstellte, dass der vertrauenswürdige Berater des Königs _.",
+            "pick": 1
+        },
+        {
+            "text": "Sie und _ müssen aufhören _ mit dem alten Artefakt _.",
+            "pick": 3
+        },
+        {
+            "text": "Der Wachmann sieht besorgt und unbehaglich aus, wie ein Mann, der seinem _ erklären muss, dass seine Träume, _ zu werden, niemals eintreten werden .",
+            "pick": 2
+        },
+        {
+            "text": "_ hat uns gerade gefickt",
+            "pick": 1
+        },
+        {
+            "text": "Meine _ bewegen sich von selbst",
+            "pick": 1
+        },
+        {
+            "text": "Zwergenfestung braucht mehr _",
+            "pick": 1
+        },
+        {
+            "text": "2e oder _",
+            "pick": 1
+        },
+        {
+            "text": "In der düsteren Dunkelheit der fernen Zukunft gibt es nur _",
+            "pick": 1
+        },
+        {
+            "text": "_ . wir brauchen keine anderen Bretter mehr!",
+            "pick": 1
+        },
+        {
+            "text": "Blut für den Blutgott! _ für das _!",
+            "pick": 2
+        },
+        {
+            "text": "Niemals _ auf das Schott schießen!",
+            "pick": 1
+        },
+        {
+            "text": "Macha war bestürzt, als er herausfand, dass _ .",
+            "pick": 1
+        },
+        {
+            "text": "Ich hoffe, niemand merkt, dass ich meinen _ Fetisch in das Spiel eingefügt habe.",
+            "pick": 1
+        },
+        {
+            "text": "_ is the Nur so kann ich 4e vergessen.",
+            "pick": 1
+        },
+        {
+            "text": "Du solltest deinen Barden niemals _ lassen.",
+            "pick": 1
+        },
+        {
+            "text": "Willkommen im _ Quest Thread.",
+            "pick": 1
+        },
+        {
+            "text": "Das Phylakterium des Lichs ist ein _!",
+            "pick": 1
+        },
+        {
+            "text": "Dieser eine Typ in meiner Gruppe würfelt immer chaotisch neutral _.",
+            "pick": 1
+        },
+        {
+            "text": "Dann trank der Barbar aus dem _gefüllten Brunnen",
+            "pick": 1
+        },
+        {
+            "text": "_: Das war eine Sache.",
+            "pick": 1
+        },
+        {
+            "text": "& gt; 3D-Frauen gegenüber _ bevorzugen",
+            "pick": 1
+        },
+        {
+            "text": "Wohin wir gehen, brauchen wir _ nicht siehe",
+            "pick": 1
+        },
+        {
+            "text": "Ich habe heute eine Box bekommen. Was ist da drin? _",
+            "pick": 1
+        },
+        {
+            "text": "Roll _ Umfang",
+            "pick": 1
+        },
+        {
+            "text": "Was ich gemacht habe: _. <br> Was der DM sah: _. <br> Was ich gespielt habe: _",
+            "pick": 3
+        },
+        {
+            "text": "_ vs. _: Critical Hit!",
+            "pick": 2
+        },
+        {
+            "text": "Kann _ aufblühen das Schlachtfeld?",
+            "pick": 1
+        },
+        {
+            "text": "& gt; mfw _.",
+            "pick": 1
+        },
+        {
+            "text": "_? Das ist ULTRA ketzerisch",
+            "pick": 1
+        },
+        {
+            "text": "Also habe ich meine Kapitelabzeichen gemacht _",
+            "pick": 1
+        },
+        {
+            "text": "Sie begegnen einem Pavillon. Sie antworten mit _",
+            "pick": 1
+        },
+        {
+            "text": "D & amp; D: Die 6. Ausgabe wird _ als Hauptrasse darstellen!",
+            "pick": 1
+        },
+        {
+            "text": "Your Natural 1 Summons _.",
+            "pick": 1
+        },
+        {
+            "text": "Es hätte _ gedauert bis ... CREEEEEEEEEED!",
+            "pick": 1
+        }
+    ],
+    "whiteCards": [
+        "Call of Cthulhu",
+        "Korruption der Champions",
+        "/ sp /",
+        "HERESY!",
+        "Kauf von GW-Farben und Grundierungen",
+        "Ihre andere Ehre!",
+        "WAAAAAAAAAAGH!",
+        "Weibliche DM",
+        "Mr. Fred Rogers, gesegnet sei sein Name.",
+        "Das Schiff ist alles. Das Schiff bewegt sich",
+        "Kromgol",
+        "Tyrone the Monk",
+        "METAL BOXES",
+        "100 Baneblades",
+        "Haggard",
+        "Living Saint Inquisitor Grendel",
+        "Abaddon the Armless",
+        "Sigmar",
+        "Gav & amp; Bob",
+        "MR RAGE",
+        "Shub-Niggurath",
+        "Die große Rasse von Yith",
+        "Nyarlathotep",
+        "Cthulhu selbst",
+        "Der König in Gelb",
+        "Azathoth",
+        "Yog-Sothoth",
+        "Deep Ones",
+        "Ein Boot",
+        "Haiyore Nyaruko-San",
+        "Saya no Uta",
+        "Die Königin in Gelb",
+        "Transformationsfetischisten",
+        "Ein Shoggoth",
+        "Shlicktau",
+        "Faptau",
+        "Ruby und Tom",
+        "Pun-Pun",
+        "I CAST FIST!",
+        "Cultist-Chan",
+        "100-Tonnen-Mech der Atlas-Klasse",
+        "Ciaphas Cain",
+        "Oinkbane The Wereboar Assassin",
+        "Orkupy Waaaghstreet",
+        "Bard Papa",
+        "Warhammer 40k",
+        "Warhammer Fantasy",
+        "Bloodbowl",
+        "Games Workshop",
+        "Dungeons and Dragons",
+        "Pathfinder",
+        "Magic: the Gathering",
+        "Yu-Gi-Oh",
+        "Engine Heart",
+        "Pokemon: Tabletop Adventures",
+        "Pok & eacute; mon TCG",
+        "Vampire LARP",
+        "Vampire: The Masquerade",
+        "Esh-Esh",
+        "Hungarian Larper",
+        "Bitches for Thulsa Doom",
+        "Dice Bags",
+        "Conan der Libertäre",
+        "Conan der Bibliothekar",
+        "Blut und Donner!",
+        "Zeig mir deine Ehre",
+        "Blut für den Blutgott!",
+        "Eigentlich eine intelligente Diskussion über Religion.",
+        "DJ Phylactery",
+        "Muscle Wizard",
+        "Sir Bearington",
+        "2 cat",
+        "Scat Fetish",
+        "Wat ersports Fetish",
+        "Blood Ravens",
+        "Ultramarines",
+        "Blast Templates",
+        "Decking from a room in a love hotel",
+        "Teacup Ride",
+        "WO IST FELIX RAMIREZ?",
+        "Dr. Assmarbles",
+        "/ d / M",
+        "Machas Vorrat an Mon-Keigh-Unanständigkeiten",
+        "Ein taktisches Genie",
+        "Brennende Schicksalspunkte zum Überleben",
+        "Umgang mit Fleischschäden",
+        "Unterrichten des Neulings",
+        "über DAS SYSTEM.",
+        "Einen Spionage-Moment haben.",
+        "America-san.",
+        "Doomrider und sein Kokain",
+        "Die Freundin des GM",
+        "Vectron, sein Name wird gelobt.",
+        "Vectrons freundliche Klaue.",
+        "Dein spiritueller Liege, Matt Ward",
+        "Skub",
+        "Dorfs",
+        "THAC0",
+        "- 4 str",
+        "Lenore",
+        "Fucking kender",
+        "TIIIIIMMMME WIIIIZZZZAAAAARRRDDDDs!",
+        "Overpowered katanas",
+        "Getting \"Squatted\"",
+        "Rolling Straight 1s",
+        "Sexy, kaum legaler Thri-Kreen",
+        "Canon Fanfiction",
+        "AC Guys Glück",
+        "KUUUUUUUBOOOOOOOOO!",
+        "Dicke und luxuriöse Nackenbärte",
+        "Blut für das Blut",
+        "Gott",
+        "The Emprah",
+        "Attacking the Darkness",
+        "Falling Rocks",
+        "Subtle Pigmen",
+        "Elf Vaginas",
+        "GMPC",
+        "An Imperial Titan",
+        "THIN YOUR PAINTS",
+        "Hasser werden hassen",
+        "NONE PURER !!!",
+        "Lofn",
+        "Big Blue Boy",
+        "Fisk Malks",
+        "Madolche?",
+        "Filthy Casual",
+        "Dakkon Motherfucking Blackblade",
+        "Mark Rosewater",
+        "Chimney Imp",
+        "Storm Crow",
+        "Ein magischer Pisswald.",
+        "Aski ng, um ein Pony in einem Game of Thrones-RPG zu spielen.",
+        "Half-Fae-Catboys",
+        "SAN-Verlust",
+        "Monte Cookes ranziger Fursuit",
+        "Kickstarting eines / tg / Homebrews, nur um es zu drehen raus, um Scheiße zu sein.",
+        "Warten auf Zeitzauberer!",
+        "Bedecken Sie sich mit Gebirgstau und rollen Sie durch das FLGS-Badezimmer.",
+        "Enuff Dakka",
+        "Muckin 'about",
+        "Caster Edition Fanboys.",
+        "Deep Rot",
+        "Eine Armee aus Angüssen",
+        "d4 Caltrops",
+        "Xeno-Abschaum",
+        "Fleischbrot",
+        "Dekanter einer endlosen Wasserrakete",
+        "DRAGON DILDOS",
+        "Joshua - die Verkörperung des männlichen Selbsthasses",
+        "Necronomicon",
+        "Eine Vagina voller Spinnen",
+        "Eine Erstausgabe von FATAL",
+        "DC 80 Escape Artist Check",
+        "Ein Bär in Verkleidung",
+        "Mise.",
+        "Crawdaddy.",
+        "Kinderkartenspiele",
+        "Kartenspiele auf Motorrädern.",
+        "Virgin Spike.",
+        "Choo choo, Motherfucker.",
+        "Jace: the Wallet Sculptor.",
+        "Grimmige dunkle Dunkelheit, die grimmig ist.",
+        "Kord",
+        "Queen of Blades.",
+        "Ein Roboter-Ninja-Catgirl-Mädchen",
+        "Bitte nehmen Sie die Gegenstände nicht mit.",
+        "Hypercube",
+        "Ein fallender Paladin",
+        "Boxcars",
+        "A Natural 20",
+        "Fahren des Jund-Zuges mit Vollgas.",
+        "E. dition wars.",
+        "Eine Eisenbahn ohne Ende.",
+        "Abschied von Exodia.",
+        "Frost Giants",
+        "Verherrlichte Rollenspiele",
+        "Für die Geschichte spielen",
+        "Metagaming",
+        "Menschen die THAC0 nicht verstehen.",
+        "Wenn Sie Ihre Privilegienprüfung nicht bestehen und vollen Schaden durch die Atemwaffe des Tumblrdragon erleiden",
+        "Kostenlose Babykunst",
+        "Wenn nur Tom Bombadil einen Fick geben würde.",
+        "Moot",
+        "Untersetzer",
+        "Einen Zeitmoment erklären, wenn das TM etwas Wichtiges sagen will.",
+        "Leute, die THAC0 verwenden.",
+        "Kebab",
+        "Los Tiburon",
+        "CLANG!",
+        "Commissar Fuklaw",
+        "FATAL",
+        "Female",
+        "Space Marines",
+        "Ein Ork, der eine Truhe in einem 10x10-Raum bewacht",
+        "Captcha",
+        "Bad at Magic",
+        "Time Cube-Schach",
+        "Noh",
+        "Tankred Endures",
+        "FOR THE EMPRAH",
+        "CREEEEEEEEEEED!",
+        "Shitposting",
+        "Eine Kobold-Prinzessin",
+        "Scary Spooky Skeletons",
+        "Grognard",
+        "Goblins",
+        "Kein Sinn für richtig und falsch",
+        "Eldrad",
+        "Kharne",
+        "FATE",
+        "Schwester von Kampf gegen lesbische Hebephilia",
+        "Sabbat Warhero",
+        "Squats",
+        "Chaos Spawn",
+        "Scheiße über die Pläne der DM",
+        "Suggesting GURPS",
+        ". Egal was.",
+        "Satanische Rituale und Menschenopfer.",
+        "Monstergirls.",
+        "Alter Mann Henderson.",
+        "Lich",
+        "LOS MAGOOOOOOOOOOOS DEL TIEMPOOOOOOOOOO!",
+        "Explosive Runen",
+        "Eine Tüte voller tragbarer Löcher",
+        "Ein Meisterschwert",
+        "Druidische Geheimnisse",
+        "Zauberjammer",
+        "Lady of Pain",
+        "Pelor",
+        "Ein buchstäblicher schwarzer Ritter",
+        "Ein buchstäblicher weißer Ritter",
+        "Mein magisches Reich",
+        "Der MacGuffin",
+        "Spess mehrines",
+        "Paladin",
+        "Ein verdammter Zauberer sein",
+        "Surf ninjas",
+        "Eine Windel mit Flammenwerfer",
+        "Fa / tg / uy",
+        "Sexbots",
+        "Peasant Railguns",
+        "That Guy",
+        "Chaotic Randumb",
+        "Your FLGS",
+        "Laughing Eldar",
+        "Goddamn Magpies",
+        "Roll-Play",
+        "Metal Boxes",
+        "Diplomatie",
+        "LIIVI",
+        "Das DM",
+        "Ein großer, schwarzer Ritter",
+        "Ein größerer, schwärzerer Ritter",
+        "Der größte, schwärzeste Ritter",
+        "Brogan",
+        "stat me",
+        "/ co /",
+        "/ d /",
+        "/ x /",
+        "The Whizzard",
+        "Mary Sue",
+        "Crazy Hassan",
+        "& gt; BLAM",
+        "Gork and Mork",
+        "Hour lange Questabenteuer über Omegle",
+        "Überspringe den Bullshit und gehe direkt zum Schlagen",
+        "Anthropomorphismus in 40K"
+    ]
+}

@@ -1,0 +1,193 @@
+{
+    "blackCards": [
+        {
+            "text": "Hey, Susie. Ich weiß, dein Job ist _, aber kannst du mich einfach packen _? Danke.",
+            "pick": 2
+        },
+        {
+            "text": "Diesen Monat in Cosmo: wie man seinem Mann _ auf Kosten von _ gibt.",
+            "pick": 2
+        },
+        {
+            "text": "Bist du da, Gott? Ich bin es, _",
+            "pick": 1
+        },
+        {
+            "text": "50 Shades of _.",
+            "pick": 1
+        },
+        {
+            "text": "Es ist keine Länge, es ist _.",
+            "pick": 1
+        },
+        {
+            "text": "Whatever, Peeta. Du wirst meinen Kampf mit _ nie verstehen.",
+            "pick": 1
+        },
+        {
+            "text": "Männer sind von _, Frauen sind von _.",
+            "pick": 2
+        },
+        {
+            "text": "Warum hasst die Komen-Stiftung geplante Elternschaft?",
+            "pick": 1
+        },
+        {
+            "text": "Mathe ist schwer. Los geht's _!",
+            "pick": 1
+        },
+        {
+            "text": "Der neueste Vorschlag in der texanischen Legislative ist es, Frauen _ wegzunehmen.",
+            "pick": 1
+        },
+        {
+            "text": "Wenn es Ihnen nichts ausmacht, wie * haben * Lesben Sex?",
+            "pick": 1
+        },
+        {
+            "text": "In ihrem nächsten Romcom spielt Katherine Heigl eine Frau, die sich in das _ ihres Chefs verliebt.",
+            "pick": 1
+        },
+        {
+            "text": "Die Pantone-Farbe des Jahres ist inspiriert von _.",
+            "pick": 1
+        },
+        {
+            "text": "Was ist Olivia Popes Geheimnis, um Rotweinflecken von Weiß zu entfernen? Kleidung?",
+            "pick": 1
+        },
+        {
+            "text": "Warum genau war Alanis so sauer auf Onkel Joey?",
+            "pick": 1
+        },
+        {
+            "text": "Warum schicken mich Männer im Internet Bilder von _?",
+            "pick": 1
+        },
+        {
+            "text": "Was ist meine bevorzugte Waffe im \"Krieg gegen Frauen\"?",
+            "pick": 1
+        },
+        {
+            "text": "What's Seth MacFarlanes Problem?",
+            "pick": 1
+        },
+        {
+            "text": "Ich musste mich fragen: War es Mr. Big oder war es _?",
+            "pick": 1
+        },
+        {
+            "text": "Was ist in meinen BH gefallen?",
+            "pick": 1
+        },
+        {
+            "text": "Was ist meine bevorzugte Verhütungsmethode?",
+            "pick": 1
+        },
+        {
+            "text": "Sofia Coppolas neuer Film konzentriert sich auf eine wohlhabende junge weiße Frau, die sich durch _.",
+            "pick": 1
+        },
+        {
+            "text": "_: das Lied von Tori Amos, das mein Leben verändert hat entfremdet fühlt.",
+            "pick": 1
+        },
+        {
+            "text": "Etwas Altes, etwas Neues, etwas Geliehenes und _.",
+            "pick": 1
+        },
+        {
+            "text": "Warum können wir keine schönen Dinge haben?",
+            "pick": 1
+        }
+    ],
+    "whiteCards": [
+        "77 Cent auf den Dollar verdienen (es sei denn, Sie sind Latina).",
+        "Inspirational Dove Schokoladenverpackungen.",
+        "Masturbieren zu Ty Pennington.",
+        "So tun, als würden Sie dieses Brautjungfernkleid wieder tragen.",
+        "Mansplaining.",
+        "Beyonce Denkstück s.",
+        "Gabby Giffords 'physikalische Therapie.",
+        "Weibliche Genitalverstümmelung.",
+        "Wenn der Tampon zu niedrig ist und Sie ihn bei jedem Schritt spüren.",
+        "Ein Witz, der für Frauen zu lustig ist, um ihn zu verstehen.",
+        "Meryl Streep Selfies.",
+        "Hillary Hündin schlägt Bill mit einem gefrorenen Thunfisch.",
+        "The Bechdel Test.",
+        "Staphylokokkeninfektionen durch schmutzige Nagelstudios.",
+        "Stalking Hochzeitsfotos auf Facebook, leise weinen.",
+        "Emma Goldman den ganzen Motherfucker niederbrennen.",
+        "Duschen, die nach Regen riechen.",
+        "Rosa Parks 'Rücksitz.",
+        "Verlobungsfotos auf Bahngleisen.",
+        "Ersticken an der Asche von Gloria Steinems BHs.",
+        "Die Kälte , harte Wahrheit, die noch keine Lesbe geschert hat.",
+        "Mach deine Kegel bei der Arbeit.",
+        "Misandry.",
+        "Abtreibung Barbie.",
+        "Sag einem Straßenschänder \"Weißt du was? Ich werde dich </ i> umhauen. \"",
+        "Peggy Olsons Halsabschneider-Ambitionen.",
+        "Ein Quickie mit Rachel Maddow im grünen Raum.",
+        "Sheryl Sandberg zwangsernährt die Seiten von Lean In, eins nach dem anderen.",
+        "Emma Watson, Emma Stone, EMMA THOMPSON BITCHES.",
+        "Müllcontainer voller wunderlicher Save-the-Date-Magnete.",
+        "Die Folterkammer, in der Kathryn Bigelow James Cameron aufbewahrt.",
+        "Ein detaillierter Vajazzling von Van Gohs Sternennacht.",
+        "Hör auf, mich so zu tun, als würde ich mich um deine Hochzeit kümmern, DARLA.",
+        "The Chub Rub.",
+        "Kinnhaare, die du so tust, als hättest du nicht.",
+        "Ein stark formulierter Brief an Netflix fordern die Hinzufügung von \"The Good Wife\".",
+        "Verdoppeln auf Sport-BHs.",
+        "Wenn ein Hund Ihren Schritt riecht und Sie genau wissen, warum.",
+        "Malalas Schusswunden.",
+        "Stillen, wenn ein Fremder Baby weint im Zug.",
+        "Ein neues Kochbuch von Sylvia Plath.",
+        "Weinen in der Umkleidekabine während der Bikini-Saison.",
+        "Essen der gesamten Tasche.",
+        "Verbrühen von heißem Wachs genau dort auf Ihren Schamlippen.",
+        "Der G-Punkt, der Y-Punkt, der andere Punkt, den du erfunden hast verwirren Sie Ihren Partner.",
+        "Der unendliche Vorrat an gefrorenem Käsekuchen der Goldenen Mädchen.",
+        "Unterbrust wie ranzige Milch.",
+        "Ich frage mich, ob Ihr Mädchen, das in Hermine verknallt ist, Pädophilie darstellt. \" 18. Grün im Augusta National Golf Club.",
+        "Ein brauner Fleck, bei dem es sich wahrscheinlich genauso um Periodenblut oder Schokolade handelt.",
+        "Ein handgehäkelter Diva Cup-Koffer von Etsy.",
+        "Ihr gigantischer Schwarm auf Jenna Lyons.",
+        "Ein One-Way-Ticket nach Steubenville.",
+        "Ein 4-Wege-Mieder mit Alexander Skarsgard, Ian Somerhalder und David Boreanaz.",
+        "Michelle Rodriguez mit dem Finger schlagen.",
+        "Prinzessin Aurora verschlingt das noch schlagende Herz von Bösartig.",
+        "Eine tränenbefleckte Kopie von Reviving Ophelia.",
+        "Eine frauenfeindliche Dystopie in einer nicht allzu weit entfernten WAIT A MINUTE.",
+        "Färben Sie Ihre Haare rot wie Angela Chase.",
+        "Daenerys Targaryens Feuerspucken vajayjay.",
+        "Klicken Sie ärgerlich wie auf die Urlaubsfotos Ihres Chefs.",
+        "Informieren Sie ruhig Ihr Datum, dass Sie die Infield Fly-Regel besser verstehen als er.",
+        "Tina Fey und Amy Poehler machen auf einem Stapel Bitch-Magazine rum.",
+        "Nur bis zum Knie rasieren.",
+        "Meredith Greys Schlampenphase.",
+        "Schändliche Kindheitserinnerungen daran, das Rollstuhlmädchen zu beneiden, das die ganze Aufmerksamkeit auf sich gezogen hat.",
+        "Ich wünschte, das Baby im Flugzeug würde sterben.",
+        "Zärtlich dominierend Onkel Jesse von hinten.",
+        "Stolpern über David Wright, der als Judy Garland im East Village auftritt.",
+        "Auf sich selbst urinieren, um einen Angriff zu verhindern .",
+        "Wenn ein FOX-Nachrichtensprecher kausal auf \"ebonics\" verweist.",
+        "Von den Property Brothers auf einer benutzerdefinierten Granitplatte DPed.",
+        "Im Vergleich zu einem Cathy-Cartoon auf Metafilter.",
+        "Kim Kardashians Plazenta banh mi .",
+        "Bitten Sie Gilbert Gottfried, beim Sex die Iago-Stimme zu spielen.",
+        "Beobachten Sie, wie Bethenny Frankel in einem Meer vorgemischter SkinnyGirl-Cocktails ums Leben kämpft.",
+        "Eine alternative Version des Washington Monument, die irgendwie aussieht eine Vagina.",
+        "Erzählen Sie Pacey Ihre innersten Geheimnisse in einem Kanu unter den Sternen von Capeside.",
+        "Die blaue Flüssigkeit von Tam pon Werbespots.",
+        "Patti Stangers Schmucklinie.",
+        "# Solidarität ist für weiße Frauen.",
+        "Eine Mahnwache bei Kerzenlicht für Nicole Brown Smith.",
+        "Sexuelle Fantasien mit Mindy Lahiri und einem üppigen Kaffeekuchen.",
+        "Tweeting Cory Booker darüber Kerl, der hinter dir geht.",
+        "Eine geschlechtsneutrale Babymitteilung mit Eulenmotiven.",
+        "Die einzige Frau im Büro für sexuelle Belästigung sein.",
+        "Larry Summers immer schwierigere mathematische Fragen stellen, bis Bar und Mat Mitzvahs werden als gleich wichtig angesehen.",
+        "Wladimir Putin mit Activia vollstopfen, bis er Russlands Homophobie beseitigt."
+    ]
+}

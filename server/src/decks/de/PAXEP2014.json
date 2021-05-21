@@ -1,0 +1,22 @@
+{
+    "blackCards": [
+        {
+            "text": "Lassen Sie mich Ihnen von meinem neuen Startup erzählen. Es ist im Grunde _, aber für _.",
+            "pick": 2
+        },
+        {
+            "text": "_ war das Trauma absolut wert .",
+            "pick": 1
+        }
+    ],
+    "whiteCards": [
+        "Aufregender Inhalt!",
+        "Schokoladenpudding über Bill Cosbys Brustwarzen reiben.",
+        "Was The Rock wirklich kochte.",
+        "Auf einen verdammten Gott treten verdammt 'LEGO.",
+        "All diese Flüssigkeit in meinem Mund.",
+        "Einem Delphin einen Handjob für die Wissenschaft geben.",
+        "Hodor.",
+        "Ein Boden, der buchstäblich aus Lava besteht."
+    ]
+}

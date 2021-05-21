@@ -1,0 +1,584 @@
+{
+    "blackCards": [
+        {
+            "text": "Wer ist ein Arschloch?",
+            "pick": 1
+        },
+        {
+            "text": "Hör dir das _ auf dieser Scheiße an.",
+            "pick": 1
+        },
+        {
+            "text": "Kirby hat zwei ikonische Fähigkeiten: saugen und _.",
+            "pick": 1
+        },
+        {
+            "text": "Jon kann nicht genug von _.",
+            "pick": 1
+        },
+        {
+            "text": "Jon glaubt, dass der wichtigste Teil eines Videospiels _ ist.",
+            "pick": 1
+        },
+        {
+            "text": "Stecke ein Loch in dieses _!",
+            "pick": 1
+        },
+        {
+            "text": "Pikachu, benutze deinen _ Angriff!",
+            "pick": 1
+        },
+        {
+            "text": "Jons Mutter hat ihn angerufen, um ihm von _ zu erzählen.",
+            "pick": 1
+        },
+        {
+            "text": "Echtes Gespräch? _.",
+            "pick": 1
+        },
+        {
+            "text": "Jon und Arin gewinnen! Sie erkennen, dass _ wichtiger ist.",
+            "pick": 1
+        },
+        {
+            "text": "Jon und Arin saugt an _.",
+            "pick": 1
+        },
+        {
+            "text": "Wie viele _ bekommt Mega Man?",
+            "pick": 1
+        },
+        {
+            "text": "Wenn das _ nicht da wäre Ich würde es tun. Aber es ist da, also nicht.",
+            "pick": 1
+        },
+        {
+            "text": "Jon will nur _ berühren.",
+            "pick": 1
+        },
+        {
+            "text": "Jon kann Flugreisen ohne _ nicht überleben.",
+            "pick": 1
+        },
+        {
+            "text": "Es nützt nichts! Take _!",
+            "pick": 1
+        },
+        {
+            "text": "Gibt es irgendetwas? um davon zu profitieren?",
+            "pick": 1
+        },
+        {
+            "text": "Ich war schon wieder _!",
+            "pick": 1
+        },
+        {
+            "text": "Rolling aro und mit der Geschwindigkeit von _!",
+            "pick": 1
+        },
+        {
+            "text": "Dieses Mal haben wir auf Guest Grumps _.",
+            "pick": 1
+        },
+        {
+            "text": "Top fünf Spiele , gehen! 1? Mega Man X. 2-5? _.",
+            "pick": 1
+        },
+        {
+            "text": "Warum ist Steam Train so umstritten?",
+            "pick": 1
+        },
+        {
+            "text": "WOOP WOOP WOOP I'm a _!",
+            "pick": 1
+        },
+        {
+            "text": "Weißt du, welche Fanpost mich jedes Mal am glücklichsten macht, wenn ich sie sehe? Es sind diejenigen, bei denen die Leute sagen: _ .",
+            "pick": 1
+        },
+        {
+            "text": "Du ruinierst meine Integrität! _ wird mich jetzt nicht einstellen!",
+            "pick": 1
+        },
+        {
+            "text": "Nightshade: The Claws of _.",
+            "pick": 1
+        },
+        {
+            "text": "Number one! Mit einer Kugel! Vergrößern Sie das _!",
+            "pick": 1
+        },
+        {
+            "text": "Oh, es ist _!",
+            "pick": 1
+        },
+        {
+            "text": "Ein Stück _ bitte.",
+            "pick": 1
+        },
+        {
+            "text": "Benutze dein _!",
+            "pick": 1
+        },
+        {
+            "text": "Schau dir diesen Kerl an, er ist wie _.",
+            "pick": 1
+        },
+        {
+            "text": "Schau, es ist _!",
+            "pick": 1
+        },
+        {
+            "text": "Das nächste Mal bei Game Grumps, _!",
+            "pick": 1
+        },
+        {
+            "text": "\" Diese neuen T-Shirts werden einige Leben verändern, Arin. \"",
+            "pick": 1
+        },
+        {
+            "text": "... Worüber zum Teufel redet ihr zwei ?!",
+            "pick": 1
+        },
+        {
+            "text": "_. Dies ist wie eine meiner japanischen Animes!",
+            "pick": 1
+        },
+        {
+            "text": "_. Gib das ein, Barry.",
+            "pick": 1
+        },
+        {
+            "text": "_. MILLIONEN SIND TOT !!!",
+            "pick": 1
+        },
+        {
+            "text": "_. Es nützt nichts!",
+            "pick": 1
+        },
+        {
+            "text": "_. Ich habe diese Scheiße nicht!",
+            "pick": 1
+        },
+        {
+            "text": "_? Ten-outta-ten!",
+            "pick": 1
+        },
+        {
+            "text": "Barry, wir brauchen eine Wiederholung auf _.",
+            "pick": 1
+        },
+        {
+            "text": "Barry, füge _ hinzu das Video!",
+            "pick": 1
+        },
+        {
+            "text": "Barry unterhält sich, indem er alte Episoden von _.",
+            "pick": 1
+        },
+        {
+            "text": "Arin reagiert negativ auf _ .",
+            "pick": 1
+        },
+        {
+            "text": "Arin glaubt, dass der wichtigste Teil eines Videospiels _ ist.",
+            "pick": 1
+        },
+        {
+            "text": "Und da war es. ..Kirby hatte endlich das _ der verlorenen Stadt getroffen.",
+            "pick": 1
+        },
+        {
+            "text": "Und dann, als verdammter Trottel, würde ich ein Loch in _.",
+            "pick": 1
+        },
+        {
+            "text": "\"Sie wollen Käsepizza? \" \"Nr. _. \"",
+            "pick": 1
+        },
+        {
+            "text": "Werfen Sie nicht _! Es ist teuer für jemanden!",
+            "pick": 1
+        },
+        {
+            "text": "Alter, echtes Gerede? _.",
+            "pick": 1
+        },
+        {
+            "text": "Ich verkaufe nicht einmal _!",
+            "pick": 1
+        },
+        {
+            "text": "Erinnerst du dich an die Episode, in der Ash ein _ erwischt hat? ?",
+            "pick": 1
+        },
+        {
+            "text": "Ich sage es dir einmal, ich sage es dir zweimal! _ ist gut für die Wirtschaft!",
+            "pick": 1
+        },
+        {
+            "text": "Ich möchte mein _ in sie stecken!",
+            "pick": 1
+        },
+        {
+            "text": "Wie viele Nasenhaare macht _ haben?",
+            "pick": 1
+        },
+        {
+            "text": "Ich kann es sicher nicht ohne dich tun, und ich weiß, dass du es nicht ohne _ tun kannst!",
+            "pick": 1
+        },
+        {
+            "text": "Game Grumps: gesponsert von _.",
+            "pick": 1
+        },
+        {
+            "text": "Gib _ eine Chance! Er wird auf dir wachsen!",
+            "pick": 1
+        },
+        {
+            "text": "Bei meinem ersten Angriff werde ich _ jonglieren, um dich zu beeindrucken.",
+            "pick": 1
+        },
+        {
+            "text": "Scheiße, ich habe ein _ gefunden.",
+            "pick": 1
+        },
+        {
+            "text": "Jeder möchte etwas über mich wissen, aber er weiß nichts über mein _.",
+            "pick": 1
+        },
+        {
+            "text": "Mach mich einmal zum Narren, ich bin verrückt. Betrüge mich zwei Mal? Wie konntest du. Mach mich dreimal zum Narren, du bist offiziell _.",
+            "pick": 1
+        },
+        {
+            "text": "Iss dein _, Sohn.",
+            "pick": 1
+        },
+        {
+            "text": "Egoraptors Verlobte ist eigentlich ein _.",
+            "pick": 1
+        },
+        {
+            "text": "Die neuesten albernen Spielernamen der Grumps sind _ und _.",
+            "pick": 2
+        },
+        {
+            "text": "Wenn du nicht ' Wenn Sie nicht wissen, was _ ist, können Sie nicht zu _ gehen.",
+            "pick": 2
+        },
+        {
+            "text": "In dieser Ecke _; in der anderen Ecke _; es ist Game Grumps VS!",
+            "pick": 2
+        },
+        {
+            "text": "WENN ICH NICHT _ sein kann, bin ich mir sicher, wie es sein kann _ !!",
+            "pick": 2
+        },
+        {
+            "text": "KOMMEN SIE UND _ UND WILLKOMMEN BEI _!",
+            "pick": 2
+        },
+        {
+            "text": "Wenn _ sich aus _ entwickelt hat, warum zum Teufel ist es dann noch _, Alter ?!",
+            "pick": 3
+        },
+        {
+            "text": "_? Ziemlich schlau. _? Ziemlich schlau. _? FUCKING GENIUS !!!!",
+            "pick": 3
+        },
+        {
+            "text": "_ Train!",
+            "pick": 1
+        },
+        {
+            "text": "_ ist nicht Jons Stärke.",
+            "pick": 1
+        },
+        {
+            "text": "_: Besser als Hirschscheiße!",
+            "pick": 1
+        },
+        {
+            "text": "_ WINS!",
+            "pick": 1
+        },
+        {
+            "text": "Echtes Gespräch? Ist das _ _?",
+            "pick": 2
+        },
+        {
+            "text": "Willkommen zurück bei _ _!",
+            "pick": 2
+        },
+        {
+            "text": "JON'S _, ZEIG UNS DEIN _.",
+            "pick": 2
+        },
+        {
+            "text": "Schau dir diesen Arsch an!",
+            "pick": 2
+        },
+        {
+            "text": "Barrys schiere Fähigkeiten bei _ sind unübertroffen.",
+            "pick": 1
+        },
+        {
+            "text": "BARRY! SHOW _ AGAIN!",
+            "pick": 1
+        },
+        {
+            "text": "_ kostet das nicht einmal weniger!",
+            "pick": 1
+        },
+        {
+            "text": "Ich mag das _ nicht Geschmack.",
+            "pick": 1
+        },
+        {
+            "text": "_ ist wirklich gut gealtert.",
+            "pick": 1
+        },
+        {
+            "text": "_ Grumps!",
+            "pick": 1
+        },
+        {
+            "text": "_ ist Jons Lieblingsvideospiel aller Zeiten.",
+            "pick": 1
+        },
+        {
+            "text": "_ is GREAT GREAT GREAT!",
+            "pick": 1
+        },
+        {
+            "text": "Was ist in Arins Kinn zu finden?",
+            "pick": 1
+        },
+        {
+            "text": "Was will ich heute ertragen?",
+            "pick": 1
+        },
+        {
+            "text": "Willkommen im Sonic Team! Wir machen _, denke ich!",
+            "pick": 1
+        },
+        {
+            "text": "Willkommen zurück bei _.",
+            "pick": 1
+        },
+        {
+            "text": "Was ist besser als Skyward Sword?",
+            "pick": 1
+        },
+        {
+            "text": "WAS ZUM FICK IST EIN _?!",
+            "pick": 1
+        },
+        {
+            "text": "Was ist die boopinest Scheiße?",
+            "pick": 1
+        },
+        {
+            "text": "Was bedeuten Mumbos magische Wörter?",
+            "pick": 1
+        },
+        {
+            "text": "Wer hat Jon ersetzt, als er GameGrumps verlassen hat?",
+            "pick": 1
+        },
+        {
+            "text": "Wenn ich in den Spiegel schaue, sehe ich _.",
+            "pick": 1
+        },
+        {
+            "text": "Was ist der wahre Grund, warum Jon gegangen ist?",
+            "pick": 1
+        }
+    ],
+    "whiteCards": [
+        "Pacific Rim.",
+        "Lesen des Handbuchs.",
+        "Furzwissenschaft.",
+        "Sonic the Hedgehog.",
+        "Buchstäblich zur Hölle.",
+        "Ein kleinerer, weißer Schwanz.",
+        "Ein ziemlich epischer Kot.",
+        "Eine Couch, die nach nackten Menschen stinkt.",
+        "Ein schöner kleiner Moment.",
+        "Ein teures Mietkostüm.",
+        "Eine Hodenuntersuchung.",
+        "Von einem verdammt gelähmten Taillow getötet werden.",
+        "Schrecklich Durchfall bekommen on by a owl.",
+        "Fucking ganked.",
+        "Getting diddled again.",
+        "Goofy masturbiert auf den Feldern.",
+        "Goof Troop.",
+        "Beim MAGfest heftig krank werden.",
+        "Auf dem Decke für keine e xplicable Grund.",
+        "Game Grumps VS.",
+        "Game Grumps Remixe.",
+        "Game Feel.",
+        "FUCKING LEGO CARS !!?!",
+        "Von einem Ansturm von Elefanten zensiert werden.",
+        "GeorgLopez.",
+        "Garshstostoles.",
+        "Game Grumps.",
+        "Die demografische Gruppe der augenlosen Mädchen.",
+        "Egofaptor.",
+        "Ende einer Episode über",
+        "Heil ****!",
+        "Dreimal mich zum Narren halten.",
+        "Fuckin '. Larry.",
+        "Schneller Vorlauf.",
+        "Kampf gegen Iblis zum hundertsten Mal.",
+        "Dixon.",
+        "Esel-Arsch Kong.",
+        "Dannys lähmende Kegelsucht.",
+        "Tauchen Sie Ihre Eier in den Sand.",
+        "Den Holocaust essen.",
+        "Ihre Erbsen essen.",
+        "Drakkhens realistische Kampfsequenzen.",
+        "Die Linie in den verdammten Sand ziehen.",
+        "Kirby.",
+        "Zombies töten, indem Sie auf einer Tastaturpistole tippen .",
+        "Zu erfahren, dass Ihr Sohn tot ist, sich aber nicht darum kümmert, weil Sie ihn sowieso nicht wollten.",
+        "Kitty Cat Dance Party.",
+        "Lichtschwert-Kampfschwert.",
+        "Zitrone und Bill.",
+        "Mittelmäßigkeit, as eine Macht.",
+        "Jacques.",
+        "Es nützt nichts.",
+        "Jon gewinnt. AS USUAL.",
+        "JonTron.",
+        "Jon / Arin Slash Fiction.",
+        "Jon's gefühlvoller Gesang.",
+        "Js'keep goin '.",
+        "JonTrons Musiktheaterstimme.",
+        "Ein anhaltender Husten für immer.",
+        "Hubschraubertitten.",
+        "Hepatitis Sea.",
+        "Schlagen Sie eine Nachtschattenpatrone mit Thors Hammer, nur um den Hammer zu brechen.",
+        "Homoerotischer Subtext zwischen zwei erwachsenen Männern, die Videospiele spielen.",
+        "Eishaar.",
+        "Incriminating Footage of Jon.",
+        "Insta-Killing Your Partner mit der Select-Taste.",
+        "Grade A Fleisch.",
+        "Grant Kirkhope.",
+        "Grant Kirkhope's Knackers.",
+        "GREAT! GROSS! GROSS!",
+        "Grep.",
+        "Grumping it.",
+        "G & uuml; f Troop.",
+        "Der halbe Deal zum doppelten Preis!",
+        "Ein schottischer Kerl, der zu schnell spricht.",
+        "Eine Wiederholung von Barry .",
+        "Ein bisschen Dingle-Dang.",
+        "Eine menschenähnliche Fledermaus mit Titten.",
+        "... Metal Gear ?!",
+        "Cumfaggots.",
+        "Die Tutorials und Anweisungen fehlen vollständig.",
+        "Danny Sexbang.",
+        "Dan bekommt Action mit einer von Egoraptors Actionfiguren.",
+        "Chu Chu Rocket.",
+        "Käsepizza.",
+        "Jemanden mit einem Zugunglück vergleichen.",
+        "Chulip.",
+        "Hühnerfinger für Obdachlose kaufen.",
+        "Bumping Butts.",
+        "Catharsis.",
+        "Vorsichtiges Begleiten von Anna.",
+        "Breaking a Basketball Net's Backboard.",
+        "Borderline Narcissism.",
+        "Brian / Frank / Steve / Willard / Jonathan / Michael IV / Michael III / Michael Jordan / Scott.",
+        "In ein Lied einbrechen.",
+        "Barrys Zensurgeräusche.",
+        "Vegetarier werden, dann klinisch depressiv werden.",
+        "Zur Wiederholung gezwungen werden der gleiche Teil des Spiels immer und immer wieder.",
+        "Birdemic.",
+        "Arins großer Floppy-Penis.",
+        "Arins Schwanzschwert.",
+        "Arins Sprachausgabe.",
+        "Barry Kr amer.",
+        "Anne Frank macht einen Striptease.",
+        "Arin gewinnt tatsächlich ein Game Grumps VS.",
+        "Arin Hanson / Egoraptor.",
+        "A Sonic.",
+        "Ein Wal, der ein Robbengeräusch macht.",
+        "Versehentliches Zurücksetzen eines Videospiels.",
+        "Die Erkenntnis, dass Freundschaft wichtiger ist.",
+        "Die seltenste Form von Arin, der Spaß hat.",
+        "Zungenbildung.",
+        "Drei große Füße Vergnügen.",
+        "WAAAAAAAVE LAAAAZEEEEEEER.",
+        "CD-Spieler eingeben und Modellauto bekommen",
+        "World Dick Barf-Syndrom",
+        "In meinen Bananenschuhen herumlaufen",
+        "Moundo",
+        "MomTron",
+        "Nazi von Killyou.",
+        "Naughty Bear.",
+        "Mike Tyson.",
+        "Mega Man.",
+        "Mister Mosquito.",
+        "Duran Duran falsch aussprechen.",
+        "Die Anweisungen des Spiels nicht lesen.",
+        "Die Steuerung nicht kennen an Nickelodeon GUTS.",
+        "Protoman gehorchen und einen Wald niederbrennen.",
+        "Nixon.",
+        "Ninja Sex Party.",
+        "NICHT VERDAMMT!",
+        "NO JON NO.",
+        "PONY.MOV.",
+        "Poopy Butt.",
+        "Poppy Bros.",
+        "Princess Elises Tintenfischgesicht.",
+        "Pause Balls.",
+        "Pelistorm.",
+        "Ein schreckliches Spiel für mehr als hundert Folgen spielen.",
+        "Slaps spielen, um zu brechen eine Krawatte.",
+        "RIDIN 'O. N AUTOS !!!",
+        "Roboter bestellen Käsepizza.",
+        "Rakete. Zum Mond.",
+        "Mit Schallgeschwindigkeit herumrollen.",
+        "Ein Loch in ein Lebkuchenhaus schlagen.",
+        "Bomben aus der Vagina quälen.",
+        "Rassenschwindel.",
+        "Schmutzigen britischen Humor hineinschleichen ein bescheidenes Videospiel über einen Bären und einen Vogel.",
+        "Silver the Hedgehog.",
+        "Signieren und Zerstören einer Kopie von Sonic '06.",
+        "Seven asses.",
+        "Sequelitis.",
+        "Screaming out Whitney Houston",
+        "Ich werde dich immer lieben",
+        "in ursprünglicher Qual.",
+        "Rouges grobes Fledermausgesicht.",
+        "RubberRoss.",
+        "Starrte auf eine Speisekarte, während Ross sein ekelhaftes Gesicht mit Süßigkeiten stopfte.",
+        "Stairfax Temperaturen.",
+        "Sprühen Sie Druckluft mit einem Bitterstoff ins Gesicht und erbrechen Sie anschließend.",
+        "Spice World.",
+        "Sonic '06.",
+        "Solid Snake.",
+        "Snowboarding bergauf",
+        "Schneewittchen",
+        "Saugen",
+        "Blut aus den Titten eines japanischen Mädchens.",
+        "Suzy the Goose",
+        "STRGG",
+        "Kampf gegen Silver the Hedgehog",
+        "Sticky Sap",
+        "Stretch Panic",
+        "Stasis-ing the Drill.",
+        "Steam Train.",
+        "The Higgs Boson.",
+        "The Knuckles Wall Glitch.",
+        "The Chinless Wonder.",
+        "The Goshdangodon.",
+        "The Awesome Series.",
+        "Die Band Egoraptor.",
+        "TENOUTTATEN.",
+        "Dieser Typ."
+    ]
+}

@@ -1,0 +1,40 @@
+{
+    "blackCards": [
+        {
+            "pick": 1,
+            "text": "Donald Trump hat _ für seinen Vizepräsidenten nominiert."
+        },
+        {
+            "pick": 1,
+            "text": "Im Jahr 2019 hat Donald Trump unseren Staatsangehörigen eliminiert Parks, um Platz für _ zu schaffen."
+        },
+        {
+            "pick": 1,
+            "text": "Donald Trumps erste Amtshandlung als Präsident war das Verbot von _."
+        }
+    ],
+    "whiteCards": [
+        "Ein legitimer Grund, Selbstmord zu begehen.",
+        "Eine Abtreibung in der Seitengasse von einem mexikanischen Cyborg-Arzt.",
+        "Weiße Männer der unteren Klasse in fremdenfeindliche Raserei versetzen.",
+        "Wut.",
+        "Ich versuche mich zu erinnern, was Musik ist.",
+        "Durch ein Ödland streifen. von windgeblasenem Müll und verlassenen Autobahnen.",
+        "Millionen gefährlicher, schlecht bezahlter Fertigungsaufträge nach Amerika zurückbringen.",
+        "Ein nagendes Gefühl der Angst.",
+        "Urin trinken, um zu überleben.",
+        "Nuklearer Winter.",
+        "Präsident Donald Trump.",
+        "Lässige Entlassung.",
+        "Extra-Rationen für mein kleines Mädchen.",
+        "Weltkriege 3 bis 5.",
+        "Herauszufinden, dass Demokratie möglicherweise keine so gute Idee ist.",
+        "Milde Belustigung.",
+        "Begrabe meinen einzigen Sohn.",
+        "Die Säuberung der Untreuen.",
+        "Der Versuch, aus diesem Albtraum aufzuwachen.",
+        "Ein Vater und ein Sohn kämpfen gegeneinander ch andere über das letzte Stück Brot.",
+        "Islam illegal machen.",
+        "Verzweifelt Beleidigungen auf Donald Trump schleudern, während er sie in seinen sich schnell ausdehnenden Körper aufnimmt."
+    ]
+}

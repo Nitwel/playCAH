@@ -1,0 +1,440 @@
+{
+    "blackCards": [
+        {
+            "text": "Warum gibt es sechs _, wenn es nur vier _ gibt?",
+            "pick": 2
+        },
+        {
+            "text": "Wie lautet Ihr Paarungsruf?",
+            "pick": 1
+        },
+        {
+            "text": "Was ist das Schlimmste, was jemand vor der Polizei sagen kann?",
+            "pick": 1
+        },
+        {
+            "text": "Was ist das Traurigste, was Sie jemals gesehen haben?",
+            "pick": 1
+        },
+        {
+            "text": "Was ist dein Lieblingsbuch?",
+            "pick": 1
+        },
+        {
+            "text": "_ ist der größte Kanadier.",
+            "pick": 1
+        },
+        {
+            "text": "Was ist der Sinn des Lebens?",
+            "pick": 1
+        },
+        {
+            "text": "Wenn du jemanden auf der Welt ficken könntest, wen würdest du wählen?",
+            "pick": 1
+        },
+        {
+            "text": "Niemand im Büro hat die Bromance zwischen _ und _ erwartet.",
+            "pick": 2
+        },
+        {
+            "text": "Wähle zwei Karten aus, um deinen Teamnamen zu erstellen.",
+            "pick": 2
+        },
+        {
+            "text": "Diese Woche auf VS fordert _ ein Spiel von _ heraus.",
+            "pick": 3
+        },
+        {
+            "text": "Der Krieg ist vorbei. Wir veranstalten eine Parade _s Ehre. _ treibt den Wagen und _ ist verantwortlich für Konfetti.",
+            "pick": 3
+        },
+        {
+            "text": "_ ist das beste _ aller Zeiten.",
+            "pick": 2
+        },
+        {
+            "text": "_ gewinnt! _ ist ein Pferd!",
+            "pick": 2
+        },
+        {
+            "text": "Wenn Sie 1.000.000 USD pro Woche hätten, würden Sie _, aber in th Am nächsten Tag müssten Sie _?",
+            "pick": 2
+        },
+        {
+            "text": "Mein Name ist _, und ich hasse _!",
+            "pick": 2
+        },
+        {
+            "text": "Warum hat Michael Gavin angeschrien?",
+            "pick": 1
+        },
+        {
+            "text": "Würdet ihr mich immer noch mögen, wenn mein Name _ wäre?",
+            "pick": 1
+        },
+        {
+            "text": "Du hast es wie ein _ gegen die Wand geworfen!",
+            "pick": 1
+        },
+        {
+            "text": "_ is _ as dicks.",
+            "pick": 2
+        },
+        {
+            "text": "Wer hat eine Fälschung? Internet-Freundin?",
+            "pick": 1
+        },
+        {
+            "text": "Warum ist Geoff cool?",
+            "pick": 1
+        },
+        {
+            "text": "Warum sind wir hier?",
+            "pick": 1
+        },
+        {
+            "text": "Was ist in Gavins Schreibtisch?",
+            "pick": 1
+        },
+        {
+            "text": "Was wäre dein gewähltes Schlagwort?",
+            "pick": 1
+        },
+        {
+            "text": "Wohin gehört Ray?",
+            "pick": 1
+        },
+        {
+            "text": "Wohin gehen wir zum Mittagessen?",
+            "pick": 1
+        },
+        {
+            "text": "Was macht Caboose wütend?",
+            "pick": 1
+        },
+        {
+            "text": "Welche Geheimnisse liegen hinter Jacks Bart?",
+            "pick": 1
+        },
+        {
+            "text": "Was macht Michael am wütendsten?",
+            "pick": 1
+        },
+        {
+            "text": "Was ist Ihr größtes Feature?",
+            "pick": 1
+        },
+        {
+            "text": "_ ist das schlechteste im Podcast.",
+            "pick": 1
+        },
+        {
+            "text": "_. Das ist top.",
+            "pick": 1
+        },
+        {
+            "text": "Nachdem Burnie bei PAX verschwendet wurde, gab er bekannt, dass \"Ich bin _!\"",
+            "pick": 1
+        },
+        {
+            "text": "Barbara saugt _.",
+            "pick": 1
+        },
+        {
+            "text": "Nahaufnahme meines _.",
+            "pick": 1
+        },
+        {
+            "text": "Komm nach Fort _!",
+            "pick": 1
+        },
+        {
+            "text": "Beschreibe dich in einem Wort / Phrase.",
+            "pick": 1
+        },
+        {
+            "text": "_ ist wahrscheinlich ein Typ der Venusaurier.",
+            "pick": 1
+        },
+        {
+            "text": "Diese Woche auf AHWU, _.",
+            "pick": 1
+        },
+        {
+            "text": "Diese Woche auf Immersion werden wir _ testen.",
+            "pick": 1
+        },
+        {
+            "text": "Das nächste RvB-Cameo wird von _.",
+            "pick": 1
+        },
+        {
+            "text": "Sie haben Ryans geistige Gesundheit in Frage gestellt, nachdem sie _ in seinem Haus gefunden haben.",
+            "pick": 1
+        },
+        {
+            "text": "Was ist Game Night?",
+            "pick": 1
+        },
+        {
+            "text": "Wie heißen Hydranten in England?",
+            "pick": 1
+        },
+        {
+            "text": "Was hört Ryans Kind?",
+            "pick": 1
+        },
+        {
+            "text": "Leute mögen _.",
+            "pick": 1
+        },
+        {
+            "text": "RT Recap, mit _!",
+            "pick": 1
+        },
+        {
+            "text": "Mein _ versucht zu sterben.",
+            "pick": 1
+        },
+        {
+            "text": "Am heutigen Abend spielt die AH-Crew _.",
+            "pick": 1
+        },
+        {
+            "text": "Also ging ich einfach weiter, bis plötzlich _ kam und atta cked me.",
+            "pick": 1
+        },
+        {
+            "text": "Danke an _ für das Titellied dieser Woche.",
+            "pick": 1
+        },
+        {
+            "text": "Shout out to _!",
+            "pick": 1
+        },
+        {
+            "text": "Rufe meine Mutter an. Nannte meinen Teddybär _.",
+            "pick": 1
+        },
+        {
+            "text": "Es ist nicht meine Schuld. Jemand hat mir _ in den Weg gestellt.",
+            "pick": 1
+        },
+        {
+            "text": "Es ist ein _ da draußen.",
+            "pick": 1
+        },
+        {
+            "text": "Wenn du eins machen darfst illegale Sache, was wäre das?",
+            "pick": 1
+        },
+        {
+            "text": "Wenn du Supermacht haben könntest, welche wäre das?",
+            "pick": 1
+        },
+        {
+            "text": "LLLLLLLLLLLLET'S _!",
+            "pick": 1
+        },
+        {
+            "text": "Lindsay könnte _ versauen.",
+            "pick": 1
+        },
+        {
+            "text": "Lass es uns noch einmal machen! Das macht Spaß!",
+            "pick": 1
+        },
+        {
+            "text": "Joel spielt _.",
+            "pick": 1
+        },
+        {
+            "text": "Kämpfe, kämpfe, kämpfe, _?",
+            "pick": 1
+        },
+        {
+            "text": "Alter, ich habe sechzehn _!",
+            "pick": 1
+        },
+        {
+            "text": "Sagt unser Haus \"Wir lieben _?\"",
+            "pick": 1
+        },
+        {
+            "text": "Detective _ is down!",
+            "pick": 1
+        },
+        {
+            "text": "Wenn Jack ein Frosch wäre und du ihn küsstest, in was würde er sich verwandeln?",
+            "pick": 1
+        },
+        {
+            "text": "Ich ersticke dich in meinem _!",
+            "pick": 1
+        },
+        {
+            "text": "Scheiß drauf, ich meine _, richtig?",
+            "pick": 1
+        }
+    ],
+    "whiteCards": [
+        "Eine Tüte Schwänze",
+        "Surgeon Simulator 2013",
+        "Minecraft",
+        "Ein nasses Papiertuch",
+        "ENDERMAN !!!",
+        "Hellrot",
+        "In Ablehnung.",
+        "Enwrong.",
+        "Papa BrownMan.",
+        "Calebs Haus.",
+        "Evil Ryan.",
+        "Randy Savage.",
+        "Gavins Schwanz.",
+        "Tragen Sie Ihre Kopfhörer während einer Podcast-Woche danach rückwärts Woche.",
+        "Schnippeln Sie mit der Bohne.",
+        "Machen Sie sich fertig mit Ihrem Quelch.",
+        "Grand Theft Auto IV.",
+        "Rays nasser Schwamm.",
+        "Bankrott Ihrer Firma wegen eines Kranspiels.",
+        "Eine schwule Höhle . Eine Schwule.",
+        "Montagen, die niemand sehen wird.",
+        "Ohne Knochen.",
+        "Eine Tintenfischorgie.",
+        "Team Magnum Dong.",
+        "300.000 Gamerscore.",
+        "Barbara Dunkelman.",
+        "Lindsay Tuggey.",
+        "Zwei dumme Fotzen.",
+        "RT Confessions.",
+        "Guffpap.",
+        "Smegpot.",
+        "Weil Hündinnen nicht scheißen.",
+        "Start von Muldenkippern von einer unfertigen Brücke.",
+        "Monoray.",
+        "Gavino.",
+        "Monty Oum.",
+        "Mavin Slash Fiction.",
+        "Caleb Denecour.",
+        "Erreichen einer Milliarde Aufrufe auf YouTube.",
+        "Machen Sie eine doppelte Barrel-Rolle und lassen Sie sofort jemanden überfahren.",
+        "Ein Ray-Cam-Masturbationsmoment.",
+        "Gavin angreifen, um ihn vom Gewinnen abzuhalten.",
+        "RT Shorts.",
+        "RT Animated Adventures.",
+        "Mega64.",
+        "Immersion.",
+        "The Frienderman.",
+        "Einen Mann mit seinem eigenen Schädel zu Tode schlagen.",
+        "Mit Huckepack bis zum Tod kämpfen.",
+        "RWBY.",
+        "Scheiße auf den AHWU-Ansager werfen.",
+        "Rot gegen Blau.",
+        "Geoffs Krebs-",
+        "Heilendes Lachen.",
+        "Der Turm der Zuhälter.",
+        "Mit CPR eine Schusswunde am Kopf behandeln.",
+        "Ein Plan, bei dem Grif stirbt.",
+        "Der Versuch, einen fünf Pfund schweren Gummibärchen in einer Sitzung zu essen .",
+        "Frontflip für Stil!",
+        "Pa rkour.",
+        "Blood Gulch.",
+        "Etwas, das oben ist.",
+        "Faffy Waffle.",
+        "Cockbites.",
+        "Den Controller aus den Händen eines Konkurrenten schlagen.",
+        "Zwei Basen in der Mitte einer Kiste Schlucht. Whoop-dee-fuckin'-doo.",
+        "Achievement City",
+        "Fails of the Weak",
+        "Verlust einer Stunde Filmmaterial durch einen kurzen Stromausfall",
+        "Trials PIG",
+        "Achievement HORSE.",
+        "Edgar die Kuh",
+        "Gavins Trophäenraum des Sieges",
+        "Team Neighborhood Watch",
+        "Ray gewinnt",
+        "Team Gents",
+        "Plan G.",
+        "Team Nice Dynamite",
+        "Team Lads.",
+        "Jacks Schwanz.",
+        "The Crev.",
+        "The Internet Box.",
+        "Durchführen von Operationen im Weltraum.",
+        "Slenderman.",
+        "The R &r Connection.",
+        "RTX.",
+        "Randy Newman.",
+        "Aufgeben und ein Haus bauen.",
+        "Ein Miniatur-Turm der Zuhälter.",
+        "Tupperware.",
+        "Flynt Coal.",
+        "Meatspin.",
+        "Gubbins.",
+        "Knobs.",
+        "Weil sie es mögen würden.",
+        "Die Abenteuer von Batman und Randy Newman.",
+        "Rays Douche-Cut.",
+        "Ein Größenwahnsinniger mit Bart.",
+        "Entdecken Sie Ihre längst verlorenen Creeper-Eltern.",
+        "Gavin töten.",
+        "Geoffs Hobo-Bart.",
+        "In einem Hundekäfig gefangen sein.",
+        "Jacks Bart.",
+        "RoosterTeeth.",
+        "Man-Gobbler, der Truthahn-Bestialitätsfilm.",
+        "Gavin Free.",
+        "Michael Jones.",
+        "Ray Narvaez, Jr.",
+        "Geoff Lazer Ramsey.",
+        "Burnie Burns.",
+        "Jack Pattillo.",
+        "Ryan Haywo.",
+        "Gus Sorola.",
+        "Der Pappausschnitt von Gus.",
+        "Joel Heyman.",
+        "Going cakeless.",
+        "Scheinwerferflüssigkeit.",
+        "Hitler zweimal spielen.",
+        "Sarge.",
+        "Lopez la Pesado.",
+        "Franklin Delano Donut.",
+        "Dexter Grif.",
+        "Dick Simmons.",
+        "Agent Washington.",
+        "Andy die Bombe.",
+        "Küken in einem Panzer aufheben.",
+        "Lavernius Tucker.",
+        "Leonard Church",
+        "Sheila the Tank",
+        "Michael J. Caboose",
+        "Frank \"Doc\" DuFresne",
+        "Agent Maine",
+        "Meta",
+        "Omega",
+        ". O'Malley.",
+        " Agent Texas / Allison.",
+        "MOGAR!",
+        "Screen Looking.",
+        "Joe the Cat.",
+        "# DantheMan.",
+        "Slo Mo Guys.",
+        "X-Ray und Vav.",
+        "Rage Quit.",
+        "Achievement Hunter",
+        "Pongo",
+        "Soggy Bread",
+        "Sarge's Funeral",
+        "Camping als legitime Strategie",
+        "Team-Killing Fucktards.",
+        "Calling Dibs auf einem Raumschiff.",
+        "Weil die Leute Trauben mögen.",
+        "Upside-Down Kerry.",
+        "Epsilons Lasergesicht.",
+        "MOTHERFUCKING TRIPLE SPIKES!",
+        "Mark Nutt.",
+        "AHWU.",
+        "Ray's Sombrero.",
+        "Eine Ausgrabung machen."
+    ]
+}

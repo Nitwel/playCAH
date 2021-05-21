@@ -1,0 +1,844 @@
+{
+    "blackCards": [
+        {
+            "pick": 1,
+            "text": "9-1-1, was ist dein Notfall?"
+        },
+        {
+            "pick": 1,
+            "text": "_, nur für eine Sekunde. Nur um zu sehen, wie es sich anfühlt."
+        },
+        {
+            "pick": 1,
+            "text": "_, du bist ein echter MVP."
+        },
+        {
+            "pick": 1,
+            "text": "_: Ist nicht niemand habe Zeit dafür!"
+        },
+        {
+            "pick": 1,
+            "text": "_: koche sie, zerdrücke sie, stecke sie in einen Eintopf!"
+        },
+        {
+            "pick": 1,
+            "text": "_: Ich melde mich freiwillig als Tribut!"
+        },
+        {
+            "pick": 1,
+            "text": "_: es ist magisch lecker."
+        },
+        {
+            "pick": 1,
+            "text": "_: Nur ein anderer Weg dass Gott uns zeigt, dass er uns liebt."
+        },
+        {
+            "pick": 1,
+            "text": "_: Nur girly Dinge."
+        },
+        {
+            "pick": 1,
+            "text": "_: Sag einfach '."
+        },
+        {
+            "pick": 1,
+            "text": "_: nicht einmal."
+        },
+        {
+            "pick": 1,
+            "text": "_: Wird von der Verwaltung zu Ihrem Schutz bereitgestellt."
+        },
+        {
+            "pick": 1,
+            "text": "_: Ihre Ideen faszinieren mich und ich möchte Ihren Newsletter abonnieren."
+        },
+        {
+            "pick": 1,
+            "text": "_? Das ist was <i> sie </ i> sagte."
+        },
+        {
+            "pick": 1,
+            "text": "Ein neues russisches Dash-Cam-Video zeigt _ genau dort mitten auf der Straße!"
+        },
+        {
+            "pick": 2,
+            "text": "Ein wildes _ erscheint! Sie haben _ verwendet! Es ist super effektiv!"
+        },
+        {
+            "pick": 1,
+            "text": "Entsprechend Ein neuer UN-Vertrag gilt jetzt als Massenvernichtungswaffe."
+        },
+        {
+            "pick": 2,
+            "text": "Eine Unze _ ist ein Pfund _ wert."
+        },
+        {
+            "pick": 3,
+            "text": "Altes chinesisches Sprichwort sagt: _ ist nur _ ohne _."
+        },
+        {
+            "pick": 1,
+            "text": "Apple &reg; hat ein neues Gerät angekündigt, das verspricht, die Art und Weise, wie wir über _ denken, zu revolutionieren."
+        },
+        {
+            "pick": 1,
+            "text": "Das Publikum bei Sundance war von Lars von Triers umstrittenem neuen Film \"_\" traumatisiert."
+        },
+        {
+            "pick": 1,
+            "text": "Bevor ich entlassen wurde, habe ich mir nie eine Karriere in _ vorgestellt."
+        },
+        {
+            "pick": 3,
+            "text": "Bentley's &reg; Die neueste Luxuslimousine der Spitzenklasse wird mit _, _ und _ geliefert."
+        },
+        {
+            "pick": 1,
+            "text": "Aufgrund des jahrelangen Drucks wurden die Washington Redskins offiziell in Washington _ umbenannt."
+        },
+        {
+            "pick": 1,
+            "text": "In Kürze von Pixar: \" _ \"."
+        },
+        {
+            "pick": 1,
+            "text": "Lieber Dan Savage, bitte helfen Sie. Ich kann keinen Orgasmus ohne _ erreichen."
+        },
+        {
+            "pick": 2,
+            "text": "Lieber, dein Vater und ich haben _ und _ in deinem Schlafzimmer gefunden. Ich bin schockiert und ehrlich gesagt nur ein wenig </ i> enttäuscht."
+        },
+        {
+            "pick": 1,
+            "text": "Während des Mittagessens waren wir schockiert, als die Chefin ihre Besessenheit offenbarte mit _."
+        },
+        {
+            "pick": 1,
+            "text": "Seit \"dem Vorfall\". Jedes Mal, wenn ich meine Augen schließe, sehe ich immer noch _."
+        },
+        {
+            "pick": 1,
+            "text": "Experten sagen, dass _ ohne sorgfältige Verwaltung und Erhaltung innerhalb unserer Lieferzeiten verschwinden wird."
+        },
+        {
+            "pick": 1,
+            "text": "Von den Leuten, die Sie <i> Sharktopus </ i> und <i> Sharknado </ i>, Syfy's &reg; Der nächste Horrorfilm kombiniert Haie mit _."
+        },
+        {
+            "pick": 1,
+            "text": "Von den Produzenten der Shark Week ... kommt diesen Herbst, _ Week."
+        },
+        {
+            "pick": 1,
+            "text": "Fuddruckers &reg; testet heimlich einen Burger mit _."
+        },
+        {
+            "pick": 1,
+            "text": "Gentleman, ich bin sicher, Sie fragen sich, warum ich Sie heute Abend hier gefragt habe. Es ist eine lange Geschichte, aber alles begann mit _."
+        },
+        {
+            "pick": 1,
+            "text": "Go-Go-Gadget _!"
+        },
+        {
+            "pick": 2,
+            "text": "Good Nachrichten, alle zusammen! Ich halte einen TED-Vortrag über das Thema, wie sich _ verwandeln wird."
+        },
+        {
+            "pick": 1,
+            "text": "Nachdem Ron Paul seine Bitten um eine Rückkehr zum Goldstandard aufgegeben hat, wirbt er jetzt für a _-basierte Wirtschaft."
+        },
+        {
+            "pick": 1,
+            "text": "Hey Mann, kommst du heute Abend zu meiner gezeigten? Meine neue Band heißt \"_\"."
+        },
+        {
+            "pick": 1,
+            "text": "Wie habe ich diese einstweilige Verfügung erhalten?"
+        },
+        {
+            "pick": 1,
+            "text": "How bin ich durch das College gekommen?"
+        },
+        {
+            "pick": 1,
+            "text": "Wie habe ich mir den Rücken verletzt?"
+        },
+        {
+            "pick": 1,
+            "text": "Wie habe ich mein Erbe ausgegeben?"
+        },
+        {
+            "pick": 1,
+            "text": "Wie haben meine Großeltern die Weltwirtschaftskrise überstanden?"
+        },
+        {
+            "pick": 2,
+            "text": "Ich bin _. Ich spreche für _."
+        },
+        {
+            "pick": 1,
+            "text": "Ich bin _, der Zerstörer der Welten geworden."
+        },
+        {
+            "pick": 1,
+            "text": "Ich erkläre, in Zeiten der Not, auf die ich mich immer verlassen habe."
+        },
+        {
+            "pick": 1,
+            "text": "Ich wünschte, die Zeitungen hätten _ in Opas Nachruf nicht erwähnt."
+        },
+        {
+            "pick": 1,
+            "text": "Es ist mir egal, <i> was </ i> Leute sagen, _ ist <i> kein < / i> Verbrechen."
+        },
+        {
+            "pick": 3,
+            "text": "Ich bekam einige seltsame Blicke an der Kasse, als die Kassiererin _, _ und _ in meinem Einkaufswagen bemerkte."
+        },
+        {
+            "pick": 3,
+            "text": "Ich habe diesen wiederkehrenden Traum, wo ich _ und ich bin Ich gebe _ zu _."
+        },
+        {
+            "pick": 1,
+            "text": "Ich muss zugeben ... es hat eine Weile gedauert, bis ich damit einverstanden war, aber _ in unsere Hochzeitszeremonie einzubeziehen ist eine Entscheidung, die ich getroffen habe Ich werde es nie bereuen."
+        },
+        {
+            "pick": 1,
+            "text": "Ich habe meinen Job als Barkeeper in der Nacht gekündigt, als mich ein Esel als Tipp verlassen hat."
+        },
+        {
+            "pick": 1,
+            "text": "Ich denke, ich muss Fluffums zum Welpentraining mitnehmen: Er hat diese schreckliche Angewohnheit von _."
+        },
+        {
+            "pick": 3,
+            "text": "Ich wurde einmal wegen eines Vorfalls mit _ in die Personalabteilung geschickt. _ und (angeblich) _."
+        },
+        {
+            "pick": 1,
+            "text": "Ich wünschte, es wäre etwas Einfaches & mdash; wie Erdnüsse oder Schalentiere & mdash; aber mein Arzt sagt mir, dass ich tatsächlich allergisch gegen _ bin."
+        },
+        {
+            "pick": 2,
+            "text": "Ich werde meinen eigenen Themenpark bauen! Mit _! Und _!"
+        },
+        {
+            "pick": 1,
+            "text": "Ich bin so hungrig, dass ich _ essen könnte."
+        },
+        {
+            "pick": 2,
+            "text": "Ich habe ein Raumschiff mit Antrieb entworfen durch die Energie, die freigesetzt wird, wenn Sie _ und _ kombinieren."
+        },
+        {
+            "pick": 2,
+            "text": "Wenn Gott nicht wollte, dass wir _ genießen, hätte er uns _ nicht gegeben."
+        },
+        {
+            "pick": 1,
+            "text": "Wenn Lachen die beste Medizin ist, ist die zweitbeste _."
+        },
+        {
+            "pick": 1,
+            "text": "Wenn die Leute nicht so schnell urteilen würden, ich würde der Person zu meiner Linken sofort _ geben."
+        },
+        {
+            "pick": 1,
+            "text": "Wenn du mein Liebhaber sein willst, musst du mit _."
+        },
+        {
+            "pick": 1,
+            "text": "Wenn Sie ein Bild der Zukunft möchten, stellen Sie sich einen Boot-Stempel auf _ & mdash; für immer."
+        },
+        {
+            "pick": 2,
+            "text": "In einem bahnbrechenden Experiment hat _ _ geboren."
+        },
+        {
+            "pick": 1,
+            "text": "In einem Zug, der Hollywood hat Insider verwirrt, haben die Produzenten von American Idol beschlossen, Gastgeber Ryan Seacrest durch _ zu ersetzen."
+        },
+        {
+            "pick": 1,
+            "text": "In einem neuen Roman von Nicholas Sparks verliebt sich ein junges Mädchen auf tragische Weise in _ ."
+        },
+        {
+            "pick": 1,
+            "text": "In seinem letzten Interview diskutierte Robin Williams seinen privaten Kampf mit _."
+        },
+        {
+            "pick": 1,
+            "text": "Meiner Meinung nach _ ist ein Grund für einen berechtigten Mord."
+        },
+        {
+            "pick": 1,
+            "text": "In Valhalla wird gesagt, dass alle tapferen Krieger _."
+        },
+        {
+            "pick": 1,
+            "text": "Es dauerte sieben Jahre in einem abgelegenen tibetischen Kloster, aber ich lernte schließlich die Kunst des _."
+        },
+        {
+            "pick": 1,
+            "text": "Wie Midas wiedergeboren wird alles, was sie berührt, zu _."
+        },
+        {
+            "pick": 1,
+            "text": "Michelle Obama empörte die Konservativen, als sie andeutete, dass _ vielleicht keine so schlechte Sache war."
+        },
+        {
+            "pick": 1,
+            "text": "Mein Hellseher warnt, dass meine Zukunft ist gefüllt mit _."
+        },
+        {
+            "pick": 1,
+            "text": "Meine Tour durch das Weiße Haus rad Eskalierte, als der Secret Service einen Blick auf _ in meiner Tasche erhaschte."
+        },
+        {
+            "pick": 2,
+            "text": "Netflix's &reg; Die neue Originalserie ist eine Sitcom, die auf _ und _ basiert."
+        },
+        {
+            "pick": 1,
+            "text": "Nach seiner Pensionierung kann Papst Benedikt endlich Zeit seiner wahren Leidenschaft widmen: _."
+        },
+        {
+            "pick": 1,
+            "text": "Oh mein Gott! Sie töteten _! Ihr Bastarde!"
+        },
+        {
+            "pick": 1,
+            "text": "Oh, du denkst also, du bist jetzt zu gut für uns, kleines \"Miss _!\""
+        },
+        {
+            "pick": 1,
+            "text": "Der alte Willy war genau wie du oder ich, bevor er ihn in den Griff bekam."
+        },
+        {
+            "pick": 1,
+            "text": "Ooooooohh ja, Baby, du weißt was ich mag. Gimmie _."
+        },
+        {
+            "pick": 2,
+            "text": "PornHub.coms beliebteste Videofunktionen _ und _."
+        },
+        {
+            "pick": 1,
+            "text": "Gerücht ist, Kim Jong -un exekutiert Gefangene mit _."
+        },
+        {
+            "pick": 1,
+            "text": "Wissenschaftler haben die wahre Ursache von Autismus entdeckt: _."
+        },
+        {
+            "pick": 2,
+            "text": "So. dann sagt er: \"Wenn Sie diese Beziehung zum Laufen bringen möchten, müssen Sie _ und _ aufgeben.\" Wie. If."
+        },
+        {
+            "pick": 1,
+            "text": "Sweet, ich habe gerade einen Groupon für _."
+        },
+        {
+            "pick": 1,
+            "text": "Danke Mario! Aber _ ist in einem anderen Schloss!"
+        },
+        {
+            "pick": 2,
+            "text": "Dank _ habe ich jetzt eine lähmende Angst vor _."
+        },
+        {
+            "pick": 1,
+            "text": "Der beste Teil des Aufwachens ist _."
+        },
+        {
+            "pick": 1,
+            "text": "Die letzten drei Elemente auf meiner \"Bucket List\":"
+        },
+        {
+            "pick": 2,
+            "text": "In der Nacht vor einem Schneesturm sollten Sie sich immer mit _ und _ eindecken."
+        },
+        {
+            "pick": 1,
+            "text": "Die NSA möchte mit mir über eine E-Mail sprechen, die ich mit folgenden Schlüsselbegriffen verschickt habe:"
+        },
+        {
+            "pick": 1,
+            "text": "Das Restaurant war nett, aber ich war überrascht, _ auf der Speisekarte zu sehen."
+        },
+        {
+            "pick": 1,
+            "text": "Der Weg zur Hölle ist asphaltiert mit _."
+        },
+        {
+            "pick": 1,
+            "text": "Es gibt einen neuen Anime über vier magische Schüler und ihre Abenteuer mit _."
+        },
+        {
+            "pick": 2,
+            "text": "This Flasche von 1961 Ch & acirc; teau Cheval Blanc hat Notizen von _ und _."
+        },
+        {
+            "pick": 2,
+            "text": "Dieser Film wurde mit \"NC-17\" bewertet. für grafische Darstellungen von _ und _."
+        },
+        {
+            "pick": 3,
+            "text": "Drei Aufzählungspunkte aus meinem OKCupid &reg; Profil: _, _ und vor allem _."
+        },
+        {
+            "pick": 1,
+            "text": "Today, Amazon.com &reg; erhielt ein Patent auf _."
+        },
+        {
+            "pick": 1,
+            "text": "Tonight on \"My Super Sweet 16\". Stephanis Eltern geben ihr _."
+        },
+        {
+            "pick": 2,
+            "text": "Heute Abend auf \"Supernatural\". Sam und Dean sind gezwungen, sich nur mit _ zu konfrontieren."
+        },
+        {
+            "pick": 2,
+            "text": "An der Spitze der Sachbuch-Bestseller dieser Woche: \"_: die Kunst, mit _ zu leben.\""
+        },
+        {
+            "pick": 2,
+            "text": "Ultimate Deathmatch: _ vs. _."
+        },
+        {
+            "pick": 1,
+            "text": "Utah erwägt die Legalisierung von _."
+        },
+        {
+            "pick": 1,
+            "text": "WANTED: ein sauberer, gut beleuchteter Ort für _."
+        },
+        {
+            "pick": 1,
+            "text": "Was <i> genau </ i> ist los Mein Arsch?"
+        },
+        {
+            "pick": 1,
+            "text": "Was <i> gab </ i> Superman wirklich seine Kräfte?"
+        },
+        {
+            "pick": 1,
+            "text": "Was tun Ich bin in einer Lagereinheit verrottet?"
+        },
+        {
+            "pick": 1,
+            "text": "Was wollen wir? _! <br> <br> Wann wollen wir es? Jetzt!"
+        },
+        {
+            "pick": 1,
+            "text": "Was hat mich so gemacht?"
+        },
+        {
+            "pick": 1,
+            "text": "Was soll ich für Halloween sein?"
+        },
+        {
+            "pick": 1,
+            "text": "Was war einer der abgelehnten Geschmacksrichtungen für Bertie Bott's Every Flavor Beans &trade?"
+        },
+        {
+            "pick": 1,
+            "text": "Was werden sie auf meinem Grabstein schnitzen?"
+        },
+        {
+            "pick": 1,
+            "text": "Was ist mein sicheres Wort?"
+        },
+        {
+            "pick": 1,
+            "text": "Was ist das bestgehütete Geheimnis dieser Stadt?"
+        },
+        {
+            "pick": 3,
+            "text": "Wenn ich mit jemandem ausgehe, kann ich _ und _ übersehen, aber _ ist ein Deal-Breaker."
+        },
+        {
+            "pick": 1,
+            "text": "Wenn ich es ernsthaft versaut habe und müssen Wiedergutmachung leisten, was kann ich meinem Lebensgefährten geben, um ihnen zu zeigen, dass ich wirklich reuig bin?"
+        },
+        {
+            "pick": 1,
+            "text": "Wenn Sie das Spiel von _ spielen, gewinnen Sie oder Sie sterben."
+        },
+        {
+            "pick": 1,
+            "text": "Während offiziell noch verpönt, ist _ jetzt in den US-Streitkräften erlaubt."
+        },
+        {
+            "pick": 1,
+            "text": "Wer wird der Erste sein? gegen die Wand, wenn die Revolution kommt?"
+        },
+        {
+            "pick": 1,
+            "text": "Wer ist <i> wirklich </ i> schuld?"
+        },
+        {
+            "pick": 2,
+            "text": "Wer hat _, _ und zwei Daumen? Dieser Typ!"
+        },
+        {
+            "pick": 1,
+            "text": "Warum sitzt niemand bei mir?"
+        },
+        {
+            "pick": 1,
+            "text": "Warum lassen sie mich nicht rein Chuck E. Cheese's &reg; mehr?"
+        },
+        {
+            "pick": 1,
+            "text": "William Shatners schockierende neue Autobiographie trägt den Titel \"_: The Final Frontier\"."
+        },
+        {
+            "pick": 2,
+            "text": "Yea , obwohl ich durch das Tal von _ gehe, werde ich kein _ fürchten."
+        },
+        {
+            "pick": 1,
+            "text": "Ja, ich bin es, der gefährlichste Superschurke der Welt: Baron Von _!"
+        },
+        {
+            "pick": 2,
+            "text": "Du hast dein _ in meinem _!"
+        },
+        {
+            "pick": 1,
+            "text": "Du hast mein Schwert. \"Und du hast meinen Bogen.\" & quot; Und <i> mein </ i> _! & quot;"
+        },
+        {
+            "pick": 1,
+            "text": "Ihr Leute seid krank! Es ist <i> nichts </ i> Lustiges an _."
+        }
+    ],
+    "whiteCards": [
+        "<i> Hakuna matata </ i>, Motherfucker.",
+        "Eine 50-Dollar-Tasse Kaffee, buchstäblich aus Katzenscheiße hergestellt .",
+        "Eine wirklich schlechte Hefeinfektion.",
+        "Ein 5-Pfund-Beutel mit Gummibärchen.",
+        "Ein Bachelor-Abschluss in Kommunikation.",
+        "Eine mit Hoden gefüllte Kugelgrube.",
+        "Eine Banane. Sie wissen, für die Skalierung.",
+        "Ein Bart länger als 12 Zoll.",
+        "Ein Benedict Cumberbatch RealDoll &trade;",
+        "Ein bisschen von der alten Ohrfeige und Kitzel.",
+        "Eine Hündin Camaro.",
+        "Eine schwarze Fliege in Ihrem Chardonnay.",
+        "Eine Decke mit einem Loch darin.",
+        "Eine Braille-Vajazzling.",
+        "Eine Frühstückswurst mit ernsthaften emotionalen Problemen.",
+        "Ein Haufen Rotznasen, Besserwisser- alle zwanzig Jahre.",
+        "Ein brennendes Gefühl.",
+        "Ein Butt-Plug in Form einer aufgerollten Kopie der US-Verfassung.",
+        "Ein Käfigkampf mit Nicolas Cage.",
+        "Ein Assnado der Kategorie 5.",
+        "Ein Stuhl, der gerne Menschen vergewaltigt.",
+        "Eine Kombination aus Sprungbrett und Begasungszelt.",
+        "Eine knusprige alte Socke.",
+        "Ein listiger Stunt.",
+        "Eine Eselshow.",
+        "Ein Angstknaller.",
+        "Ein fischiger Geschmack.",
+        "Ein Fleshlight &reg;",
+        "Ein flauschiger kleiner Hintern.",
+        "Ein 4-Zoll-Kitzler.",
+        "Ein gutes Schtupping.",
+        "Eine unentgeltliche Tonmationssequenz.",
+        "Ein Haarhemd.",
+        "Ein Hamster mit einer pochenden Erektion.",
+        "Eine Geschichte des Missbrauchs.",
+        "Eine Ehemannwölbung.",
+        "Eine Jury aus Gleichaltrigen.",
+        "Ein buchstäblich rasierter Biber.",
+        "Ein Mazel tov Cocktail.",
+        "Ein Fleisch Eis am Stiel.",
+        "Ein Mo. ist Towlette.",
+        "Ein Stück Kot, ungefähr so ​​groß und geformt wie ein Crouton.",
+        "Eine Ananas mit Chlamydien.",
+        "Ein starker Würgereflex.",
+        "Ein Greifpenis.",
+        "Ein lila Nurple.",
+        "Eine geheime Mischung aus elf Kräutern und Gewürzen.",
+        "Ein Gefühl der Resignation.",
+        "Ein sexuell aggressiver Koala.",
+        "Eine Scheiße Glitzer.",
+        "Ein schockierend blähender Rotluchs.",
+        "Ein Dummkopf alter Kapitän, der nur <i> voller </ i> Geschichten ist.",
+        "Ein einzelnes, glänzendes Bitcoin.",
+        "Ein Yokel mit schlaffen Kiefern.",
+        "Ein Lied darüber, wie großartig Nebraska ist.",
+        "A. stinkender kleiner Finger.",
+        "Eine Stripperin namens \"Sardelle\".",
+        "Eine starke, unabhängige Frau, die keinen Mann braucht.",
+        "Ein zärtliches Rodeln.",
+        "Ein durstiger Sperma-Jacking will sein Baby Mama.",
+        "Eine Spitze meines Fedoras.",
+        "Ein Zungenschlag in der alten Furzschachtel.",
+        "Ein geworfener Salat.",
+        "Eine mit Urin gefüllte Bong.",
+        "Ein Waco, Texas-Thema Neuheit Grillstelle und Raucher.",
+        "Ein warmer, leicht duftender Keks.",
+        "Ein Wer-Lachs.",
+        "Ein jüngerer, weitaus attraktiverer Ehepartner.",
+        "Afrikaner, die rassistisch weiße Art.",
+        "Ein Absinth Einlauf.",
+        "Ein tatsächlicher Soßenzug.",
+        "Ein Wechselstrom tual unsichtbarer Rucksack.",
+        "Ein entzückendes Babyfaultier.",
+        "Ein wütender kleiner Mann.",
+        "Ein asexueller Bonobo.",
+        "Ein weiblicher südlicher Homophob.",
+        "Ein Notfallwurzelkanal.",
+        "Ein Kaiserpinguin mit <i> no </ i> Schamgefühl.",
+        "Eine ganze Flasche Germeister.",
+        "Ein erotischer Roman über das Monster von Loch Ness.",
+        "Eine extragroße Dose Bone Bashful &trade; Marke Chinchilla Pudding Sauce.",
+        "Eine kleine Teeny Weenie.",
+        "Eine obszöne Menge Butter.",
+        "Ein Oosik oder Inuit War Club aus dem Penisknochen eines Walrosses.",
+        "Ein Orkgasmus.",
+        "Eine übermäßig begeisterte Prostatauntersuchung.",
+        "Ein unerwarteter Finger im Anus.",
+        "Ein nicht überraschender Ausschlag.",
+        "Alles mit einem Loch.",
+        "Bewerbung bei einer neuen Gilde.",
+        "Asiatische Mädchen mit Namen wie \"Christina\" oder \"Elizabeth\".",
+        "Autoerotische Erstickung",
+        "Axl Rose",
+        "Babykarotten",
+        "Speck, der Schmerzen fühlen kann",
+        "Schmiermittel mit Speckgeschmack",
+        "Barfing in ein winziges",
+        "bejewled Handtasche.",
+        "In der Lage sein, <i> alle </ i> der verschiedenen Arten von Oliven zu benennen.",
+        "Mit einem Schwanz geboren werden.",
+        "Mit einem Feinkostschneider beschnitten werden.",
+        "Heteroflexibel sein .",
+        "In die Eierstöcke getreten werden.",
+        "Punk in der Republik sein.",
+        "Von Dickwölfen in den Schlaf vergewaltigt werden.",
+        "Klein, aber perfekt geformt sein.",
+        "So weit im Schrank sein, kannst du siehe Narnia.",
+        "Mit Wild Turkey &reg; 101.",
+        "Aufstoßen der Texte zu \"Hey Jude.\"",
+        "Bitch Tits.",
+        "Bitchy ruhendes Gesicht.",
+        "Blistering Seepocken!",
+        "Bono. Nur ... Bono.",
+        "Bourbon Pong.",
+        "Bronies.",
+        "Kuchenfurz.",
+        "Charles Darwin.",
+        "Wasserfälle jagen.",
+        "Chemtrails.",
+        "Chesticles.",
+        "Child-. große Särge.",
+        "Chloroform.",
+        "Cockasaurus Rex: der geilste Dinosaurier von allen.",
+        "Cockissimo Fantastico, der legendäre Liebhaber mit dem wunderbaren Wang.",
+        "Cocktimus Prime: die lasergelenkte Dildorakete.",
+        "Cockulous Maximus, enormer Tallywacker von Tripolis.",
+        "Die Dingleberries auskämmen.",
+        "Costco &reg; Lebensmittelproben.",
+        "Krabben passen die Luftfeuchtigkeit an.",
+        "Cumalot.",
+        "Bordstein stampfen.",
+        "Gefahrenpheremonen.",
+        "Tod durch Snu-Snu.",
+        "Dennis Rodman, professioneller Diplomat.",
+        "DOOOOOMM !!!!!!!",
+        "Double Vaginal, Double Anal.",
+        "Dr. Jellyfinger.",
+        "Droppin 'the mic.",
+        "Duchess Von Fingerbang.",
+        "Einschreibung in die Clownschule.",
+        "Erotische Ballontiere.",
+        "Erotische Star Trek-Fanfiction, in der alle Charaktere Furries sind, wie Kirk ein Ozelot oder so.",
+        "Erklären, wie ich den Spitznamen \"Nibbleberries\" bekam.",
+        "Hesekiel 23: 20 \". Dort begehrte sie nach ihren Liebhabern, deren Genitalien denen von Eseln glichen und deren Emission denen von ähnelte Pferde. \"",
+        "Fat Man and Little Boy",
+        "Felching",
+        "Flop Sweat",
+        "Sitzplätze in der ersten Reihe für die Shit Show",
+        "Gurgelnde Geräusche",
+        "Gazpacho-Taktik",
+        "Geht da runter und seid alle wie \"diese Scheiße ist böse, yo. Scheiß drauf, yo. \"",
+        "Immer ganked.",
+        "Gilbert Gottfrieds Stimme.",
+        "Gib Anne Frank ein Schlagzeug zum Geburtstag.",
+        "Gib dem Tumor einen niedlichen Namen.",
+        "Gib deinem Haustier Lamm eine Brasilianerin.",
+        "Googeln \"Betty White nackt.\"",
+        "Omas feuchte, schlampige Küsse.",
+        "Schinkennacht!",
+        "Ihre trockenen, schuppigen Hände.",
+        "Hey, fick dich, Kumpel.",
+        "Urkomische Ausländer!",
+        "Honey Boo Boo schoss eine 2-Liter-Flasche \"Go-Go-Saft \".",
+        "Hookers and Blow.",
+        "Sich bei einem Tegan and Sara-Konzert treffen.",
+        "Hulking out .",
+        "Bestehen darauf, dass Jesus technisch gesehen ein Zombie ist.",
+        "Japanische Seiltechnik.",
+        "Jennifer Lawrence.",
+        "JJ Abrams setzt überall Linseneffekte auf.",
+        "Joe Biden macht seinen Freak an.",
+        "Joffrey Baratheon, die abscheuliche kleine Scheiße.",
+        "Juggalos.",
+        "Kentucky Fried Children.",
+        "Hobos töten.",
+        "LeBron James 'große, einhüllende Hände.",
+        "Lego &reg; Nachbildungen berühmter Pornoszenen.",
+        "Unter uns leben ... unsere Wege lernen. Aufpassen. Warten.",
+        "Long Schlong Silver.",
+        "Niedrig hängende Früchte.",
+        "Lt. Worfs natürlich gerippter klingonischer Schlong.",
+        "Lucky Pierre.",
+        "M'lady.",
+        "Flugzeuggeräusche machen.",
+        "Die ganze Nacht süße, süße Liebe machen.",
+        "Eine Taco Bell kräftig lieben &reg; Beefy 5-Layer Burrito &trade ;.",
+        "Mesothelioma.",
+        "Michele Bachmann masturbiert wütend mit einem Kleiderbügel.",
+        "Mindestlohn.",
+        "Mitt Romney macht eine Burlesque-Routine in einem riesigen Champagnerglas.",
+        "Mongolian & quot; Rindfleisch.",
+        "Affenfolter.",
+        "Mehr Punkte!",
+        "Mr. Im Moment.",
+        "Meine offensichtliche Unfähigkeit, ein paar einfache Worte laut vorzulesen.",
+        "Meine großen saftigen Fickkartoffeln.",
+        "Mein Nachtelfe der Stufe 90, Leafshit Puddingsbane.",
+        "Mein stiller Zwilling, die Nachgeburt.",
+        "Natalie Portman nackt, versteinert und mit heißem Sand bedeckt.",
+        "Nazi-Einhörner.",
+        "Neil deGrasse Tyson.",
+        "Nicht zu stinkend, wissen Sie, im Keller. Unten.",
+        "Obamacare.",
+        "OH EM GEE, TOTES ADORBS !!!",
+        "One Direction.",
+        "Eine, deren Unterregionen riesig sind und winken, wie zu einem Korridor, in den ein Frankfurter geworfen werden könnte.",
+        "Eröffnung für Sigur R & oacute; s.",
+        "Origami erotica.",
+        "Painal.",
+        "Paula Deens Ernährungsberaterin.",
+        "Erdnussbutter-Gelee-Zeit.",
+        "Becken-Zauberei.",
+        "Platons Allegorie der Höhle",
+        "oder irgendein anderer prätentiöser Schwachsinn.",
+        "Kackensuppe.",
+        "In der Öffentlichkeit kacken.",
+        "Posting on www.reddit.com / r / gonewild /",
+        "Vorgeben, ein fehlerhafter Roboter zu sein.",
+        "Vorgeben, Schluckauf zu haben.",
+        "Primo schlick material.",
+        "Aussprechen von \"Quinoa\". richtig.",
+        "Schutzhaft.",
+        "Baby in eine Ecke stellen.",
+        "Rassistische Ninjas.",
+        "Regenbogen-Cumdrops.",
+        "Raptor Jesus.",
+        "Realistische Erwartungen.",
+        "Widerstrebender Anal.",
+        "Reptilien.",
+        "Reiches korinthisches Leder.",
+        "Robin Thicke.",
+        "Rock Bottom.",
+        "Romantischer Krebs.",
+        "Herumlaufen wie ein Typ mit abgeschnittenem Huhn.",
+        "S'more Schnapps.",
+        "Scissoring.",
+        "Selbstmedikation.",
+        "Selbstreplizierender Fudge.",
+        "Ausverkauf.",
+        "11. September.",
+        "Sexy Hexen.",
+        "Sechs Pfund roher, geschälter Knoblauch.",
+        "Etwas mehr als 3 Unzen Sperma.",
+        "Langsam eine übergroße jamaikanische Flagge schwenken.",
+        "Eine punkige kleine Schlampe.",
+        "Etwas, das sich Elon Musk ausgedacht hat, als er in meditativer Trance sechs Zoll über dem Boden schwebte.",
+        "Etwas so Beleidigendes, ich möchte es nicht einmal sagen.",
+        "Den Saft bei AA aufspitzen.",
+        "Sploosh!",
+        "Sriracha.",
+        "Animatronik auf dem neuesten Stand der Technik.",
+        "Dampfend heiße Limonade.",
+        "Kampf kuschelt.",
+        "Susan, diese Schlampe.",
+        "Schlucke einen Spielball.",
+        "Tacos.",
+        "Nimm einen für das Team.",
+        "Tampons in jedem Loch.",
+        "Ted Nugents kalte, tote Hände.",
+        "Das \"nicht so frische\" Gefühl.",
+        "Das Ding mit dem Löffel.",
+        "Die (technisch) Jungfrau Maria.",
+        "Das Zeitalter der Zustimmung.",
+        "Die Chroniken von Red-Dick.",
+        "Die Kliterati.",
+        "Die Kombination Fett aus allen Fettabsaugungsverfahren der Kardashianer.",
+        "Der kreative Einsatz einer Poolnudel.",
+        "Der Schritt von Fremden.",
+        "Das Echo der Stille von SIDS.",
+        "Die ausdrückliche schriftliche Zustimmung der Major League Baseball .",
+        "Der sagenumwobene mongolische Todeswurm.",
+        "Die wenigen Lametta-Fetzen, die immer noch an meinem Arschloch haften.",
+        "Der Gazastreifen.",
+        "Die Friedhofsverschiebung um 7-Eleven &reg;.",
+        "Der grüne Apfel spritzt .",
+        "Das Loch in meiner Brust, in dem sich mein Herz befand.",
+        "Der große Hard-On Collider.",
+        "Die Liebe, die es nicht wagt, ihren Namen auszusprechen.",
+        "Das Geräusch, das eine Katze vor dem Erbrechen macht.",
+        "Die alte Reichweite.",
+        "Das patriarchalische soziale Konstrukt der physischen Genitalien.",
+        "Der schlanke Mann.",
+        "Die glatte, makellose Haut eines Kindes.",
+        "Das sanfte Liebeshupen einer Lust Gans.",
+        "Das Geräusch einer Hand, die klopft.",
+        "Das klebrige Eklige.",
+        "Die süße Befreiung des Todes.",
+        "Die TARDIS.",
+        "Der Geschmack e aus menschlichem Fleisch.",
+        "Das ganze gottverdammte Ding.",
+        "Diese cremigen atheistischen Schenkel.",
+        "Titty streut.",
+        "Sich gegenseitig den Hintern berühren.",
+        "Trickle-down-Ökonomie.",
+        "Hosen-Chili.",
+        "Büschelohren.",
+        "Alles in einen sexy Tanz verwandeln.",
+        "Zwanzig Millionen US-Dollar.",
+        "Unkontrollierbar würgen bei der bloßen Erwähnung von Mayonnaise.",
+        "Mit einem lebenden Tintenfisch als Kondom.",
+        "Verwenden eines Kabelbinders als spontanen Penisring.",
+        "Verwenden von Tränen als Gleitmittel.",
+        "Verwenden von Zähnen.",
+        "Van Goghs abgetrenntes Ohr.",
+        "Wanghis Kahn, Cocklord der Mongolen.",
+        "Waffen-Ebola .",
+        "Tragen eines blauen Fuchsanzugs am Casual Friday.",
+        "Tragen Ihres IUP in einem MRT.",
+        "Wohlfahrt.",
+        "Was passiert in Vegas?",
+        "Was Jesus tun würde.",
+        "Was auch immer übrig bleibt.",
+        "Ein Kleinkind als Waffe führen.",
+        "Wackeln.",
+        "GEWINNEN !!",
+        "Wuv.",
+        "Www.clownpenis.fart",
+        "Yiffing.",
+        "Yogahosen.",
+        "Sie wissen, eine von <i> ihnen </ i> Arten von Dingen.",
+        "Zatopeepee, der blinde Ficksman.",
+        "Ze Deutsche."
+    ]
+}

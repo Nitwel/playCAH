@@ -1,0 +1,48 @@
+{
+    "blackCards": [
+        {
+            "text": "<i> (schweres Atmen) </ i> <br> Luke, ich bin _.",
+            "pick": 1
+        },
+        {
+            "text": "Du denkst Sie haben mich besiegt? Nun, mal sehen, wie Sie mit _ umgehen!",
+            "pick": 1
+        },
+        {
+            "text": "Was zum Teufel?! Sie haben eine 6 / 6 mit Fliegen, Trampeln und _ hinzugefügt.",
+            "pick": 1
+        },
+        {
+            "text": "_ ist im _-Modus viel besser.",
+            "pick": 2
+        },
+        {
+            "text": "Leider, Neo, kann niemandem <i> gesagt werden < / i> was _ ist. Sie müssen es selbst sehen.",
+            "pick": 1
+        }
+    ],
+    "whiteCards": [
+        "Versehentlich auf eine <i> League of Legends </ i> -Statue treffen.",
+        "Ser Jorah Mormonts hellblaue Kugeln.",
+        "Die alten Götter.",
+        "Meine Eier in eine Sega Genesis stopfen und den Ein- / Ausschalter drücken.",
+        "Von Kamtschatka aus angreifen.",
+        "Separate Trinkbrunnen für Dunkelelfen.",
+        "Lagging out.",
+        "Von einer radioaktiven Spinne gebissen werden und dann 30 Jahre lang gegen Leukämie kämpfen.",
+        "Ein riesiger mechanischer Vogel mit einer tragischen Hintergrundgeschichte.",
+        "Der reine, Zen-ähnliche Zustand, der zwischen Mikro und Mikro existiert Makro.",
+        "Xena, <br> Warrior Princess.",
+        "Endless Ninjas.",
+        " Was auch immer <i> Final Fantasy </ i> Bullshit dieses Jahr passiert ist ar.",
+        "Sammle alle sieben Kraftkristalle.",
+        "KHAAAAAAAAAN!",
+        "Futuristischer Todessport.",
+        "Die Phantasie von Peter Jackson.",
+        "Dämonen und Scheiße.",
+        "Alle guten Zeiten und Premium-Spiele Unterhaltung im Kickstarter-Raum.",
+        "Ein mürrischer alter Harrison Ford, der lieber etwas anderes tun würde.",
+        "2W6 emotionalen Schaden nehmen.",
+        "Das Star Wars-Universum."
+    ]
+}

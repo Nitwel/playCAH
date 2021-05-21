@@ -1,0 +1,385 @@
+{
+    "blackCards": [
+        {
+            "text": "_. Das ist mein Fetisch.",
+            "pick": 1
+        },
+        {
+            "text": "Wenn Spike schläft, liest Twilight gerne Bücher über _.",
+            "pick": 1
+        },
+        {
+            "text": "Als Luna zum Mond kam, wurde sie mit _ begrüßt.",
+            "pick": 1
+        },
+        {
+            "text": "Twilight Sparkle besitzt weit mehr Bücher über _ als sie Ich würde gerne zugeben.",
+            "pick": 1
+        },
+        {
+            "text": "Twilight langweilte sich mit der Magie der Freundschaft und studiert nun die Magie von _.",
+            "pick": 1
+        },
+        {
+            "text": "Heute gab Bürgermeisterin Mare ihre offizielle Wahlkampfposition am _ und _ bekannt. Kein Pony war am wenigsten überrascht.",
+            "pick": 2
+        },
+        {
+            "text": "Zu viel Kontroverse machte Prinzessin Celestia _ illegal.",
+            "pick": 1
+        },
+        {
+            "text": "Das schlimmste Missgeschick, das Prinzessin Cadance verursachte, war, als sie sich verliebte.",
+            "pick": 2
+        },
+        {
+            "text": "Das einzige Der Weg, um Opal ins Bad zu bekommen, ist mit _.",
+            "pick": 1
+        },
+        {
+            "text": "Die Nationalhymne von Equestria ist _.",
+            "pick": 1
+        },
+        {
+            "text": "The Everfree Wald ist voll von _.",
+            "pick": 1
+        },
+        {
+            "text": "Die Elemente der Harmonie waren ursprünglich die Elemente von _.",
+            "pick": 1
+        },
+        {
+            "text": "Überraschenderweise, Canterlot hat ein Museum von _.",
+            "pick": 1
+        },
+        {
+            "text": "Sollten die Elemente der Harmonie versagen, soll _ als letzter Ausweg verwendet werden.",
+            "pick": 1
+        },
+        {
+            "text": "Super Speedy _ Squeezy 5000.",
+            "pick": 1
+        },
+        {
+            "text": "Rarity sollte ein Lied über _ haben, aber es wurde geschnitten.",
+            "pick": 1
+        },
+        {
+            "text": "Raritys neuestes Kleidungsdesign wurde von _.",
+            "pick": 1
+        },
+        {
+            "text": "Rarity hat eine lange vergessene Linie von Kleidungsstücken kreiert, die von _ inspiriert wurden.",
+            "pick": 1
+        },
+        {
+            "text": "Rainbow Dash erhielt eine Gehirnerschütterung, nachdem er in _ geflogen war.",
+            "pick": 1
+        },
+        {
+            "text": "Rainbow Dash ist das einzige Pony in ganz Equestria, das _ kann.",
+            "pick": 1
+        },
+        {
+            "text": "_ sollte _ _.",
+            "pick": 3
+        },
+        {
+            "text": "_ is best pony.",
+            "pick": 1
+        },
+        {
+            "text": "_ has gewann den nationalen Reitpreis für _.",
+            "pick": 2
+        },
+        {
+            "text": "Aloe und Lotus haben mit einer radikalen Behandlung experimentiert, die die therapeutischen Eigenschaften von _ nutzt.",
+            "pick": 1
+        },
+        {
+            "text": "Nachdem Celestia Tausende von Jahren gelebt hat, kann sie sich nur an _ erfreuen.",
+            "pick": 1
+        },
+        {
+            "text": "Nach einer wilden Partynacht erwacht Fluttershy und findet _ in ihrem Bett .",
+            "pick": 1
+        },
+        {
+            "text": "_? Das ist das zukünftige Problem von Spike.",
+            "pick": 1
+        },
+        {
+            "text": "Nach einer wilden Kreuzzugsnacht erfuhr Applebloom, dass _ ihr ganz besonderes Talent war.",
+            "pick": 1
+        },
+        {
+            "text": "CUTIE MARK CRUSADERS; _! YAY!",
+            "pick": 1
+        },
+        {
+            "text": "BUY SOME _!",
+            "pick": 1
+        },
+        {
+            "text": "Ohne Vorwarnung brach Pinkie Pie in ein Lied über _ aus.",
+            "pick": 1
+        },
+        {
+            "text": "Du bist ein Mensch, der nach Equestria transportiert wurde! Das erste, wonach Sie suchen würden, ist _.",
+            "pick": 1
+        },
+        {
+            "text": "Big Mac schläft tief und fest, wenn _ bei ihm ist.",
+            "pick": 1
+        },
+        {
+            "text": "Zecora ist ein bekannter Lieferant von _ und _.",
+            "pick": 2
+        },
+        {
+            "text": "Und so wurde Equestria hergestellt!",
+            "pick": 1
+        },
+        {
+            "text": "Unerklärlich , das einzige, was die Paraspriten nicht essen würden, war _.",
+            "pick": 1
+        },
+        {
+            "text": "In einer Welt ohne Menschen sind Sättel eigentlich für _.",
+            "pick": 1
+        },
+        {
+            "text": "Es ist kein Felsbrocken! Es ist _!",
+            "pick": 1
+        },
+        {
+            "text": "Es stellt sich heraus, dass Hitlers Lieblingspony _ war.",
+            "pick": 1
+        },
+        {
+            "text": "Ich möchte _ sein.",
+            "pick": 1
+        },
+        {
+            "text": "In einem beispiellosen Bösen verwandelte Discord _ in _.",
+            "pick": 2
+        },
+        {
+            "text": "In einem Anfall von Wut, Prinzessin Celestia schickte _ an _ für _.",
+            "pick": 3
+        },
+        {
+            "text": "Everypony war schockiert zu entdecken, dass Scootaloos süßes Zeichen _ war.",
+            "pick": 1
+        },
+        {
+            "text": "Jeden Morgen steigt Prinzessin Celestia auf.",
+            "pick": 1
+        },
+        {
+            "text": "Ich wusste nie, was _ sein könnte, bis Sie alle sein _ mit mir geteilt haben.",
+            "pick": 2
+        },
+        {
+            "text": "Giggle at _!",
+            "pick": 1
+        },
+        {
+            "text": "Liebe Prinzessin Celestia, heute habe ich von _ erfahren.",
+            "pick": 1
+        },
+        {
+            "text": "Daring Do und die Suche nach _.",
+            "pick": 1
+        },
+        {
+            "text": "Reiterforscher haben entdeckt, dass _ das 7. Element der Harmonie ist .",
+            "pick": 1
+        },
+        {
+            "text": "Trotz aller Erwartungen war Sweetie Belles Cutie-Marke _.",
+            "pick": 1
+        },
+        {
+            "text": "Prince Bluebloods Cutie-Marke steht für _ .",
+            "pick": 1
+        },
+        {
+            "text": "Rainbow Dash wollte schon immer _.",
+            "pick": 1
+        },
+        {
+            "text": "Nichts bringt Pinkie mehr zum Lächeln als _.",
+            "pick": 1
+        },
+        {
+            "text": "Es war einmal das Land Equestria, das von _ und _ regiert wurde.",
+            "pick": 2
+        },
+        {
+            "text": "Ponyville ist weithin bekannt für _.",
+            "pick": 1
+        },
+        {
+            "text": "Ponyville war schockiert, _ in Fluttershys Schuppen zu entdecken.",
+            "pick": 1
+        },
+        {
+            "text": "Lauren Faust war schockiert, _ in ihrem Briefkasten zu finden.",
+            "pick": 1
+        },
+        {
+            "text": "Luna hat im Kampf gegen Chrysalis nicht geholfen, weil sie zu beschäftigt mit _ war.",
+            "pick": 1
+        },
+        {
+            "text": "My Cutie mark wäre _.",
+            "pick": 1
+        },
+        {
+            "text": "Nicht viele Leute wissen, dass Tara Strong auch die Stimme von _ ist.",
+            "pick": 1
+        }
+    ],
+    "whiteCards": [
+        "Ein riesiger Pferdeschwanz.",
+        "Eine Saftbox.",
+        "Lesben.",
+        "Ein Baum.",
+        "Hornnekrose.",
+        "Heißen Pony-Sex mit Bloomberg.",
+        "Zigeuner.",
+        "20% kühler werden!",
+        "Sanftes Streicheln des Horns.",
+        "Gabby Gums.",
+        "Futaloo",
+        "Freundschaft",
+        "Fohlenmissbrauch",
+        "Foodmanes",
+        "Fluttertree",
+        "Fluttershy's Shed",
+        "The Rainbow Factory",
+        "My OC.",
+        "The Pegasus Master Race",
+        "Nightmare Moon",
+        "Molestias Sex-Dungeon",
+        "Twilight's Secret Clop Stash",
+        "THE ROYAL CANTERLOT VOICE",
+        "Twilight Sparkle",
+        "Manehatten",
+        "Zwei Stutfohlen scheißen in einen Eimer.",
+        "Mare Supremacy",
+        "Twist",
+        "Vinyl Scratch / DJ Pon-3",
+        "Whipping the Earth Pony Slaves",
+        "Man Spike",
+        "Unicorn Privilege.",
+        "Wolfieshy.",
+        "Winter Wrap Up.",
+        "Making Magic.",
+        "Wincest.",
+        "Zecoras Meth-Labor.",
+        "Lyra Heartstrings.",
+        "Worst Pony.",
+        "Magic.",
+        "Jappleack.",
+        "Joes Donut Hole.",
+        "John Joseco.",
+        "Ein Pony nicht sexuell umarmen.",
+        "1000 Jahre auf dem Mond gefangen sein.",
+        "Aus Equestria verbannt (täglich).",
+        "Big Macintosh.",
+        "Bestes Pony.",
+        "Applejack.",
+        "Applebucking.",
+        "Noch ein Donut!",
+        "Mit zusätzlichen Streuseln!",
+        "Baked Bads.",
+        "Avasting Fluttershy's Ass.",
+        "Cumming in Rainbow Dash.",
+        "Eine extrem geile Granny Smith.",
+        "Ein epischer Ponykrieg in ferner Zukunft.",
+        "Ein Sockenfetisch.",
+        "Ein sexy Sattel.",
+        "Ein taktischer Sonic Rainnuke.",
+        "Ein Sonic Raingasm.",
+        "Equestria.",
+        "Discord.",
+        "Fillidelphia.",
+        "Facehoofing.",
+        "Fluffy Pony.",
+        "Filly Fiddling.",
+        "Fluttershy's Secret Stash.",
+        "Fluttershy.",
+        "Cupcakes.",
+        "Da Magicks.",
+        "Dark Magicks.",
+        "Daring Do Fanfiction.",
+        "Diamond Dog Rollenspiel .",
+        "Derpy Hooves",
+        "Cider",
+        "Clopfics",
+        "Clopping",
+        "Crippled Foals",
+        "BonBon",
+        "Books",
+        "Celestia's Hoof",
+        "Celestias massiver Harem von Fohlen.",
+        "Ein dekorativer Toaster gemütlich.",
+        "Ein Gänseblümchen-Sandwich.",
+        "Ein süßes Zeichen.",
+        "Ein menschlicher Fetisch.",
+        "Ein geiler Hengst.",
+        "Ein Huf in den Arsch.",
+        "Ein rassistisch reines Cloudsdale.",
+        "Eine Stute in Hitze.",
+        "Ein Saftbox-Fetisch.",
+        "Überraschung.",
+        "Stretching diese Gesäßmuskeln.",
+        "Sweetie Belle.",
+        "Pinkie Pie in vollem Latex.",
+        "Handlung",
+        "Spikes Verständnis der Biologie",
+        "Pinkie Pie",
+        "Steven Magnets",
+        "Ponys tragen c Lothes.",
+        "Speaking Fancy.",
+        "Poison Joke.",
+        "Ponys mit verdammten Laserstrahlen an den Köpfen!",
+        "Shaking Dat Plot.",
+        "Sloppy Clop.",
+        "Shipping.",
+        "Pants .",
+        "Verwaiste Fohlen.",
+        "Der Mond.",
+        "Octavia.",
+        "The Friendship Express.",
+        "Pegasus-Flügeldeformitäten.",
+        "Die große galoppierende Gala.",
+        "Die große und mächtige Trixie Lulamoon.",
+        "Pinkamenas Bügelsäge.",
+        "Die Kuchen.",
+        "Der Schokoladenmousse-Elch.",
+        "Pinkamena Diane Pie.",
+        "Sweetie Belles jungfräuliche Marshmallow-Muschi.",
+        "Sweetie Bot.",
+        "Das Lyra-Plüschtier.",
+        "Das Quetschgeräusch.",
+        "Ponys.",
+        "Heimlich ein Wechselbalg.",
+        "Pony-Rassismus.",
+        "Scootabuse.",
+        "Pony-Griffon-Ehe.",
+        "Scoot, Scoot-A-Loo .",
+        "Rainbow Dash.",
+        "Rarity.",
+        "Ponychan.",
+        "Rainbow Crash.",
+        "Queen Chrysalis.",
+        "Raging Wingboners.",
+        "Princess Celestia.",
+        "Princess Molestia.",
+        "Prinzessin Luna.",
+        "Prinzessin Mi Amore Cadenza."
+    ]
+}

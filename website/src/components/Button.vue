@@ -28,7 +28,8 @@ export default {
             type: Boolean,
             default: false
         }
-    }
+    },
+    emits: ['click'],
 }
 </script>
 <style lang="scss" scoped>
