@@ -1,23 +1,31 @@
 <template>
-  <div class="shortcuts">
-    <span @click="$emit('click', 'leave')" v-if="leave" class="material-icons">exit_to_app</span>
-    <span @click="$emit('click', 'delete')" v-if="del" class="delete material-icons">delete</span>
-  </div>
+    <div class="shortcuts">
+        <span
+            v-if="leave"
+            class="material-icons"
+            @click="$emit('click', 'leave')"
+        >exit_to_app</span>
+        <span
+            v-if="del"
+            class="delete material-icons"
+            @click="$emit('click', 'delete')"
+        >delete</span>
+    </div>
 </template>
 
 <script>
 export default {
-  name: 'Shortcuts',
-  props: {
-    leave: {
-      type: Boolean,
-      default: false
-    },
-    del: {
-      type: Boolean,
-      default: false
+    name: 'Shortcuts',
+    props: {
+        leave: {
+            type: Boolean,
+            default: false
+        },
+        del: {
+            type: Boolean,
+            default: false
+        }
     }
-  }
 }
 </script>
 <style scoped lang="scss">

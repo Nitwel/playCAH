@@ -1,40 +1,48 @@
 <template>
-  <div class="effect" :style="{'--effect-time': `${time}ms`}">
-    <slot />
-    <img v-if="show && effect == 'pop'" class="effect-image pop" src="../assets/place.svg"  alt="">
-  </div>
+    <div
+        class="effect"
+        :style="{'--effect-time': `${time}ms`}"
+    >
+        <slot />
+        <img
+            v-if="show && effect == 'pop'"
+            class="effect-image pop"
+            src="../assets/place.svg"
+            alt=""
+        >
+    </div>
 </template>
 
 <script>
 export default {
-  name: 'Effect',
-  props: {
-    trigger: {
-      type: String,
-      default: ''
+    name: 'Effect',
+    props: {
+        trigger: {
+            type: String,
+            default: ''
+        },
+        time: {
+            type: Number,
+            default: 800
+        },
+        effect: {
+            type: String,
+            default: null
+        }
     },
-    time: {
-      type: Number,
-      default: 800
+    data () {
+        return {
+            show: false
+        }
     },
-    effect: {
-      type: String,
-      default: null
+    created () {
+        this.$root.$on(this.trigger, (event) => {
+            this.show = true
+            setTimeout(() => {
+                this.show = false
+            }, this.time)
+        })
     }
-  },
-  data () {
-    return {
-      show: false
-    }
-  },
-  created () {
-    this.$root.$on(this.trigger, (event) => {
-      this.show = true
-      setTimeout(() => {
-        this.show = false
-      }, this.time)
-    })
-  }
 }
 </script>
 <style scoped lang="scss">

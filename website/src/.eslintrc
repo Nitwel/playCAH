@@ -16,5 +16,23 @@
   "plugins": [
   ],
   "rules": {
-  }
+    "@typescript-eslint/explicit-module-boundary-types": "off",
+    "indent": ["error", 4],
+    "vue/html-indent": ["error", 4, {
+      "attribute": 1,
+      "baseIndent": 1,
+      "closeBracket": 0,
+      "alignAttributesVertically": true,
+      "ignores": []
+    }]
+  },
+  "overrides": [
+    {
+      // enable the rule specifically for TypeScript files
+      "files": ["*.ts", "*.tsx"],
+      "rules": {
+        "@typescript-eslint/explicit-module-boundary-types": ["error"]
+      }
+    }
+  ]
 }

@@ -1,167 +1,228 @@
 <template>
-  <div class="game">
-    <Shortcuts leave :del="!deleted && !winnerSelected" @click="onShortcut"/>
-    <div class="title">{{title}}</div>
-    <div class="points">
-      <span
-        v-for="user in points"
-        :key="user.name"
-        :class="{disconnected: !user.connected}"
-      >{{$store.state.name == user.name? '(you)': ''}}{{zar == user.name? '(czar)': ''}} {{user.name}} has {{user.points}} points.</span>
-    </div>
-    <div class="table">
-      <div class="slots">
-        <div class="user-slot" v-for="(user, pos) in users" :key="user.name">
-          <Card
-            v-for="(p, i) in blackCard.pick"
-            :key="pos + '-' + i"
-            :event-id="pos"
-            :indeterminate="!user.placed"
-            :small="blackCard.pick > 1"
-            :xSmall="blackCard.pick > 2"
-            :class="{placed: user.placed, clickable: isZar && allPlaced && !allRevealed, winner: winnerSelected && posNames[pos] === $store.state.winner}"
-            @click.native="selected(pos)"
-          >
-            <User v-if="!allPlaced" :name="user.name" :small="!user.placed" :x-small="user.placed" class="abs"/>
-            <User v-if="winnerSelected" :name="posNames[pos]" x-small class="abs"/>
-            <span class="questionmark abs" v-if="user.placed && !isRevealed(pos)">?</span>
-            <span class="revealed" v-if="isRevealed(pos)" v-html="revealed[pos][i]"></span>
-            <transition name="scaleSelect">
-              <Button v-if="isZar && allRevealed && i == blackCard.pick - 1 && !winnerSelected" class="winner abs" icon="done" rounded @click="onSelectWinner(pos)"></Button>
-            </transition>
-          </Card>
+    <div class="game">
+        <Shortcuts
+            leave
+            :del="!deleted && !winnerSelected"
+            @click="onShortcut"
+        />
+        <div class="title">
+            {{ title }}
         </div>
-        <div class="user-slot" v-if="!isZar && !allPlaced && !playerPlaced">
-          <Effect v-for="p in blackCard.pick" :key="p" :trigger="'slot'+p" :time="500" effect="pop">
-            <Card class="user-card-fields" :id="p" indeterminate :small="blackCard.pick > 1" :xSmall="blackCard.pick > 2">
-              <img class="add" src="../assets/add-full.svg" alt="add">
+        <div class="points">
+            <span
+                v-for="user in points"
+                :key="user.name"
+                :class="{disconnected: !user.connected}"
+            >{{ $store.state.name == user.name? '(you)': '' }}{{ zar == user.name? '(czar)': '' }} {{ user.name }} has {{ user.points }} points.</span>
+        </div>
+        <div class="table">
+            <div class="slots">
+                <div
+                    v-for="(user, pos) in users"
+                    :key="user.name"
+                    class="user-slot"
+                >
+                    <Card
+                        v-for="(p, i) in blackCard.pick"
+                        :key="pos + '-' + i"
+                        :event-id="pos"
+                        :indeterminate="!user.placed"
+                        :small="blackCard.pick > 1"
+                        :x-small="blackCard.pick > 2"
+                        :class="{placed: user.placed, clickable: isZar && allPlaced && !allRevealed, winner: winnerSelected && posNames[pos] === $store.state.winner}"
+                        @click.native="selected(pos)"
+                    >
+                        <User
+                            v-if="!allPlaced"
+                            :name="user.name"
+                            :small="!user.placed"
+                            :x-small="user.placed"
+                            class="abs"
+                        />
+                        <User
+                            v-if="winnerSelected"
+                            :name="posNames[pos]"
+                            x-small
+                            class="abs"
+                        />
+                        <span
+                            v-if="user.placed && !isRevealed(pos)"
+                            class="questionmark abs"
+                        >?</span>
+                        <span
+                            v-if="isRevealed(pos)"
+                            class="revealed"
+                            v-html="revealed[pos][i]"
+                        />
+                        <transition name="scaleSelect">
+                            <Button
+                                v-if="isZar && allRevealed && i == blackCard.pick - 1 && !winnerSelected"
+                                class="winner abs"
+                                icon="done"
+                                rounded
+                                @click="onSelectWinner(pos)"
+                            />
+                        </transition>
+                    </Card>
+                </div>
+                <div
+                    v-if="!isZar && !allPlaced && !playerPlaced"
+                    class="user-slot"
+                >
+                    <Effect
+                        v-for="p in blackCard.pick"
+                        :key="p"
+                        :trigger="'slot'+p"
+                        :time="500"
+                        effect="pop"
+                    >
+                        <Card
+                            :id="p"
+                            class="user-card-fields"
+                            indeterminate
+                            :small="blackCard.pick > 1"
+                            :x-small="blackCard.pick > 2"
+                        >
+                            <img
+                                class="add"
+                                src="../assets/add-full.svg"
+                                alt="add"
+                            >
+                        </Card>
+                    </Effect>
+                </div>
+            </div>
+            <Card
+                class="black"
+                black
+            >
+                <span v-html="blackCard.text" />
             </Card>
-          </Effect>
         </div>
-      </div>
-      <Card class="black" black>
-        <span v-html="blackCard.text"></span>
-      </Card>
+        <Hands
+            :disabled="isZar"
+            :all-placed="allPlaced"
+            :deleting="deleting && !deleted"
+            @deleted="deleted = true"
+        />
     </div>
-    <Hands :disabled="isZar" :allPlaced="allPlaced" :deleting="deleting && !deleted" @deleted="deleted = true"/>
-  </div>
 </template>
 
 <script>
 export default {
-  name: 'Game',
-  props: {
-    name: String
-  },
-  data () {
-    return {
-      deleted: false,
-      deleting: false
-    }
-  },
-  created () {
-    this.$root.$on('next_round', () => {
-      this.deleted = false
-      this.deleting = false
-      var audio = new Audio('/sounds/win.wav')
-      audio.play()
-    })
-  },
-  computed: {
-    isZar () {
-      return this.$store.state.zar === this.$store.state.name
+    name: 'Game',
+    props: {
+        name: String
     },
-    playerPlaced () {
-      const name = this.$store.state.name
-      return this.$store.state.users.find(u => u.name === name).placed
-    },
-    allPlaced () {
-      return this.$store.getters.allPlaced
-    },
-    allRevealed () {
-      return this.$store.getters.allRevealed
-    },
-    winnerSelected () {
-      return this.$store.state.posNames && Object.values(this.$store.state.posNames).length > 0
-    },
-    users () {
-      let users = this.$store.getters.connectedUsers
-      const currentUser = users.find(u => u.name === this.$store.state.name)
-      users = users.filter(u => u !== currentUser)
-      users.push(currentUser)
-
-      if (Object.keys(this.revealed).length !== 0) {
-        users = users.filter(u => u.placed)
-      }
-
-      if (!this.isZar && (this.allPlaced || this.playerPlaced)) {
-        return users.filter(u => u.name !== this.$store.state.zar)
-      } else {
-        return users.filter(u => u.name !== this.$store.state.name && u.name !== this.$store.state.zar)
-      }
-    },
-    points () {
-      return this.$store.state.users
-    },
-    blackCard () {
-      return this.$store.state.blackCard
-    },
-    revealed () {
-      return this.$store.state.revealed
-    },
-    posNames () {
-      return this.$store.state.posNames
-    },
-    zar () {
-      return this.$store.state.zar
-    },
-    title () {
-      if (this.winnerSelected) {
-        return `${this.$store.state.winner} won. Next round starts in ${this.$store.state.timer}s.`
-      }
-
-      if (this.isZar) {
-        if (this.allPlaced && !this.allRevealed) {
-          return 'Its your turn to reveal the cards!'
-        } else if (this.allRevealed) {
-          return 'Now select your favorite!'
-        } else {
-          return 'Wait until all players have placed their cards!'
+    data () {
+        return {
+            deleted: false,
+            deleting: false
         }
-      } else {
-        if (this.allPlaced && !this.allRevealed) {
-          return `${this.zar} is revealing the cards!`
-        } else if (this.allRevealed) {
-          return `${this.zar} is selecting is favorite!`
-        } else {
-          return `Place your cards! ${this.zar} is the czar.`
+    },
+    computed: {
+        isZar () {
+            return this.$store.state.zar === this.$store.state.name
+        },
+        playerPlaced () {
+            const name = this.$store.state.name
+            return this.$store.state.users.find(u => u.name === name).placed
+        },
+        allPlaced () {
+            return this.$store.getters.allPlaced
+        },
+        allRevealed () {
+            return this.$store.getters.allRevealed
+        },
+        winnerSelected () {
+            return this.$store.state.posNames && Object.values(this.$store.state.posNames).length > 0
+        },
+        users () {
+            let users = this.$store.getters.connectedUsers
+            const currentUser = users.find(u => u.name === this.$store.state.name)
+            users = users.filter(u => u !== currentUser)
+            users.push(currentUser)
+
+            if (Object.keys(this.revealed).length !== 0) {
+                users = users.filter(u => u.placed)
+            }
+
+            if (!this.isZar && (this.allPlaced || this.playerPlaced)) {
+                return users.filter(u => u.name !== this.$store.state.zar)
+            } else {
+                return users.filter(u => u.name !== this.$store.state.name && u.name !== this.$store.state.zar)
+            }
+        },
+        points () {
+            return this.$store.state.users
+        },
+        blackCard () {
+            return this.$store.state.blackCard
+        },
+        revealed () {
+            return this.$store.state.revealed
+        },
+        posNames () {
+            return this.$store.state.posNames
+        },
+        zar () {
+            return this.$store.state.zar
+        },
+        title () {
+            if (this.winnerSelected) {
+                return `${this.$store.state.winner} won. Next round starts in ${this.$store.state.timer}s.`
+            }
+
+            if (this.isZar) {
+                if (this.allPlaced && !this.allRevealed) {
+                    return 'Its your turn to reveal the cards!'
+                } else if (this.allRevealed) {
+                    return 'Now select your favorite!'
+                } else {
+                    return 'Wait until all players have placed their cards!'
+                }
+            } else {
+                if (this.allPlaced && !this.allRevealed) {
+                    return `${this.zar} is revealing the cards!`
+                } else if (this.allRevealed) {
+                    return `${this.zar} is selecting is favorite!`
+                } else {
+                    return `Place your cards! ${this.zar} is the czar.`
+                }
+            }
         }
-      }
-    }
-  },
-  methods: {
-    onShortcut (type) {
-      if (type === 'delete') {
-        this.deleting = !this.deleting
-      } else if (type === 'leave') {
-        this.$store.dispatch('leave_game')
-      }
     },
-    isRevealed (pos) {
-      return this.revealed[pos] && this.revealed[pos].length > 0
+    created () {
+        this.$root.$on('next_round', () => {
+            this.deleted = false
+            this.deleting = false
+            var audio = new Audio('/sounds/win.wav')
+            audio.play()
+        })
     },
-    selected (pos) {
-      if (!this.isZar || !this.allPlaced || this.revealed[pos]) return
+    methods: {
+        onShortcut (type) {
+            if (type === 'delete') {
+                this.deleting = !this.deleting
+            } else if (type === 'leave') {
+                this.$store.dispatch('leave_game')
+            }
+        },
+        isRevealed (pos) {
+            return this.revealed[pos] && this.revealed[pos].length > 0
+        },
+        selected (pos) {
+            if (!this.isZar || !this.allPlaced || this.revealed[pos]) return
 
-      this.$store.dispatch('reveal_cards', pos)
-    },
-    onSelectWinner (pos) {
-      var audio = new Audio('/sounds/plopplop.mp3')
-      audio.play()
+            this.$store.dispatch('reveal_cards', pos)
+        },
+        onSelectWinner (pos) {
+            var audio = new Audio('/sounds/plopplop.mp3')
+            audio.play()
 
-      this.$store.dispatch('winner', pos)
+            this.$store.dispatch('winner', pos)
+        }
     }
-  }
 }
 </script>
 <style scoped lang="scss">

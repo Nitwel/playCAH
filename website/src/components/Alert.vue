@@ -1,52 +1,56 @@
 <template>
-  <transition name="alert">
-    <div class="alert" :class="type" v-if="show">
-        <span class="material-icons">{{icon}}</span>{{message}}
-    </div>
-  </transition>
+    <transition name="alert">
+        <div
+            v-if="show"
+            class="alert"
+            :class="type"
+        >
+            <span class="material-icons">{{ icon }}</span>{{ message }}
+        </div>
+    </transition>
 </template>
 
 <script>
 export default {
-  name: 'Alert',
-  data () {
-    return {
-      show: false,
-      message: '',
-      timeout: undefined,
-      type: undefined
+    name: 'Alert',
+    data () {
+        return {
+            show: false,
+            message: '',
+            timeout: undefined,
+            type: undefined
+        }
+    },
+    computed: {
+        icon () {
+            switch (this.type) {
+            case 'error':
+                return 'warning'
+            default:
+                return 'info'
+            }
+        }
+    },
+    created () {
+        this.$root.$on('error', (message) => {
+            this.type = 'error'
+            this.onEvent(message)
+        })
+        this.$root.$on('info', (message) => {
+            this.type = 'info'
+            this.onEvent(message)
+        })
+    },
+    methods: {
+        onEvent (message) {
+            this.message = message
+            this.show = true
+            clearTimeout(this.timeout)
+            this.timeout = setTimeout(() => {
+                this.show = false
+            }, 3000)
+        }
     }
-  },
-  created () {
-    this.$root.$on('error', (message) => {
-      this.type = 'error'
-      this.onEvent(message)
-    })
-    this.$root.$on('info', (message) => {
-      this.type = 'info'
-      this.onEvent(message)
-    })
-  },
-  computed: {
-    icon () {
-      switch (this.type) {
-        case 'error':
-          return 'warning'
-        default:
-          return 'info'
-      }
-    }
-  },
-  methods: {
-    onEvent (message) {
-      this.message = message
-      this.show = true
-      clearTimeout(this.timeout)
-      this.timeout = setTimeout(() => {
-        this.show = false
-      }, 3000)
-    }
-  }
 }
 </script>
 <style scoped lang="scss">

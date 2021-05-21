@@ -1,23 +1,39 @@
 <template>
-  <div class="user" :class="{ large, small, invite, xSmall }">
-    <avataaars
-      v-if="!invite"
-      class="image"
-      avatar-style="Circle"
-      v-bind="look"
-      :random="false"
-    ></avataaars>
-    <img v-else class="invite" src="../assets/add.svg" alt="add" />
-    <div v-if="name && !hideName" class="name">{{ name }}</div>
-    <div class="info" v-if="!invite && user">
-      <span class="title">Player info</span>
-      <span>Name: {{ name }}</span>
-      <span>Points: {{ user.points || 0 }}</span>
+    <div
+        class="user"
+        :class="{ large, small, invite, xSmall }"
+    >
+        <avataaars
+            v-if="!invite"
+            class="image"
+            avatar-style="Circle"
+            v-bind="look"
+            :random="false"
+        />
+        <img
+            v-else
+            class="invite"
+            src="../assets/add.svg"
+            alt="add"
+        >
+        <div
+            v-if="name && !hideName"
+            class="name"
+        >
+            {{ name }}
+        </div>
+        <div
+            v-if="!invite && user"
+            class="info"
+        >
+            <span class="title">Player info</span>
+            <span>Name: {{ name }}</span>
+            <span>Points: {{ user.points || 0 }}</span>
+        </div>
     </div>
-  </div>
 </template>
 
-<script>
+<script lang="ts">
 import Avataaars from "vuejs-avataaars-nitwel/src/Avataaars.vue";
 import { mouthTypes } from "vuejs-avataaars-nitwel/src/assetsTypes/mouth.js";
 import { eyeTypes } from "vuejs-avataaars-nitwel/src/assetsTypes/eyes.js";
@@ -28,94 +44,100 @@ import { accessoriesTypes } from "vuejs-avataaars-nitwel/src/assetsTypes/accesso
 import { facialHairTypes } from "vuejs-avataaars-nitwel/src/assetsTypes/facial-hair.js";
 import { GraphicShirtTypes } from "vuejs-avataaars-nitwel/src/assetsTypes/graphic-shirt.js";
 import {
-  hairColors,
-  skinColors,
-  hatAndShirtColors,
+    hairColors,
+    skinColors,
+    hatAndShirtColors,
 } from "vuejs-avataaars-nitwel/src/assetsTypes/colors.js";
+import { computed } from "vue";
+import { store } from "../store";
 
 const types = {
-  mouthType: mouthTypes,
-  eyeType: eyeTypes,
-  eyebrowType: eyebrowTypes,
-  clotheType: clothesType,
-  topType: topTypes,
-  accessoriesType: accessoriesTypes,
-  facialHairType: facialHairTypes,
-  graphicType: GraphicShirtTypes,
-  facialHairColor: hairColors,
-  hairColor: hairColors,
-  skinColor: skinColors,
-  topColor: hatAndShirtColors,
-  clotheColor: hatAndShirtColors,
+    mouthType: mouthTypes,
+    eyeType: eyeTypes,
+    eyebrowType: eyebrowTypes,
+    clotheType: clothesType,
+    topType: topTypes,
+    accessoriesType: accessoriesTypes,
+    facialHairType: facialHairTypes,
+    graphicType: GraphicShirtTypes,
+    facialHairColor: hairColors,
+    hairColor: hairColors,
+    skinColor: skinColors,
+    topColor: hatAndShirtColors,
+    clotheColor: hatAndShirtColors,
 };
 
 export default {
-  name: "User",
-  components: {
-    Avataaars,
-  },
-  props: {
-    name: {
-      type: String,
-      default: null,
-      required: true,
+    name: "User",
+    components: {
+        Avataaars,
     },
-    hideName: {
-      type: Boolean,
-      default: false,
+    props: {
+        name: {
+            type: String,
+            default: '',
+            required: true,
+        },
+        hideName: {
+            type: Boolean,
+            default: false,
+        },
+        invite: {
+            type: Boolean,
+            default: false,
+        },
+        large: {
+            type: Boolean,
+            default: false,
+        },
+        small: {
+            type: Boolean,
+            default: false,
+        },
+        xSmall: {
+            type: Boolean,
+            default: false,
+        },
     },
-    invite: {
-      type: Boolean,
-      default: false,
-    },
-    large: {
-      type: Boolean,
-      default: false,
-    },
-    small: {
-      type: Boolean,
-      default: false,
-    },
-    xSmall: {
-      type: Boolean,
-      default: false,
-    },
-  },
-  setup() {},
-  computed: {
-    user() {
-      return this.$store.state.users.find((user) => user.name === this.name);
-    },
-    look() {
-      const data = types;
+    setup(props) {
 
-      const look = {};
-
-      Object.entries(data).forEach(([category, options], index) => {
-        const optionList = Object.keys(options);
-        const hashSection = parseInt(
-          this.hash.substring(index * 2, index * 2 + 2)
+        const user = computed(() =>
+            store.state.users.find((user) => user.name === props.name)
         );
 
-        look[category] = optionList[hashSection % optionList.length];
-      });
-      return look;
-    },
-    hash() {
-      const targetLength = 24;
-      let hash = "";
-      let code = 9999;
-      for (let i = 0; i < targetLength; i++) {
-        code =
-          (this.name.charCodeAt(i % this.name.length) + code) %
-          (this.name.length + 178);
+        const look = computed(() => {
+            const data = types;
 
-        const codeStr = "00" + (code % 100);
-        hash += codeStr.substring(codeStr.length - 2);
-      }
-      return hash;
+            const look: Record<string, any> = {};
+
+            Object.entries(data).forEach(([category, options], index) => {
+                const optionList = Object.keys(options);
+                const hashSection = parseInt(
+                    hash.value.substring(index * 2, index * 2 + 2)
+                );
+
+                look[category] = optionList[hashSection % optionList.length];
+            });
+            return look;
+        });
+
+        const hash = computed(() => {
+            const targetLength = 24;
+            let hash = "";
+            let code = 9999;
+            for (let i = 0; i < targetLength; i++) {
+                code =
+          (props.name.charCodeAt(i % props.name.length) + code) %
+          (props.name.length + 178);
+
+                const codeStr = "00" + (code % 100);
+                hash += codeStr.substring(codeStr.length - 2);
+            }
+            return hash;
+        });
+
+        return { user, look, hash };
     },
-  },
 };
 </script>
 <style scoped lang="scss">

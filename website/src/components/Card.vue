@@ -1,54 +1,76 @@
 <template>
-  <div class="card" :class="{small, xSmall}">
-    <div class="card-element" :class="{indeterminate, black, selectable}" ref="card">
-      <svg v-if="indeterminate" class="border" viewBox="0 0 200 300">
-        <rect x="5" y="5" width="190" height="290" rx="20" ry="20" stroke="var(--light-grey)" stroke-width="5" stroke-dasharray="20 20" fill="transparent"/>
-      </svg>
-      <slot />
+    <div
+        class="card"
+        :class="{small, xSmall}"
+    >
+        <div
+            ref="card"
+            class="card-element"
+            :class="{indeterminate, black, selectable}"
+        >
+            <svg
+                v-if="indeterminate"
+                class="border"
+                viewBox="0 0 200 300"
+            >
+                <rect
+                    x="5"
+                    y="5"
+                    width="190"
+                    height="290"
+                    rx="20"
+                    ry="20"
+                    stroke="var(--light-grey)"
+                    stroke-width="5"
+                    stroke-dasharray="20 20"
+                    fill="transparent"
+                />
+            </svg>
+            <slot />
+        </div>
+        <slot name="container" />
     </div>
-    <slot name="container"/>
-  </div>
 </template>
 
 <script>
 export default {
-  name: 'Card',
-  props: {
-    black: {
-      type: Boolean,
-      default: false
+    name: 'Card',
+    props: {
+        black: {
+            type: Boolean,
+            default: false
+        },
+        indeterminate: {
+            type: Boolean,
+            default: false
+        },
+        small: {
+            type: Boolean,
+            default: false
+        },
+        xSmall: {
+            type: Boolean,
+            default: false
+        },
+        selectable: {
+            type: Boolean,
+            default: false
+        },
+        eventId: {
+            type: Number,
+            default: undefined
+        }
     },
-    indeterminate: {
-      type: Boolean,
-      default: false
-    },
-    small: {
-      type: Boolean,
-      default: false
-    },
-    xSmall: {
-      type: Boolean,
-      default: false
-    },
-    selectable: {
-      type: Boolean,
-      default: false
-    },
-    eventId: {
-      type: Number,
-      default: undefined
-    }
-  },
-  created () {
-    if (this.eventId !== undefined) {
-      this.$root.$on('rotate_' + this.eventId, () => {
-        const card = this.$refs.card
-        if (!card) return
+    created () {
+        if (this.eventId !== undefined) {
+            this.$root.$on('rotate_' + this.eventId, () => {
+                const card = this.$refs.card
+                if (!card) return
 
-        card.classList.add('rotating')
-      })
+                card.classList.add('rotating')
+            })
+        }
     }
-  }
 }
 </script>
 <style scoped lang="scss">

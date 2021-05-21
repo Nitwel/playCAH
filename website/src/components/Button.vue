@@ -1,27 +1,34 @@
 <template>
-  <button @click="$emit('click')" class="button" :class="{icon, rounded, disabled}">
-      <span v-if="icon" class="icon material-icons">{{icon}}</span>
-      <slot v-else/>
-  </button>
+    <button
+        class="button"
+        :class="{icon, rounded, disabled}"
+        @click="$emit('click')"
+    >
+        <span
+            v-if="icon"
+            class="icon material-icons"
+        >{{ icon }}</span>
+        <slot v-else />
+    </button>
 </template>
 
 <script>
 export default {
-  name: 'Button',
-  props: {
-    icon: {
-      type: String,
-      default: null
-    },
-    rounded: {
-      type: Boolean,
-      default: false
-    },
-    disabled: {
-      type: Boolean,
-      default: false
+    name: 'Button',
+    props: {
+        icon: {
+            type: String,
+            default: null
+        },
+        rounded: {
+            type: Boolean,
+            default: false
+        },
+        disabled: {
+            type: Boolean,
+            default: false
+        }
     }
-  }
 }
 </script>
 <style lang="scss" scoped>

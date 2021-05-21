@@ -1,28 +1,35 @@
 <template>
-  <input :type="type" :placeholder="placeholder" :disabled="disabled" class="input" @input="$emit('input', $event.target.value)" :value="value"/>
+    <input
+        :type="type"
+        :placeholder="placeholder"
+        :disabled="disabled"
+        class="input"
+        :value="value"
+        @input="$emit('input', $event.target.value)"
+    >
 </template>
 
 <script>
 export default {
-  name: 'Input',
-  props: {
-    value: {
-      type: [String, Number],
-      default: ''
-    },
-    type: {
-      type: String,
-      default: 'text'
-    },
-    placeholder: {
-      type: String,
-      default: 'Enter...'
-    },
-    disabled: {
-      type: Boolean,
-      default: false
+    name: 'Input',
+    props: {
+        value: {
+            type: [String, Number],
+            default: ''
+        },
+        type: {
+            type: String,
+            default: 'text'
+        },
+        placeholder: {
+            type: String,
+            default: 'Enter...'
+        },
+        disabled: {
+            type: Boolean,
+            default: false
+        }
     }
-  }
 }
 </script>
 <style lang="scss" scoped>

@@ -1,87 +1,118 @@
 <template>
-  <div id="home">
-    <div class="title">CAH by Nitwel<div class="tag">Unofficial</div></div>
-    <User :name="name" large hideName/>
-    <div class="start">
-      <Input placeholder="Your name..." v-model="name" maxlength="12"/>
-      <Input v-if="showLobbyInput" placeholder="Enter lobby name..." v-model="lobby" maxlength="20"/>
-      <div class="btns">
-        <Button v-if="!showLobbyInput" @click="resetLobby">Change Lobby</Button>
-        <Button @click="onClick" :disabled="!connected">Join</Button>
-      </div>
+    <div id="home">
+        <div class="title">
+            CAH by Nitwel<div class="tag">
+                Unofficial
+            </div>
+        </div>
+        <User
+            :name="name"
+            large
+            hide-name
+        />
+        <div class="start">
+            <Input
+                v-model="name"
+                placeholder="Your name..."
+                maxlength="12"
+            />
+            <Input
+                v-if="showLobbyInput"
+                v-model="lobby"
+                placeholder="Enter lobby name..."
+                maxlength="20"
+            />
+            <div class="btns">
+                <Button
+                    v-if="!showLobbyInput"
+                    @click="resetLobby"
+                >
+                    Change Lobby
+                </Button>
+                <Button
+                    :disabled="!connected"
+                    @click="onClick"
+                >
+                    Join
+                </Button>
+            </div>
+        </div>
+        <div class="footer">
+            <a
+                href="https://docs.google.com/forms/d/e/1FAIpQLScPaRQoTIMgzjF6Bmgbi6TESD2KnfzohOG0opd9qN4BJ21YTg/viewform?usp=sf_link"
+                target="_blank"
+            >Give feedback</a>
+            <a
+                href="https://github.com/sponsors/Nitwel"
+                target="_blank"
+            >Sponsor me!</a>
+            <a href="disclaimer.html">Disclamer</a>
+            <a href="https://github.com/Nitwel/CAH">Source Code</a>
+        </div>
+        <span class="version">{{ version }}</span>
     </div>
-    <div class="footer">
-      <a href="https://docs.google.com/forms/d/e/1FAIpQLScPaRQoTIMgzjF6Bmgbi6TESD2KnfzohOG0opd9qN4BJ21YTg/viewform?usp=sf_link" target="_blank">Give feedback</a>
-      <a href="https://github.com/sponsors/Nitwel" target="_blank">Sponsor me!</a>
-      <a href="disclaimer.html">Disclamer</a>
-      <a href="https://github.com/Nitwel/CAH">Source Code</a>
-    </div>
-    <span class="version">{{version}}</span>
-  </div>
 </template>
 
-<script>
+<script lang="ts">
+import { computed, onMounted, ref } from 'vue'
 import packageJson from '../../package.json'
+import {store} from '../store'
+import {emitter} from '../setup'
 
 export default {
-  name: 'Home',
-  data () {
-    return {
-      showLobbyInput: true
-    }
-  },
-  created () {
-    if (this.lobby !== '') this.showLobbyInput = false
-  },
-  props: {
+    name: 'Home',
+    setup() {
+        const showLobbyInput = ref(true)
 
-  },
-  computed: {
-    version () {
-      return 'v' + (packageJson.version || '0.1.0')
-    },
-    name: {
-      get () {
-        return this.$store.state.name
-      },
-      set (val) {
-        this.$store.state.name = val
-      }
-    },
-    lobby: {
-      get () {
-        return this.$store.state.lobby
-      },
-      set (val) {
-        this.$store.state.lobby = val
-      }
-    },
-    connected () {
-      return this.$store.state.connected
-    }
-  },
-  methods: {
-    onClick () {
-      if (!this.connected) {
-        this.$root.$emit('error', 'Not connected to the server.')
-        return
-      }
+        const version = computed(() => 'v' + packageJson.version || '1.0.0')
+        const name = computed({
+            get(): string {
+                return store.state.name
+            },
+            set(name: string) {
+                store.state.name = name
+            }
+        })
 
-      if (!this.name) {
-        this.$root.$emit('error', 'You must provide a user name.')
-        return
-      }
+        const lobby = computed({
+            get(): string {
+                return store.state.lobby
+            },
+            set(name: string) {
+                store.state.lobby = name
+            }
+        })
 
-      if (!this.lobby) {
-        this.$root.$emit('error', 'You must provide a lobby name.')
-        return
-      }
-      this.$store.dispatch('join_lobby')
+        const connected = computed(() => store.state.connected)
+
+        onMounted(() => {
+            if (lobby.value !== '') showLobbyInput.value = false
+        })
+
+        return {showLobbyInput, version, name, lobby, connected, onClick, resetLobby}
+
+        function onClick () {
+            if (!connected.value) {
+                emitter.emit('error', 'Not connected to the server.')
+                return
+            }
+
+            if (!name.value) {
+                emitter.emit('error', 'You must provide a user name.')
+                return
+            }
+
+            if (!lobby.value) {
+                emitter.emit('error', 'You must provide a lobby name.')
+                return
+            }
+            store.dispatch('join_lobby')
+        }
+
+        function resetLobby () {
+            showLobbyInput.value = true
+        }
     },
-    resetLobby () {
-      this.showLobbyInput = true
-    }
-  }
 }
 </script>
 <style scoped lang="scss">

@@ -1,15 +1,13 @@
 <template>
-  <div class="hello">
-
-  </div>
+    <div class="hello" />
 </template>
 
 <script>
 export default {
-  name: 'Loader',
-  props: {
-    msg: String
-  }
+    name: 'Loader',
+    props: {
+        msg: String
+    }
 }
 </script>
 <style scoped lang="scss">
