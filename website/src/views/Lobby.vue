@@ -13,12 +13,7 @@
     <div class="settings">
       <div>
         <label>Card decks</label>
-        <multiselect v-if="host" v-model="selected" :options="card_decks" taggable multiple label="name" track-by="value" :searchable="false" :allow-empty="false">
-          <template slot="singleLabel" slot-scope="{ option }"><strong>{{ option.name }}</strong></template>
-        </multiselect>
-        <multiselect v-else :value="readonlyDecks" :options="card_decks" taggable multiple disabled>
-          <template slot="singleLabel" slot-scope="{ option }"><strong>{{ option.name }}</strong></template>
-        </multiselect>
+        <!-- TODO: Multiselect -->
       </div>
       <div>
         <label>Language</label>
@@ -44,11 +39,10 @@
 </template>
 
 <script>
-import Multiselect from 'vue-multiselect'
 
 export default {
   components: {
-    Multiselect
+    
   },
   name: 'Lobby',
   props: {
@@ -203,8 +197,6 @@ export default {
 }
 </script>
 
-<style src="vue-multiselect/dist/vue-multiselect.min.css"></style>
-
 <style scoped lang="scss">
 .lobby {
   width: 100%;
@@ -281,7 +273,7 @@ export default {
       flex-direction: column;
     }
 
-    ::v-deep .multiselect {
+    :deep(.multiselect)  {
       margin: 2px 0;
       max-width: 90vw;
       min-width: 200px;

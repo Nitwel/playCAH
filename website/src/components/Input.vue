@@ -1,29 +1,64 @@
 <template>
-  <input type="text" :value="modelValue" :placeholder="placeholder" @input="$emit('update:modelValue', $event.target.value)"  />
+  <input :type="type" :placeholder="placeholder" :disabled="disabled" class="input" @input="$emit('input', $event.target.value)" :value="value"/>
 </template>
 
-<script lang="ts">
+<script>
 export default {
-    props: {
-        modelValue: {
-            type: String,
-            default: null
-        },
-        placeholder: {
-            type: String,
-            default: null
-        }
+  name: 'Input',
+  props: {
+    value: {
+      type: [String, Number],
+      default: ''
     },
-    emits: ['update:modelValue']
+    type: {
+      type: String,
+      default: 'text'
+    },
+    placeholder: {
+      type: String,
+      default: 'Enter...'
+    },
+    disabled: {
+      type: Boolean,
+      default: false
+    }
+  }
 }
 </script>
-
 <style lang="scss" scoped>
-input {
-    border: none;
-    border-radius: 15px;
-    height: 30px;
+.input {
+  color: var(--dark-grey);
+  height: 54px;
+  padding: 5px 30px;
+  border: 4px solid var(--grey);
+  border-radius: 10px;
+  font-size: 30px;
+  font-weight: 500;
+  max-width: 95vw;
+
+  &:focus, &:hover {
+  }
+
+  &:focus * {
+    outline: none;
+  }
+
+  &:disabled {
+    background: var(--white);
+  }
+
+  @media (max-width: 1000px) {
+    height: 48px;
+    font-size: 25px;
     padding: 5px 20px;
-    
+    padding: 6px;
+  }
+
+  @media (max-width: 800px) {
+    height: 42px;
+    font-size: 20px;
+    padding: 5px 15px;
+    border: 3px solid var(--grey);
+  }
 }
 </style>

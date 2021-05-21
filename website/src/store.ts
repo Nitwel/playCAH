@@ -1,5 +1,5 @@
 import { createStore } from "vuex";
-import { socket, emitter } from "./main";
+import { socket, emitter } from "./setup";
 import router from './router'
 import {actions, formatBlackCard} from './socket'
 

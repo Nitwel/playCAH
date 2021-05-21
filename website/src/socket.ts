@@ -1,4 +1,4 @@
-import {socket, emitter} from './main'
+import {socket, emitter} from './setup'
 import router from './router'
 import { State } from './store';
 

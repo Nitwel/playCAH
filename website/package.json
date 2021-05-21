@@ -1,33 +1,46 @@
 {
   "name": "website",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "scripts": {
-    "serve": "vite preview",
     "build": "vue-tsc --noEmit && vite build",
-    "dev": "vite"
+    "dev": "vite",
+    "lint:script": "eslint --ext .ts,vue --ignore-path .gitignore ."
   },
   "dependencies": {
-    "@mdi/font": "5.9.55",
     "lodash": "^4.17.21",
     "mitt": "^2.1.0",
-    "roboto-fontface": "*",
     "socket.io-client": "^4.1.2",
     "vue": "^3.0.5",
     "vue-i18n": "^9.1.6",
     "vue-router": "^4.0.8",
     "vue-socket.io-extended": "^5.0.0-alpha.5",
-    "vuetify": "^3.0.0-alpha.0",
+    "vuejs-avataaars-nitwel": "^4.0.2",
     "vuex": "^4.0.0"
   },
   "devDependencies": {
     "@types/lodash": "^4.14.169",
+    "@typescript-eslint/eslint-plugin": "^4.24.0",
+    "@typescript-eslint/parser": "^4.24.0",
     "@vitejs/plugin-vue": "^1.2.2",
     "@vue/compiler-sfc": "^3.0.5",
+    "@vue/eslint-config-prettier": "^6.0.0",
+    "@vue/eslint-config-typescript": "^7.0.0",
+    "eslint": "^7.26.0",
+    "eslint-plugin-vue": "^7.9.0",
+    "husky": "^6.0.0",
+    "lint-staged": "^11.0.0",
     "sass": "^1.32.13",
     "sass-loader": "^10.0.0",
-    "typescript": "^4.1.3",
+    "typescript": "^4.2.4",
     "vite": "^2.3.3",
-    "vue-cli-plugin-vuetify": "~2.4.0",
     "vue-tsc": "^0.0.24"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.{ts,vue}": "eslint --fix"
   }
 }

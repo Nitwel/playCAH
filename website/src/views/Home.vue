@@ -21,6 +21,8 @@
 </template>
 
 <script>
+import packageJson from '../../package.json'
+
 export default {
   name: 'Home',
   data () {
@@ -36,7 +38,7 @@ export default {
   },
   computed: {
     version () {
-      return 'v' + (process.env.VUE_APP_VERSION || '0.1.0')
+      return 'v' + (packageJson.version || '0.1.0')
     },
     name: {
       get () {
