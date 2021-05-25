@@ -119,7 +119,7 @@ export default {
         name: String
     },
     setup(props) {
-      const {isAllPlaced, isAllRevealed, getConnectedUsers} = useUtil()
+        const {isAllPlaced, isAllRevealed, getConnectedUsers} = useUtil()
         const deleted = ref(false)
         const deleting = ref(false)
         const store = useStore()

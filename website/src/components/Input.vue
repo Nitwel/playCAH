@@ -12,7 +12,6 @@
 <script>
 export default {
     name: 'Input',
-    emits: ['update:modelValue'],
     props: {
         modelValue: {
             type: [String, Number],
@@ -30,7 +29,8 @@ export default {
             type: Boolean,
             default: false
         }
-    }
+    },
+    emits: ['update:modelValue']
 }
 </script>
 <style lang="scss" scoped>

@@ -65,20 +65,20 @@ export default {
         }
     },
     setup(props) {
-      const card = ref<HTMLElement>()
+        const card = ref<HTMLElement>()
 
-      onMounted(() => {
-        if (props.eventId !== undefined) {
-            emitter.on('rotate_' + props.eventId, () => {
+        onMounted(() => {
+            if (props.eventId !== undefined) {
+                emitter.on('rotate_' + props.eventId, () => {
 
-                if (card.value === undefined) return
+                    if (card.value === undefined) return
 
-                card.value.classList.add('rotating')
-            })
-        }
-      })
+                    card.value.classList.add('rotating')
+                })
+            }
+        })
 
-      return { card }
+        return { card }
     }
 }
 </script>

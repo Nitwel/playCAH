@@ -116,7 +116,7 @@ export default {
         const store = useStore()
 
         const selected = computed({
-          get () {
+            get () {
                 return cardDecks.filter((deck) => store.state.cardDecks.includes(deck.value))
             },
             set (val: {name: string, value: string}[]) {
@@ -125,7 +125,7 @@ export default {
         })
 
         const language = computed({
-          get () {
+            get () {
                 return store.state.language
             },
             set (val: string) {
@@ -142,7 +142,7 @@ export default {
         const endLobby = computed(() => store.state.endLobby )
 
         const users = computed(() => {
-          const users = store.state.users
+            const users = store.state.users
             if (endLobby.value) {
                 const sorted = [...users]
                 const ranks = ['gold', 'silver', 'bronze']
@@ -175,10 +175,10 @@ export default {
             if(element === null) return
 
             if(element instanceof HTMLTextAreaElement) {
-              element.value = link.value
-              element.select()
-              document.execCommand('copy')
-              emitter.emit('info', 'The link has been copied.')
+                element.value = link.value
+                element.select()
+                document.execCommand('copy')
+                emitter.emit('info', 'The link has been copied.')
             }
 
         }
