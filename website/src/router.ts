@@ -9,10 +9,10 @@ import Admin from './views/Admin.vue'
 import {store} from './store'
 
 const reroute: NavigationGuard = function (to, from, next) {
-    if (to.params.name === store.state.gameState) {
+    if (String(to.name) === store.state.gameState) {
         next()
     } else {
-        if (to.params.name) {
+        if (['Lobby', 'Game'].includes(String(to.name)) && to.params.name) {
             store.state.lobby = to.params.name as string
         }
         next('/')
@@ -20,7 +20,7 @@ const reroute: NavigationGuard = function (to, from, next) {
 }
   
 
-const routes: Array<RouteRecordRaw> = [
+const routes: RouteRecordRaw[] = [
     {
         path: '/',
         name: 'Home',

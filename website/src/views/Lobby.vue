@@ -158,6 +158,8 @@ export default {
             return users
         })
 
+        return {pointsToWin, handSize, languages, selected, language, readonlyDecks, host, endLobby, users, saveSettings, onClick, copyLink}
+
         function saveSettings () {
             store.dispatch('change_settings', {
                 points_to_win: pointsToWin.value,

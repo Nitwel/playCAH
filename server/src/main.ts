@@ -20,7 +20,7 @@ const house = new House()
 io.on('connection', (socket: Socket) => {
     console.log("connected ", socket.id)
     
-    socket.on('join', (name, lobby) => {
+    socket.on('join', (name, lobby, callback) => {
         console.log("joining")
     
         const game = house.getGame(lobby)
@@ -53,7 +53,7 @@ io.on('connection', (socket: Socket) => {
                 }
             }
 
-            return {
+            callback({
                 players,
                 revealed,
                 host: game.host,
@@ -63,23 +63,23 @@ io.on('connection', (socket: Socket) => {
                 hand: disconnectedPlayer.getCardsInHand(),
                 black: game.blackCard,
                 zar: game.getZar().name
-            }
+            })
         }
 
         if (game.gameState !== 'Lobby') {
-            return {error: "Game already running."}
+            return callback({error: "Game already running."})
         }
 
         const player = new Player(socket.id, name)
 
         if(game.addPlayer(player) === false)
-            return { error: "Player name already taken."}
+            return callback({ error: "Player name already taken."})
 
         socket.join(lobby)
 
         socket.to(lobby).emit('player_join', {name: player.name})
         
-        return {
+        callback({
             players: game.getAllPlayers().map(player => ({
                 name: player.name,
                 points: 0,
@@ -90,17 +90,17 @@ io.on('connection', (socket: Socket) => {
             hand_size: game.handSize,
             card_decks: game.cardDecks,
             language: game.language
-        }
+        })
     })
 
-    socket.on('start_game', () => {
+    socket.on('start_game', (callback) => {
         const game = house.getGameOfPlayer(socket.id)
         
-        if( game === undefined) return {error: "You are not in a lobby."}
+        if( game === undefined) return callback({error: "You are not in a lobby."})
 
-        if( game.getHost()?.sid !== socket.id ) return {error: "You are not the host."}
+        if( game.getHost()?.sid !== socket.id ) return callback({error: "You are not the host."})
 
-        if( game.players.length < 3) return {error: "You need at least 3 players in the lobby."}
+        if( game.players.length < 3) return callback({error: "You need at least 3 players in the lobby."})
 
         game.startGame()
 
@@ -114,10 +114,10 @@ io.on('connection', (socket: Socket) => {
         
     })
 
-    socket.on('place_cards', (cards) => {
+    socket.on('place_cards', (cards, callback) => {
         const game = house.getGameOfPlayer(socket.id)
 
-        if( game === undefined ) return { error: "You are currently not in a game."}
+        if( game === undefined ) return callback({ error: "You are currently not in a game."})
 
         const player = game.getPlayer(socket.id)
 
@@ -128,18 +128,18 @@ io.on('connection', (socket: Socket) => {
         socket.to(game.name).emit('cards_placed', player.name)
     })
 
-    socket.on('reveal', (position) => {
+    socket.on('reveal', (position, callback) => {
         const game = house.getGameOfPlayer(socket.id)
 
-        if ( game === undefined ) return { error: "You are currently not in a game."}
+        if ( game === undefined ) return callback({ error: "You are currently not in a game."})
 
         const zar = game.getZar()
 
-        if(zar.sid !== socket.id) return { error: "You are currently not the zar."}
+        if(zar.sid !== socket.id) return callback({ error: "You are currently not the zar."})
 
         const unrevealedPlayers = game.players.filter(player => player.sid !== socket.id && player.hasCardsRevealed() === false)
 
-        if (unrevealedPlayers.length === 0) return {error: "All players are revealed."}
+        if (unrevealedPlayers.length === 0) return callback({error: "All players are revealed."})
 
         const player = unrevealedPlayers[Math.floor(unrevealedPlayers.length * Math.random())]
 
@@ -150,18 +150,18 @@ io.on('connection', (socket: Socket) => {
         socket.to(game.name).emit("cards_revealed", {pos: position, cards: player.getPlacedCards()})
     })
 
-    socket.on('winner_selected', (position) => {
+    socket.on('winner_selected', (position, callback) => {
         const game = house.getGameOfPlayer(socket.id)
 
-        if ( game === undefined ) return { error: "You are currently not in a game."}
+        if ( game === undefined ) return callback({ error: "You are currently not in a game."})
 
-        if( game.getZar().sid !== socket.id) return {error: "You are not the zar."}
+        if( game.getZar().sid !== socket.id) return callback({error: "You are not the zar."})
 
-        if( game.allCardsRevealed() === false) return { error: "Not all cards are revealed yet."}
+        if( game.allCardsRevealed() === false) return callback({ error: "Not all cards are revealed yet."})
 
         const winningPlayer = game.getPlayerWithPos(position)
 
-        if (winningPlayer === undefined) return { error: "player could not be found."}
+        if (winningPlayer === undefined) return callback({ error: "player could not be found."})
 
         winningPlayer.points += 1
 
@@ -193,14 +193,14 @@ io.on('connection', (socket: Socket) => {
         }
     })
 
-    socket.on('change_settings', (settings: Record<string, any>) => {
+    socket.on('change_settings', (settings: Record<string, any>, callback) => {
         const game = house.getGameOfPlayer(socket.id)
 
-        if ( game === undefined ) return { error: "You are currently not in a game."}
+        if ( game === undefined ) return callback({ error: "You are currently not in a game."})
 
-        if( game.getZar().sid !== socket.id) return {error: "You are not the zar."}
+        if( game.getZar().sid !== socket.id) return callback({error: "You are not the zar."})
 
-        if( game.gameState !== 'Lobby') return { error: "Settings can only be changed in the lobby."}
+        if( game.gameState !== 'Lobby') return callback({ error: "Settings can only be changed in the lobby."})
 
         if('cards_decks' in settings && Array.isArray(settings.card_decks)) game.cardDecks = settings.card_decks
 
@@ -212,28 +212,28 @@ io.on('connection', (socket: Socket) => {
 
         io.to(game.name).emit('settings_changed', settings)
 
-        return { info: "Settings habe been changed."}
+        return callback({ info: "Settings habe been changed."})
     })
 
-    socket.on('delete_card', (card) => {
+    socket.on('delete_card', (card, callback) => {
 
         const game = house.getGameOfPlayer(socket.id)
 
-        if ( game === undefined ) return { error: "You are currently not in a game."}
+        if ( game === undefined ) return callback({ error: "You are currently not in a game."})
 
         const player = game.getPlayer(socket.id)
 
         if(player === undefined) return
 
-        if(player.deletedCard) return { error: "You already deleted a card."}
+        if(player.deletedCard) return callback({ error: "You already deleted a card."})
 
-        if ( player.removeCardInHand(card) === false) return {error: "The card doesn't exist in your hand."}
+        if ( player.removeCardInHand(card) === false) return callback({error: "The card doesn't exist in your hand."})
 
         player.deletedCard = true
     })
 
-    socket.on('games', (password) => {
-        if(password !== "Umpa Lumpas") return { error: "Wrong password."}
+    socket.on('games', (password, callback) => {
+        if(password !== "Umpa Lumpas") return callback({ error: "Wrong password."})
 
         return house.games
     })
