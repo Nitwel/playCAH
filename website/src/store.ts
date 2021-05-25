@@ -20,15 +20,23 @@ export interface State {
     cardDecks: string[];
     gameState: "Home" | "Lobby" | "Game";
     endLobby: boolean;
-    blackCard: undefined | {text: string, count: number};
+    blackCard: undefined | {text: string, pick: number};
     revealed: Record<string, any>;
     posNames: Object;
     hands: string[];
-    users: Record<string, any>[];
+    users: User[];
     connected: boolean;
     winner: string;
     timer: number;
     language: string;
+}
+
+export interface User {
+    name: string,
+    placed: boolean,
+    connected: boolean,
+    points: number,
+    trophy?: string
 }
 
 export const store = createStore<State>({
@@ -151,24 +159,6 @@ export const store = createStore<State>({
                     state.hands = state.hands.filter((c) => c !== card);
                 }
             });
-        },
-    },
-    getters: {
-        allPlaced(state) {
-            const users = state.users.filter((u) => u.connected);
-            return (
-                Object.values(users.filter((u) => u.placed)).length === users.length - 1
-            );
-        },
-        allRevealed(state) {
-            const users = state.users.filter((u) => u.connected);
-            return Object.values(state.revealed).length === users.length - 1;
-        },
-        connectedUsers(state) {
-            return state.users.filter((u) => u.connected);
-        },
-        disconnectedUsers(state) {
-            return state.users.filter((u) => !u.connected);
         },
     },
     plugins: [createLogger({

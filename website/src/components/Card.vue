@@ -32,7 +32,10 @@
     </div>
 </template>
 
-<script>
+<script lang="ts">
+import { onMounted, ref } from 'vue'
+import {emitter} from '../setup'
+
 export default {
     name: 'Card',
     props: {
@@ -61,15 +64,21 @@ export default {
             default: undefined
         }
     },
-    created () {
-        if (this.eventId !== undefined) {
-            this.$root.$on('rotate_' + this.eventId, () => {
-                const card = this.$refs.card
-                if (!card) return
+    setup(props) {
+      const card = ref<HTMLElement>()
 
-                card.classList.add('rotating')
+      onMounted(() => {
+        if (props.eventId !== undefined) {
+            emitter.on('rotate_' + props.eventId, () => {
+
+                if (card.value === undefined) return
+
+                card.value.classList.add('rotating')
             })
         }
+      })
+
+      return { card }
     }
 }
 </script>

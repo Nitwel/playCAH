@@ -30,7 +30,7 @@
                         :small="blackCard.pick > 1"
                         :x-small="blackCard.pick > 2"
                         :class="{placed: user.placed, clickable: isZar && allPlaced && !allRevealed, winner: winnerSelected && posNames[pos] === $store.state.winner}"
-                        @click.native="selected(pos)"
+                        @click="selected(pos)"
                     >
                         <User
                             v-if="!allPlaced"
@@ -108,119 +108,108 @@
     </div>
 </template>
 
-<script>
+<script lang="ts">
+import { computed, onMounted, ref } from 'vue'
+import { useStore } from '../store'
+import {useUtil} from '../util'
+import { emitter } from '../setup'
 export default {
     name: 'Game',
     props: {
         name: String
     },
-    data () {
-        return {
-            deleted: false,
-            deleting: false
-        }
-    },
-    computed: {
-        isZar () {
-            return this.$store.state.zar === this.$store.state.name
-        },
-        playerPlaced () {
-            const name = this.$store.state.name
-            return this.$store.state.users.find(u => u.name === name).placed
-        },
-        allPlaced () {
-            return this.$store.getters.allPlaced
-        },
-        allRevealed () {
-            return this.$store.getters.allRevealed
-        },
-        winnerSelected () {
-            return this.$store.state.posNames && Object.values(this.$store.state.posNames).length > 0
-        },
-        users () {
-            let users = this.$store.getters.connectedUsers
-            const currentUser = users.find(u => u.name === this.$store.state.name)
-            users = users.filter(u => u !== currentUser)
-            users.push(currentUser)
+    setup(props) {
+      const {isAllPlaced, isAllRevealed, getConnectedUsers} = useUtil()
+        const deleted = ref(false)
+        const deleting = ref(false)
+        const store = useStore()
 
-            if (Object.keys(this.revealed).length !== 0) {
-                users = users.filter(u => u.placed)
+        const isZar = computed(() => store.state.zar === store.state.name)
+        const playerPlaced = computed(() => store.state.users.find(user => user.name === store.state.name)?.placed)
+        const allPlaced = computed(() => isAllPlaced())
+        const allRevealed = computed(() => isAllRevealed())
+        const winnerSelected = computed(() => store.state.posNames && Object.values(store.state.posNames).length > 0)
+
+        const users = computed(() => {
+            let users = getConnectedUsers()
+            const currentUser = users.find((user) => user.name === store.state.name)
+            users = users.filter((user) => user !== currentUser)
+            if(currentUser !== undefined)
+                users.push(currentUser)
+
+            if (Object.keys(revealed.value).length !== 0) {
+                users = users.filter(user => user.placed)
             }
 
-            if (!this.isZar && (this.allPlaced || this.playerPlaced)) {
-                return users.filter(u => u.name !== this.$store.state.zar)
+            if (isZar.value === false && (allPlaced.value || playerPlaced.value)) {
+                return users.filter(u => u.name !== store.state.zar)
             } else {
-                return users.filter(u => u.name !== this.$store.state.name && u.name !== this.$store.state.zar)
+                return users.filter(u => u.name !== store.state.name && u.name !== store.state.zar)
             }
-        },
-        points () {
-            return this.$store.state.users
-        },
-        blackCard () {
-            return this.$store.state.blackCard
-        },
-        revealed () {
-            return this.$store.state.revealed
-        },
-        posNames () {
-            return this.$store.state.posNames
-        },
-        zar () {
-            return this.$store.state.zar
-        },
-        title () {
-            if (this.winnerSelected) {
-                return `${this.$store.state.winner} won. Next round starts in ${this.$store.state.timer}s.`
+        })
+
+        const points = computed(() => store.state.users)
+        const blackCard = computed(() => store.state.blackCard)
+        const revealed = computed(() => store.state.revealed)
+        const posNames = computed(() => store.state.posNames)
+        const zar = computed(() => store.state.zar)
+
+        const title = computed(() => {
+            if (winnerSelected.value) {
+                return `${store.state.winner} won. Next round starts in ${store.state.timer}s.`
             }
 
-            if (this.isZar) {
-                if (this.allPlaced && !this.allRevealed) {
+            if (isZar.value) {
+                if (allPlaced.value && allRevealed.value === false) {
                     return 'Its your turn to reveal the cards!'
-                } else if (this.allRevealed) {
+                } else if (allRevealed.value) {
                     return 'Now select your favorite!'
                 } else {
                     return 'Wait until all players have placed their cards!'
                 }
             } else {
-                if (this.allPlaced && !this.allRevealed) {
-                    return `${this.zar} is revealing the cards!`
-                } else if (this.allRevealed) {
-                    return `${this.zar} is selecting is favorite!`
+                if (allPlaced.value && allRevealed.value === false) {
+                    return `${zar.value} is revealing the cards!`
+                } else if (allRevealed.value) {
+                    return `${zar.value} is selecting is favorite!`
                 } else {
-                    return `Place your cards! ${this.zar} is the czar.`
+                    return `Place your cards! ${zar.value} is the czar.`
                 }
             }
-        }
-    },
-    created () {
-        this.$root.$on('next_round', () => {
-            this.deleted = false
-            this.deleting = false
-            var audio = new Audio('/sounds/win.wav')
-            audio.play()
         })
-    },
-    methods: {
-        onShortcut (type) {
-            if (type === 'delete') {
-                this.deleting = !this.deleting
-            } else if (type === 'leave') {
-                this.$store.dispatch('leave_game')
-            }
-        },
-        isRevealed (pos) {
-            return this.revealed[pos] && this.revealed[pos].length > 0
-        },
-        selected (pos) {
-            if (!this.isZar || !this.allPlaced || this.revealed[pos]) return
 
-            this.$store.dispatch('reveal_cards', pos)
-        },
-        onSelectWinner (pos) {
+        onMounted(() => {
+            emitter.on('next_round', () => {
+                deleted.value = false
+                deleting.value = false
+                var audio = new Audio('/sounds/win.wav')
+                audio.play()
+            })
+        })
+
+        function onShortcut (type: 'delete' | 'leave') {
+            if (type === 'delete') {
+                deleting.value = !deleting.value
+            } else if (type === 'leave') {
+                store.dispatch('leave_game')
+            }
+        }
+
+        function isRevealed (pos: number) {
+            return revealed.value[pos] && revealed.value[pos].length > 0
+        }
+
+        function selected (pos: number) {
+            if (isZar.value === false || allPlaced.value === false || revealed.value[pos]) return
+
+            store.dispatch('reveal_cards', pos)
+        }
+
+        function onSelectWinner (pos: number) {
             var audio = new Audio('/sounds/plopplop.mp3')
             audio.play()
 
-            this.$store.dispatch('winner', pos)
+            store.dispatch('winner', pos)
         }
     }
 }

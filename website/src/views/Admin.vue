@@ -28,28 +28,29 @@
     </div>
 </template>
 
-<script>
+<script lang="ts">
+import { ref } from 'vue'
+import { socket } from '../setup'
 export default {
     name: 'Admin',
-    data () {
-        return {
-            password: '',
-            games: [],
-            players: []
-        }
-    },
-    methods: {
-        onClick () {
-            this.$socket.emit('games', this.password, (response) => {
+    setup(props) {
+        const password = ref('')
+        const games = ref([])
+        const players = ref([])
+
+        return {onClick, password, games, players}
+
+        function onClick () {
+            socket.emit('games', password.value, (response: any) => {
                 if (response.error) return console.error(response.error)
                 console.log(response)
 
-                this.games = response
+                games.value = response
             })
-            this.$socket.emit('players', this.password, (response) => {
+            socket.emit('players', password.value, (response: any) => {
                 if (response.error) return console.error(response.error)
                 console.log(response)
-                this.players = response
+                players.value = response
             })
         }
     }

@@ -9,7 +9,7 @@
             v-for="(card, index) in hands"
             :id="index"
             :key="index"
-            ref="card"
+            ref="registerCardRef"
             :selectable="!placed && !disabled"
             :style="{'--slotted-time': `${plotAnimation}ms`, 'marginRight': `${cardMargin}px`}"
         >
@@ -36,7 +36,11 @@
     </div>
 </template>
 
-<script>
+<script lang="ts">
+import { computed, onBeforeUpdate, onMounted, onUnmounted, ref, watch } from 'vue'
+import { useStore } from '../store'
+import { emitter } from '../setup'
+import { register } from './register'
 export default {
     name: 'Hands',
     props: {
@@ -53,139 +57,190 @@ export default {
             default: false
         }
     },
-    data () {
-        return {
-            dragging: undefined,
-            startPos: {
-                top: 0,
-                left: 0
-            },
-            nearSlot: null,
-            inSlot: {},
-            slotted: undefined,
-            placed: false,
-            plotAnimation: 300,
-            slotPositions: undefined,
-            render: true,
-            windowWidth: window.innerWidth
-        }
-    },
-    computed: {
-        cardMargin () {
-            let cardWidth = 200
-            if (this.windowWidth <= 1000) cardWidth = 150
-            if (this.windowWidth <= 800) cardWidth = 100
-            console.log(cardWidth)
+    setup(props, {emit}) {
+        const store = useStore()
+        const cards = ref<HTMLElement[]>([])
+        const hand = ref<HTMLElement>()
+        
+        const dragging = ref<HTMLElement | undefined>(undefined)
+        const startPos = ref<{top: number, left: number, clientHeight?: number, clientWidth?: number}>({
+            top: 0,
+            left: 0,
+            clientHeight: 0,
+            clientWidth: 0
+        })
+        const nearSlot = ref<string | null>(null)
+        const inSlot = ref<Record<string, HTMLElement>>({})
+        const slotted = ref<number | undefined>(undefined)
+        const placed = ref(false)
+        const plotAnimation = 300
+        const slotPositions = ref<Record<string, {top: number, left: number}>>({})
+        const render = ref(true)
+        const windowWidth = ref(window.innerWidth)
 
-            let margin = ((this.windowWidth - 20) - cardWidth * this.hands.length) / this.hands.length
+        const cardMargin = computed(() => {
+            let cardWidth = 200
+            if (windowWidth.value <= 1000) cardWidth = 150
+            if (windowWidth.value <= 800) cardWidth = 100
+
+            let margin = ((windowWidth.value - 20) - cardWidth * hands.value.length) / hands.value.length
             if (margin > 10) margin = 10
             return margin
-        },
-        hands () {
-            return this.$store.state.hands
-        },
-        blackCard () {
-            return this.$store.state.blackCard
-        },
-        placeable () {
-            return Object.values(this.inSlot).length === this.blackCard.pick && !this.placed
-        }
-    },
-    watch: {
-        hands (newVal, oldVal) {
-            this.render = false
+        })
+
+        const hands = computed(() => store.state.hands)
+        const blackCard = computed(() => store.state.blackCard)
+        const placable = computed(() => Object.values(inSlot.value).length === blackCard.value?.pick && placed.value === false)
+
+        watch(hands, () => {
+            render.value = false
             setTimeout(() => {
-                this.render = true
+                render.value = true
             }, 10)
-        }
-    },
-    beforeDestroy () {
-        Object.values(this.inSlot).forEach((card) => {
-            document.body.removeChild(card)
-        })
-    },
-    mounted () {
-        document.addEventListener('touchmove', this.drag)
-        document.addEventListener('touchstart', this.dragstart)
-        document.addEventListener('touchend', this.dragend)
-        document.addEventListener('mousemove', this.drag)
-        document.addEventListener('mousedown', this.dragstart)
-        document.addEventListener('mouseup', this.dragend)
-        document.body.onresize = ($event) => {
-            this.windowWidth = window.innerWidth
-        }
-
-        this.$root.$on('next_round', () => {
-            this.deletePlacedCards()
-            this.placed = false
-            this.inSlot = {}
         })
 
-        this.$root.$on('game_end', () => {
-            this.deletePlacedCards()
-            this.placed = false
-            this.inSlot = {}
+        onBeforeUpdate(() => {
+            cards.value = []
         })
-    },
-    methods: {
-        is_in_slot (index) {
-            const match = Object.values(this.inSlot).findIndex(card => parseInt(card.id) === index)
+
+        onUnmounted(() => {
+            Object.values(inSlot).forEach(card => {
+                document.body.removeChild(card)
+            })
+        })
+
+        onMounted(() => {
+            document.addEventListener('touchmove', drag)
+            document.addEventListener('touchstart', dragstart)
+            document.addEventListener('touchend', dragend)
+            document.addEventListener('mousemove', drag)
+            document.addEventListener('mousedown', dragstart)
+            document.addEventListener('mouseup', dragend)
+
+            document.body.onresize = ($event) => {
+                windowWidth.value = window.innerWidth
+            }
+            emitter.on('next_round', () => {
+                deletePlacedCards()
+                placed.value = false
+                inSlot.value = {}
+            })
+
+            emitter.on('game_end', () => {
+                deletePlacedCards()
+                placed.value = false
+                inSlot.value = {}
+            })
+        })
+
+        return { registerCardRef, hand }
+
+        function registerCardRef(element: HTMLElement) {
+            cards.value.push(element)
+        }
+
+        function is_in_slot(index: number) {
+            const match = Object.values(inSlot.value).findIndex(card => parseInt(card.id) === index)
             return match !== -1
-        },
-        delete_card (card) {
-            this.$emit('deleted')
-            this.$store.dispatch('delete_card', card)
-        },
-        calcSlotPositions () {
-            const rects = document.getElementsByClassName('user-card-fields')
-            const fields = {}
+        }
 
-            rects.forEach(rect => {
+        function delete_card (card: string) {
+            emit('deleted')
+            store.dispatch('delete_card', card)
+        }
+
+        function calcSlotPositions () {
+            const rects = document.getElementsByClassName('user-card-fields')
+            const fields: Record<string, {top: number, left: number}> = {}
+
+
+
+            Array.from(rects).forEach(rect => {
                 const bounds = rect.getBoundingClientRect()
                 fields[rect.id] = { top: bounds.top, left: bounds.left }
             })
-            this.slotPositions = fields
-        },
-        distance (x1, y1, x2, y2) {
+            slotPositions.value = fields
+        }
+
+        function distance (x1: number, y1: number, x2: number, y2: number) {
             return Math.sqrt(Math.pow(Math.abs(x1 - x2), 2) + Math.pow(Math.abs(y1 - y2), 2))
-        },
-        drag ($event) {
-            if (!this.dragging) return
+        }
+
+        function dragstart ($event: TouchEvent | MouseEvent) {
+            if (placed.value === true || props.disabled === true || props.deleting === true) return
+
+            const card = cards.value.find(card => card === $event.target || card.contains($event.target as Node))
+
+            if (card === undefined || card.classList.contains('slotted') || card.classList.contains('placed')) return
+            dragging.value = card
+            const pos = card.getBoundingClientRect()
+
+            if (!Object.values(inSlot.value).includes(card)) { document.body.appendChild(card) }
+            card.classList.add('global')
+            if (blackCard.value && blackCard.value.pick > 2) card.classList.add('xSmall')
+            else if (blackCard.value && blackCard.value.pick > 1) card.classList.add('small')
+
+            card.style.top = pos.top + 'px'
+            card.style.left = pos.left + 'px'
 
             let left, top
 
-            if ($event.changedTouches) {
-                top = $event.changedTouches[0].clientY - this.startPos.top
-                left = $event.changedTouches[0].clientX - this.startPos.left
+            if($event instanceof MouseEvent) {
+                top = $event.clientY - pos.top
+                left = $event.clientX - pos.left
             } else {
-                top = $event.clientY - this.startPos.top
-                left = $event.clientX - this.startPos.left
+                top = $event.changedTouches[0].clientY - pos.top
+                left = $event.changedTouches[0].clientX - pos.left
             }
 
-            Object.entries(this.slotPositions).forEach(entrie => {
-                const id = entrie[0]
-                const bounds = entrie[1]
+            startPos.value = { top, left }
 
-                const dist = this.distance(left, top, bounds.left, bounds.top)
+            Object.entries(inSlot.value).forEach(([key, value]) => {
+                if (value === card) {
+                    nearSlot.value = key
+                }
+            })
 
-                if (!this.nearSlot || this.nearSlot === id) {
-                    if (this.inSlot[id] && ((dist <= 50 && this.nearSlot !== id) || (dist > 50 && this.nearSlot === id))) {
-                        this.inSlot[id].style.transform = this.nearSlot ? '' : 'translate(20px, -20px)'
+            calcSlotPositions()
+        }
+
+        function drag ($event: TouchEvent | MouseEvent) {
+            if (dragging.value === undefined) return
+
+            let left: number
+            let top: number
+
+            if ($event instanceof MouseEvent) {
+                top = $event.clientY - startPos.value.top
+                left = $event.clientX - startPos.value.left
+            } else {
+                top = $event.changedTouches[0].clientY - startPos.value.top
+                left = $event.changedTouches[0].clientX - startPos.value.left
+                
+            }
+
+            Object.entries(slotPositions.value).forEach(([id, bounds]) => {
+
+                const dist = distance(left, top, bounds.left, bounds.top)
+
+                if (nearSlot.value === null || nearSlot.value === id) {
+                    if (inSlot.value[id] && ((dist <= 50 && nearSlot.value !== id) || (dist > 50 && nearSlot.value === id))) {
+                        inSlot.value[id].style.transform = nearSlot.value ? '' : 'translate(20px, -20px)'
                     }
-                    this.nearSlot = dist <= 50 ? id : null
+                    nearSlot.value = dist <= 50 ? id : null
 
-                    if (this.nearSlot === id) {
+                    if (nearSlot.value === id) {
                         top = bounds.top
                         left = bounds.left
                     } else {
-                        if (!this.dragging.classList.contains('moving')) {
+                        if (dragging.value?.classList.contains('moving') === false) {
                             var audio = new Audio('/sounds/swip.mp3')
                             audio.play()
                         }
 
-                        this.dragging.classList.add('moving')
-                        if (this.inSlot[id] === this.dragging) {
-                            this.$delete(this.inSlot, id)
+                        dragging.value?.classList.add('moving')
+                        if (inSlot.value[id] === dragging.value) {
+                            delete inSlot.value[id]
                         }
                     }
                 }
@@ -193,107 +248,75 @@ export default {
 
             if (top < 0) top = 0
             if (left < 0) left = 0
-            if (top + this.dragging.clientHeight > window.innerHeight) top = window.innerHeight - this.dragging.clientHeight
-            if (left + this.dragging.clientWidth > window.innerWidth) left = window.innerWidth - this.dragging.clientWidth
+            if (top + dragging.value?.clientHeight > window.innerHeight) top = window.innerHeight - dragging.value.clientHeight
+            if (left + dragging.value.clientWidth > window.innerWidth) left = window.innerWidth - dragging.value.clientWidth
 
-            this.dragging.style.top = top + 'px'
-            this.dragging.style.left = left + 'px'
-        },
-        dragstart ($event) {
-            if (this.placed || this.disabled || this.deleting) return
+            dragging.value.style.top = top + 'px'
+            dragging.value.style.left = left + 'px'
+        }
 
-            const el = Object.values(this.$refs.card).map(el => el.$el).find(el => el === $event.target || el.contains($event.target))
+        function dragend() {
+            if (dragging.value === undefined) return
 
-            if (!el || el.classList.contains('slotted') || el.classList.contains('placed')) return
-            this.dragging = el
-            const pos = this.dragging.getBoundingClientRect()
+            const card = dragging.value
 
-            if (!Object.values(this.inSlot).includes(this.dragging)) { document.body.appendChild(this.dragging) }
-            this.dragging.classList.add('global')
-            if (this.blackCard.pick > 2) this.dragging.classList.add('xSmall')
-            else if (this.blackCard.pick > 1) this.dragging.classList.add('small')
-
-            this.dragging.style.top = pos.top + 'px'
-            this.dragging.style.left = pos.left + 'px'
-
-            let left, top
-
-            if ($event.changedTouches) {
-                top = $event.changedTouches[0].clientY - pos.top
-                left = $event.changedTouches[0].clientX - pos.left
-            } else {
-                top = $event.clientY - pos.top
-                left = $event.clientX - pos.left
-            }
-
-            this.startPos = { top, left }
-
-            Object.entries(this.inSlot).forEach(entrie => {
-                if (entrie[1] === this.dragging) {
-                    this.nearSlot = entrie[0]
-                }
-            })
-
-            this.calcSlotPositions()
-        },
-        dragend () {
-            if (!this.dragging) return
-
-            if (!this.nearSlot) {
-                this.dragging.style.top = ''
-                this.dragging.style.left = ''
-                this.dragging.classList.remove('global', 'small', 'xSmall')
-                this.$refs.hand.appendChild(this.dragging)
+            if (nearSlot.value === null) {
+                card.style.top = ''
+                card.style.left = ''
+                card.classList.remove('global', 'small', 'xSmall')
+                hand.value?.appendChild(card)
 
                 const audio = new Audio('/sounds/zpfw.mp3')
                 audio.play()
             } else {
-                const oldSlot = this.inSlot[this.nearSlot]
-                if (oldSlot && oldSlot !== this.dragging) {
+                const oldSlot = inSlot.value[nearSlot.value]
+                if (oldSlot && oldSlot !== card) {
                     oldSlot.style.top = ''
                     oldSlot.style.left = ''
                     oldSlot.style.transform = ''
                     oldSlot.classList.remove('global', 'small', 'xSmall')
-                    this.$refs.hand.appendChild(oldSlot)
+                    hand.value?.appendChild(oldSlot)
                 }
 
-                this.$set(this.inSlot, this.nearSlot, this.dragging)
+                inSlot.value[nearSlot.value] = card
 
-                if (this.dragging.classList.contains('moving')) {
-                    this.$root.$emit('slot' + this.nearSlot, true)
-                    this.dragging.classList.add('slotted')
-                    const d = this.dragging
-                    clearTimeout(this.slotted)
-                    this.slotted = setTimeout(() => {
-                        d.classList.remove('slotted')
-                    }, this.plotAnimation + 100)
+                if (card.classList.contains('moving')) {
+                    emitter.emit('slot' + nearSlot.value, true)
+                    card.classList.add('slotted')
+                    clearTimeout(slotted.value)
+                    slotted.value = setTimeout(() => {
+                        card.classList.remove('slotted')
+                    }, plotAnimation + 100)
 
                     const audio = new Audio('/sounds/pflp.mp3')
                     audio.play()
                 }
             }
 
-            this.dragging.classList.remove('moving')
-            this.dragging = undefined
-            this.nearSlot = null
-        },
-        onSelect () {
-            this.placed = true
-            const cards = Object.values(this.inSlot).map(slot => this.hands[parseInt(slot.id)])
-            this.deletePlacedCards()
+            card.classList.remove('moving')
+            dragging.value = undefined
+            nearSlot.value = null
+        }
+
+        function onSelect () {
+            placed.value = true
+            const cards = Object.values(inSlot.value).map(slot => hands.value[parseInt(slot.id)])
+            deletePlacedCards()
 
             var audio = new Audio('/sounds/plopplop.mp3')
             audio.play()
 
-            this.$store.dispatch('place_cards', cards)
-        },
-        deletePlacedCards () {
-            Object.values(this.inSlot).forEach(s => {
-                if (document.body.contains(s)) {
-                    document.body.removeChild(s)
+            store.dispatch('place_cards', cards)
+        }
+
+        function deletePlacedCards () {
+            Object.values(inSlot.value).forEach(card => {
+                if (document.body.contains(card)) {
+                    document.body.removeChild(card)
                 }
             })
         }
+
     }
 }
 </script>

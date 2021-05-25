@@ -1,6 +1,6 @@
 import {Player} from './player'
 import {readFileSync} from 'fs'
-import {shuffle, remove} from 'lodash'
+import {shuffle, remove, includes} from 'lodash'
  
 function loadDecks(decks: string[], lang: string){
     const blackCards: BlackCard[] = []
@@ -26,12 +26,10 @@ export class Game {
 
     gameState: 'Lobby' | 'Game' = 'Lobby'
     players: Player[] = []
-    disconnected: Player[] = []
-    host?: string = undefined
+    disconnectedPlayers: Player[] = []
+    host?: string
     cardDecks = ["Base"]
-    placedCards: Record<string, string[]> = {}
-    revealedPlayers: string[] = []
-    blackCard?: BlackCard = undefined
+    blackCard?: BlackCard
     zar = 0
     name: string
     handSize = 7
@@ -67,23 +65,49 @@ export class Game {
     }
     
     startGame(){
-        this.disconnected = []
+        this.disconnectedPlayers = []
         this.gameState = "Game"
         this.getCardDecks()
+        this.clearPlayers()
         this.startRound()
     }
 
     startRound(){
         this.drawBlack()
         this.nextZar()
-        this.revealedPlayers = []
-        this.placedCards = {}
+        this.clearPlacedCards()
 
         this.players.forEach(player => {
             player.revealPos = undefined
             player.deletedCard = false
-            player.hand.concat(this.drawWhite(this.handSize - player.hand.length))
+            player.addCardsInHand(this.drawWhite(this.handSize - player.getCardsInHand().length))
         })
+    }
+
+    clearPlacedCards() {
+        for(const player of this.getAllPlayers()) {
+            player.clearPlacedCards()
+            player.setRevealedCards(false)
+        }
+    }
+
+    clearPlayerHands() {
+        for(const player of this.getAllPlayers()) {
+            player.clearCardsInHand()
+        }
+    }
+
+    clearPlayers() {
+        for(const player of this.getAllPlayers()) {
+            player.clearCardsInHand()
+            player.clearPlacedCards()
+            player.setRevealedCards(false)
+            player.points = 0
+        }
+    }
+
+    getAllPlayers() {
+        return [...this.players, ...this.disconnectedPlayers]
     }
         
             
@@ -95,11 +119,10 @@ export class Game {
     }
     endGame() {
         this.gameState = "Lobby"
-        this.placedCards = {}
-        this.revealedPlayers = []
+        this.clearPlacedCards()
         this.blackCard = undefined
         this.zar = 0
-        this.disconnected = []
+        this.disconnectedPlayers = []
     }
 
     getPlayer(sid: string) {
@@ -115,7 +138,7 @@ export class Game {
     }
 
     getDisconnectedPlayer(name: string){
-        return this.disconnected.find(player => player.name === name)
+        return this.disconnectedPlayers.find(player => player.name === name)
     }
     
     removePlayer(sid: string){
@@ -129,14 +152,14 @@ export class Game {
             if (this.host == player.sid && this.players.length > 0)
                 this.host = this.players[0].sid
             if (this.gameState == "Game")
-                this.disconnected.push(player)
+                this.disconnectedPlayers.push(player)
         }
         return player
     }
 
     addPlayer(player: Player) {
-        if(this.disconnected.includes(player))
-            this.disconnected= remove(this.disconnected, player)
+        if(this.disconnectedPlayers.includes(player))
+            this.disconnectedPlayers = remove(this.disconnectedPlayers, player)
 
         if (this.getPlayerWithName(player.name) !== undefined)
             return false
@@ -153,23 +176,12 @@ export class Game {
         return this.zar
     }
 
-    playerPlacedCards(sid: string, cards: string[]) {
-        this.placedCards[sid] = cards
-        const player = this.getPlayer(sid)
-        if(player === undefined) return
-
-        for (const card of cards) {
-            if(card in player.hand)
-                player.hand = remove(player.hand, card)
-        }
-    }
-
     allPlayersPlaced() {
-        return Object.keys(this.placedCards).length === this.players.length -1
+        return this.players.find(player => player.hasCardsPlaced() === false) === undefined
     }
 
     allCardsRevealed() {
-        return this.revealedPlayers.length === this.players.length - 1
+        return this.players.find(player => player.hasCardsRevealed() === false) === undefined
     }
 
     playerWonGame() {
@@ -183,24 +195,16 @@ export class Game {
     getZar() {
         return this.players[this.zar]
     }
-    
-    playerRevealed(sid: string) {
-        this.revealedPlayers.push(sid)
-    }
-    
-    isPlayerRevealed(sid: string) {
-        return sid in this.revealedPlayers
+
+    getHost() {
+        return this.host ? this.getPlayer(this.host) : undefined
     }
 
-    updateSid(oldSid: string, newSid: string) {
-        if (oldSid in this.placedCards) {
-            this.placedCards[newSid] = this.placedCards[oldSid]
-            delete this.placedCards[oldSid]
-
-        }
-        if (oldSid in this.revealedPlayers) {
-            this.revealedPlayers = remove(this.revealedPlayers, oldSid)
-            this.revealedPlayers.push(newSid)
+    isPlayerConnected(player: Player | string) {
+        if(typeof player === 'string') {
+            return this.getPlayer(player) !== undefined
+        } else {
+            return this.players.includes(player)
         }
     }
 }

@@ -22,7 +22,7 @@ export class House {
     }
     
     getGameOfPlayer(sid: string) {
-        this.games.find(game => game.getPlayer(sid) !== undefined)
+        return this.games.find(game => game.getPlayer(sid) !== undefined)
     }
 }
 

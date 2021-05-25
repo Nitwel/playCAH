@@ -137,7 +137,7 @@ socket.on('host', ( host) => {
     store.state.host = host
 })
 
-export function formatBlackCard (card: {text: string, count: number}) {
+export function formatBlackCard (card: {text: string, pick: number}) {
     card.text = card.text.replace(/_/g, '____')
     return card
 }

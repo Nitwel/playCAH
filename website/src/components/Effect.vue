@@ -13,7 +13,9 @@
     </div>
 </template>
 
-<script>
+<script lang="ts">
+import { onMounted, ref } from 'vue'
+import { emitter } from '../setup'
 export default {
     name: 'Effect',
     props: {
@@ -30,18 +32,19 @@ export default {
             default: null
         }
     },
-    data () {
-        return {
-            show: false
-        }
-    },
-    created () {
-        this.$root.$on(this.trigger, (event) => {
-            this.show = true
-            setTimeout(() => {
-                this.show = false
-            }, this.time)
+    setup(props) {
+        const show = ref(false)
+
+        onMounted(() => {
+            emitter.on(props.trigger, (event) => {
+                show.value = true
+                setTimeout(() => {
+                    show.value = false
+                }, props.time)
+            })
         })
+                
+        return  { show }
     }
 }
 </script>
