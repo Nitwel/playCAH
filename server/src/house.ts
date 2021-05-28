@@ -14,6 +14,7 @@ export class House {
         if(game === undefined) {
             game = new Game(gameName)
         }
+        this.games.push(game)
         return game
     }
     

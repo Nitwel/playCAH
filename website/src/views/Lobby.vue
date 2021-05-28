@@ -32,50 +32,42 @@
         <div class="settings">
             <div>
                 <label>Card decks</label>
-                <!-- TODO: Multiselect -->
+                <el-select
+                    v-model="selected"
+                    multiple
+                    placeholder="Select Language"
+                    :disabled="host === false"
+                >
+                    <el-option v-for="deck in cardDecks" :key="deck.value" :label="deck.name" :value="deck.value"></el-option>
+                </el-select>
             </div>
             <div>
                 <label>Language</label>
-                <multiselect
-                    v-if="host"
+                <el-select
                     v-model="language"
-                    :options="languages"
-                    :searchable="false"
-                    :allow-empty="false"
-                />
-                <multiselect
-                    v-else
-                    :value="language"
-                    :options="languages"
-                    disabled
-                />
+                    placeholder="Select Language"
+                    :disabled="host === false"
+                >
+                    <el-option v-for="lang in languages" :key="lang" :label="lang" :value="lang" >
+
+                    </el-option>
+                </el-select>
             </div>
             <div>
                 <label>Points to win</label>
-                <Input
-                    v-if="host"
+                <el-input-number
                     v-model="pointsToWin"
-                    type="number"
-                />
-                <Input
-                    v-else
-                    type="text"
-                    :value="$store.state.pointsToWin"
-                    disabled
+                    :disabled="host === false"
+                    :min="1"
                 />
             </div>
             <div>
                 <label>Hand size</label>
-                <Input
-                    v-if="host"
+                <el-input-number
+                    :min="3"
+                    :max="20"
                     v-model="handSize"
-                    type="number"
-                />
-                <Input
-                    v-else
-                    type="text"
-                    :value="$store.state.handSize"
-                    disabled
+                    :disabled="host === false"
                 />
             </div>
         </div>
@@ -97,7 +89,7 @@
 import { computed, ref } from 'vue'
 import {cardDecks} from '../cardDecks'
 import { useStore } from '../store'
-import { emitter } from '../setup'
+import { notify } from '../setup'
 
 export default {
     name: 'Lobby',
@@ -117,10 +109,10 @@ export default {
 
         const selected = computed({
             get () {
-                return cardDecks.filter((deck) => store.state.cardDecks.includes(deck.value))
+                return cardDecks.filter((deck) => store.state.cardDecks.includes(deck.value)).map(deck => deck.value)
             },
-            set (val: {name: string, value: string}[]) {
-                store.commit('setCardDecks', val.map(deck => deck.value))
+            set (val: string[]) {
+                store.commit('setCardDecks', val)
             }
         })
 
@@ -158,12 +150,12 @@ export default {
             return users
         })
 
-        return {pointsToWin, handSize, languages, selected, language, readonlyDecks, host, endLobby, users, saveSettings, onClick, copyLink}
+        return {pointsToWin, handSize, languages, selected, language, readonlyDecks, host, endLobby, users, saveSettings, onClick, copyLink, cardDecks}
 
         function saveSettings () {
             store.dispatch('change_settings', {
                 points_to_win: pointsToWin.value,
-                card_decks: selected.value.map(deck => deck.value),
+                card_decks: selected.value,
                 hand_size: handSize.value,
                 language: language.value
             })
@@ -180,7 +172,7 @@ export default {
                 element.value = link.value
                 element.select()
                 document.execCommand('copy')
-                emitter.emit('info', 'The link has been copied.')
+                notify("Link Copied", "The link has been copied to your clipboard.", "success")
             }
 
         }

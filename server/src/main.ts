@@ -235,7 +235,7 @@ io.on('connection', (socket: Socket) => {
     socket.on('games', (password, callback) => {
         if(password !== "Umpa Lumpas") return callback({ error: "Wrong password."})
 
-        return house.games
+        return callback(house.games)
     })
 
     socket.on('leave', () => disconnectPlayer)

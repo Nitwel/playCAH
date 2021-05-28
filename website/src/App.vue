@@ -1,20 +1,15 @@
 <template>
     <div id="app">
         <router-view />
-        <Alert />
     </div>
 </template>
 
 <script>
 import { onUnmounted } from 'vue'
-import Alert from './components/Alert.vue'
 import {useStore} from './store'
 
 export default {
     name: 'App',
-    components: {
-        Alert
-    },
     setup() {
         const store = useStore()
 

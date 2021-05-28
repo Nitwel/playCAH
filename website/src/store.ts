@@ -1,5 +1,5 @@
 import { createStore, Store, useStore as baseUseStore, createLogger } from "vuex";
-import { socket, emitter } from "./setup";
+import { socket, notify } from "./setup";
 import router from './router'
 import {formatBlackCard} from './socket'
 import { InjectionKey } from 'vue'
@@ -170,12 +170,12 @@ function handleResponse(response: any) {
     if (!response) return false;
     if (response.error) {
         console.error(response.error);
-        emitter.emit("error", response.error);
+        notify("Error", response.error, "error")
         return true;
     }
     if (response.info) {
         console.info(response.info);
-        emitter.emit("info", response.info);
+        notify("Info", response.info)
     }
     return false;
 }

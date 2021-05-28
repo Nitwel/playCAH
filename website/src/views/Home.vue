@@ -11,30 +11,31 @@
             hide-name
         />
         <div class="start">
-            <Input
+            <el-input
                 v-model="name"
                 placeholder="Your name..."
                 maxlength="12"
             />
-            <Input
+            <el-input
                 v-if="showLobbyInput"
                 v-model="lobby"
                 placeholder="Enter lobby name..."
                 maxlength="20"
             />
             <div class="btns">
-                <Button
+                <el-button
                     v-if="!showLobbyInput"
                     @click="resetLobby"
                 >
                     Change Lobby
-                </Button>
-                <Button
+                </el-button>
+                <el-button
+                    type="primary"
                     :disabled="!connected"
                     @click="onClick"
                 >
                     Join
-                </Button>
+                </el-button>
             </div>
         </div>
         <div class="footer">
@@ -57,7 +58,7 @@
 import { computed, onMounted, ref } from 'vue'
 import packageJson from '../../package.json'
 import {useStore} from '../store'
-import {emitter, socket} from '../setup'
+import {notify, socket} from '../setup'
 
 export default {
     name: 'Home',
@@ -94,17 +95,17 @@ export default {
 
         function onClick () {
             if (!connected.value) {
-                emitter.emit('error', 'Not connected to the server.')
+                notify("Error","Not connected to the server.","error")
                 return
             }
 
             if (!name.value) {
-                emitter.emit('error', 'You must provide a user name.')
+                notify("Error", "You must provide a user name.", "error")
                 return
             }
 
             if (!lobby.value) {
-                emitter.emit('error', 'You must provide a lobby name.')
+                notify("Error", "You must provide a lobby name.", "error")
                 return
             }
             store.dispatch('join_lobby')

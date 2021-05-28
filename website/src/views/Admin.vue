@@ -10,21 +10,9 @@
         <h1 class="games-sum">
             {{ games.length }} Games are running.
         </h1>
-        <div class="games">
-            <span
-                v-for="game in games"
-                :key="game.name"
-            >{{ game.name }} with {{ game.players.length }} players.</span>
-        </div>
-        <h1 class="players-sum">
-            {{ players.length }} Players total
-        </h1>
-        <div class="players">
-            <span
-                v-for="player in players"
-                :key="player.name"
-            >{{ player.name }} </span>
-        </div>
+        <textarea class="text" :value="JSON.stringify(games, null, 4)">
+
+        </textarea>
     </div>
 </template>
 
@@ -36,9 +24,8 @@ export default {
     setup(props) {
         const password = ref('')
         const games = ref([])
-        const players = ref([])
 
-        return {onClick, password, games, players}
+        return {onClick, password, games}
 
         function onClick () {
             socket.emit('games', password.value, (response: any) => {
@@ -46,11 +33,6 @@ export default {
                 console.log(response)
 
                 games.value = response
-            })
-            socket.emit('players', password.value, (response: any) => {
-                if (response.error) return console.error(response.error)
-                console.log(response)
-                players.value = response
             })
         }
     }
@@ -62,5 +44,10 @@ export default {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+}
+
+.text {
+    width: 80vw;
+    height: 500px;
 }
 </style>
