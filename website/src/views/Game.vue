@@ -187,6 +187,8 @@ export default {
             })
         })
 
+        return {deleted, deleting, isZar, playerPlaced, allPlaced, allRevealed, winnerSelected, users, points, blackCard, revealed, posNames, zar, title, onShortcut, isRevealed, selected, onSelectWinner}
+
         function onShortcut (type: 'delete' | 'leave') {
             if (type === 'delete') {
                 deleting.value = !deleting.value

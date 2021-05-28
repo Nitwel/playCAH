@@ -102,10 +102,18 @@ export default {
         }
     },
     setup(props) {
-        const pointsToWin = ref(5)
-        const handSize = ref(7)
+      const handSize = ref(7)
         const languages = ref(['en', 'de'])
         const store = useStore()
+
+        const pointsToWin = computed({
+          get() {
+            return store.state.pointsToWin
+          },
+          set(points: number) {
+            store.state.pointsToWin = points
+          }
+        })
 
         const selected = computed({
             get () {

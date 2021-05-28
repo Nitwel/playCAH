@@ -126,6 +126,7 @@ socket.on('cards_revealed', ( { pos, cards }) => {
     store.state.revealed[pos] = cards
 })
 socket.on('settings_changed', ( settings) => {
+    console.log("Settings Changed")
     emitter.emit('settings_changed', settings)
     store.state.pointsToWin = settings.points_to_win
     store.state.handSize = settings.hand_size

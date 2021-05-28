@@ -1,13 +1,14 @@
 import {Player} from './player'
-import {readFileSync} from 'fs'
+import {readFileSync, existsSync} from 'fs'
 import {shuffle, remove, includes} from 'lodash'
+import {join} from 'path'
  
 function loadDecks(decks: string[], lang: string){
     const blackCards: BlackCard[] = []
     const whiteCards: string[] = []
 
     decks.forEach(deck => {
-        const file = readFileSync(`./decks/${lang}/${deck}.json`, 'utf-8')
+        const file = readFileSync(join(__dirname, './decks', lang, deck + '.json'), 'utf-8')
 
         const data = JSON.parse(file)
         blackCards.concat(data['blackCards']) 
