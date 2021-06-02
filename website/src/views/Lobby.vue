@@ -102,9 +102,17 @@ export default {
         }
     },
     setup(props) {
-      const handSize = ref(7)
         const languages = ref(['en', 'de'])
         const store = useStore()
+
+        const handSize = computed({
+          get() {
+            return store.state.handSize
+          },
+          set(handSize: number) {
+            store.state.handSize = handSize
+          }
+        })
 
         const pointsToWin = computed({
           get() {

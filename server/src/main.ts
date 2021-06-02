@@ -198,7 +198,7 @@ io.on('connection', (socket: Socket) => {
 
         if ( game === undefined ) return callback({ error: "You are currently not in a game."})
 
-        if( game.getZar().sid !== socket.id) return callback({error: "You are not the zar."})
+        if( game.getHost()?.sid !== socket.id) return callback({error: "You are not the host."})
 
         if( game.gameState !== 'Lobby') return callback({ error: "Settings can only be changed in the lobby."})
 
@@ -238,10 +238,11 @@ io.on('connection', (socket: Socket) => {
         return callback(house.games)
     })
 
-    socket.on('leave', () => disconnectPlayer)
-    socket.on('disconnecting', () => disconnectPlayer)
+    socket.on('leave', disconnectPlayer)
+    socket.on('disconnect', disconnectPlayer)
 
     function disconnectPlayer() {
+        console.log("Disconnecting", socket.id)
         const game = house.getGameOfPlayer(socket.id)
     
         if( game === undefined) return
@@ -249,7 +250,7 @@ io.on('connection', (socket: Socket) => {
         socket.leave(game.name)
     
         if ( game.players.length === 1) {
-            house.games = remove(house.games, game)
+            house.games = house.games.filter(g => g.name !== game.name)
             return
         }
     
@@ -258,7 +259,7 @@ io.on('connection', (socket: Socket) => {
     
         if(player === undefined) return
     
-        io.to(game.name).emit('host', game.getHost())
+        io.to(game.name).emit('host', game.getHost()?.name)
         io.to(game.name).emit('player_leave', player.name)
     
         if(game.gameState === 'Lobby') return

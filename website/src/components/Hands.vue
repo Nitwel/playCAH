@@ -9,18 +9,18 @@
             v-for="(card, index) in hands"
             :id="index"
             :key="index"
-            ref="registerCardRef"
+            :ref="registerCardRef"
             :selectable="!placed && !disabled"
             :style="{'--slotted-time': `${plotAnimation}ms`, 'marginRight': `${cardMargin}px`}"
         >
             <span v-html="card" />
             <template #container>
                 <Button
-                    v-if="deleting && !is_in_slot(index)"
+                    v-if="deleting && !isInSlot(index)"
                     class="delete abs"
                     icon="delete"
                     rounded
-                    @click="delete_card(card)"
+                    @click="deleteCard(card)"
                 />
                 <transition name="scaleSelect">
                     <Button
@@ -37,7 +37,7 @@
 </template>
 
 <script lang="ts">
-import { computed, onBeforeUpdate, onMounted, onUnmounted, ref, watch } from 'vue'
+import { Component, computed, onBeforeUpdate, onMounted, onUnmounted, ref, watch, ComponentPublicInstance } from 'vue'
 import { useStore } from '../store'
 import { emitter } from '../setup'
 import { register } from './register'
@@ -90,7 +90,7 @@ export default {
 
         const hands = computed(() => store.state.hands)
         const blackCard = computed(() => store.state.blackCard)
-        const placable = computed(() => Object.values(inSlot.value).length === blackCard.value?.pick && placed.value === false)
+        const placeable = computed(() => Object.values(inSlot.value).length === blackCard.value?.pick && placed.value === false)
 
         watch(hands, () => {
             render.value = false
@@ -133,18 +133,18 @@ export default {
             })
         })
 
-        return { registerCardRef, hand }
+        return { registerCardRef, hand, render, cardMargin, hands, placeable, placed, deleteCard, onSelect, isInSlot, inSlot, plotAnimation, blackCard }
 
-        function registerCardRef(element: HTMLElement) {
-            cards.value.push(element)
+        function registerCardRef(element: ComponentPublicInstance<HTMLElement>) {
+            cards.value.push(element.$el)
         }
 
-        function is_in_slot(index: number) {
+        function isInSlot(index: number) {
             const match = Object.values(inSlot.value).findIndex(card => parseInt(card.id) === index)
             return match !== -1
         }
 
-        function delete_card (card: string) {
+        function deleteCard (card: string) {
             emit('deleted')
             store.dispatch('delete_card', card)
         }
@@ -167,6 +167,7 @@ export default {
         }
 
         function dragstart ($event: TouchEvent | MouseEvent) {
+            console.log("dragstart")
             if (placed.value === true || props.disabled === true || props.deleting === true) return
 
             const card = cards.value.find(card => card === $event.target || card.contains($event.target as Node))
@@ -205,6 +206,7 @@ export default {
         }
 
         function drag ($event: TouchEvent | MouseEvent) {
+            console.log("Dragging")
             if (dragging.value === undefined) return
 
             let left: number
@@ -256,6 +258,7 @@ export default {
         }
 
         function dragend() {
+            console.log("dragend")
             if (dragging.value === undefined) return
 
             const card = dragging.value
@@ -284,7 +287,7 @@ export default {
                     emitter.emit('slot' + nearSlot.value, true)
                     card.classList.add('slotted')
                     clearTimeout(slotted.value)
-                    slotted.value = setTimeout(() => {
+                    slotted.value = window.setTimeout(() => {
                         card.classList.remove('slotted')
                     }, plotAnimation + 100)
 

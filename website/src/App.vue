@@ -12,10 +12,6 @@ export default {
     name: 'App',
     setup() {
         const store = useStore()
-
-        onUnmounted(() => {
-            store.dispatch('leave_lobby')
-        })
     }
 }
 </script>

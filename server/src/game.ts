@@ -4,16 +4,16 @@ import {shuffle, remove, includes} from 'lodash'
 import {join} from 'path'
  
 function loadDecks(decks: string[], lang: string){
-    const blackCards: BlackCard[] = []
-    const whiteCards: string[] = []
+    let blackCards: BlackCard[] = []
+    let whiteCards: string[] = []
 
-    decks.forEach(deck => {
+    for(let deck of decks) {
         const file = readFileSync(join(__dirname, './decks', lang, deck + '.json'), 'utf-8')
 
         const data = JSON.parse(file)
-        blackCards.concat(data['blackCards']) 
-        whiteCards.concat(data['whiteCards'] )
-    })
+        blackCards = blackCards.concat(data.blackCards)
+        whiteCards = whiteCards.concat(data.whiteCards)
+    }
 
     return {blackCards, whiteCards}
 }
@@ -46,11 +46,8 @@ export class Game {
     getCardDecks() {
         const decks = loadDecks(this.cardDecks, this.language)
 
-        this.blackCards = decks.blackCards
-        this.whiteCards = decks.whiteCards
-
-        this.blackCards = shuffle(this.blackCards)
-        this.whiteCards = shuffle(this.whiteCards)
+        this.blackCards = shuffle(decks.blackCards)
+        this.whiteCards = shuffle(decks.whiteCards)
     }
 
     drawBlack(){
@@ -61,7 +58,7 @@ export class Game {
 
     drawWhite(amount = 1){
         const choosenCards = this.whiteCards.splice(0, amount)
-        this.whiteCards.concat(choosenCards)
+        this.whiteCards = this.whiteCards.concat(choosenCards)
         return choosenCards
     }
     
@@ -144,11 +141,11 @@ export class Game {
     
     removePlayer(sid: string){
         const player = this.getPlayer(sid)
-        if (player) {
+        if (player !== undefined) {
             if (this.players.indexOf(player) <= this.zar)
-                this.zar = (this.zar - 1) % (this.players.length - 1)
+                this.zar = (this.zar + 1) % (this.players.length - 1)
 
-            this.players = remove(this.players, player)
+            this.players = this.players.filter(p => p.sid !== player.sid)
 
             if (this.host == player.sid && this.players.length > 0)
                 this.host = this.players[0].sid

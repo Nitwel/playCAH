@@ -161,9 +161,6 @@ export const store = createStore<State>({
             });
         },
     },
-    plugins: [createLogger({
-        logger: console
-    })]
 });
 
 function handleResponse(response: any) {

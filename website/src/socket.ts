@@ -10,8 +10,12 @@ socket.on('answer', ( data) => {
 
 socket.on('connect', () => {
     store.state.connected = true
-  
     console.log('Connected')
+})
+
+socket.on('reconnect', () => {
+    store.state.connected = true
+    console.log('Reconnected')
 })
 
 socket.on('disconnect', ( data) => {
@@ -64,6 +68,7 @@ socket.on('game_start', ( { hand, black, zar }) => {
     store.state.blackCard = formatBlackCard(black)
     store.state.zar = zar
     router.push('/game/' + store.state.lobby)
+    console.log(store)
 })
 socket.on('next_round', async ( { hand, black, zar, winner, pos }) => {
     emitter.emit('next_round', { hand, black, zar, winner, pos })

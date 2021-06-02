@@ -43,7 +43,7 @@ export class Player {
     }
 
     addCardsInHand(cards: string[]) {
-        this.hand.concat(cards)
+        this.hand = this.hand.concat(cards)
     }
 
     placeCards(cards: string[]) {
