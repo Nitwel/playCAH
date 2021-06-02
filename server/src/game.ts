@@ -175,11 +175,13 @@ export class Game {
     }
 
     allPlayersPlaced() {
-        return this.players.find(player => player.hasCardsPlaced() === false) === undefined
+        const zar = this.getZar();
+        return this.players.find(player => player.hasCardsPlaced() === false && player !== zar) === undefined
     }
 
     allCardsRevealed() {
-        return this.players.find(player => player.hasCardsRevealed() === false) === undefined
+        const zar = this.getZar();
+        return this.players.find(player => player.hasCardsRevealed() === false && player !== zar) === undefined
     }
 
     playerWonGame() {

@@ -125,7 +125,7 @@ io.on('connection', (socket: Socket) => {
 
         player.placeCards(cards)
 
-        socket.to(game.name).emit('cards_placed', player.name)
+        io.to(game.name).emit('cards_placed', player.name)
     })
 
     socket.on('reveal', (position, callback) => {
@@ -147,7 +147,7 @@ io.on('connection', (socket: Socket) => {
 
         player.revealPos = position
 
-        socket.to(game.name).emit("cards_revealed", {pos: position, cards: player.getPlacedCards()})
+        io.to(game.name).emit("cards_revealed", {pos: position, cards: player.getPlacedCards()})
     })
 
     socket.on('winner_selected', (position, callback) => {

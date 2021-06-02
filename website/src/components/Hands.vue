@@ -136,7 +136,7 @@ export default {
         return { registerCardRef, hand, render, cardMargin, hands, placeable, placed, deleteCard, onSelect, isInSlot, inSlot, plotAnimation, blackCard }
 
         function registerCardRef(element: ComponentPublicInstance<HTMLElement>) {
-            cards.value.push(element.$el)
+            if(element && element.$el) cards.value.push(element.$el)
         }
 
         function isInSlot(index: number) {
@@ -167,7 +167,6 @@ export default {
         }
 
         function dragstart ($event: TouchEvent | MouseEvent) {
-            console.log("dragstart")
             if (placed.value === true || props.disabled === true || props.deleting === true) return
 
             const card = cards.value.find(card => card === $event.target || card.contains($event.target as Node))
@@ -206,7 +205,6 @@ export default {
         }
 
         function drag ($event: TouchEvent | MouseEvent) {
-            console.log("Dragging")
             if (dragging.value === undefined) return
 
             let left: number
@@ -258,7 +256,6 @@ export default {
         }
 
         function dragend() {
-            console.log("dragend")
             if (dragging.value === undefined) return
 
             const card = dragging.value
