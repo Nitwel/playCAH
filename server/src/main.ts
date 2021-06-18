@@ -212,7 +212,7 @@ io.on('connection', (socket: Socket) => {
 
         io.to(game.name).emit('settings_changed', settings)
 
-        return callback({ info: "Settings habe been changed."})
+        return callback({ info: "Settings have been changed."})
     })
 
     socket.on('delete_card', (card, callback) => {
@@ -230,6 +230,32 @@ io.on('connection', (socket: Socket) => {
         if ( player.removeCardInHand(card) === false) return callback({error: "The card doesn't exist in your hand."})
 
         player.deletedCard = true
+    })
+
+    socket.on('add_deck', (name, deck, callback) => {
+
+        const game = house.getGameOfPlayer(socket.id)
+
+        if ( game === undefined ) return callback({ error: "You are currently not in a game."})
+
+        if(game.gameState !== 'Lobby') return callback({error: "You need to be inside the lobby to add a card deck."})
+
+        if(game.getZar().sid !== socket.id) return callback({error: "You need to be the host to add a card deck."})
+
+        game.addCustomDeck(name, deck)
+
+        return callback({info: "The custom deck has been added."})
+
+    })
+
+    socket.on('remove_deck', (name, callback) => {
+        const game = house.getGameOfPlayer(socket.id)
+
+        if ( game === undefined ) return callback({ error: "You are currently not in a game."})
+
+        if(game.gameState !== 'Lobby') return callback({error: "You need to be inside the lobby to add a card deck."})
+
+        if(game.getZar().sid !== socket.id) return callback({error: "You need to be the host to add a card deck."})
     })
 
     socket.on('games', (password, callback) => {
