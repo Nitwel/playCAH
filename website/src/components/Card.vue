@@ -26,6 +26,13 @@
                     fill="transparent"
                 />
             </svg>
+            <textarea
+            placeholder="Enter some text..."
+              class="editable"
+              v-if="modelValue !== undefined"
+              :value="modelValue"
+              @input="$emit('update:modelValue', $event.target.value)"
+            ></textarea>
             <slot />
         </div>
         <slot name="container" />
@@ -38,7 +45,12 @@ import {emitter} from '../setup'
 
 export default {
     name: 'Card',
+    emits: ['update:modelValue'],
     props: {
+        modelValue: {
+          type: String,
+          default: undefined
+        },
         black: {
             type: Boolean,
             default: false
@@ -64,7 +76,7 @@ export default {
             default: undefined
         }
     },
-    setup(props) {
+    setup(props, {emit}) {
         const card = ref<HTMLElement>()
 
         onMounted(() => {
@@ -121,6 +133,20 @@ export default {
     transition: 200ms ease-in-out;
 
     user-select: none;
+
+    .editable {
+      height: 100%;
+      max-width: 100%;
+      max-height: 100%;
+      background-color: inherit;
+      border: none;
+      resize: none;
+      outline: none;
+      font-family: inherit;
+      font-size: inherit;
+      overflow: hidden;
+      color: inherit;
+    }
 
     &.black {
       background-color: black;

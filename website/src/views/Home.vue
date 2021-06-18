@@ -1,7 +1,7 @@
 <template>
     <div id="home">
         <div class="title">
-            CAH by Nitwel<div class="tag">
+            play CAH<div class="tag">
                 Unofficial
             </div>
         </div>
@@ -25,6 +25,7 @@
                 maxlength="20"
             />
             <div class="btns">
+                <router-link to="/deckcreator"><el-button>Deck Creator</el-button></router-link>
                 <el-button
                     v-if="!showLobbyInput"
                     @click="resetLobby"
@@ -39,6 +40,7 @@
                 >
                     Join
                 </el-button>
+                
             </div>
         </div>
         <div class="footer">

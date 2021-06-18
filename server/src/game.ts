@@ -18,6 +18,11 @@ function loadDecks(decks: string[], lang: string){
     return {blackCards, whiteCards}
 }
 
+type Deck = {
+    whiteCards: string[],
+    blackCards: BlackCard[]
+}
+
 type BlackCard = {
     text: string,
     pick: number
@@ -30,6 +35,7 @@ export class Game {
     disconnectedPlayers: Player[] = []
     host?: string
     cardDecks = ["Base"]
+    customDecks: Record<string, Deck> = {}
     blackCard?: BlackCard
     zar = 0
     name: string
@@ -107,7 +113,14 @@ export class Game {
     getAllPlayers() {
         return [...this.players, ...this.disconnectedPlayers]
     }
-        
+    
+    addCustomDeck(name: string, deck: Deck) {
+        this.customDecks[name] = deck
+    }
+
+    removeCustomDeck(name: string) {
+        delete this.customDecks[name]
+    }
             
     addPoint(sid: string) {
         this.players.forEach(player => {

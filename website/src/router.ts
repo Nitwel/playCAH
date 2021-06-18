@@ -5,6 +5,7 @@ import Game from './views/Game.vue'
 import Profile from './views/Profile.vue'
 import About from './views/About.vue'
 import Admin from './views/Admin.vue'
+import DeckCreator from './views/DeckCreator.vue'
 
 import {store} from './store'
 
@@ -45,6 +46,11 @@ const routes: RouteRecordRaw[] = [
         path: '/profile',
         name: 'Profile',
         component: Profile
+    },
+    {
+        path: '/deckcreator',
+        name: 'DeckCreator',
+        component: DeckCreator
     },
     {
         path: '/about',
