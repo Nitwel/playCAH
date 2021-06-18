@@ -71,7 +71,7 @@ export default {
             if (props.eventId !== undefined) {
                 emitter.on('rotate_' + props.eventId, () => {
 
-                    if (card.value === undefined) return
+                    if (!card.value) return
 
                     card.value.classList.add('rotating')
                 })

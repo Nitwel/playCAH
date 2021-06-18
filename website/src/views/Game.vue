@@ -182,7 +182,7 @@ export default {
             emitter.on('next_round', () => {
                 deleted.value = false
                 deleting.value = false
-                var audio = new Audio('/sounds/win.wav')
+                var audio = new Audio('/sounds/win.mp3')
                 audio.play()
             })
         })

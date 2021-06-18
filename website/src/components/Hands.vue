@@ -5,34 +5,34 @@
         class="hands"
         :style="{'paddingRight': `${-cardMargin + 10}px`}"
     >
-        <Card
-            v-for="(card, index) in hands"
-            :id="index"
-            :key="index"
-            :ref="registerCardRef"
-            :selectable="!placed && !disabled"
-            :style="{'--slotted-time': `${plotAnimation}ms`, 'marginRight': `${cardMargin}px`}"
-        >
-            <span v-html="card" />
-            <template #container>
-                <Button
-                    v-if="deleting && !isInSlot(index)"
-                    class="delete abs"
-                    icon="delete"
-                    rounded
-                    @click="deleteCard(card)"
-                />
-                <transition name="scaleSelect">
+        <teleport v-for="(card, index) in hands" :key="index" :to="to[index]" :disabled="index in to === false || to[index] === ''">
+            <Card
+                :id="index"
+                :ref="registerCardRef"
+                :selectable="!placed && !disabled"
+                :style="{'--slotted-time': `${plotAnimation}ms`, 'marginRight': `${cardMargin}px`}"
+            >
+                <span v-html="card" />
+                <template #container>
                     <Button
-                        v-if="placeable && index == inSlot[blackCard.pick].id"
-                        class="accept abs"
-                        icon="done"
+                        v-if="deleting && !isInSlot(index)"
+                        class="delete abs"
+                        icon="delete"
                         rounded
-                        @click="onSelect"
+                        @click="deleteCard(card)"
                     />
-                </transition>
-            </template>
-        </Card>
+                    <transition name="scaleSelect">
+                        <Button
+                            v-if="placeable && blackCard.pick in inSlot && index == inSlot[blackCard.pick].id"
+                            class="accept abs"
+                            icon="done"
+                            rounded
+                            @click="onSelect"
+                        />
+                    </transition>
+                </template>
+            </Card>
+        </teleport>
     </div>
 </template>
 
@@ -41,6 +41,7 @@ import { Component, computed, onBeforeUpdate, onMounted, onUnmounted, ref, watch
 import { useStore } from '../store'
 import { emitter } from '../setup'
 import { register } from './register'
+
 export default {
     name: 'Hands',
     props: {
@@ -69,6 +70,7 @@ export default {
             clientHeight: 0,
             clientWidth: 0
         })
+        const to = ref<Record<number, string>>({})
         const nearSlot = ref<string | null>(null)
         const inSlot = ref<Record<string, HTMLElement>>({})
         const slotted = ref<number | undefined>(undefined)
@@ -103,12 +105,6 @@ export default {
             cards.value = []
         })
 
-        onUnmounted(() => {
-            Object.values(inSlot).forEach(card => {
-                document.body.removeChild(card)
-            })
-        })
-
         onMounted(() => {
             document.addEventListener('touchmove', drag)
             document.addEventListener('touchstart', dragstart)
@@ -121,19 +117,19 @@ export default {
                 windowWidth.value = window.innerWidth
             }
             emitter.on('next_round', () => {
-                deletePlacedCards()
+                to.value = {}
                 placed.value = false
                 inSlot.value = {}
             })
 
             emitter.on('game_end', () => {
-                deletePlacedCards()
+                to.value = {}
                 placed.value = false
                 inSlot.value = {}
             })
         })
 
-        return { registerCardRef, hand, render, cardMargin, hands, placeable, placed, deleteCard, onSelect, isInSlot, inSlot, plotAnimation, blackCard }
+        return { registerCardRef, hand, render, cardMargin, hands, placeable, placed, deleteCard, onSelect, isInSlot, inSlot, plotAnimation, blackCard, nearSlot, to }
 
         function registerCardRef(element: ComponentPublicInstance<HTMLElement>) {
             if(element && element.$el) cards.value.push(element.$el)
@@ -153,9 +149,7 @@ export default {
             const rects = document.getElementsByClassName('user-card-fields')
             const fields: Record<string, {top: number, left: number}> = {}
 
-
-
-            Array.from(rects).forEach(rect => {
+            Array.from(rects).forEach((rect) => {
                 const bounds = rect.getBoundingClientRect()
                 fields[rect.id] = { top: bounds.top, left: bounds.left }
             })
@@ -172,10 +166,11 @@ export default {
             const card = cards.value.find(card => card === $event.target || card.contains($event.target as Node))
 
             if (card === undefined || card.classList.contains('slotted') || card.classList.contains('placed')) return
+
             dragging.value = card
             const pos = card.getBoundingClientRect()
 
-            if (!Object.values(inSlot.value).includes(card)) { document.body.appendChild(card) }
+            if (!Object.values(inSlot.value).includes(card)) { to.value[Number(card.id)] = '#app' }
             card.classList.add('global')
             if (blackCard.value && blackCard.value.pick > 2) card.classList.add('xSmall')
             else if (blackCard.value && blackCard.value.pick > 1) card.classList.add('small')
@@ -264,7 +259,7 @@ export default {
                 card.style.top = ''
                 card.style.left = ''
                 card.classList.remove('global', 'small', 'xSmall')
-                hand.value?.appendChild(card)
+                to.value[Number(card.id)] = ''
 
                 const audio = new Audio('/sounds/zpfw.mp3')
                 audio.play()
@@ -275,7 +270,7 @@ export default {
                     oldSlot.style.left = ''
                     oldSlot.style.transform = ''
                     oldSlot.classList.remove('global', 'small', 'xSmall')
-                    hand.value?.appendChild(oldSlot)
+                    to.value[Number(oldSlot.id)] = ''
                 }
 
                 inSlot.value[nearSlot.value] = card
@@ -301,20 +296,12 @@ export default {
         function onSelect () {
             placed.value = true
             const cards = Object.values(inSlot.value).map(slot => hands.value[parseInt(slot.id)])
-            deletePlacedCards()
+            to.value = {}
 
             var audio = new Audio('/sounds/plopplop.mp3')
             audio.play()
 
             store.dispatch('place_cards', cards)
-        }
-
-        function deletePlacedCards () {
-            Object.values(inSlot.value).forEach(card => {
-                if (document.body.contains(card)) {
-                    document.body.removeChild(card)
-                }
-            })
         }
 
     }

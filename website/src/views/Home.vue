@@ -12,11 +12,13 @@
         />
         <div class="start">
             <el-input
+                class="name"
                 v-model="name"
                 placeholder="Your name..."
                 maxlength="12"
             />
             <el-input
+                class="lobby"
                 v-if="showLobbyInput"
                 v-model="lobby"
                 placeholder="Enter lobby name..."
@@ -30,6 +32,7 @@
                     Change Lobby
                 </el-button>
                 <el-button
+                    class="join-lobby"
                     type="primary"
                     :disabled="!connected"
                     @click="onClick"

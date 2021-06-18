@@ -49,7 +49,7 @@ export class Player {
     placeCards(cards: string[]) {
         if(difference(cards, this.hand).length > 0) return false
 
-        this.hand = this.hand.filter(card => card in cards === false)
+        this.hand = this.hand.filter(card => cards.includes(card) === false)
         this.placedCards = cards
 
         return true
