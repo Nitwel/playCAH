@@ -50,9 +50,7 @@ export default {
         return { whiteCards, blackCards,text, addCard, removeCard, updateCard, readFile, loadFile, deckTitle, saveFile}
 
         function updateCard(index: number, value: string, isBlack: boolean) {
-            console.log(value)
             value = value.trim().replace(/_{1,}/g, '____')
-            console.log(value)
             if(isBlack) blackCards.value[index].text = value
             else whiteCards.value[index] = value
         }

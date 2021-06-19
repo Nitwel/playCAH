@@ -68,7 +68,6 @@ socket.on('game_start', ( { hand, black, zar }) => {
     store.state.blackCard = formatBlackCard(black)
     store.state.zar = zar
     router.push('/game/' + store.state.lobby)
-    console.log(store)
 })
 socket.on('next_round', async ( { hand, black, zar, winner, pos }) => {
     emitter.emit('next_round', { hand, black, zar, winner, pos })
@@ -131,7 +130,6 @@ socket.on('cards_revealed', ( { pos, cards }) => {
     store.state.revealed[pos] = cards
 })
 socket.on('settings_changed', ( settings) => {
-    console.log("Settings Changed")
     emitter.emit('settings_changed', settings)
     store.state.pointsToWin = settings.points_to_win
     store.state.handSize = settings.hand_size
@@ -141,6 +139,10 @@ socket.on('settings_changed', ( settings) => {
 socket.on('host', ( host) => {
     emitter.emit('host', host)
     store.state.host = host
+})
+
+socket.on('update_custom_decks', (decks) => {
+    store.state.customDecks = decks
 })
 
 export function formatBlackCard (card: {text: string, pick: number}) {

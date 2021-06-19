@@ -10,6 +10,7 @@ export class Player {
     revealPos?: number
     private placedCardsRevealed: boolean = false
     private placedCards: string[] = []
+    uploadedDecks: string[] = []
 
     constructor(sid: string, name: string) {
         this.sid = sid
@@ -38,7 +39,7 @@ export class Player {
 
     removeCardInHand(card: string) {
         if(this.hand.includes(card) === false) return false
-        this.hand = remove(this.hand, card)
+        this.hand = this.hand.filter(c =>  c !== card)
         return true
     }
 

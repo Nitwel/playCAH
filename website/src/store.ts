@@ -3,6 +3,7 @@ import { socket, notify } from "./setup";
 import router from './router'
 import {formatBlackCard} from './socket'
 import { InjectionKey } from 'vue'
+import { Deck } from "./util/types";
 
 export const key: InjectionKey<Store<State>> = Symbol()
 
@@ -18,6 +19,7 @@ export interface State {
     handSize: number;
     pointsToWin: number;
     cardDecks: string[];
+    customDecks: string[];
     gameState: "Home" | "Lobby" | "Game";
     endLobby: boolean;
     blackCard: undefined | {text: string, pick: number};
@@ -48,6 +50,7 @@ export const store = createStore<State>({
         handSize: 7,
         pointsToWin: 5,
         cardDecks: ["Base"],
+        customDecks: [],
         gameState: "Home", // Home, Lobby, Game
         endLobby: false,
         blackCard: undefined,
@@ -82,6 +85,7 @@ export const store = createStore<State>({
             state.users = [];
             state.winner = "";
             state.language = "en";
+            state.customDecks = []
         },
     },
     actions: {
@@ -101,6 +105,7 @@ export const store = createStore<State>({
                     state.cardDecks = response.card_decks;
                     state.pointsToWin = response.points_to_win;
                     state.language = response.language;
+                    state.customDecks = response.custom_decks
 
                     if (response.hand) {
                         state.gameState = "Game";
@@ -149,8 +154,13 @@ export const store = createStore<State>({
             socket.emit("leave");
         },
         change_settings({ state }, settings) {
-            socket.emit("change_settings", settings, (response: any) => {
-                handleResponse(response);
+            socket.emit("change_settings", {
+                points_to_win: state.pointsToWin,
+                card_decks: state.cardDecks,
+                hand_size: state.handSize,
+                language: state.language
+              }, (response: any) => {
+                
             });
         },
         delete_card({ state }, card) {
@@ -160,6 +170,11 @@ export const store = createStore<State>({
                 }
             });
         },
+        upload_custom_decks({state}, decks: Deck[]) {
+            socket.emit("upload_decks", decks, (response: any) => {
+                handleResponse(response)
+            })
+        }
     },
 });
 

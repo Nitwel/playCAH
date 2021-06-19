@@ -2,7 +2,8 @@ import {Player} from './player'
 import {readFileSync, existsSync} from 'fs'
 import {shuffle, remove, includes} from 'lodash'
 import {join} from 'path'
- 
+import { BlackCard, Deck } from './types'
+
 function loadDecks(decks: string[], lang: string){
     let blackCards: BlackCard[] = []
     let whiteCards: string[] = []
@@ -16,16 +17,6 @@ function loadDecks(decks: string[], lang: string){
     }
 
     return {blackCards, whiteCards}
-}
-
-type Deck = {
-    whiteCards: string[],
-    blackCards: BlackCard[]
-}
-
-type BlackCard = {
-    text: string,
-    pick: number
 }
 
 export class Game {
@@ -50,10 +41,18 @@ export class Game {
     }
 
     getCardDecks() {
-        const decks = loadDecks(this.cardDecks, this.language)
+        let {whiteCards, blackCards} = loadDecks(this.cardDecks.filter(deck => deck in this.customDecks === false), this.language)
 
-        this.blackCards = shuffle(decks.blackCards)
-        this.whiteCards = shuffle(decks.whiteCards)
+        for(let [name, deck] of Object.entries(this.customDecks)) {
+            if(this.cardDecks.includes(name)) {
+                whiteCards = whiteCards.concat(deck.whiteCards)
+                blackCards = blackCards.concat(deck.blackCards)
+            }
+
+        }
+
+        this.blackCards = shuffle(blackCards)
+        this.whiteCards = shuffle(whiteCards)
     }
 
     drawBlack(){
@@ -113,9 +112,17 @@ export class Game {
     getAllPlayers() {
         return [...this.players, ...this.disconnectedPlayers]
     }
-    
-    addCustomDeck(name: string, deck: Deck) {
-        this.customDecks[name] = deck
+
+    addCustomDeck(sid: string, deck: Deck) {
+        this.customDecks[deck.name] = deck
+        this.getPlayer(sid)?.uploadedDecks.push(deck.name)
+    }
+
+    removeDecksOfPlayer(sid: string) {
+        const decks = this.getPlayer(sid)?.uploadedDecks || []
+        for(let deck of decks) {
+            this.removeCustomDeck(deck)
+        }
     }
 
     removeCustomDeck(name: string) {
@@ -219,5 +226,9 @@ export class Game {
         } else {
             return this.players.includes(player)
         }
+    }
+
+    getCustomDecks() {
+        return Object.keys(this.customDecks)
     }
 }

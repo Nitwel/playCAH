@@ -24,8 +24,14 @@
     <div class="settings" label-position="top">
       <div>
         <label>Card Decks</label>
-        <el-button size="small" @click="editPacks = true">Edit decks</el-button>
-        <el-tag v-for="deck in selected" :key="deck" closable @close="toggleDeck(deck)">{{deck}}</el-tag>
+        <el-button v-if="host" size="small" @click="editPacks = true">Edit decks</el-button>
+        <el-tag
+          v-for="deck in selected"
+          :key="deck"
+          :closable="host"
+          @close="toggleDeck(deck)"
+          >{{ deck }}</el-tag
+        >
       </div>
       <div>
         <label>Language</label>
@@ -61,23 +67,35 @@
         />
       </div>
       <div v-if="host" class="actions">
-        <el-button @click="saveSettings"> Save Settings </el-button>
         <el-button @click="onClick" type="primary">
           {{ endLobby ? "Next Round" : "Start" }}
         </el-button>
       </div>
     </div>
-    <el-drawer size="600px" title="Card Decks" v-model="editPacks" :modal="false">
+    <el-drawer
+      size="600px"
+      title="Card Decks"
+      v-model="editPacks"
+    >
       <div class="deck-list">
         <div class="scroll">
-          <el-card v-for="deck in cardDecks" :key="deck.value" @click="toggleDeck(deck.value)">
-            <el-checkbox :model-value="selected.includes(deck.value)" @change="toggleDeck(deck.value)"></el-checkbox>
-            <label>{{deck.name}}</label>  
-          </el-card>
+          <div
+            v-for="deck in allDecks"
+            :key="deck.value"
+            @click="toggleDeck(deck.value)"
+          >
+            <el-checkbox
+              :model-value="selected.includes(deck.value)"
+              @change="toggleDeck(deck.value)"
+            ></el-checkbox>
+            <label>{{ deck.name }}</label>
+          </div>
         </div>
         <div class="drawer-actions">
-          <el-button type="primary">Upload Card Deck</el-button>
-          <input @change="readFile" type="file" id="upload" />
+          <el-button type="primary" @click="uploadCustomDeck"
+            >Upload Card Deck</el-button
+          >
+          <input @change="readFiles" type="file" id="upload" multiple />
         </div>
       </div>
     </el-drawer>
@@ -85,10 +103,11 @@
 </template>
 
 <script lang="ts">
-import { computed, ref } from "vue";
+import { computed, ref, watch, watchEffect } from "vue";
 import { cardDecks } from "../cardDecks";
 import { useStore } from "../store";
 import { notify } from "../setup";
+import { getFiles } from "../util/getFiles";
 
 export default {
   name: "Lobby",
@@ -101,7 +120,7 @@ export default {
   setup(props) {
     const languages = ref(["en", "de"]);
     const store = useStore();
-    const editPacks = ref(false)
+    const editPacks = ref(false);
 
     const handSize = computed({
       get() {
@@ -109,6 +128,7 @@ export default {
       },
       set(handSize: number) {
         store.state.handSize = handSize;
+        saveSettings();
       },
     });
 
@@ -118,17 +138,17 @@ export default {
       },
       set(points: number) {
         store.state.pointsToWin = points;
+        saveSettings();
       },
     });
 
     const selected = computed({
       get() {
-        return cardDecks
-          .filter((deck) => store.state.cardDecks.includes(deck.value))
-          .map((deck) => deck.value);
+        return store.state.cardDecks
       },
       set(val: string[]) {
         store.commit("setCardDecks", val);
+        saveSettings();
       },
     });
 
@@ -138,6 +158,7 @@ export default {
       },
       set(val: string) {
         store.commit("setLanguage", val);
+        saveSettings();
       },
     });
 
@@ -170,6 +191,13 @@ export default {
       return users;
     });
 
+    const allDecks = computed(() => {
+      return [
+        ...store.state.customDecks.map((deck) => ({ name: deck, value: deck })),
+        ...cardDecks,
+      ];
+    });
+
     return {
       pointsToWin,
       handSize,
@@ -183,23 +211,37 @@ export default {
       saveSettings,
       onClick,
       copyLink,
-      cardDecks,
+      allDecks,
       editPacks,
-      toggleDeck
+      toggleDeck,
+      uploadCustomDeck,
+      readFiles,
     };
 
+    async function readFiles(event: InputEvent) {
+      const target = event.target as HTMLInputElement;
+      if (!target.files || target.files?.length < 1) return;
+
+      const files = Array.from(target.files);
+      const decks = await getFiles(...files);
+
+      selected.value = [...selected.value, ...decks.map((deck) => deck.name)];
+
+      store.dispatch("upload_custom_decks", decks);
+    }
+
+    function uploadCustomDeck() {
+      document.getElementById("upload")?.click();
+    }
+
     function toggleDeck(deck: string) {
-      if(selected.value.includes(deck)) selected.value = selected.value.filter(val => val !== deck)
-      else selected.value = [...selected.value, deck]
+      if (selected.value.includes(deck))
+        selected.value = selected.value.filter((val) => val !== deck);
+      else selected.value = [...selected.value, deck];
     }
 
     function saveSettings() {
-      store.dispatch("change_settings", {
-        points_to_win: pointsToWin.value,
-        card_decks: selected.value,
-        hand_size: handSize.value,
-        language: language.value,
-      });
+      store.dispatch("change_settings");
     }
     function onClick() {
       store.dispatch("start_game");
@@ -291,7 +333,7 @@ export default {
   }
 
   .deck-list {
-     height: 100%;
+    height: 100%;
     display: flex;
     flex-direction: column;
 
@@ -300,7 +342,7 @@ export default {
       overflow: auto;
       height: 100%;
       display: flex;
-      flex-wrap: wrap;
+      flex-direction: column;
       gap: 10px;
     }
 
@@ -308,13 +350,17 @@ export default {
       padding: 16px;
     }
 
-    ::v-deep(.el-card__body) {
-      padding: 10px 20px;
-    }
-
     ::v-deep(.el-checkbox) {
       margin-right: 15px;
     }
+  }
+
+  ::v-deep(.el-tag) {
+    margin-left: 10px;
+  }
+
+  #upload {
+    display: none;
   }
 
   .settings {
@@ -335,7 +381,8 @@ export default {
       margin-bottom: 10px;
     }
 
-    label,& > div {
+    label,
+    & > div {
       display: block;
     }
   }

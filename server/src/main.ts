@@ -3,6 +3,7 @@ import {createServer} from 'http'
 import { House } from "./house"
 import { Player } from "./player"
 import { random, remove } from "lodash"
+import {BlackCard, Deck} from './types'
 
 const server = createServer()
 const io = new Server(server, {
@@ -60,6 +61,7 @@ io.on('connection', (socket: Socket) => {
                 points_to_win: game.pointsToWin,
                 hand_size: game.handSize,
                 card_decks: game.cardDecks,
+                custom_decks: game.getCustomDecks(),
                 hand: disconnectedPlayer.getCardsInHand(),
                 black: game.blackCard,
                 zar: game.getZar().name
@@ -89,6 +91,7 @@ io.on('connection', (socket: Socket) => {
             points_to_win: game.pointsToWin,
             hand_size: game.handSize,
             card_decks: game.cardDecks,
+            custom_decks: game.getCustomDecks(),
             language: game.language
         })
     })
@@ -202,7 +205,7 @@ io.on('connection', (socket: Socket) => {
 
         if( game.gameState !== 'Lobby') return callback({ error: "Settings can only be changed in the lobby."})
 
-        if('cards_decks' in settings && Array.isArray(settings.card_decks)) game.cardDecks = settings.card_decks
+        if('card_decks' in settings && Array.isArray(settings.card_decks)) game.cardDecks = settings.card_decks
 
         if('points_to_win' in settings && typeof settings.points_to_win === 'number') game.pointsToWin = settings.points_to_win
 
@@ -230,10 +233,11 @@ io.on('connection', (socket: Socket) => {
         if ( player.removeCardInHand(card) === false) return callback({error: "The card doesn't exist in your hand."})
 
         player.deletedCard = true
+
+        return callback()
     })
 
-    socket.on('add_deck', (name, deck, callback) => {
-
+    socket.on('upload_decks', (decks: Deck[], callback) => {
         const game = house.getGameOfPlayer(socket.id)
 
         if ( game === undefined ) return callback({ error: "You are currently not in a game."})
@@ -242,20 +246,14 @@ io.on('connection', (socket: Socket) => {
 
         if(game.getZar().sid !== socket.id) return callback({error: "You need to be the host to add a card deck."})
 
-        game.addCustomDeck(name, deck)
+        for(let deck of decks) {
+            game.addCustomDeck(socket.id, deck)
+        }
+
+        io.to(game.name).emit('update_custom_decks', game.getCustomDecks())
 
         return callback({info: "The custom deck has been added."})
 
-    })
-
-    socket.on('remove_deck', (name, callback) => {
-        const game = house.getGameOfPlayer(socket.id)
-
-        if ( game === undefined ) return callback({ error: "You are currently not in a game."})
-
-        if(game.gameState !== 'Lobby') return callback({error: "You need to be inside the lobby to add a card deck."})
-
-        if(game.getZar().sid !== socket.id) return callback({error: "You need to be the host to add a card deck."})
     })
 
     socket.on('games', (password, callback) => {
@@ -288,7 +286,9 @@ io.on('connection', (socket: Socket) => {
         io.to(game.name).emit('host', game.getHost()?.name)
         io.to(game.name).emit('player_leave', player.name)
     
-        if(game.gameState === 'Lobby') return
+        if(game.gameState === 'Lobby') {
+            return
+        }
     
         if (game.players.length < 3) {
             game.endGame()

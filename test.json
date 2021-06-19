@@ -1,0 +1,66 @@
+{
+    "blackCards": [
+        {
+            "text": "This is a test 1",
+            "pick": 1
+        },
+		{
+            "text": "This is a test 2",
+            "pick": 2
+        },
+		{
+            "text": "This is a test 3",
+            "pick": 1
+        },
+		{
+            "text": "This is a test 4",
+            "pick": 1
+        },
+		{
+            "text": "This is a test 5",
+            "pick": 3
+        },
+		{
+            "text": "This is a test 6",
+            "pick": 1
+        },
+		{
+            "text": "This is a test 7",
+            "pick": 1
+        }
+    ],
+    "whiteCards": [
+        "Test Card 1",
+		"Test Card 2",
+		"Test Card 3",
+		"Test Card 4",
+		"Test Card 5",
+		"Test Card 6",
+		"Test Card 7",
+		"Test Card 8",
+		"Test Card 1a",
+		"Test Card 2b",
+		"Test Card 3c",
+		"Test Card 4d",
+		"Test Card 5e",
+		"Test Card 6f",
+		"Test Card 7g",
+		"Test Card 8h",
+		"Test Card 11",
+		"Test Card 22",
+		"Test Card 33",
+		"Test Card 44",
+		"Test Card 55",
+		"Test Card 66",
+		"Test Card 77",
+		"Test Card 88",
+		"Test Card 11a",
+		"Test Card 22b",
+		"Test Card 33c",
+		"Test Card 44d",
+		"Test Card 55e",
+		"Test Card 66f",
+		"Test Card 77g",
+		"Test Card 88h"
+    ]
+}

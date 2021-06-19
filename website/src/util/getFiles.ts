@@ -8,6 +8,7 @@ export async function getFiles(...files: File[]) {
                 const contents = e.target?.result
                 if(typeof contents !== 'string') return
                 const deck = JSON.parse(contents);
+                deck.name = file.name.replace('.json','')
                 resolve(deck)
             }
             reader.onerror = (e) => {
