@@ -36,6 +36,7 @@
 
 <script lang="ts">
 import { ref } from 'vue';
+import {getFiles} from '../util/getFiles'
 import Input from '../components/Input.vue';
 import { clone, cloneDeep } from 'lodash';
 export default {
@@ -82,25 +83,23 @@ export default {
             a?.click()
         }
 
-        function readFile(event: InputEvent) {
+        async function readFile(event: InputEvent) {
             const target = event.target as HTMLInputElement
             if(!target.files || target.files?.length < 1) return
             const file = target.files[0]
 
-            const reader = new FileReader()
             deckTitle.value = file.name.replace('.json','')
-            reader.onload = (e) => {
-                const contents = e.target?.result
-                if(typeof contents !== 'string') return
-                const {blackCards: black, whiteCards: white} = JSON.parse(contents);
-                whiteCards.value = white
-                blackCards.value = black
-                blackCards.value = blackCards.value.map(card => {
-                    card.text = card.text.trim().replace(/_{1,}/g, '____')
-                    return card
-                })
-            }
-            reader.readAsText(file)
+
+            const decks = await getFiles(file)
+
+            const {blackCards: black, whiteCards: white} = decks[0]
+            blackCards.value = black
+            whiteCards.value = white
+
+            blackCards.value = blackCards.value.map(card => {
+                card.text = card.text.trim().replace(/_{1,}/g, '____')
+                return card
+            })
         }
     }
 }

@@ -76,7 +76,8 @@
           </el-card>
         </div>
         <div class="drawer-actions">
-          <el-button type="primary">Upload Deck</el-button>
+          <el-button type="primary">Upload Card Deck</el-button>
+          <input @change="readFile" type="file" id="upload" />
         </div>
       </div>
     </el-drawer>
