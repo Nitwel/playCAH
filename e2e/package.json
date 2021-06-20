@@ -1,5 +1,16 @@
 {
+  "name": "e2e",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "",
+  "license": "ISC",
   "dependencies": {
-    "cypress": "^7.5.0"
+    "jest": "^27.0.4",
+    "jest-puppeteer": "^5.0.4",
+    "puppeteer": "^9.1.1"
   }
 }

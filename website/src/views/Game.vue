@@ -1,5 +1,5 @@
 <template>
-    <div class="game">
+    <div id="game">
         <Shortcuts
             leave
             :del="!deleted && !winnerSelected"

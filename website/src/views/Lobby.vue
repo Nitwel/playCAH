@@ -1,5 +1,5 @@
 <template>
-  <div class="lobby">
+  <div id="lobby">
     <div class="title">Lobby</div>
     <div class="users">
       <div v-for="user in users" :key="user.name" class="user">
@@ -24,7 +24,7 @@
     <div class="settings" label-position="top">
       <div>
         <label>Card Decks</label>
-        <el-button v-if="host" size="small" @click="editPacks = true">Edit decks</el-button>
+        <el-button class="deck-select" v-if="host" size="small" @click="editPacks = true">Edit decks</el-button>
         <el-tag
           v-for="deck in selected"
           :key="deck"
@@ -36,6 +36,7 @@
       <div>
         <label>Language</label>
         <el-select
+          class="language-select"
           v-model="language"
           placeholder="Select Language"
           :disabled="host === false"
@@ -52,6 +53,7 @@
       <div>
         <label>Points to win</label>
         <el-input-number
+          class="points-to-win"
           v-model="pointsToWin"
           :disabled="host === false"
           :min="1"
@@ -60,6 +62,7 @@
       <div>
         <label>Hand size</label>
         <el-input-number
+          class="hand-size"
           :min="3"
           :max="20"
           v-model="handSize"
@@ -67,7 +70,7 @@
         />
       </div>
       <div v-if="host" class="actions">
-        <el-button @click="onClick" type="primary">
+        <el-button class="start" @click="onClick" type="primary">
           {{ endLobby ? "Next Round" : "Start" }}
         </el-button>
       </div>
