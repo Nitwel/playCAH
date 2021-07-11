@@ -217,7 +217,7 @@ export default {
 }
 </script>
 <style scoped lang="scss">
-.game {
+#game {
   width: 100%;
   height: 100%;
   position: relative;

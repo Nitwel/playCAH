@@ -270,7 +270,7 @@ export default {
 </script>
 
 <style scoped lang="scss">
-.lobby {
+#lobby {
   width: 100%;
   height: 100%;
   display: flex;
@@ -331,7 +331,7 @@ export default {
     }
   }
 
-  ::v-deep(.el-drawer__body) {
+  :deep(.el-drawer__body) {
     height: calc(100% - 78px);
   }
 
@@ -353,12 +353,12 @@ export default {
       padding: 16px;
     }
 
-    ::v-deep(.el-checkbox) {
+    :deep(.el-checkbox) {
       margin-right: 15px;
     }
   }
 
-  ::v-deep(.el-tag) {
+  :deep(.el-tag) {
     margin-left: 10px;
   }
 

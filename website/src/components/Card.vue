@@ -105,7 +105,7 @@ export default {
   font-weight: 500;
   font-size: 20px;
 
-  ::v-deep .abs {
+  :deep(.abs) {
     position: absolute;
     top: var(--card-top);
     left: var(--card-left);
