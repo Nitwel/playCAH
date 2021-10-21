@@ -1,19 +1,23 @@
 import {Server, Socket} from "socket.io"
-import {createServer} from 'http'
+import {createServer} from 'https'
 import { House } from "./house"
 import { Player } from "./player"
 import { random, remove } from "lodash"
 import {BlackCard, Deck} from './types'
+import {readFileSync} from 'fs'
 
-const server = createServer()
+const server = createServer({
+    key: readFileSync('../private.key'),
+    cert: readFileSync('../cert.crt')
+})
 const io = new Server(server, {
     cors: {
         origin: '*'
-    }
+    },
 })
 
-server.listen(3001, () => {
-    console.log("listening on *:3001")
+server.listen(5000, () => {
+    console.log("listening on *:5000")
 })
 
 const house = new House()
