@@ -1,12 +1,15 @@
 import {Server, Socket} from "socket.io"
-import {createServer} from 'https'
+import {createServer as createHttp} from 'http'
+import {createServer as createHttps} from 'https'
 import { House } from "./house"
 import { Player } from "./player"
 import { random, remove } from "lodash"
 import {BlackCard, Deck} from './types'
 import {readFileSync} from 'fs'
 
-const server = createServer({
+
+
+const server = (process.argv?.[2] || 'dev').startsWith('dev') ? createHttp() : createHttps({
     key: readFileSync('../private.key'),
     cert: readFileSync('../cert.crt')
 })
