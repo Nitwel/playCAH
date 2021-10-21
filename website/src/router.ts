@@ -1,4 +1,4 @@
-import { createRouter, createWebHashHistory, createWebHistory, NavigationGuard, RouteRecordRaw } from 'vue-router'
+import { createRouter, createWebHashHistory ,createWebHistory, NavigationGuard, RouteRecordRaw } from 'vue-router'
 import Home from './views/Home.vue'
 import Lobby from './views/Lobby.vue'
 import Game from './views/Game.vue'
@@ -65,7 +65,7 @@ const routes: RouteRecordRaw[] = [
 ]
 
 const router = createRouter({
-    history: createWebHistory(),
+    history: createWebHashHistory(),
     routes
 })
 
