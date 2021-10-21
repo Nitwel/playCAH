@@ -98,7 +98,7 @@
           <el-button type="primary" @click="uploadCustomDeck"
             >Upload Card Deck</el-button
           >
-          <input @change="readFiles" type="file" id="upload" multiple />
+          <input @change="readFiles" type="file" id="upload" multiple accept=".deck" />
         </div>
       </div>
     </el-drawer>
@@ -106,7 +106,7 @@
 </template>
 
 <script lang="ts">
-import { computed, ref, watch, watchEffect } from "vue";
+import { computed, ref } from "vue";
 import { cardDecks } from "../cardDecks";
 import { useStore } from "../store";
 import { notify } from "../setup";
@@ -270,6 +270,7 @@ export default {
 </script>
 
 <style scoped lang="scss">
+
 #lobby {
   width: 100%;
   height: 100%;
@@ -382,6 +383,11 @@ export default {
 
     > div {
       margin-bottom: 10px;
+    }
+
+    label {
+      margin-bottom: 4px;
+      font-size: 20px;
     }
 
     label,

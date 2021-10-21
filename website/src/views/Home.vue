@@ -190,10 +190,15 @@ export default {
       display: flex;
       justify-content: center;
       flex-wrap: wrap;
+      gap: 10px;
 
       .button {
         margin: 5px 10px;
       }
+    }
+
+    .name {
+      margin-bottom: 10px;
     }
 
     input {

@@ -5,8 +5,8 @@
             <el-button @click="loadFile">Load File</el-button>
             <el-button @click="saveFile">Save File</el-button>
             <el-input class="deck-title" v-model="deckTitle"></el-input>
-            <input @change="readFile" type="file" id="upload" />
-            <a id="download" :download="deckTitle +'.json'"></a>
+            <input @change="readFile" type="file" id="upload" accept=".deck" />
+            <a id="download" :download="deckTitle +'.deck'"></a>
         </div>
         <div class="cards">
              <div class="white-cards">
@@ -86,7 +86,7 @@ export default {
             if(!target.files || target.files?.length < 1) return
             const file = target.files[0]
 
-            deckTitle.value = file.name.replace('.json','')
+            deckTitle.value = file.name.replace('.deck','')
 
             const decks = await getFiles(file)
 
