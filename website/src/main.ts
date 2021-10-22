@@ -8,7 +8,7 @@ import { createI18n } from 'vue-i18n'
 import deDEBase from './lang/de-DE.json'
 import { register } from './components/register';
 import 'element-plus/dist/index.css'
-import {ElButton, ElInput, ElInputNumber, ElOption, ElSelect, ElDrawer, ElTag, ElForm, ElFormItem, ElCard, ElCheckbox} from 'element-plus'
+import ElementPlus from 'element-plus'
 
 
 export const i18n = createI18n({
@@ -25,9 +25,6 @@ app.use(i18n)
 app.use(VueSocketIOExt, socket, {store})
 app.use(router)
 app.use(store, key)
-
-for(const el of [ElButton, ElInput, ElSelect, ElOption, ElInputNumber, ElDrawer, ElTag, ElForm, ElFormItem, ElCard, ElCheckbox]) {
-    app.component(el.name, el)
-}
+app.use(ElementPlus)
 
 app.mount('#app')
