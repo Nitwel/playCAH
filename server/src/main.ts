@@ -186,7 +186,7 @@ io.on('connection', (socket: Socket) => {
             const playerPositions: Record<number, string> = {}
 
             game.players.forEach(player => {
-                if(player.revealPos) playerPositions[player.revealPos] = player.name
+                if('revealPos' in player && typeof player.revealPos === 'number') playerPositions[player.revealPos] = player.name
             })
 
             game.startRound()
@@ -218,7 +218,7 @@ io.on('connection', (socket: Socket) => {
 
         if('hand_size' in settings && typeof settings.hand_size === 'number') game.handSize = settings.hand_size
 
-        if('language' in settings && typeof settings.hand_size === 'string') game.language = settings.language
+        if('language' in settings && typeof settings.language === 'string') game.language = settings.language
 
         io.to(game.name).emit('settings_changed', settings)
 

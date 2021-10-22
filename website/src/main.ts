@@ -7,7 +7,7 @@ import router from './router'
 import { createI18n } from 'vue-i18n'
 import deDEBase from './lang/de-DE.json'
 import { register } from './components/register';
-import 'element-plus/lib/theme-chalk/index.css';
+import 'element-plus/dist/index.css'
 import {ElButton, ElInput, ElInputNumber, ElOption, ElSelect, ElDrawer, ElTag, ElForm, ElFormItem, ElCard, ElCheckbox} from 'element-plus'
 
 

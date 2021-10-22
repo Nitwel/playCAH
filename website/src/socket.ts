@@ -97,6 +97,7 @@ socket.on('next_round', async ( { hand, black, zar, winner, pos }) => {
     })
 })
 socket.on('game_end', ( points) => {
+    router.push(`/lobby/${store.state.lobby}`)
     emitter.emit('game_end', points)
     store.state.hands = []
     store.state.blackCard = undefined
@@ -114,7 +115,6 @@ socket.on('game_end', ( points) => {
 
     store.state.endLobby = true
     store.state.gameState = 'Lobby'
-    router.push(`/lobby/${store.state.lobby}`)
 })
 socket.on('cards_placed', ( name) => {
     emitter.emit('cards_placed', name)
