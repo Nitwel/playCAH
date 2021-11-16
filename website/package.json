@@ -7,7 +7,7 @@
     "lint:script": "eslint --ext .ts,vue --ignore-path .gitignore . --fix"
   },
   "dependencies": {
-    "element-plus": "^1.1.0-beta.24",
+    "element-plus": "^1.2.0-beta.3",
     "lodash": "^4.17.21",
     "mitt": "^2.1.0",
     "socket.io-client": "^4.1.2",
