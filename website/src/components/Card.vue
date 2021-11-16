@@ -20,7 +20,7 @@
                 class="editable"
                 v-if="modelValue !== undefined"
                 :value="modelValue"
-                @input="$emit('update:modelValue', $event.target?.value)"
+                @input="$emit('update:modelValue', ($event.target as HTMLInputElement).value)"
             ></textarea>
             <slot />
         </div>

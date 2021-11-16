@@ -19,18 +19,27 @@
 
 <script setup lang="ts">
 import Avataaars from "vuejs-avataaars-nitwel/src/Avataaars.vue";
+// @ts-ignore
 import { mouthTypes } from "vuejs-avataaars-nitwel/src/assetsTypes/mouth.js";
+// @ts-ignore
 import { eyeTypes } from "vuejs-avataaars-nitwel/src/assetsTypes/eyes.js";
+// @ts-ignore
 import { eyebrowTypes } from "vuejs-avataaars-nitwel/src/assetsTypes/eyebrows.js";
+// @ts-ignore
 import { clothesType } from "vuejs-avataaars-nitwel/src/assetsTypes/clothes.js";
+// @ts-ignore
 import { topTypes } from "vuejs-avataaars-nitwel/src/assetsTypes/top.js";
+// @ts-ignore
 import { accessoriesTypes } from "vuejs-avataaars-nitwel/src/assetsTypes/accessories.js";
+// @ts-ignore
 import { facialHairTypes } from "vuejs-avataaars-nitwel/src/assetsTypes/facial-hair.js";
+// @ts-ignore
 import { GraphicShirtTypes } from "vuejs-avataaars-nitwel/src/assetsTypes/graphic-shirt.js";
 import {
     hairColors,
     skinColors,
     hatAndShirtColors,
+// @ts-ignore
 } from "vuejs-avataaars-nitwel/src/assetsTypes/colors.js";
 import { computed } from "vue";
 import { store } from "../store";
