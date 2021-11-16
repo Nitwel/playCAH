@@ -48,7 +48,7 @@ export const store = createStore<State>({
         zar: "",
         host: "",
         handSize: 7,
-        pointsToWin: 5,
+        pointsToWin: 7,
         cardDecks: ["Base"],
         customDecks: [],
         gameState: "Home", // Home, Lobby, Game

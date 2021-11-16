@@ -31,7 +31,7 @@ export class Game {
     zar = 0
     name: string
     handSize = 7
-    pointsToWin = 5
+    pointsToWin = 7
     language = 'en'
     blackCards: BlackCard[] = []
     whiteCards: string[] = []
