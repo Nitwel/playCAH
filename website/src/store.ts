@@ -24,7 +24,7 @@ export interface State {
     endLobby: boolean;
     blackCard: undefined | {text: string, pick: number};
     revealed: Record<string, any>;
-    posNames: Object;
+    posNames: Record<number, string>;
     hands: string[];
     users: User[];
     connected: boolean;

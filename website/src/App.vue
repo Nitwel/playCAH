@@ -2,16 +2,8 @@
     <router-view />
 </template>
 
-<script>
+<script setup lang="ts">
 import { onUnmounted } from 'vue'
-import {useStore} from './store'
-
-export default {
-    name: 'App',
-    setup() {
-        const store = useStore()
-    }
-}
 </script>
 
 <style lang="scss">

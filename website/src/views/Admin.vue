@@ -16,27 +16,22 @@
     </div>
 </template>
 
-<script lang="ts">
+<script setup lang="ts">
 import { ref } from 'vue'
 import { socket } from '../setup'
-export default {
-    name: 'Admin',
-    setup(props) {
-        const password = ref('')
-        const games = ref([])
 
-        return {onClick, password, games}
+const password = ref('')
+const games = ref([])
 
-        function onClick () {
-            socket.emit('games', password.value, (response: any) => {
-                if (response.error) return console.error(response.error)
-                console.log(response)
+function onClick () {
+    socket.emit('games', password.value, (response: any) => {
+        if (response.error) return console.error(response.error)
+        console.log(response)
 
-                games.value = response
-            })
-        }
-    }
+        games.value = response
+    })
 }
+
 </script>
 <style scoped lang="scss">
 .admin {

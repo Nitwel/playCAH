@@ -176,8 +176,7 @@ export class Game {
     }
 
     addPlayer(player: Player) {
-        if(this.disconnectedPlayers.includes(player))
-            this.disconnectedPlayers = remove(this.disconnectedPlayers, player)
+        this.disconnectedPlayers = this.disconnectedPlayers.filter(p => p.name !== player.name)
 
         if (this.getPlayerWithName(player.name) !== undefined)
             return false

@@ -8,17 +8,10 @@
           v-if="endLobby && user.trophy"
           class="tropy material-icons"
           :class="user.trophy"
-          >emoji_events</span
-        >
+        >emoji_events</span>
         <span v-if="endLobby" class="points">{{ user.points }} Points</span>
       </div>
-      <User
-        v-if="!endLobby"
-        name="invite"
-        class="invite"
-        invite
-        @click="copyLink"
-      />
+      <User v-if="!endLobby" name="invite" class="invite" invite @click="copyLink" />
       <textarea id="lobby-link" />
     </div>
     <div class="settings" label-position="top">
@@ -30,8 +23,7 @@
           :key="deck"
           :closable="host"
           @close="toggleDeck(deck)"
-          >{{ deck }}</el-tag
-        >
+        >{{ deck }}</el-tag>
       </div>
       <div>
         <label>Language</label>
@@ -41,13 +33,7 @@
           placeholder="Select Language"
           :disabled="host === false"
         >
-          <el-option
-            v-for="lang in languages"
-            :key="lang"
-            :label="lang"
-            :value="lang"
-          >
-          </el-option>
+          <el-option v-for="lang in languages" :key="lang" :label="lang" :value="lang"></el-option>
         </el-select>
       </div>
       <div>
@@ -70,23 +56,17 @@
         />
       </div>
       <div v-if="host" class="actions">
-        <el-button class="start" @click="onClick" type="primary">
-          {{ endLobby ? "Next Round" : "Start" }}
-        </el-button>
+        <el-button
+          class="start"
+          @click="onClick"
+          type="primary"
+        >{{ endLobby ? "Next Round" : "Start" }}</el-button>
       </div>
     </div>
-    <el-drawer
-      size="600px"
-      title="Card Decks"
-      v-model="editPacks"
-    >
+    <el-drawer size="600px" title="Card Decks" v-model="editPacks">
       <div class="deck-list">
         <div class="scroll">
-          <div
-            v-for="deck in allDecks"
-            :key="deck.value"
-            @click="toggleDeck(deck.value)"
-          >
+          <div v-for="deck in allDecks" :key="deck.value" @click="toggleDeck(deck.value)">
             <el-checkbox
               :model-value="selected.includes(deck.value)"
               @change="toggleDeck(deck.value)"
@@ -95,9 +75,7 @@
           </div>
         </div>
         <div class="drawer-actions">
-          <el-button type="primary" @click="uploadCustomDeck"
-            >Upload Card Deck</el-button
-          >
+          <el-button type="primary" @click="uploadCustomDeck">Upload Card Deck</el-button>
           <input @change="readFiles" type="file" id="upload" multiple accept=".deck" />
         </div>
       </div>
@@ -105,172 +83,146 @@
   </div>
 </template>
 
-<script lang="ts">
+<script setup lang="ts">
 import { computed, ref } from "vue";
 import { cardDecks } from "../cardDecks";
 import { useStore } from "../store";
 import { notify } from "../setup";
 import { getFiles } from "../util/getFiles";
 
-export default {
-  name: "Lobby",
-  components: {},
-  props: {
-    name: {
-      type: String,
-    },
+const props = defineProps({
+  name: {
+    type: String,
   },
-  setup(props) {
-    const languages = ref(["en", "de"]);
-    const store = useStore();
-    const editPacks = ref(false);
+})
 
-    const handSize = computed({
-      get() {
-        return store.state.handSize;
-      },
-      set(handSize: number) {
-        store.state.handSize = handSize;
-        saveSettings();
-      },
+const languages = ref(["en", "de"]);
+const store = useStore();
+const editPacks = ref(false);
+
+const handSize = computed({
+  get() {
+    return store.state.handSize;
+  },
+  set(handSize: number) {
+    store.state.handSize = handSize;
+    saveSettings();
+  },
+});
+
+const pointsToWin = computed({
+  get() {
+    return store.state.pointsToWin;
+  },
+  set(points: number) {
+    store.state.pointsToWin = points;
+    saveSettings();
+  },
+});
+
+const selected = computed({
+  get() {
+    return store.state.cardDecks
+  },
+  set(val: string[]) {
+    store.commit("setCardDecks", val);
+    saveSettings();
+  },
+});
+
+const language = computed({
+  get() {
+    return store.state.language;
+  },
+  set(val: string) {
+    store.commit("setLanguage", val);
+    saveSettings();
+  },
+});
+
+const link = computed(() => window.location.href);
+
+const readonlyDecks = computed(() =>
+  cardDecks
+    .filter((deck) => store.state.cardDecks.includes(deck.value))
+    .map((deck) => deck.name)
+);
+
+const host = computed(() => store.state.host === store.state.name);
+
+const endLobby = computed(() => store.state.endLobby);
+
+const users = computed(() => {
+  const users = store.state.users;
+  if (endLobby.value) {
+    const sorted = [...users];
+    const ranks = ["gold", "silver", "bronze"];
+
+    sorted.sort((a, b) => b.points - a.points);
+
+    users.forEach((user) => {
+      for (let i = 0; i < 3 && i < sorted.length; i++) {
+        if (user.name === sorted[i].name) user.trophy = ranks[i];
+      }
     });
+  }
+  return users;
+});
 
-    const pointsToWin = computed({
-      get() {
-        return store.state.pointsToWin;
-      },
-      set(points: number) {
-        store.state.pointsToWin = points;
-        saveSettings();
-      },
-    });
+const allDecks = computed(() => {
+  return [
+    ...store.state.customDecks.map((deck) => ({ name: deck, value: deck })),
+    ...cardDecks,
+  ];
+});
 
-    const selected = computed({
-      get() {
-        return store.state.cardDecks
-      },
-      set(val: string[]) {
-        store.commit("setCardDecks", val);
-        saveSettings();
-      },
-    });
+async function readFiles(event: Event) {
+  const target = event.target as HTMLInputElement;
+  if (!target.files || target.files?.length < 1) return;
 
-    const language = computed({
-      get() {
-        return store.state.language;
-      },
-      set(val: string) {
-        store.commit("setLanguage", val);
-        saveSettings();
-      },
-    });
+  const files = Array.from(target.files);
+  const decks = await getFiles(...files);
 
-    const link = computed(() => window.location.href);
+  selected.value = [...selected.value, ...decks.map((deck) => deck.name)];
 
-    const readonlyDecks = computed(() =>
-      cardDecks
-        .filter((deck) => store.state.cardDecks.includes(deck.value))
-        .map((deck) => deck.name)
+  store.dispatch("upload_custom_decks", decks);
+}
+
+function uploadCustomDeck() {
+  document.getElementById("upload")?.click();
+}
+
+function toggleDeck(deck: string) {
+  if (selected.value.includes(deck))
+    selected.value = selected.value.filter((val) => val !== deck);
+  else selected.value = [...selected.value, deck];
+}
+
+function saveSettings() {
+  store.dispatch("change_settings");
+}
+function onClick() {
+  store.dispatch("start_game");
+}
+
+function copyLink() {
+  const element = document.getElementById("lobby-link");
+  if (element === null) return;
+
+  if (element instanceof HTMLTextAreaElement) {
+    element.value = link.value;
+    element.select();
+    document.execCommand("copy");
+    notify(
+      "Link Copied",
+      "The link has been copied to your clipboard.",
+      "success"
     );
-
-    const host = computed(() => store.state.host === store.state.name);
-
-    const endLobby = computed(() => store.state.endLobby);
-
-    const users = computed(() => {
-      const users = store.state.users;
-      if (endLobby.value) {
-        const sorted = [...users];
-        const ranks = ["gold", "silver", "bronze"];
-
-        sorted.sort((a, b) => b.points - a.points);
-
-        users.forEach((user) => {
-          for (let i = 0; i < 3 && i < sorted.length; i++) {
-            if (user.name === sorted[i].name) user.trophy = ranks[i];
-          }
-        });
-      }
-      return users;
-    });
-
-    const allDecks = computed(() => {
-      return [
-        ...store.state.customDecks.map((deck) => ({ name: deck, value: deck })),
-        ...cardDecks,
-      ];
-    });
-
-    return {
-      pointsToWin,
-      handSize,
-      languages,
-      selected,
-      language,
-      readonlyDecks,
-      host,
-      endLobby,
-      users,
-      saveSettings,
-      onClick,
-      copyLink,
-      allDecks,
-      editPacks,
-      toggleDeck,
-      uploadCustomDeck,
-      readFiles,
-    };
-
-    async function readFiles(event: InputEvent) {
-      const target = event.target as HTMLInputElement;
-      if (!target.files || target.files?.length < 1) return;
-
-      const files = Array.from(target.files);
-      const decks = await getFiles(...files);
-
-      selected.value = [...selected.value, ...decks.map((deck) => deck.name)];
-
-      store.dispatch("upload_custom_decks", decks);
-    }
-
-    function uploadCustomDeck() {
-      document.getElementById("upload")?.click();
-    }
-
-    function toggleDeck(deck: string) {
-      if (selected.value.includes(deck))
-        selected.value = selected.value.filter((val) => val !== deck);
-      else selected.value = [...selected.value, deck];
-    }
-
-    function saveSettings() {
-      store.dispatch("change_settings");
-    }
-    function onClick() {
-      store.dispatch("start_game");
-    }
-
-    function copyLink() {
-      const element = document.getElementById("lobby-link");
-      if (element === null) return;
-
-      if (element instanceof HTMLTextAreaElement) {
-        element.value = link.value;
-        element.select();
-        document.execCommand("copy");
-        notify(
-          "Link Copied",
-          "The link has been copied to your clipboard.",
-          "success"
-        );
-      }
-    }
-  },
-};
+  }
+}
 </script>
 
 <style scoped lang="scss">
-
 #lobby {
   width: 100%;
   height: 100%;

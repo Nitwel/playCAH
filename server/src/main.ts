@@ -32,9 +32,7 @@ io.on('connection', (socket: Socket) => {
         console.log("joining")
     
         const game = house.getGame(lobby)
-        const disconnectedPlayer = game.getDisconnectedPlayer(socket.id)
-
-        
+        const disconnectedPlayer = game.getDisconnectedPlayer(name)
 
         if (disconnectedPlayer !== undefined) {
             socket.join(lobby)

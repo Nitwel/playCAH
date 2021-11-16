@@ -1,8 +1,7 @@
-import { createRouter, createWebHashHistory ,createWebHistory, NavigationGuard, RouteRecordRaw } from 'vue-router'
+import { createRouter, createWebHashHistory, NavigationGuard, RouteRecordRaw } from 'vue-router'
 import Home from './views/Home.vue'
 import Lobby from './views/Lobby.vue'
 import Game from './views/Game.vue'
-import Profile from './views/Profile.vue'
 import About from './views/About.vue'
 import Admin from './views/Admin.vue'
 import DeckCreator from './views/DeckCreator.vue'
@@ -41,11 +40,6 @@ const routes: RouteRecordRaw[] = [
         beforeEnter: reroute,
         component: Game,
         props: true
-    },
-    {
-        path: '/profile',
-        name: 'Profile',
-        component: Profile
     },
     {
         path: '/deckcreator',

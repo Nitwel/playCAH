@@ -1,7 +1,7 @@
 <template>
     <div
         class="effect"
-        :style="{'--effect-time': `${time}ms`}"
+        :style="`--effect-time: ${time}ms`"
     >
         <slot />
         <img
@@ -13,40 +13,35 @@
     </div>
 </template>
 
-<script lang="ts">
+<script setup lang="ts">
 import { onMounted, ref } from 'vue'
 import { emitter } from '../setup'
-export default {
-    name: 'Effect',
-    props: {
-        trigger: {
-            type: String,
-            default: ''
-        },
-        time: {
-            type: Number,
-            default: 800
-        },
-        effect: {
-            type: String,
-            default: null
-        }
-    },
-    setup(props) {
-        const show = ref(false)
 
-        onMounted(() => {
-            emitter.on(props.trigger, (event) => {
-                show.value = true
-                setTimeout(() => {
-                    show.value = false
-                }, props.time)
-            })
-        })
-                
-        return  { show }
+const props = defineProps({
+    trigger: {
+        type: String,
+        default: ''
+    },
+    time: {
+        type: Number,
+        default: 800
+    },
+    effect: {
+        type: String,
+        default: null
     }
-}
+})
+
+const show = ref(false)
+
+onMounted(() => {
+    emitter.on(props.trigger, (event) => {
+        show.value = true
+        setTimeout(() => {
+            show.value = false
+        }, props.time)
+    })
+})
 </script>
 <style scoped lang="scss">
 .effect {

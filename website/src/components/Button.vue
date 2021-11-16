@@ -12,10 +12,8 @@
     </button>
 </template>
 
-<script>
-export default {
-    name: 'Button',
-    props: {
+<script setup lang="ts">
+const props = defineProps({
         icon: {
             type: String,
             default: null
@@ -28,9 +26,8 @@ export default {
             type: Boolean,
             default: false
         }
-    },
-    emits: ['click'],
-}
+    })
+const emit = defineEmits(['click'])
 </script>
 <style lang="scss" scoped>
 .button {

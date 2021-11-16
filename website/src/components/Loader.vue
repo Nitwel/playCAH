@@ -2,14 +2,11 @@
     <div class="hello" />
 </template>
 
-<script>
-export default {
-    name: 'Loader',
-    props: {
-        msg: String
-    }
-}
+<script setup lang="ts">
+
+const props = defineProps({
+    msg: String
+})
 </script>
 <style scoped lang="scss">
-
 </style>

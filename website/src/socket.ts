@@ -48,7 +48,7 @@ socket.on('player_leave', ( player) => {
     const index = store.state.users.findIndex(u => u.name === player)
 
     if (store.state.gameState === 'Game') {
-        store.state.users[index].connected = true
+        store.state.users[index].connected = false
         emitter.emit('player_disconnect', player)
     } else {
         store.state.users = store.state.users.filter(p => p.name !== player)

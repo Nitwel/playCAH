@@ -2,13 +2,10 @@
     <div class="hello" />
 </template>
 
-<script>
-export default {
-    name: 'About',
-    props: {
-        msg: String
-    }
-}
+<script setup lang="ts">
+const props = defineProps({
+    msg: String
+})
 </script>
 <style scoped lang="scss">
 
