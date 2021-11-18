@@ -9,11 +9,15 @@ function loadDecks(decks: string[], lang: string){
     let whiteCards: string[] = []
 
     for(let deck of decks) {
-        const file = readFileSync(join(__dirname, './decks', lang, deck + '.json'), 'utf-8')
+        try{
+            const file = readFileSync(join(__dirname, './decks', lang, deck + '.json'), 'utf-8')
 
-        const data = JSON.parse(file)
-        blackCards = blackCards.concat(data.blackCards)
-        whiteCards = whiteCards.concat(data.whiteCards)
+            const data = JSON.parse(file)
+            blackCards = blackCards.concat(data.blackCards)
+            whiteCards = whiteCards.concat(data.whiteCards)
+        } catch(error) {
+            console.error(`Could not load deck ${lang}/${deck}\nError ${error}`)
+        }
     }
 
     return {blackCards, whiteCards}
