@@ -1,0 +1,1 @@
+nohup node ./dist/main.js &
