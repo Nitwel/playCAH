@@ -1,1 +1,1 @@
-nohup node ./dist/main.js &
+nohup node ./dist/main.js prod &
