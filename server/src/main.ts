@@ -10,8 +10,8 @@ import {readFileSync} from 'fs'
 
 
 const server = (process.argv?.[2] || 'dev').startsWith('dev') ? createHttp() : createHttps({
-    key: readFileSync('../private.key'),
-    cert: readFileSync('../cert.crt')
+    key: readFileSync('./private.key'),
+    cert: readFileSync('./cert.crt')
 })
 const io = new Server(server, {
     cors: {
@@ -19,8 +19,8 @@ const io = new Server(server, {
     },
 })
 
-server.listen(5000, () => {
-    console.log("listening on *:5000")
+server.listen(5001, () => {
+    console.log("listening on *:5001")
 })
 
 const house = new House()
