@@ -15,7 +15,7 @@ const server = (process.argv?.[2] || 'dev').startsWith('dev') ? createHttp() : c
 })
 const io = new Server(server, {
     cors: {
-        origin: '*.playcah.de/*'
+        origin: '*'
     },
 })
 
