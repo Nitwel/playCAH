@@ -2,8 +2,6 @@ import {socket, emitter} from './setup'
 import router from './router'
 import { store } from './store';
 
-import {ActionTree} from "vuex"
-
 socket.on('answer', ( data) => {
     console.log('Got Answer!')
 })
