@@ -5,14 +5,33 @@ import { House } from "./house"
 import { Player } from "./player"
 import { random, remove } from "lodash"
 import {BlackCard, Deck} from './types'
-import {readFileSync} from 'fs'
+import {readFileSync, existsSync, readdirSync} from 'fs'
 
+const PK_PATH = './dist/keys/private.key'
+const CERT_PATH = './dist/keys/cert.crt'
 
+let server
 
-const server = (process.argv?.[2] || 'dev').startsWith('dev') ? createHttp() : createHttps({
-    key: readFileSync('./private.key'),
-    cert: readFileSync('./cert.crt')
-})
+if(process.argv?.[2]?.startsWith('dev')) {
+    server = createHttp()
+    console.log("Starting in http mode")
+} else {
+    if(!existsSync(PK_PATH)) {
+        console.error(`${PK_PATH} File was not found`)
+    }
+    if(!existsSync(CERT_PATH)) {
+        console.error(`${CERT_PATH} File was not found`)
+    }
+
+    server = createHttps({
+        key: readFileSync(PK_PATH),
+        cert: readFileSync(CERT_PATH)
+    })
+
+    console.log("Starting in https mode")
+
+}
+
 const io = new Server(server, {
     cors: {
         origin: '*'

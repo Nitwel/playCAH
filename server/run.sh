@@ -1,1 +1,0 @@
-nohup node ./dist/main.js prod &

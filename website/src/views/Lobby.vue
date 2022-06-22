@@ -162,6 +162,7 @@ const users = computed(() => {
 
     users.forEach((user) => {
       for (let i = 0; i < 3 && i < sorted.length; i++) {
+        user.trophy = undefined
         if (user.name === sorted[i].name) user.trophy = ranks[i];
       }
     });

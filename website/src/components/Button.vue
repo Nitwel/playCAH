@@ -65,7 +65,7 @@ const emit = defineEmits(['click'])
     }
 
     &:active {
-        transform: scale(0.95);
+        transform: translate(-50%, -50%) scale(0.90);
     }
 
     &.disabled {
