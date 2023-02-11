@@ -1,8 +1,7 @@
-const { renameSync, readdirSync, mkdirSync, writeFileSync, readFileSync } = require('fs')
+const { readdirSync, mkdirSync, writeFileSync, readFileSync } = require('fs')
 const { join } = require('path')
 
 copyDir('./src/decks', './dist/decks')
-
 
 function copyDir(from, to, folder = '') {
     

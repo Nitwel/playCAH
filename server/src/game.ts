@@ -1,6 +1,6 @@
 import {Player} from './player'
-import {readFileSync, existsSync} from 'fs'
-import {shuffle, remove, includes} from 'lodash'
+import {readFileSync} from 'fs'
+import {shuffle} from 'lodash'
 import {join} from 'path'
 import { BlackCard, Deck } from './types'
 

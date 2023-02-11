@@ -1,4 +1,4 @@
-import {difference, remove} from 'lodash'
+import {difference} from 'lodash'
 
 export class Player {
 

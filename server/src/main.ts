@@ -1,36 +1,40 @@
 import {Server, Socket} from "socket.io"
 import {createServer as createHttp} from 'http'
-import {createServer as createHttps} from 'https'
 import { House } from "./house"
 import { Player } from "./player"
-import { random, remove } from "lodash"
-import {BlackCard, Deck} from './types'
-import {readFileSync, existsSync, readdirSync} from 'fs'
+import { Deck} from './types'
+import { readFileSync } from "fs"
+import {lookup} from 'mime-types'
 
-const PK_PATH = './dist/keys/private.key'
-const CERT_PATH = './dist/keys/cert.crt'
+const server = createHttp()
+const webPath = require.resolve('@playcah/website')
 
-let server
+server.on('request', (req, res) => {
+    let url = req.url ?? 'index.html'
 
-if(process.argv?.[2]?.startsWith('dev')) {
-    server = createHttp()
-    console.log("Starting in http mode")
-} else {
-    if(!existsSync(PK_PATH)) {
-        console.error(`${PK_PATH} File was not found`)
+    if(url === '/') url = 'index.html'
+
+    const path = webPath.replace('index.html', url)
+    let data: string | Buffer = ''
+
+    try {
+        const mime = lookup(path)
+
+        if(!mime) throw new Error('Mime type not found')
+
+        data = readFileSync(path)
+
+        res.setHeader('Content-Type', mime)
+        res.writeHead(200)
+    } catch (error) {
+        console.error(error)
+        data = 'File not found'
+        res.writeHead(404)
     }
-    if(!existsSync(CERT_PATH)) {
-        console.error(`${CERT_PATH} File was not found`)
-    }
 
-    server = createHttps({
-        key: readFileSync(PK_PATH),
-        cert: readFileSync(CERT_PATH)
-    })
-
-    console.log("Starting in https mode")
-
-}
+    res.write(data)
+    res.end()
+})
 
 const io = new Server(server, {
     cors: {
@@ -38,8 +42,8 @@ const io = new Server(server, {
     },
 })
 
-server.listen(5001, () => {
-    console.log("listening on *:5001")
+server.listen(80, () => {
+    console.log("listening on *:80")
 })
 
 const house = new House()
