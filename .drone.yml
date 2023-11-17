@@ -1,7 +1,7 @@
 ---
 kind: pipeline
 type: docker
-name: default1
+name: default
 
 steps:
 - name: build
@@ -11,6 +11,6 @@ steps:
       from_secret: docker_username
     password:
       from_secret: docker_password
-    repo: Nitwel/playcah
+    repo: nitwel/playcah
     tags:
     - latest
