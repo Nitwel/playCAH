@@ -1,4 +1,5 @@
 # playCAH
+[![Build Status](https://drone.nitwel.de/api/badges/Nitwel/playCAH/status.svg)](https://drone.nitwel.de/Nitwel/playCAH)
 
 This is the source code of https://playcah.de.
 
